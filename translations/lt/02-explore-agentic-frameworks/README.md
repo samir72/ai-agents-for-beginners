@@ -1,31 +1,31 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "a9631d0898fc3c6ecbb3a8a0da7aaba3",
-  "translation_date": "2025-08-30T15:07:07+00:00",
+  "original_hash": "86b9c2b24da3b3e61711182ffa72601c",
+  "translation_date": "2025-09-29T23:06:52+00:00",
   "source_file": "02-explore-agentic-frameworks/README.md",
   "language_code": "lt"
 }
 -->
-[![Tyrinėjame AI agentų sistemas](../../../translated_images/lesson-2-thumbnail.c65f44c93b8558df4d5d407e29970e654629e614f357444a9c27c80feb54c79d.lt.png)](https://youtu.be/ODwF-EZo_O8?si=1xoy_B9RNQfrYdF7)
+[![AI agentų sistemų tyrinėjimas](../../../translated_images/lesson-2-thumbnail.c65f44c93b8558df4d5d407e29970e654629e614f357444a9c27c80feb54c79d.lt.png)](https://youtu.be/ODwF-EZo_O8?si=1xoy_B9RNQfrYdF7)
 
-> _(Spustelėkite aukščiau esančią nuotrauką, kad peržiūrėtumėte šios pamokos vaizdo įrašą)_
+> _(Spustelėkite paveikslėlį aukščiau, kad peržiūrėtumėte šios pamokos vaizdo įrašą)_
 
-# Tyrinėkite AI agentų sistemas
+# AI agentų sistemų tyrinėjimas
 
-AI agentų sistemos yra programinės įrangos platformos, skirtos supaprastinti AI agentų kūrimą, diegimą ir valdymą. Šios sistemos suteikia kūrėjams iš anksto sukurtus komponentus, abstrakcijas ir įrankius, kurie palengvina sudėtingų AI sistemų kūrimą.
+AI agentų sistemos – tai programinės platformos, sukurtos palengvinti AI agentų kūrimą, diegimą ir valdymą. Šios sistemos suteikia kūrėjams iš anksto paruoštus komponentus, abstrakcijas ir įrankius, kurie supaprastina sudėtingų AI sistemų kūrimą.
 
-Šios sistemos padeda kūrėjams sutelkti dėmesį į unikalius jų programų aspektus, pateikdamos standartizuotus sprendimus dažniems AI agentų kūrimo iššūkiams. Jos pagerina mastelio keitimą, prieinamumą ir efektyvumą kuriant AI sistemas.
+Šios sistemos padeda kūrėjams susitelkti į unikalius jų programų aspektus, siūlydamos standartizuotus sprendimus dažniausiai pasitaikantiems AI agentų kūrimo iššūkiams. Jos didina AI sistemų mastelį, prieinamumą ir efektyvumą.
 
 ## Įvadas
 
 Šioje pamokoje aptarsime:
 
-- Kas yra AI agentų sistemos ir ką jos leidžia pasiekti kūrėjams?
-- Kaip komandos gali naudoti šias sistemas greitam prototipų kūrimui, iteracijai ir agentų galimybių tobulinimui?
-- Kokie yra skirtumai tarp Microsoft sukurtų sistemų ir įrankių?
+- Kas yra AI agentų sistemos ir ką jos leidžia kūrėjams pasiekti?
+- Kaip komandos gali jas naudoti greitam prototipų kūrimui, iteracijoms ir agentų galimybių tobulinimui?
+- Kokie yra skirtumai tarp Microsoft sukurtų sistemų <a href="https://aka.ms/ai-agents/autogen" target="_blank">AutoGen</a>, <a href="https://aka.ms/ai-agents-beginners/semantic-kernel" target="_blank">Semantic Kernel</a> ir <a href="https://aka.ms/ai-agents-beginners/ai-agent-service" target="_blank">Azure AI Agent Service</a>?
 - Ar galiu tiesiogiai integruoti savo esamus Azure ekosistemos įrankius, ar man reikia atskirų sprendimų?
-- Kas yra Azure AI Agents paslauga ir kaip ji gali man padėti?
+- Kas yra Azure AI Agents paslauga ir kaip ji man padeda?
 
 ## Mokymosi tikslai
 
@@ -40,40 +40,40 @@ AI agentų sistemos yra programinės įrangos platformos, skirtos supaprastinti 
 
 Tradicinės AI sistemos gali padėti integruoti AI į jūsų programas ir pagerinti jas šiais būdais:
 
-- **Personalizacija**: AI gali analizuoti naudotojų elgseną ir pageidavimus, kad pateiktų suasmenintas rekomendacijas, turinį ir patirtis.  
-Pavyzdys: Transliacijos paslaugos, tokios kaip Netflix, naudoja AI, kad pasiūlytų filmus ir laidas pagal peržiūrų istoriją, taip didindamos naudotojų įsitraukimą ir pasitenkinimą.
-- **Automatizacija ir efektyvumas**: AI gali automatizuoti pasikartojančias užduotis, optimizuoti darbo eigas ir pagerinti operacinį efektyvumą.  
-Pavyzdys: Klientų aptarnavimo programos naudoja AI valdomus pokalbių robotus, kad atsakytų į dažniausiai užduodamus klausimus, sumažindamos atsakymo laiką ir leisdamos žmonėms spręsti sudėtingesnes problemas.
-- **Patobulinta naudotojo patirtis**: AI gali pagerinti bendrą naudotojo patirtį, suteikdama intelektualias funkcijas, tokias kaip balso atpažinimas, natūralios kalbos apdorojimas ir prognozuojantis tekstas.  
-Pavyzdys: Virtualūs asistentai, tokie kaip Siri ir Google Assistant, naudoja AI, kad suprastų ir atsakytų į balso komandas, palengvindami naudotojų sąveiką su įrenginiais.
+- **Personalizacija**: AI gali analizuoti vartotojų elgesį ir pageidavimus, kad pateiktų personalizuotas rekomendacijas, turinį ir patirtis.  
+Pavyzdys: Transliavimo paslaugos, tokios kaip Netflix, naudoja AI, kad pasiūlytų filmus ir laidas pagal žiūrėjimo istoriją, didindamos vartotojų įsitraukimą ir pasitenkinimą.
+- **Automatizavimas ir efektyvumas**: AI gali automatizuoti pasikartojančias užduotis, optimizuoti darbo eigą ir pagerinti operacinį efektyvumą.  
+Pavyzdys: Klientų aptarnavimo programos naudoja AI valdomus pokalbių robotus, kad spręstų dažniausiai užduodamus klausimus, sumažindamos atsakymo laiką ir atlaisvindamos žmonių agentus sudėtingesnėms problemoms.
+- **Patobulinta vartotojo patirtis**: AI gali pagerinti bendrą vartotojo patirtį, siūlydama intelektualias funkcijas, tokias kaip balso atpažinimas, natūralios kalbos apdorojimas ir numatomas tekstas.  
+Pavyzdys: Virtualūs asistentai, tokie kaip Siri ir Google Assistant, naudoja AI, kad suprastų ir atsakytų į balso komandas, palengvindami vartotojams sąveiką su jų įrenginiais.
 
-### Skamba puikiai, tiesa? Tai kodėl mums reikia AI agentų sistemų?
+### Skamba puikiai, tiesa? Taigi, kodėl mums reikia AI agentų sistemų?
 
-AI agentų sistemos yra daugiau nei tik AI sistemos. Jos skirtos kurti intelektualius agentus, kurie gali sąveikauti su naudotojais, kitais agentais ir aplinka, siekdami konkrečių tikslų. Šie agentai gali demonstruoti autonominį elgesį, priimti sprendimus ir prisitaikyti prie besikeičiančių sąlygų. Pažvelkime į pagrindines galimybes, kurias suteikia AI agentų sistemos:
+AI agentų sistemos yra daugiau nei tik AI sistemos. Jos sukurtos tam, kad būtų galima kurti intelektualius agentus, kurie gali sąveikauti su vartotojais, kitais agentais ir aplinka, siekdami konkrečių tikslų. Šie agentai gali demonstruoti autonominį elgesį, priimti sprendimus ir prisitaikyti prie besikeičiančių sąlygų. Pažvelkime į pagrindines galimybes, kurias suteikia AI agentų sistemos:
 
 - **Agentų bendradarbiavimas ir koordinavimas**: Leidžia kurti kelis AI agentus, kurie gali dirbti kartu, bendrauti ir koordinuoti veiksmus, kad išspręstų sudėtingas užduotis.
-- **Užduočių automatizavimas ir valdymas**: Suteikia mechanizmus daugiapakopių darbo eigų automatizavimui, užduočių delegavimui ir dinamiškam užduočių valdymui tarp agentų.
-- **Konteksto supratimas ir prisitaikymas**: Aprūpina agentus gebėjimu suprasti kontekstą, prisitaikyti prie besikeičiančios aplinkos ir priimti sprendimus remiantis realaus laiko informacija.
+- **Užduočių automatizavimas ir valdymas**: Suteikia mechanizmus, skirtus automatizuoti daugiapakopius darbo procesus, deleguoti užduotis ir dinamiškai valdyti užduotis tarp agentų.
+- **Kontekstinis supratimas ir prisitaikymas**: Aprūpina agentus gebėjimu suprasti kontekstą, prisitaikyti prie besikeičiančios aplinkos ir priimti sprendimus remiantis realaus laiko informacija.
 
-Apibendrinant, agentai leidžia pasiekti daugiau, perkelti automatizavimą į kitą lygį, kurti intelektualesnes sistemas, kurios gali prisitaikyti ir mokytis iš savo aplinkos.
+Apibendrinant, agentai leidžia pasiekti daugiau, perkelti automatizavimą į kitą lygį, kurti intelektualesnes sistemas, kurios gali prisitaikyti ir mokytis iš aplinkos.
 
 ## Kaip greitai kurti prototipus, iteruoti ir tobulinti agentų galimybes?
 
-Tai sparčiai besikeičianti sritis, tačiau yra keletas bendrų dalykų daugelyje AI agentų sistemų, kurie gali padėti greitai kurti prototipus ir iteruoti, būtent modulinių komponentų naudojimas, bendradarbiavimo įrankiai ir mokymasis realiuoju laiku. Pažvelkime į juos:
+Tai sparčiai besikeičianti sritis, tačiau yra keletas bendrų dalykų daugelyje AI agentų sistemų, kurie gali padėti greitai kurti prototipus ir iteruoti, būtent modulinius komponentus, bendradarbiavimo įrankius ir mokymąsi realiu laiku. Pažvelkime į tai išsamiau:
 
-- **Naudokite modulinius komponentus**: AI SDK siūlo iš anksto sukurtus komponentus, tokius kaip AI ir atminties jungtys, funkcijų kvietimas naudojant natūralią kalbą ar kodo papildinius, šablonus ir kt.
-- **Pasinaudokite bendradarbiavimo įrankiais**: Kurkite agentus su konkrečiais vaidmenimis ir užduotimis, leidžiančiais išbandyti ir tobulinti bendradarbiavimo darbo eigas.
-- **Mokykitės realiuoju laiku**: Įgyvendinkite grįžtamojo ryšio ciklus, kuriuose agentai mokosi iš sąveikų ir dinamiškai koreguoja savo elgesį.
+- **Naudokite modulinius komponentus**: AI SDK siūlo iš anksto paruoštus komponentus, tokius kaip AI ir atminties jungtys, funkcijų kvietimas naudojant natūralią kalbą ar kodų papildinius, šablonus ir kt.
+- **Pasinaudokite bendradarbiavimo įrankiais**: Kurkite agentus su konkrečiais vaidmenimis ir užduotimis, leidžiančiais testuoti ir tobulinti bendradarbiavimo darbo eigas.
+- **Mokykitės realiu laiku**: Įgyvendinkite grįžtamojo ryšio ciklus, kuriuose agentai mokosi iš sąveikų ir dinamiškai koreguoja savo elgesį.
 
 ### Naudokite modulinius komponentus
 
-Tokie SDK kaip Microsoft Semantic Kernel ir LangChain siūlo iš anksto sukurtus komponentus, tokius kaip AI jungtys, šablonai ir atminties valdymas.
+SDK, tokie kaip Microsoft Semantic Kernel ir LangChain, siūlo iš anksto paruoštus komponentus, tokius kaip AI jungtys, šablonai ir atminties valdymas.
 
-**Kaip komandos gali tai naudoti**: Komandos gali greitai surinkti šiuos komponentus, kad sukurtų veikiantį prototipą, nepradėdamos nuo nulio, taip leidžiant greitai eksperimentuoti ir iteruoti.
+**Kaip komandos gali tai naudoti**: Komandos gali greitai surinkti šiuos komponentus, kad sukurtų funkcionalų prototipą, nepradėdamos nuo nulio, leidžiant greitai eksperimentuoti ir iteruoti.
 
-**Kaip tai veikia praktikoje**: Galite naudoti iš anksto sukurtą analizatorių, kad išgautumėte informaciją iš naudotojo įvesties, atminties modulį duomenims saugoti ir atkurti, bei šablonų generatorių sąveikai su naudotojais, viską tai padarydami be poreikio kurti šiuos komponentus nuo nulio.
+**Kaip tai veikia praktikoje**: Galite naudoti iš anksto paruoštą analizatorių, kad išgautumėte informaciją iš vartotojo įvesties, atminties modulį duomenų saugojimui ir paieškai, bei šablonų generatorių sąveikai su vartotojais, visa tai be poreikio kurti šiuos komponentus nuo nulio.
 
-**Kodo pavyzdys**. Pažvelkime į pavyzdžius, kaip galite naudoti iš anksto sukurtą AI jungtį su Semantic Kernel Python ir .Net, kuris naudoja automatinį funkcijų kvietimą, kad modelis atsakytų į naudotojo įvestį:
+**Kodo pavyzdys**. Pažvelkime į pavyzdžius, kaip galite naudoti iš anksto paruoštą AI jungtį su Semantic Kernel Python ir .Net, kuris naudoja automatinį funkcijų kvietimą, kad modelis atsakytų į vartotojo įvestį:
 
 ``` python
 # Semantic Kernel Python Example
@@ -162,7 +162,7 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
-```  
+```
 ```csharp
 // Semantic Kernel C# example
 
@@ -223,17 +223,17 @@ public class BookTravelPlugin
         return await Task.FromResult( $"Travel was booked to {location} on {date}");
     }
 }
-```  
-
-Šiame pavyzdyje matote, kaip galite pasinaudoti iš anksto sukurtu analizatoriumi, kad išgautumėte pagrindinę informaciją iš naudotojo įvesties, pvz., skrydžio užsakymo užklausos kilmę, paskirties vietą ir datą. Šis modulinis požiūris leidžia sutelkti dėmesį į aukšto lygio logiką.
+```
+  
+Iš šio pavyzdžio matote, kaip galite pasinaudoti iš anksto paruoštu analizatoriumi, kad išgautumėte pagrindinę informaciją iš vartotojo įvesties, pvz., skrydžio užsakymo prašymo kilmę, paskirties vietą ir datą. Šis modulinis požiūris leidžia susitelkti į aukšto lygio logiką.
 
 ### Pasinaudokite bendradarbiavimo įrankiais
 
-Tokios sistemos kaip CrewAI, Microsoft AutoGen ir Semantic Kernel palengvina kelių agentų kūrimą, kurie gali dirbti kartu.
+Sistemos, tokios kaip CrewAI, Microsoft AutoGen ir Semantic Kernel, palengvina kelių agentų kūrimą, kurie gali dirbti kartu.
 
-**Kaip komandos gali tai naudoti**: Komandos gali kurti agentus su konkrečiais vaidmenimis ir užduotimis, leidžiančiais išbandyti ir tobulinti bendradarbiavimo darbo eigas bei pagerinti bendrą sistemos efektyvumą.
+**Kaip komandos gali tai naudoti**: Komandos gali kurti agentus su konkrečiais vaidmenimis ir užduotimis, leidžiančiais testuoti ir tobulinti bendradarbiavimo darbo eigas bei pagerinti bendrą sistemos efektyvumą.
 
-**Kaip tai veikia praktikoje**: Galite sukurti agentų komandą, kur kiekvienas agentas turi specializuotą funkciją, pvz., duomenų gavimą, analizę ar sprendimų priėmimą. Šie agentai gali bendrauti ir dalintis informacija, kad pasiektų bendrą tikslą, pvz., atsakytų į naudotojo užklausą ar atliktų užduotį.
+**Kaip tai veikia praktikoje**: Galite sukurti agentų komandą, kur kiekvienas agentas turi specializuotą funkciją, pvz., duomenų paiešką, analizę ar sprendimų priėmimą. Šie agentai gali bendrauti ir dalintis informacija, kad pasiektų bendrą tikslą, pvz., atsakyti į vartotojo užklausą ar atlikti užduotį.
 
 **Kodo pavyzdys (AutoGen)**:
 
@@ -268,38 +268,160 @@ team = RoundRobinGroupChat([agent_retrieve, agent_analyze, user_proxy], terminat
 stream = team.run_stream(task="Analyze data", max_turns=10)
 # Use asyncio.run(...) when running in a script.
 await Console(stream)
-```  
+```
+  
+Šiame ankstesniame kode matote, kaip galite sukurti užduotį, kurioje dalyvauja keli agentai, dirbantys kartu analizuoti duomenis. Kiekvienas agentas atlieka konkrečią funkciją, o užduotis vykdoma koordinuojant agentus, kad būtų pasiektas norimas rezultatas. Sukurdami specializuotus agentus su konkrečiais vaidmenimis, galite pagerinti užduočių efektyvumą ir našumą.
 
-Šiame pavyzdyje matote, kaip galite sukurti užduotį, kurioje dalyvauja keli agentai, dirbantys kartu analizuoti duomenis. Kiekvienas agentas atlieka konkrečią funkciją, o užduotis vykdoma koordinuojant agentus, kad būtų pasiektas norimas rezultatas. Sukurdami specializuotus agentus su konkrečiais vaidmenimis, galite pagerinti užduočių efektyvumą ir našumą.
+### Mokykitės realiu laiku
 
-### Mokykitės realiuoju laiku
+Pažangios sistemos suteikia galimybes realiu laiku suprasti kontekstą ir prisitaikyti.
 
-Pažangios sistemos suteikia galimybes realiuoju laiku suprasti kontekstą ir prisitaikyti.
+**Kaip komandos gali tai naudoti**: Komandos gali įgyvendinti grįžtamojo ryšio ciklus, kuriuose agentai mokosi iš sąveikų ir dinamiškai koreguoja savo elgesį, taip nuolat tobulindami ir rafinuodami savo galimybes.
 
-**Kaip komandos gali tai naudoti**: Komandos gali įgyvendinti grįžtamojo ryšio ciklus, kuriuose agentai mokosi iš sąveikų ir dinamiškai koreguoja savo elgesį, taip užtikrindami nuolatinį tobulėjimą ir galimybių plėtrą.
+**Kaip tai veikia praktikoje**: Agentai gali analizuoti vartotojų grįžtamąjį ryšį, aplinkos duomenis ir užduočių rezultatus, kad atnaujintų savo žinių bazę, koreguotų sprendimų priėmimo algoritmus ir laikui bėgant pagerintų našumą. Šis iteracinis mokymosi procesas leidžia agentams prisitaikyti prie besikeičiančių sąlygų ir vartotojų pageidavimų, didinant bendrą sistemos efektyvumą.
 
-**Kaip tai veikia praktikoje**: Agentai gali analizuoti naudotojų atsiliepimus, aplinkos duomenis ir užduočių rezultatus, kad atnaujintų savo žinių bazę, koreguotų sprendimų priėmimo algoritmus ir pagerintų našumą laikui bėgant. Šis iteracinis mokymosi procesas leidžia agentams prisitaikyti prie besikeičiančių sąlygų ir naudotojų pageidavimų, didinant bendrą sistemos efektyvumą.
-
-## Kokie yra skirtumai tarp AutoGen, Semantic Kernel ir Azure AI Agent Service?
+## Kokie yra skirtumai tarp AutoGen, Semantic Kernel ir Azure AI Agent Service sistemų?
 
 Yra daug būdų palyginti šias sistemas, tačiau pažvelkime į pagrindinius skirtumus jų dizaino, galimybių ir tikslinių naudojimo atvejų atžvilgiu:
 
 ## AutoGen
 
-AutoGen yra atvirojo kodo sistema, sukurta Microsoft Research AI Frontiers Lab. Ji orientuota į įvykių valdomas, paskirstytas *agentines* programas, leidžiančias naudoti kelis LLM, SLM, įrankius ir pažangius kelių agentų dizaino modelius.
+AutoGen yra atvirojo kodo sistema, sukurta Microsoft Research AI Frontiers Lab. Ji orientuota į įvykių valdomas, paskirstytas *agentines* programas, leidžiančias naudoti kelis LLM ir SLM, įrankius bei pažangius kelių agentų dizaino modelius.
 
-AutoGen yra pagrįsta agentų koncepcija, kurie yra autonominiai subjektai, galintys suvokti savo aplinką, priimti sprendimus ir imtis veiksmų, siekdami konkrečių tikslų. Agentai bendrauja per asinchroninius pranešimus, leidžiančius jiems dirbti nepriklausomai ir lygiagrečiai, taip didinant sistemos mastelį ir atsaką.
+AutoGen yra pagrįsta pagrindine agentų koncepcija – autonominiais subjektais, kurie gali suvokti savo aplinką, priimti sprendimus ir imtis veiksmų, kad pasiektų konkrečius tikslus. Agentai bendrauja asinchroniniais pranešimais, leidžiančiais jiems dirbti nepriklausomai ir lygiagrečiai, didinant sistemos mastelį ir atsaką.
+
+<a href="https://en.wikipedia.org/wiki/Actor_model" target="_blank">Agentai yra pagrįsti aktoriaus modeliu</a>. Pasak Vikipedijos, aktorius yra _pagrindinis lygiagrečios skaičiavimo blokas. Atsakydamas į gautą pranešimą, aktorius gali: priimti vietinius sprendimus, sukurti daugiau aktorių, siųsti daugiau pranešimų ir nustatyti, kaip reaguoti į kitą gautą pranešimą_.
+
+**Naudojimo atvejai**: Kodo generavimo automatizavimas, duomenų analizės užduotys ir specialių agentų kūrimas planavimo bei tyrimų funkcijoms.
+
+Štai keletas svarbių AutoGen pagrindinių koncepcijų:
+
+- **Agentai**. Agentas yra programinės įrangos subjektas, kuris:
+  - **Bendrauja per pranešimus**, šie pranešimai gali būti sinchroniniai arba asinchroniniai.
+  - **Palaiko savo būseną**, kurią gali keisti gaunami pranešimai.
+  - **Atlieka veiksmus** reaguodamas į gautus pranešimus arba būsenos pokyčius. Šie veiksmai gali keisti agento būseną ir sukelti išorinius efektus, pvz., atnaujinti pranešimų žurnalus, siųsti naujus pranešimus, vykdyti kodą ar atlikti API užklausas.
+
+Štai trumpas kodo fragmentas, kuriame sukuriate savo agentą su pokalbių galimybėmis:
+
+    ```python
+    from autogen_agentchat.agents import AssistantAgent
+    from autogen_agentchat.messages import TextMessage
+    from autogen_ext.models.openai import OpenAIChatCompletionClient
+
+
+    class MyAgent(RoutedAgent):
+        def __init__(self, name: str) -> None:
+            super().__init__(name)
+            model_client = OpenAIChatCompletionClient(model="gpt-4o")
+            self._delegate = AssistantAgent(name, model_client=model_client)
+    
+        @message_handler
+        async def handle_my_message_type(self, message: MyMessageType, ctx: MessageContext) -> None:
+            print(f"{self.id.type} received message: {message.content}")
+            response = await self._delegate.on_messages(
+                [TextMessage(content=message.content, source="user")], ctx.cancellation_token
+            )
+            print(f"{self.id.type} responded: {response.chat_message.content}")
+    ```
+  
+Ankstesniame kode `MyAgent` buvo sukurtas ir paveldėtas iš `RoutedAgent`. Jis turi pranešimų tvarkyklę, kuri spausdina pranešimo turinį ir tada siunčia atsakymą naudodamas `AssistantAgent` delegatą. Ypač atkreipkite dėmesį, kaip `self._delegate` priskiriamas `AssistantAgent` egzempliorius, kuris yra iš anksto paruoštas agentas, galintis tvarkyti pokalbių užbaigimus.
+
+Leiskime AutoGen sužinoti apie šį agento tipą ir paleiskime programą:
+
+    ```python
+    
+    # main.py
+    runtime = SingleThreadedAgentRuntime()
+    await MyAgent.register(runtime, "my_agent", lambda: MyAgent())
+
+    runtime.start()  # Start processing messages in the background.
+    await runtime.send_message(MyMessageType("Hello, World!"), AgentId("my_agent", "default"))
+    ```
+  
+Ankstesniame kode agentai registruojami vykdymo aplinkoje, o tada agentui siunčiamas pranešimas, kuris sukelia šį rezultatą:
+
+    ```text
+    # Output from the console:
+    my_agent received message: Hello, World!
+    my_assistant received message: Hello, World!
+    my_assistant responded: Hello! How can I assist you today?
+    ```
+  
+- **Keli agentai**. AutoGen palaiko kelių agentų kūrimą, kurie gali dirbti kartu, kad pasiektų sudėtingas užduotis. Agentai gali bendrauti, dalintis informacija ir koordinuoti savo veiksmus, kad efektyviau spręstų problemas. Norėdami sukurti kelių agentų sistemą, galite apibrėžti skirtingų tipų agentus su specializuotomis funkcijomis ir vaidmenimis, pvz., duomenų paieška, analizė, sprendimų priėmimas ir vartotojų sąveika. Pažvelkime, kaip atrodo toks kūrimas:
+
+    ```python
+    editor_description = "Editor for planning and reviewing the content."
+
+    # Example of declaring an Agent
+    editor_agent_type = await EditorAgent.register(
+    runtime,
+    editor_topic_type,  # Using topic type as the agent type.
+    lambda: EditorAgent(
+        description=editor_description,
+        group_chat_topic_type=group_chat_topic_type,
+        model_client=OpenAIChatCompletionClient(
+            model="gpt-4o-2024-08-06",
+            # api_key="YOUR_API_KEY",
+        ),
+        ),
+    )
+
+    # remaining declarations shortened for brevity
+
+    # Group chat
+    group_chat_manager_type = await GroupChatManager.register(
+    runtime,
+    "group_chat_manager",
+    lambda: GroupChatManager(
+        participant_topic_types=[writer_topic_type, illustrator_topic_type, editor_topic_type, user_topic_type],
+        model_client=OpenAIChatCompletionClient(
+            model="gpt-4o-2024-08-06",
+            # api_key="YOUR_API_KEY",
+        ),
+        participant_descriptions=[
+            writer_description, 
+            illustrator_description, 
+            editor_description, 
+            user_description
+        ],
+        ),
+    )
+    ```
+  
+Ankstesniame kode turime `GroupChatManager`, kuris registruojamas vykdymo aplinkoje. Šis valdytojas atsakingas už skirtingų tipų agentų, tokių kaip rašytojai, iliustratoriai, redaktoriai ir vartotojai, sąveikos koordinavimą.
+
+- **Agentų vykdymo aplinka**. Sistema suteikia vykdymo aplinką, leidžiančią agentams bendrauti, valdyti jų identifikacijas ir gyvavimo ciklus bei užtikrinti saugumo ir privatumo ribas. Tai reiškia, kad galite paleisti savo agentus saugioje ir kontroliuojamoje aplinkoje, užtikrindami, kad jie galėtų saugiai ir efektyviai sąveikauti. Yra du vykdymo aplinkos tipai:
+  - **Atskira vykdymo aplinka**. Tai geras pasirinkimas vieno proceso programoms, kur visi agentai įgyvendinami ta pačia programavimo kalba ir vykdomi tame pačiame procese. Štai iliustracija, kaip tai veikia:
+  
+    <a href="https://microsoft.github.io/autogen/stable/_images/architecture-standalone.svg" target="_blank">Atskira vykdymo aplinka</a>  
+Programų rinkinys
+
+    *agentai bendrauja per pranešimus vykdymo aplinkoje, o vykdymo aplinka valdo agentų gyvavimo ciklą*
+
+  - **Paskirstyta agentų vykdymo aplinka**, tinkama daugiaprocesinėms programoms, kur agentai gali būti įgyvendinami skirtingomis programavimo kalbomis ir vykdomi skirtinguose įrenginiuose. Štai iliustracija, kaip tai veikia:
+  
+    <a href="https://microsoft.github.io/autogen/stable/_images/architecture-distributed.svg" target="_blank">Paskirstyta vykdymo aplinka</a>
+
+## Semantic Kernel + Agentų sistema
+
+Semantic Kernel yra įmonėms pritaikytas AI orkestravimo SDK. Jį sudaro AI ir atminties jungtys bei Agentų sistema.
+
+Pirmiausia aptarkime pagrindinius komponentus:
+
+- **AI jungtys**: Tai sąsaja su išorinėmis AI paslaugomis ir duomenų šaltin
+Šie faktai yra saugomi atminties kolekcijoje `SummarizedAzureDocs`. Tai labai supaprastintas pavyzdys, tačiau galite matyti, kaip galima saugoti informaciją atmintyje, kad LLM galėtų ją naudoti.
+
 Tai yra pagrindai apie Semantic Kernel sistemą, o kaip dėl Agent Framework?
 
 ## Azure AI Agent Service
 
-Azure AI Agent Service yra naujesnė funkcija, pristatyta Microsoft Ignite 2024 renginyje. Ji leidžia kurti ir diegti AI agentus naudojant lankstesnius modelius, tokius kaip tiesioginis ryšys su atvirojo kodo LLM, pvz., Llama 3, Mistral ir Cohere.
+Azure AI Agent Service yra naujesnis papildymas, pristatytas Microsoft Ignite 2024 renginyje. Jis leidžia kurti ir diegti AI agentus naudojant lankstesnius modelius, tokius kaip tiesioginis atvirojo kodo LLM, pvz., Llama 3, Mistral ir Cohere, iškvietimas.
 
-Azure AI Agent Service siūlo stipresnius įmonės saugumo mechanizmus ir duomenų saugojimo metodus, todėl jis tinkamas naudoti įmonių programose.
+Azure AI Agent Service siūlo stipresnius įmonės saugumo mechanizmus ir duomenų saugojimo metodus, todėl jis tinkamas naudoti įmonės programose.
 
-Ši paslauga veikia iš karto su daugiagentėmis orkestravimo sistemomis, tokiomis kaip AutoGen ir Semantic Kernel.
+Jis veikia iš karto su daugiagentėmis orkestravimo sistemomis, tokiomis kaip AutoGen ir Semantic Kernel.
 
-Šiuo metu paslauga yra viešojoje peržiūroje ir palaiko Python bei C# kalbas agentų kūrimui.
+Ši paslauga šiuo metu yra viešoje peržiūroje ir palaiko Python bei C# agentų kūrimui.
 
 Naudodami Semantic Kernel Python, galime sukurti Azure AI Agent su vartotojo apibrėžtu įskiepiu:
 
@@ -405,9 +527,9 @@ Azure AI Agent Service turi šias pagrindines sąvokas:
     )
     ```
 
-    Šiame pavyzdyje agentas sukuriamas su modeliu `gpt-4o-mini`, pavadinimu `my-agent` ir instrukcijomis `You are helpful agent`. Agentas aprūpintas įrankiais ir ištekliais, kad galėtų atlikti kodo interpretavimo užduotis.
+    Šiame pavyzdyje sukuriamas agentas su modeliu `gpt-4o-mini`, pavadinimu `my-agent` ir instrukcijomis `You are helpful agent`. Agentas aprūpintas įrankiais ir ištekliais, kad galėtų atlikti kodo interpretavimo užduotis.
 
-- **Gija ir žinutės**. Gija yra dar viena svarbi sąvoka. Ji atspindi pokalbį arba sąveiką tarp agento ir vartotojo. Gijos gali būti naudojamos pokalbio eigai stebėti, konteksto informacijai saugoti ir sąveikos būsenai valdyti. Štai gijos pavyzdys:
+- **Gija ir žinutės**. Gija yra dar viena svarbi sąvoka. Ji atspindi pokalbį ar sąveiką tarp agento ir vartotojo. Gijos gali būti naudojamos pokalbio progreso sekimui, konteksto informacijos saugojimui ir sąveikos būsenos valdymui. Štai gijos pavyzdys:
 
     ```python
     thread = project_client.agents.create_thread()
@@ -425,27 +547,27 @@ Azure AI Agent Service turi šias pagrindines sąvokas:
     print(f"Messages: {messages}")
     ```
 
-    Ankstesniame kode sukuriama gija. Po to į giją siunčiama žinutė. Iškvietus `create_and_process_run`, agentas prašomas atlikti darbą gijoje. Galiausiai žinutės yra gaunamos ir registruojamos, kad būtų matomas agento atsakas. Žinutės rodo pokalbio eigą tarp vartotojo ir agento. Taip pat svarbu suprasti, kad žinutės gali būti įvairių tipų, pvz., tekstas, vaizdas ar failas, tai yra agento darbo rezultatas, pavyzdžiui, vaizdas arba teksto atsakas. Kaip kūrėjas, galite naudoti šią informaciją tolesniam atsako apdorojimui arba pateikimui vartotojui.
+    Ankstesniame kode sukuriama gija. Po to į giją siunčiama žinutė. Iškvietus `create_and_process_run`, agentas paprašomas atlikti darbą gijoje. Galiausiai žinutės yra gaunamos ir registruojamos, kad būtų matomas agento atsakymas. Žinutės rodo pokalbio progresą tarp vartotojo ir agento. Taip pat svarbu suprasti, kad žinutės gali būti skirtingų tipų, pvz., tekstas, vaizdas ar failas, tai yra, agento darbas gali rezultuoti, pavyzdžiui, vaizdu ar teksto atsakymu. Kaip kūrėjas, galite naudoti šią informaciją tolesniam atsakymo apdorojimui arba pateikimui vartotojui.
 
 - **Integracija su kitomis AI sistemomis**. Azure AI Agent Service gali sąveikauti su kitomis sistemomis, tokiomis kaip AutoGen ir Semantic Kernel, tai reiškia, kad galite sukurti dalį savo programos vienoje iš šių sistemų, o, pavyzdžiui, naudoti Agent Service kaip orkestratorių arba viską kurti Agent Service.
 
-**Naudojimo atvejai**: Azure AI Agent Service yra skirtas įmonių programoms, kurioms reikalingas saugus, mastelio keičiamas ir lankstus AI agentų diegimas.
+**Naudojimo atvejai**: Azure AI Agent Service yra skirtas įmonės programoms, kurioms reikalingas saugus, mastelio keičiamas ir lankstus AI agentų diegimas.
 
 ## Kuo skiriasi šios sistemos?
 
-Atrodo, kad šios sistemos turi daug bendro, tačiau yra keletas esminių skirtumų, susijusių su jų dizainu, galimybėmis ir tiksliniais naudojimo atvejais:
+Atrodo, kad šios sistemos turi daug bendro, tačiau yra keletas pagrindinių skirtumų, susijusių su jų dizainu, galimybėmis ir tiksliniais naudojimo atvejais:
 
-- **AutoGen**: Tai eksperimentinė sistema, orientuota į pažangius daugiagentės sistemos tyrimus. Tai geriausia vieta eksperimentuoti ir kurti sudėtingas daugiagentės sistemas.
-- **Semantic Kernel**: Tai gamybai paruošta agentų biblioteka, skirta kurti įmonių agentines programas. Ji orientuota į įvykių valdomas, paskirstytas agentines programas, leidžiančias naudoti kelis LLM ir SLM, įrankius bei vieno/daugiagentės dizaino modelius.
-- **Azure AI Agent Service**: Tai platforma ir diegimo paslauga Azure Foundry agentams. Ji siūlo ryšio su Azure Found paslaugomis, tokiomis kaip Azure OpenAI, Azure AI Search, Bing Search ir kodo vykdymas, kūrimą.
+- **AutoGen**: Tai eksperimentinė sistema, orientuota į pažangius daugiagentės sistemos tyrimus. Tai geriausia vieta eksperimentuoti ir kurti sudėtingas daugiagentės sistemos prototipus.
+- **Semantic Kernel**: Tai gamybai paruošta agentų biblioteka, skirta kurti įmonės agentines programas. Ji orientuota į įvykių valdomas, paskirstytas agentines programas, leidžiančias naudoti kelis LLM ir SLM, įrankius bei vieno/daugiagentės dizaino modelius.
+- **Azure AI Agent Service**: Tai platforma ir diegimo paslauga Azure Foundry agentams. Ji siūlo ryšio su Azure paslaugomis, tokiomis kaip Azure OpenAI, Azure AI Search, Bing Search ir kodo vykdymas, kūrimą.
 
 Vis dar nežinote, kurią pasirinkti?
 
 ### Naudojimo atvejai
 
-Pabandykime padėti, peržiūrėdami keletą dažniausių naudojimo atvejų:
+Pažiūrėkime, ar galime jums padėti, peržiūrėdami keletą dažniausių naudojimo atvejų:
 
-> Q: Eksperimentuoju, mokausi ir kuriu agentų programų prototipus, noriu greitai kurti ir eksperimentuoti
+> Q: Eksperimentuoju, mokausi ir kuriu agentų programų prototipus, ir noriu greitai kurti bei eksperimentuoti.
 >
 
 >A: AutoGen būtų geras pasirinkimas šiam scenarijui, nes jis orientuotas į įvykių valdomas, paskirstytas agentines programas ir palaiko pažangius daugiagentės dizaino modelius.
@@ -455,13 +577,12 @@ Pabandykime padėti, peržiūrėdami keletą dažniausių naudojimo atvejų:
 > A: AutoGen yra specialiai sukurtas įvykių valdomoms, paskirstytoms agentinėms programoms, todėl jis puikiai tinka automatizuoti kodo generavimo ir duomenų analizės užduotis. Jis suteikia reikiamus įrankius ir galimybes efektyviai kurti sudėtingas daugiagentės sistemas.
 
 >Q: Atrodo, kad Azure AI Agent Service taip pat galėtų veikti čia, jis turi įrankius kodo generavimui ir daugiau?
-
 >
 > A: Taip, Azure AI Agent Service yra platformos paslauga agentams ir turi įmontuotas galimybes keliems modeliams, Azure AI Search, Bing Search ir Azure Functions. Tai leidžia lengvai kurti agentus Foundry portale ir diegti juos masteliu.
- 
-> Q: Vis dar nesuprantu, tiesiog duokite vieną variantą
+
+> Q: Vis dar nesuprantu, tiesiog duokite vieną pasirinkimą.
 >
-> A: Puikus pasirinkimas yra pirmiausia kurti savo programą Semantic Kernel ir tada naudoti Azure AI Agent Service savo agentui diegti. Šis požiūris leidžia lengvai išsaugoti savo agentus, tuo pačiu pasinaudojant galimybe kurti daugiagentės sistemas Semantic Kernel. Be to, Semantic Kernel turi jungtį AutoGen, todėl lengva naudoti abi sistemas kartu.
+> A: Puikus pasirinkimas yra pirmiausia kurti savo programą Semantic Kernel, o tada naudoti Azure AI Agent Service agento diegimui. Šis požiūris leidžia lengvai išsaugoti savo agentus, tuo pačiu pasinaudojant galimybe kurti daugiagentės sistemas Semantic Kernel. Be to, Semantic Kernel turi jungtį su AutoGen, todėl lengva naudoti abi sistemas kartu.
 
 Apibendrinkime pagrindinius skirtumus lentelėje:
 
@@ -469,25 +590,38 @@ Apibendrinkime pagrindinius skirtumus lentelėje:
 | --- | --- | --- | --- |
 | AutoGen | Įvykių valdomos, paskirstytos agentinės programos | Agentai, Personos, Funkcijos, Duomenys | Kodo generavimas, duomenų analizės užduotys |
 | Semantic Kernel | Žmogaus tipo teksto turinio supratimas ir generavimas | Agentai, Moduliniai komponentai, Bendradarbiavimas | Natūralios kalbos supratimas, turinio generavimas |
-| Azure AI Agent Service | Lankstūs modeliai, įmonės saugumas, Kodo generavimas, Įrankių naudojimas | Modularumas, Bendradarbiavimas, Procesų orkestracija | Saugus, mastelio keičiamas ir lankstus AI agentų diegimas |
+| Azure AI Agent Service | Lankstūs modeliai, įmonės saugumas, Kodo generavimas, Įrankių iškvietimas | Modularumas, Bendradarbiavimas, Procesų orkestracija | Saugus, mastelio keičiamas ir lankstus AI agentų diegimas |
 
 Koks yra idealus naudojimo atvejis kiekvienai iš šių sistemų?
 
 ## Ar galiu tiesiogiai integruoti savo esamus Azure ekosistemos įrankius, ar man reikia atskirų sprendimų?
 
-Atsakymas yra taip, galite tiesiogiai integruoti savo esamus Azure ekosistemos įrankius su Azure AI Agent Service, ypač todėl, kad jis buvo sukurtas veikti sklandžiai su kitomis Azure paslaugomis. Pavyzdžiui, galite integruoti Bing, Azure AI Search ir Azure Functions. Taip pat yra gili integracija su Azure AI Foundry.
+Atsakymas yra taip, galite tiesiogiai integruoti savo esamus Azure ekosistemos įrankius su Azure AI Agent Service, ypač todėl, kad jis buvo sukurtas veikti sklandžiai su kitomis Azure paslaugomis. Pavyzdžiui, galite integruoti Bing, Azure AI Search ir Azure Functions. Taip pat yra gilios integracijos su Azure AI Foundry.
 
-Naudojant AutoGen ir Semantic Kernel, taip pat galima integruoti su Azure paslaugomis, tačiau gali tekti iškviesti Azure paslaugas iš savo kodo. Kitas būdas integruoti yra naudoti Azure SDK, kad sąveikautumėte su Azure paslaugomis iš savo agentų. Be to, kaip buvo minėta, galite naudoti Azure AI Agent Service kaip orkestratorių savo agentams, sukurtiems AutoGen arba Semantic Kernel, kas suteiktų lengvą prieigą prie Azure ekosistemos.
+AutoGen ir Semantic Kernel taip pat leidžia integruoti su Azure paslaugomis, tačiau gali tekti iškviesti Azure paslaugas iš savo kodo. Kitas būdas integruoti yra naudoti Azure SDK, kad sąveikautumėte su Azure paslaugomis iš savo agentų. Be to, kaip buvo minėta, galite naudoti Azure AI Agent Service kaip orkestratorių savo agentams, sukurtiems AutoGen ar Semantic Kernel, kas suteiktų lengvą prieigą prie Azure ekosistemos.
 
-### Turite daugiau klausimų apie AI Agent Framework?
+### Turite daugiau klausimų apie AI Agent Frameworks?
 
-Prisijunkite prie [Azure AI Foundry Discord](https://aka.ms/ai-agents/discord), kad susipažintumėte su kitais besimokančiais, dalyvautumėte konsultacijų valandose ir gautumėte atsakymus į savo AI agentų klausimus.
+Prisijunkite prie [Azure AI Foundry Discord](https://aka.ms/ai-agents/discord), kad susipažintumėte su kitais besimokančiais, dalyvautumėte konsultacijų valandose ir gautumėte atsakymus į savo klausimus apie AI agentus.
 
 ## Nuorodos
 
--
+- <a href="https://techcommunity.microsoft.com/blog/azure-ai-services-blog/introducing-azure-ai-agent-service/4298357" target="_blank">Azure Agent Service</a>
+- <a href="https://devblogs.microsoft.com/semantic-kernel/microsofts-agentic-ai-frameworks-autogen-and-semantic-kernel/" target="_blank">Semantic Kernel ir AutoGen</a>
+- <a href="https://learn.microsoft.com/semantic-kernel/frameworks/agent/?pivots=programming-language-python" target="_blank">Semantic Kernel Python Agent Framework</a>
+- <a href="https://learn.microsoft.com/semantic-kernel/frameworks/agent/?pivots=programming-language-csharp" target="_blank">Semantic Kernel .Net Agent Framework</a>
+- <a href="https://learn.microsoft.com/azure/ai-services/agents/overview" target="_blank">Azure AI Agent Service</a>
+- <a href="https://techcommunity.microsoft.com/blog/educatordeveloperblog/using-azure-ai-agent-service-with-autogen--semantic-kernel-to-build-a-multi-agen/4363121" target="_blank">Naudojant Azure AI Agent Service su AutoGen / Semantic Kernel kuriant daugiagentės sistemos sprendimą</a>
+
+## Ankstesnė pamoka
+
+[Įvadas į AI agentus ir jų naudojimo atvejus](../01-intro-to-ai-agents/README.md)
+
+## Kita pamoka
+
+[Agentinio dizaino modelių supratimas](../03-agentic-design-patterns/README.md)
 
 ---
 
-**Atsakomybės apribojimas**:  
-Šis dokumentas buvo išverstas naudojant AI vertimo paslaugą [Co-op Translator](https://github.com/Azure/co-op-translator). Nors siekiame tikslumo, prašome atkreipti dėmesį, kad automatiniai vertimai gali turėti klaidų ar netikslumų. Originalus dokumentas jo gimtąja kalba turėtų būti laikomas autoritetingu šaltiniu. Kritinei informacijai rekomenduojama naudoti profesionalų žmogaus vertimą. Mes neprisiimame atsakomybės už nesusipratimus ar klaidingus interpretavimus, atsiradusius dėl šio vertimo naudojimo.
+**Atsakomybės atsisakymas**:  
+Šis dokumentas buvo išverstas naudojant AI vertimo paslaugą [Co-op Translator](https://github.com/Azure/co-op-translator). Nors siekiame tikslumo, prašome atkreipti dėmesį, kad automatiniai vertimai gali turėti klaidų ar netikslumų. Originalus dokumentas jo gimtąja kalba turėtų būti laikomas autoritetingu šaltiniu. Dėl svarbios informacijos rekomenduojama profesionali žmogaus vertimo paslauga. Mes neprisiimame atsakomybės už nesusipratimus ar neteisingus interpretavimus, atsiradusius naudojant šį vertimą.

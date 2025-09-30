@@ -1,21 +1,21 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "a9631d0898fc3c6ecbb3a8a0da7aaba3",
-  "translation_date": "2025-08-29T17:55:57+00:00",
+  "original_hash": "86b9c2b24da3b3e61711182ffa72601c",
+  "translation_date": "2025-09-29T22:39:03+00:00",
   "source_file": "02-explore-agentic-frameworks/README.md",
   "language_code": "vi"
 }
 -->
-[![Khám phá Khung AI Agent](../../../translated_images/lesson-2-thumbnail.c65f44c93b8558df4d5d407e29970e654629e614f357444a9c27c80feb54c79d.vi.png)](https://youtu.be/ODwF-EZo_O8?si=1xoy_B9RNQfrYdF7)
+[![Khám phá các Khung AI Agent](../../../translated_images/lesson-2-thumbnail.c65f44c93b8558df4d5d407e29970e654629e614f357444a9c27c80feb54c79d.vi.png)](https://youtu.be/ODwF-EZo_O8?si=1xoy_B9RNQfrYdF7)
 
 > _(Nhấp vào hình ảnh trên để xem video của bài học này)_
 
-# Khám phá Khung AI Agent
+# Khám phá các Khung AI Agent
 
-Khung AI Agent là các nền tảng phần mềm được thiết kế để đơn giản hóa việc tạo, triển khai và quản lý các AI agent. Những khung này cung cấp cho nhà phát triển các thành phần dựng sẵn, các trừu tượng hóa và công cụ giúp tối ưu hóa việc phát triển các hệ thống AI phức tạp.
+Các khung AI agent là các nền tảng phần mềm được thiết kế để đơn giản hóa việc tạo, triển khai và quản lý các AI agent. Những khung này cung cấp cho nhà phát triển các thành phần dựng sẵn, các trừu tượng hóa và công cụ giúp tối ưu hóa việc phát triển các hệ thống AI phức tạp.
 
-Những khung này giúp nhà phát triển tập trung vào các khía cạnh độc đáo của ứng dụng bằng cách cung cấp các phương pháp tiêu chuẩn hóa để giải quyết các thách thức chung trong phát triển AI agent. Chúng nâng cao khả năng mở rộng, khả năng tiếp cận và hiệu quả trong việc xây dựng hệ thống AI.
+Những khung này giúp nhà phát triển tập trung vào các khía cạnh độc đáo của ứng dụng bằng cách cung cấp các phương pháp tiêu chuẩn hóa để giải quyết các thách thức phổ biến trong phát triển AI agent. Chúng tăng cường khả năng mở rộng, khả năng tiếp cận và hiệu quả trong việc xây dựng các hệ thống AI.
 
 ## Giới thiệu 
 
@@ -23,49 +23,47 @@ Bài học này sẽ đề cập đến:
 
 - Khung AI Agent là gì và chúng giúp nhà phát triển đạt được điều gì?
 - Làm thế nào các nhóm có thể sử dụng chúng để nhanh chóng tạo mẫu, lặp lại và cải thiện khả năng của agent?
-- Sự khác biệt giữa các khung và công cụ do Microsoft tạo ra là gì?
-- Tôi có thể tích hợp trực tiếp các công cụ hệ sinh thái Azure hiện có của mình hay cần các giải pháp độc lập?
-- Dịch vụ Azure AI Agents là gì và nó giúp ích như thế nào?
+- Sự khác biệt giữa các khung và công cụ do Microsoft tạo ra như <a href="https://aka.ms/ai-agents/autogen" target="_blank">AutoGen</a>, <a href="https://aka.ms/ai-agents-beginners/semantic-kernel" target="_blank">Semantic Kernel</a>, và <a href="https://aka.ms/ai-agents-beginners/ai-agent-service" target="_blank">Azure AI Agent Service</a> là gì?
+- Tôi có thể tích hợp trực tiếp các công cụ trong hệ sinh thái Azure hiện có của mình hay cần các giải pháp độc lập?
+- Azure AI Agents service là gì và nó giúp ích gì cho tôi?
 
 ## Mục tiêu học tập
 
 Mục tiêu của bài học này là giúp bạn hiểu:
 
-- Vai trò của Khung AI Agent trong phát triển AI.
-- Cách tận dụng Khung AI Agent để xây dựng các agent thông minh.
-- Các khả năng chính được kích hoạt bởi Khung AI Agent.
+- Vai trò của các Khung AI Agent trong phát triển AI.
+- Cách tận dụng các Khung AI Agent để xây dựng các agent thông minh.
+- Các khả năng chính mà các Khung AI Agent mang lại.
 - Sự khác biệt giữa AutoGen, Semantic Kernel và Azure AI Agent Service.
 
 ## Khung AI Agent là gì và chúng giúp nhà phát triển làm gì?
 
-Các Khung AI truyền thống có thể giúp bạn tích hợp AI vào ứng dụng và cải thiện ứng dụng theo các cách sau:
+Các khung AI truyền thống có thể giúp bạn tích hợp AI vào ứng dụng và cải thiện ứng dụng theo các cách sau:
 
-- **Cá nhân hóa**: AI có thể phân tích hành vi và sở thích của người dùng để cung cấp các đề xuất, nội dung và trải nghiệm cá nhân hóa.  
-Ví dụ: Các dịch vụ phát trực tuyến như Netflix sử dụng AI để gợi ý phim và chương trình dựa trên lịch sử xem, nâng cao sự tương tác và hài lòng của người dùng.
-
-- **Tự động hóa và hiệu quả**: AI có thể tự động hóa các tác vụ lặp lại, tối ưu hóa quy trình làm việc và cải thiện hiệu quả hoạt động.  
+- **Cá nhân hóa**: AI có thể phân tích hành vi và sở thích của người dùng để cung cấp các gợi ý, nội dung và trải nghiệm được cá nhân hóa.
+Ví dụ: Các dịch vụ phát trực tuyến như Netflix sử dụng AI để gợi ý phim và chương trình dựa trên lịch sử xem, tăng cường sự tương tác và hài lòng của người dùng.
+- **Tự động hóa và hiệu quả**: AI có thể tự động hóa các tác vụ lặp lại, tối ưu hóa quy trình làm việc và cải thiện hiệu quả hoạt động.
 Ví dụ: Các ứng dụng dịch vụ khách hàng sử dụng chatbot hỗ trợ AI để xử lý các câu hỏi thông thường, giảm thời gian phản hồi và giải phóng nhân viên cho các vấn đề phức tạp hơn.
-
-- **Cải thiện trải nghiệm người dùng**: AI có thể cải thiện trải nghiệm người dùng tổng thể bằng cách cung cấp các tính năng thông minh như nhận diện giọng nói, xử lý ngôn ngữ tự nhiên và văn bản dự đoán.  
+- **Cải thiện trải nghiệm người dùng**: AI có thể nâng cao trải nghiệm người dùng tổng thể bằng cách cung cấp các tính năng thông minh như nhận diện giọng nói, xử lý ngôn ngữ tự nhiên và dự đoán văn bản.
 Ví dụ: Các trợ lý ảo như Siri và Google Assistant sử dụng AI để hiểu và phản hồi các lệnh bằng giọng nói, giúp người dùng dễ dàng tương tác với thiết bị của họ.
 
 ### Nghe có vẻ tuyệt vời đúng không, vậy tại sao chúng ta cần Khung AI Agent?
 
-Khung AI Agent đại diện cho một điều gì đó hơn cả các khung AI thông thường. Chúng được thiết kế để tạo ra các agent thông minh có thể tương tác với người dùng, các agent khác và môi trường để đạt được các mục tiêu cụ thể. Những agent này có thể thể hiện hành vi tự động, đưa ra quyết định và thích nghi với các điều kiện thay đổi. Hãy cùng xem một số khả năng chính mà Khung AI Agent mang lại:
+Các khung AI Agent đại diện cho một điều gì đó hơn cả các khung AI thông thường. Chúng được thiết kế để tạo ra các agent thông minh có thể tương tác với người dùng, các agent khác và môi trường để đạt được các mục tiêu cụ thể. Những agent này có thể thể hiện hành vi tự động, đưa ra quyết định và thích nghi với các điều kiện thay đổi. Hãy cùng xem một số khả năng chính mà các Khung AI Agent mang lại:
 
 - **Hợp tác và phối hợp giữa các agent**: Cho phép tạo ra nhiều AI agent có thể làm việc cùng nhau, giao tiếp và phối hợp để giải quyết các nhiệm vụ phức tạp.
-- **Tự động hóa và quản lý nhiệm vụ**: Cung cấp cơ chế tự động hóa các quy trình nhiều bước, phân công nhiệm vụ và quản lý nhiệm vụ động giữa các agent.
+- **Tự động hóa và quản lý nhiệm vụ**: Cung cấp các cơ chế để tự động hóa quy trình làm việc nhiều bước, phân công nhiệm vụ và quản lý nhiệm vụ động giữa các agent.
 - **Hiểu và thích nghi theo ngữ cảnh**: Trang bị cho các agent khả năng hiểu ngữ cảnh, thích nghi với môi trường thay đổi và đưa ra quyết định dựa trên thông tin thời gian thực.
 
-Tóm lại, các agent cho phép bạn làm được nhiều hơn, đưa tự động hóa lên một tầm cao mới, tạo ra các hệ thống thông minh hơn có thể thích nghi và học hỏi từ môi trường.
+Tóm lại, các agent cho phép bạn làm được nhiều hơn, đưa tự động hóa lên một tầm cao mới, tạo ra các hệ thống thông minh hơn có thể thích nghi và học hỏi từ môi trường của chúng.
 
 ## Làm thế nào để nhanh chóng tạo mẫu, lặp lại và cải thiện khả năng của agent?
 
-Đây là một lĩnh vực đang phát triển nhanh chóng, nhưng có một số điều phổ biến trong hầu hết các Khung AI Agent có thể giúp bạn nhanh chóng tạo mẫu và lặp lại, cụ thể là các thành phần module, công cụ hợp tác và học hỏi theo thời gian thực. Hãy cùng tìm hiểu:
+Đây là một lĩnh vực phát triển nhanh, nhưng có một số điều phổ biến trong hầu hết các Khung AI Agent có thể giúp bạn nhanh chóng tạo mẫu và lặp lại, cụ thể là các thành phần module, công cụ hợp tác và học tập theo thời gian thực. Hãy cùng tìm hiểu:
 
-- **Sử dụng các thành phần module**: Các SDK AI cung cấp các thành phần dựng sẵn như các kết nối AI và Memory, gọi hàm bằng ngôn ngữ tự nhiên hoặc plugin mã, mẫu gợi ý và nhiều hơn nữa.
-- **Tận dụng các công cụ hợp tác**: Thiết kế các agent với vai trò và nhiệm vụ cụ thể, cho phép thử nghiệm và tinh chỉnh các quy trình làm việc hợp tác.
-- **Học hỏi theo thời gian thực**: Triển khai các vòng phản hồi nơi các agent học hỏi từ tương tác và điều chỉnh hành vi một cách linh hoạt.
+- **Sử dụng các thành phần module**: Các SDK AI cung cấp các thành phần dựng sẵn như các kết nối AI và Memory, gọi hàm bằng ngôn ngữ tự nhiên hoặc plugin mã, mẫu gợi ý, và nhiều hơn nữa.
+- **Tận dụng các công cụ hợp tác**: Thiết kế các agent với vai trò và nhiệm vụ cụ thể, cho phép thử nghiệm và tinh chỉnh quy trình làm việc hợp tác.
+- **Học tập theo thời gian thực**: Triển khai các vòng phản hồi nơi các agent học hỏi từ tương tác và điều chỉnh hành vi một cách linh hoạt.
 
 ### Sử dụng các thành phần module
 
@@ -164,7 +162,7 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
-```  
+```
 ```csharp
 // Semantic Kernel C# example
 
@@ -225,15 +223,15 @@ public class BookTravelPlugin
         return await Task.FromResult( $"Travel was booked to {location} on {date}");
     }
 }
-```  
+```
 
-Từ ví dụ này, bạn có thể thấy cách tận dụng một trình phân tích cú pháp dựng sẵn để trích xuất thông tin chính từ đầu vào của người dùng, chẳng hạn như điểm xuất phát, điểm đến và ngày của yêu cầu đặt vé máy bay. Cách tiếp cận module này cho phép bạn tập trung vào logic cấp cao.
+Từ ví dụ này, bạn có thể thấy cách bạn có thể tận dụng một trình phân tích cú pháp dựng sẵn để trích xuất thông tin chính từ đầu vào của người dùng, chẳng hạn như điểm xuất phát, điểm đến và ngày của yêu cầu đặt vé máy bay. Cách tiếp cận module này cho phép bạn tập trung vào logic cấp cao.
 
 ### Tận dụng các công cụ hợp tác
 
 Các khung như CrewAI, Microsoft AutoGen và Semantic Kernel tạo điều kiện cho việc tạo ra nhiều agent có thể làm việc cùng nhau.
 
-**Cách các nhóm có thể sử dụng**: Các nhóm có thể thiết kế các agent với vai trò và nhiệm vụ cụ thể, cho phép thử nghiệm và tinh chỉnh các quy trình làm việc hợp tác, cải thiện hiệu quả hệ thống tổng thể.
+**Cách các nhóm có thể sử dụng**: Các nhóm có thể thiết kế các agent với vai trò và nhiệm vụ cụ thể, cho phép thử nghiệm và tinh chỉnh quy trình làm việc hợp tác, cải thiện hiệu quả hệ thống tổng thể.
 
 **Cách hoạt động trong thực tế**: Bạn có thể tạo một nhóm các agent, mỗi agent có một chức năng chuyên biệt, chẳng hạn như truy xuất dữ liệu, phân tích hoặc ra quyết định. Các agent này có thể giao tiếp và chia sẻ thông tin để đạt được mục tiêu chung, chẳng hạn như trả lời câu hỏi của người dùng hoặc hoàn thành một nhiệm vụ.
 
@@ -270,39 +268,39 @@ team = RoundRobinGroupChat([agent_retrieve, agent_analyze, user_proxy], terminat
 stream = team.run_stream(task="Analyze data", max_turns=10)
 # Use asyncio.run(...) when running in a script.
 await Console(stream)
-```  
+```
 
-Trong đoạn mã trước, bạn thấy cách tạo một nhiệm vụ liên quan đến nhiều agent làm việc cùng nhau để phân tích dữ liệu. Mỗi agent thực hiện một chức năng cụ thể, và nhiệm vụ được thực hiện bằng cách phối hợp các agent để đạt được kết quả mong muốn. Bằng cách tạo các agent chuyên biệt với vai trò cụ thể, bạn có thể cải thiện hiệu quả và hiệu suất nhiệm vụ.
+Trong đoạn mã trước, bạn thấy cách bạn có thể tạo một nhiệm vụ liên quan đến nhiều agent làm việc cùng nhau để phân tích dữ liệu. Mỗi agent thực hiện một chức năng cụ thể, và nhiệm vụ được thực hiện bằng cách phối hợp các agent để đạt được kết quả mong muốn. Bằng cách tạo các agent chuyên biệt với vai trò cụ thể, bạn có thể cải thiện hiệu quả và hiệu suất của nhiệm vụ.
 
-### Học hỏi theo thời gian thực
+### Học tập theo thời gian thực
 
 Các khung tiên tiến cung cấp khả năng hiểu ngữ cảnh và thích nghi theo thời gian thực.
 
-**Cách các nhóm có thể sử dụng**: Các nhóm có thể triển khai các vòng phản hồi nơi các agent học hỏi từ tương tác và điều chỉnh hành vi một cách linh hoạt, dẫn đến cải thiện và tinh chỉnh liên tục các khả năng.
+**Cách các nhóm có thể sử dụng**: Các nhóm có thể triển khai các vòng phản hồi nơi các agent học hỏi từ tương tác và điều chỉnh hành vi một cách linh hoạt, dẫn đến cải tiến liên tục và tinh chỉnh khả năng.
 
-**Cách hoạt động trong thực tế**: Các agent có thể phân tích phản hồi của người dùng, dữ liệu môi trường và kết quả nhiệm vụ để cập nhật cơ sở kiến thức, điều chỉnh các thuật toán ra quyết định và cải thiện hiệu suất theo thời gian. Quá trình học hỏi lặp đi lặp lại này cho phép các agent thích nghi với điều kiện thay đổi và sở thích của người dùng, nâng cao hiệu quả hệ thống tổng thể.
+**Cách hoạt động trong thực tế**: Các agent có thể phân tích phản hồi của người dùng, dữ liệu môi trường và kết quả nhiệm vụ để cập nhật cơ sở kiến thức, điều chỉnh thuật toán ra quyết định và cải thiện hiệu suất theo thời gian. Quá trình học tập lặp lại này cho phép các agent thích nghi với điều kiện thay đổi và sở thích của người dùng, nâng cao hiệu quả hệ thống tổng thể.
 
 ## Sự khác biệt giữa các khung AutoGen, Semantic Kernel và Azure AI Agent Service là gì?
 
-Có nhiều cách để so sánh các khung này, nhưng hãy xem xét một số điểm khác biệt chính về thiết kế, khả năng và trường hợp sử dụng mục tiêu:
+Có nhiều cách để so sánh các khung này, nhưng hãy cùng xem một số điểm khác biệt chính về thiết kế, khả năng và trường hợp sử dụng mục tiêu:
 
 ## AutoGen
 
-AutoGen là một khung mã nguồn mở được phát triển bởi Microsoft Research's AI Frontiers Lab. Nó tập trung vào các ứng dụng *agentic* phân tán, dựa trên sự kiện, cho phép nhiều LLM và SLM, công cụ, và các mẫu thiết kế multi-agent tiên tiến.
+AutoGen là một khung mã nguồn mở được phát triển bởi Microsoft Research's AI Frontiers Lab. Nó tập trung vào các ứng dụng *agentic* phân tán, dựa trên sự kiện, cho phép nhiều LLM và SLM, công cụ, và các mẫu thiết kế đa-agent tiên tiến.
 
-AutoGen được xây dựng xung quanh khái niệm cốt lõi về các agent, là các thực thể tự động có thể nhận thức môi trường, đưa ra quyết định và thực hiện hành động để đạt được các mục tiêu cụ thể. Các agent giao tiếp thông qua các tin nhắn không đồng bộ, cho phép chúng hoạt động độc lập và song song, nâng cao khả năng mở rộng và khả năng phản hồi của hệ thống.
+AutoGen được xây dựng xung quanh khái niệm cốt lõi về các agent, là các thực thể tự động có thể nhận thức môi trường, đưa ra quyết định và thực hiện hành động để đạt được các mục tiêu cụ thể. Các agent giao tiếp thông qua các tin nhắn không đồng bộ, cho phép chúng làm việc độc lập và song song, tăng cường khả năng mở rộng và khả năng phản hồi của hệ thống.
 
-Theo Wikipedia, một actor là _khối xây dựng cơ bản của tính toán đồng thời. Để phản hồi một tin nhắn nhận được, một actor có thể: đưa ra quyết định cục bộ, tạo thêm các actor, gửi thêm tin nhắn, và xác định cách phản hồi tin nhắn tiếp theo nhận được_.
+<a href="https://en.wikipedia.org/wiki/Actor_model" target="_blank">Các agent dựa trên mô hình actor</a>. Theo Wikipedia, một actor là _khối xây dựng cơ bản của tính toán đồng thời. Để phản hồi một tin nhắn nhận được, một actor có thể: đưa ra quyết định cục bộ, tạo thêm các actor, gửi thêm tin nhắn, và xác định cách phản hồi tin nhắn tiếp theo nhận được_.
 
-**Trường hợp sử dụng**: Tự động hóa việc tạo mã, các nhiệm vụ phân tích dữ liệu, và xây dựng các agent tùy chỉnh cho các chức năng lập kế hoạch và nghiên cứu.
+**Trường hợp sử dụng**: Tự động hóa tạo mã, nhiệm vụ phân tích dữ liệu, và xây dựng các agent tùy chỉnh cho các chức năng lập kế hoạch và nghiên cứu.
 
 Dưới đây là một số khái niệm cốt lõi quan trọng của AutoGen:
 
-- **Agents**. Một agent là một thực thể phần mềm mà:
+- **Agent**. Một agent là một thực thể phần mềm:
   - **Giao tiếp qua tin nhắn**, các tin nhắn này có thể đồng bộ hoặc không đồng bộ.
   - **Duy trì trạng thái riêng**, trạng thái này có thể được sửa đổi bởi các tin nhắn đến.
   - **Thực hiện hành động** để phản hồi các tin nhắn nhận được hoặc thay đổi trạng thái của nó. Những hành động này có thể sửa đổi trạng thái của agent và tạo ra các hiệu ứng bên ngoài, chẳng hạn như cập nhật nhật ký tin nhắn, gửi tin nhắn mới, thực thi mã hoặc thực hiện các cuộc gọi API.
-
+    
   Dưới đây là một đoạn mã ngắn trong đó bạn tạo agent của riêng mình với khả năng Chat:
 
     ```python
@@ -325,10 +323,11 @@ Dưới đây là một số khái niệm cốt lõi quan trọng của AutoGen:
             )
             print(f"{self.id.type} responded: {response.chat_message.content}")
     ```
+    
+    Trong đoạn mã trước, `MyAgent` đã được tạo và kế thừa từ `RoutedAgent`. Nó có một trình xử lý tin nhắn in nội dung của tin nhắn và sau đó gửi phản hồi bằng cách sử dụng đại diện `AssistantAgent`. Đặc biệt lưu ý cách chúng ta gán cho `self._delegate` một instance của `AssistantAgent`, đây là một agent dựng sẵn có thể xử lý các hoàn thành chat.
 
-    Trong đoạn mã trên, `MyAgent` đã được tạo và kế thừa từ `RoutedAgent`. Nó có một trình xử lý tin nhắn in nội dung của tin nhắn và sau đó gửi phản hồi bằng cách sử dụng đại diện `AssistantAgent`. Đặc biệt lưu ý cách chúng ta gán cho `self._delegate` một instance của `AssistantAgent`, là một agent dựng sẵn có thể xử lý các hoàn thành chat.
 
-    Hãy để AutoGen biết về loại agent này và khởi động chương trình tiếp theo:
+    Tiếp theo, hãy để AutoGen biết về loại agent này và khởi động chương trình:
 
     ```python
     
@@ -340,7 +339,7 @@ Dưới đây là một số khái niệm cốt lõi quan trọng của AutoGen:
     await runtime.send_message(MyMessageType("Hello, World!"), AgentId("my_agent", "default"))
     ```
 
-    Trong đoạn mã trên, các agent được đăng ký với runtime và sau đó một tin nhắn được gửi đến agent dẫn đến đầu ra sau:
+    Trong đoạn mã trước, các agent được đăng ký với runtime và sau đó một tin nhắn được gửi đến agent dẫn đến đầu ra sau:
 
     ```text
     # Output from the console:
@@ -349,7 +348,7 @@ Dưới đây là một số khái niệm cốt lõi quan trọng của AutoGen:
     my_assistant responded: Hello! How can I assist you today?
     ```
 
-- **Multi agents**. AutoGen hỗ trợ việc tạo ra nhiều agent có thể làm việc cùng nhau để đạt được các nhiệm vụ phức tạp. Các agent có thể giao tiếp, chia sẻ thông tin và phối hợp hành động để giải quyết vấn đề hiệu quả hơn. Để tạo một hệ thống multi-agent, bạn có thể định nghĩa các loại agent khác nhau với các chức năng và vai trò chuyên biệt, chẳng hạn như truy xuất dữ liệu, phân tích, ra quyết định và tương tác với người dùng. Hãy xem cách tạo ra như vậy để có cảm nhận về nó:
+- **Multi agents**. AutoGen hỗ trợ việc tạo ra nhiều agent có thể làm việc cùng nhau để đạt được các nhiệm vụ phức tạp. Các agent có thể giao tiếp, chia sẻ thông tin và phối hợp hành động để giải quyết vấn đề hiệu quả hơn. Để tạo một hệ thống đa-agent, bạn có thể định nghĩa các loại agent khác nhau với các chức năng và vai trò chuyên biệt, chẳng hạn như truy xuất dữ liệu, phân tích, ra quyết định và tương tác với người dùng. Hãy xem cách tạo ra như vậy trông như thế nào để chúng ta có thể hình dung:
 
     ```python
     editor_description = "Editor for planning and reviewing the content."
@@ -390,24 +389,27 @@ Dưới đây là một số khái niệm cốt lõi quan trọng của AutoGen:
     )
     ```
 
-    Trong đoạn mã trên, chúng ta có một `GroupChatManager` được đăng ký với runtime. Quản lý này chịu trách nhiệm phối hợp các tương tác giữa các loại agent khác nhau, chẳng hạn như người viết, người minh họa, biên tập viên và người dùng.
+    Trong đoạn mã trước, chúng ta có một `GroupChatManager` được đăng ký với runtime. Quản lý này chịu trách nhiệm điều phối các tương tác giữa các loại agent khác nhau, chẳng hạn như các nhà văn, họa sĩ minh họa, biên tập viên và người dùng.
 
 - **Agent Runtime**. Khung cung cấp một môi trường runtime, cho phép giao tiếp giữa các agent, quản lý danh tính và vòng đời của chúng, và thực thi các ranh giới bảo mật và quyền riêng tư. Điều này có nghĩa là bạn có thể chạy các agent của mình trong một môi trường an toàn và được kiểm soát, đảm bảo rằng chúng có thể tương tác một cách an toàn và hiệu quả. Có hai runtime đáng quan tâm:
-  - **Runtime độc lập**. Đây là lựa chọn tốt cho các ứng dụng đơn quy trình nơi tất cả các agent được triển khai trong cùng một ngôn ngữ lập trình và chạy trong cùng một quy trình. Dưới đây là minh họa cách hoạt động:
-
-    Application stack
+  - **Runtime độc lập**. Đây là một lựa chọn tốt cho các ứng dụng đơn quy trình nơi tất cả các agent được triển khai bằng cùng một ngôn ngữ lập trình và chạy trong cùng một quy trình. Dưới đây là minh họa cách hoạt động:
+  
+    <a href="https://microsoft.github.io/autogen/stable/_images/architecture-standalone.svg" target="_blank">Runtime độc lập</a>   
+Ngăn xếp ứng dụng
 
     *các agent giao tiếp qua tin nhắn thông qua runtime, và runtime quản lý vòng đời của các agent*
 
-  - **Runtime agent phân tán**, phù hợp cho các ứng dụng đa quy trình nơi các agent có thể được triển khai trong các ngôn ngữ lập trình khác nhau và chạy trên các máy khác nhau. Dưới đây là minh họa cách hoạt động:
+  - **Runtime agent phân tán**, phù hợp cho các ứng dụng đa quy trình nơi các agent có thể được triển khai bằng các ngôn ngữ lập trình khác nhau và chạy trên các máy khác nhau. Dưới đây là minh họa cách hoạt động:
+  
+    <a href="https://microsoft.github.io/autogen/stable/_images/architecture-distributed.svg" target="_blank">Runtime phân tán</a>
 
-## Semantic Kernel + Agent Framework
+## Semantic Kernel + Khung Agent
 
 Semantic Kernel là một SDK Orchestration AI sẵn sàng cho doanh nghiệp. Nó bao gồm các kết nối AI và bộ nhớ, cùng với một Khung Agent.
 
 Hãy cùng tìm hiểu một số thành phần cốt lõi:
 
-- **AI Connectors**: Đây là giao diện với các dịch vụ AI bên ngoài và nguồn dữ liệu để sử dụng trong cả Python và C#.
+- **Kết nối AI**: Đây là giao diện với các dịch vụ AI bên ngoài và nguồn dữ liệu để sử dụng trong cả Python và C#.
 
   ```python
   # Semantic Kernel Python
@@ -440,9 +442,9 @@ Hãy cùng tìm hiểu một số thành phần cốt lõi:
     var kernel = builder.Build();
     ```
 
-    Dưới đây là một ví dụ đơn giản về cách bạn có thể tạo một kernel và thêm một dịch vụ hoàn thành chat. Semantic Kernel tạo kết nối với một dịch vụ AI bên ngoài, trong trường hợp này là Azure OpenAI Chat Completion.
+    Đây là một ví dụ đơn giản về cách bạn có thể tạo một kernel và thêm một dịch vụ hoàn thành chat. Semantic Kernel tạo kết nối với một dịch vụ AI bên ngoài, trong trường hợp này là Azure OpenAI Chat Completion.
 
-- **Plugins**: Các plugin này đóng gói các chức năng mà một ứng dụng có thể sử dụng. Có cả các plugin dựng sẵn và các plugin tùy chỉnh mà bạn có thể tạo. Một khái niệm liên quan là "prompt functions." Thay vì cung cấp các gợi ý ngôn ngữ tự nhiên để gọi hàm, bạn phát sóng một số chức năng nhất định đến mô hình. Dựa trên ngữ cảnh chat hiện tại, mô hình có thể chọn gọi một trong các chức năng này để hoàn thành yêu cầu hoặc truy vấn. Dưới đây là một ví dụ:
+- **Plugin**: Các plugin này đóng gói các chức năng mà một ứng dụng có thể sử dụng. Có cả các plugin dựng sẵn và các plugin tùy chỉnh mà bạn có thể tạo. Một khái niệm liên quan là "hàm gợi ý." Thay vì cung cấp các gợi ý ngôn ngữ tự nhiên để gọi hàm, bạn phát sóng một số hàm nhất định đến mô hình. Dựa trên ngữ cảnh chat hiện tại, mô hình có thể chọn gọi một trong những hàm này để hoàn thành yêu cầu hoặc truy vấn. Dưới đây là một ví dụ:
 
   ```python
   from semantic_kernel.connectors.ai.open_ai.services.azure_chat_completion import AzureChatCompletion
@@ -499,9 +501,9 @@ Hãy cùng tìm hiểu một số thành phần cốt lõi:
 
     ```
 
-    Ở đây, bạn có một mẫu gợi ý `skPrompt` để người dùng nhập văn bản, `$userInput`. Sau đó, bạn tạo hàm kernel `SummarizeText` và nhập nó vào kernel với tên plugin `SemanticFunctions`. Lưu ý tên của hàm giúp Semantic Kernel hiểu hàm làm gì và khi nào nên gọi.
+    Ở đây, bạn có một mẫu gợi ý `skPrompt` để lại chỗ cho người dùng nhập văn bản, `$userInput`. Sau đó, bạn tạo hàm kernel `SummarizeText` và nhập nó vào kernel với tên plugin `SemanticFunctions`. Lưu ý tên của hàm giúp Semantic Kernel hiểu hàm làm gì và khi nào nên gọi.
 
-- **Native function**: Cũng có các hàm gốc mà khung có thể gọi trực tiếp để thực hiện nhiệm vụ. Dưới đây là một ví dụ về một hàm như vậy truy xuất nội dung từ một tệp:
+- **Hàm gốc**: Cũng có các hàm gốc mà khung có thể gọi trực tiếp để thực hiện nhiệm vụ. Dưới đây là một ví dụ về một hàm như vậy truy xuất nội dung từ một tệp:
 
     ```csharp
     public class NativeFunctions {
@@ -524,7 +526,7 @@ Hãy cùng tìm hiểu một số thành phần cốt lõi:
 
     ```
 
-- **Memory**: Trừu tượng hóa và đơn giản hóa việc quản lý ngữ cảnh cho các ứng dụng AI. Ý tưởng với bộ nhớ là đây là thứ mà LLM nên biết. Bạn có thể lưu trữ thông tin này trong một vector store, cuối cùng trở thành một cơ sở dữ liệu trong bộ nhớ hoặc cơ sở dữ liệu vector hoặc tương tự. Dưới đây là một ví dụ về một kịch bản rất đơn giản nơi *facts* được thêm vào bộ nhớ:
+- **Bộ nhớ**: Trừu tượng hóa và đơn giản hóa việc quản lý ngữ cảnh cho các ứng dụng AI. Ý tưởng với bộ nhớ là đây là thứ mà LLM nên biết. Bạn có thể lưu trữ thông tin này trong một vector store, cuối cùng là một cơ sở dữ liệu trong bộ nhớ hoặc cơ sở dữ liệu vector hoặc tương tự. Dưới đây là một ví dụ về một kịch bản rất đơn giản nơi *facts* được thêm vào bộ nhớ:
 
     ```csharp
     var facts = new Dictionary<string,string>();
@@ -554,14 +556,15 @@ Hãy cùng tìm hiểu một số thành phần cốt lõi:
     }
     ```
 
-    Những facts này sau đó được lưu trữ trong bộ sưu tập bộ nhớ `SummarizedAzureDocs`. Đây là một ví dụ rất đơn giản, nhưng bạn có thể thấy cách lưu trữ thông tin trong bộ nhớ để LLM sử dụng.
-Vậy là chúng ta đã tìm hiểu những điều cơ bản về khung Semantic Kernel, vậy còn Agent Framework thì sao?
+Các thông tin này sau đó được lưu trữ trong bộ sưu tập bộ nhớ `SummarizedAzureDocs`. Đây là một ví dụ rất đơn giản, nhưng bạn có thể thấy cách lưu trữ thông tin trong bộ nhớ để LLM sử dụng.
+
+Vậy đó là những điều cơ bản về khung Semantic Kernel, còn về Agent Framework thì sao?
 
 ## Dịch vụ Azure AI Agent
 
-Azure AI Agent Service là một bổ sung mới hơn, được giới thiệu tại Microsoft Ignite 2024. Dịch vụ này cho phép phát triển và triển khai các AI agent với các mô hình linh hoạt hơn, chẳng hạn như gọi trực tiếp các LLM mã nguồn mở như Llama 3, Mistral và Cohere.
+Azure AI Agent Service là một bổ sung mới hơn, được giới thiệu tại Microsoft Ignite 2024. Nó cho phép phát triển và triển khai các AI agent với các mô hình linh hoạt hơn, chẳng hạn như gọi trực tiếp các LLM mã nguồn mở như Llama 3, Mistral và Cohere.
 
-Azure AI Agent Service cung cấp các cơ chế bảo mật doanh nghiệp mạnh mẽ và các phương pháp lưu trữ dữ liệu, làm cho nó phù hợp với các ứng dụng doanh nghiệp.
+Azure AI Agent Service cung cấp các cơ chế bảo mật doanh nghiệp mạnh mẽ và phương pháp lưu trữ dữ liệu, làm cho nó phù hợp với các ứng dụng doanh nghiệp.
 
 Dịch vụ này hoạt động ngay lập tức với các khung điều phối đa-agent như AutoGen và Semantic Kernel.
 
@@ -659,7 +662,7 @@ if __name__ == "__main__":
 
 Azure AI Agent Service có các khái niệm cốt lõi sau:
 
-- **Agent**. Azure AI Agent Service tích hợp với Azure AI Foundry. Trong AI Foundry, một AI Agent hoạt động như một microservice "thông minh" có thể được sử dụng để trả lời câu hỏi (RAG), thực hiện hành động, hoặc tự động hóa hoàn toàn các quy trình làm việc. Nó đạt được điều này bằng cách kết hợp sức mạnh của các mô hình AI tạo sinh với các công cụ cho phép truy cập và tương tác với các nguồn dữ liệu thực tế. Đây là một ví dụ về một agent:
+- **Agent**. Azure AI Agent Service tích hợp với Azure AI Foundry. Trong AI Foundry, một AI Agent hoạt động như một "microservice thông minh" có thể được sử dụng để trả lời câu hỏi (RAG), thực hiện hành động, hoặc tự động hóa hoàn toàn các quy trình làm việc. Nó đạt được điều này bằng cách kết hợp sức mạnh của các mô hình AI tạo sinh với các công cụ cho phép nó truy cập và tương tác với các nguồn dữ liệu thực tế. Đây là một ví dụ về agent:
 
     ```python
     agent = project_client.agents.create_agent(
@@ -673,7 +676,7 @@ Azure AI Agent Service có các khái niệm cốt lõi sau:
 
     Trong ví dụ này, một agent được tạo với mô hình `gpt-4o-mini`, tên `my-agent`, và hướng dẫn `You are helpful agent`. Agent này được trang bị các công cụ và tài nguyên để thực hiện các nhiệm vụ diễn giải mã.
 
-- **Thread và messages**. Thread là một khái niệm quan trọng khác. Nó đại diện cho một cuộc trò chuyện hoặc tương tác giữa một agent và một người dùng. Threads có thể được sử dụng để theo dõi tiến trình của một cuộc trò chuyện, lưu trữ thông tin ngữ cảnh, và quản lý trạng thái của tương tác. Đây là một ví dụ về một thread:
+- **Thread và messages**. Thread là một khái niệm quan trọng khác. Nó đại diện cho một cuộc trò chuyện hoặc tương tác giữa một agent và người dùng. Threads có thể được sử dụng để theo dõi tiến trình của một cuộc trò chuyện, lưu trữ thông tin ngữ cảnh, và quản lý trạng thái của tương tác. Đây là một ví dụ về thread:
 
     ```python
     thread = project_client.agents.create_thread()
@@ -691,36 +694,36 @@ Azure AI Agent Service có các khái niệm cốt lõi sau:
     print(f"Messages: {messages}")
     ```
 
-    Trong đoạn mã trên, một thread được tạo. Sau đó, một tin nhắn được gửi đến thread. Bằng cách gọi `create_and_process_run`, agent được yêu cầu thực hiện công việc trên thread. Cuối cùng, các tin nhắn được lấy và ghi lại để xem phản hồi của agent. Các tin nhắn cho thấy tiến trình của cuộc trò chuyện giữa người dùng và agent. Cũng cần hiểu rằng các tin nhắn có thể thuộc các loại khác nhau như văn bản, hình ảnh, hoặc tệp, ví dụ như công việc của agent đã tạo ra một hình ảnh hoặc một phản hồi văn bản. Là một nhà phát triển, bạn có thể sử dụng thông tin này để xử lý thêm phản hồi hoặc trình bày nó cho người dùng.
+    Trong đoạn mã trước, một thread được tạo. Sau đó, một tin nhắn được gửi đến thread. Bằng cách gọi `create_and_process_run`, agent được yêu cầu thực hiện công việc trên thread. Cuối cùng, các tin nhắn được lấy và ghi lại để xem phản hồi của agent. Các tin nhắn cho thấy tiến trình của cuộc trò chuyện giữa người dùng và agent. Điều quan trọng cần hiểu là các tin nhắn có thể thuộc nhiều loại khác nhau như văn bản, hình ảnh, hoặc tệp, tức là công việc của agent có thể dẫn đến một hình ảnh hoặc phản hồi văn bản chẳng hạn. Là một nhà phát triển, bạn có thể sử dụng thông tin này để xử lý thêm phản hồi hoặc trình bày nó cho người dùng.
 
-- **Tích hợp với các khung AI khác**. Azure AI Agent Service có thể tương tác với các khung khác như AutoGen và Semantic Kernel, điều này có nghĩa là bạn có thể xây dựng một phần ứng dụng của mình trong một trong các khung này và ví dụ sử dụng Agent Service như một bộ điều phối hoặc bạn có thể xây dựng mọi thứ trong Agent Service.
+- **Tích hợp với các khung AI khác**. Azure AI Agent Service có thể tương tác với các khung khác như AutoGen và Semantic Kernel, nghĩa là bạn có thể xây dựng một phần ứng dụng của mình trong một trong các khung này và ví dụ sử dụng Agent Service như một bộ điều phối hoặc bạn có thể xây dựng mọi thứ trong Agent Service.
 
 **Trường hợp sử dụng**: Azure AI Agent Service được thiết kế cho các ứng dụng doanh nghiệp yêu cầu triển khai AI agent an toàn, có khả năng mở rộng và linh hoạt.
 
 ## Sự khác biệt giữa các khung này là gì?
 
-Nghe có vẻ như có rất nhiều sự trùng lặp giữa các khung này, nhưng có một số điểm khác biệt chính về thiết kế, khả năng và các trường hợp sử dụng mục tiêu:
+Có vẻ như có rất nhiều sự trùng lặp giữa các khung này, nhưng có một số điểm khác biệt chính về thiết kế, khả năng và trường hợp sử dụng mục tiêu:
 
-- **AutoGen**: Là một khung thử nghiệm tập trung vào nghiên cứu tiên tiến về các hệ thống đa-agent. Đây là nơi tốt nhất để thử nghiệm và tạo mẫu các hệ thống đa-agent phức tạp.
+- **AutoGen**: Là một khung thử nghiệm tập trung vào nghiên cứu tiên tiến về hệ thống đa-agent. Đây là nơi tốt nhất để thử nghiệm và tạo mẫu các hệ thống đa-agent phức tạp.
 - **Semantic Kernel**: Là một thư viện agent sẵn sàng cho sản xuất để xây dựng các ứng dụng agentic doanh nghiệp. Tập trung vào các ứng dụng agentic phân tán, dựa trên sự kiện, cho phép nhiều LLM và SLM, công cụ, và các mẫu thiết kế agent đơn/đa.
-- **Azure AI Agent Service**: Là một nền tảng và dịch vụ triển khai trong Azure Foundry dành cho các agent. Nó cung cấp khả năng kết nối với các dịch vụ được Azure hỗ trợ như Azure OpenAI, Azure AI Search, Bing Search và thực thi mã.
+- **Azure AI Agent Service**: Là một nền tảng và dịch vụ triển khai trong Azure Foundry dành cho các agent. Nó cung cấp khả năng kết nối với các dịch vụ được hỗ trợ bởi Azure như Azure OpenAI, Azure AI Search, Bing Search và thực thi mã.
 
 Vẫn chưa chắc chắn nên chọn cái nào?
 
 ### Trường hợp sử dụng
 
-Hãy xem liệu chúng ta có thể giúp bạn bằng cách đi qua một số trường hợp sử dụng phổ biến:
+Hãy xem liệu chúng tôi có thể giúp bạn bằng cách đi qua một số trường hợp sử dụng phổ biến:
 
-> Q: Tôi đang thử nghiệm, học hỏi và xây dựng các ứng dụng agent mẫu thử nghiệm, và tôi muốn có thể xây dựng và thử nghiệm nhanh chóng
+> Q: Tôi đang thử nghiệm, học hỏi và xây dựng các ứng dụng agent proof-of-concept, và tôi muốn có thể xây dựng và thử nghiệm nhanh chóng
 >
 
-> A: AutoGen sẽ là một lựa chọn tốt cho kịch bản này, vì nó tập trung vào các ứng dụng agentic phân tán, dựa trên sự kiện và hỗ trợ các mẫu thiết kế đa-agent tiên tiến.
+>A: AutoGen sẽ là một lựa chọn tốt cho trường hợp này, vì nó tập trung vào các ứng dụng agentic phân tán, dựa trên sự kiện và hỗ trợ các mẫu thiết kế đa-agent tiên tiến.
 
-> Q: Điều gì làm cho AutoGen trở thành lựa chọn tốt hơn so với Semantic Kernel và Azure AI Agent Service cho trường hợp sử dụng này?
+> Q: Điều gì làm cho AutoGen là lựa chọn tốt hơn so với Semantic Kernel và Azure AI Agent Service cho trường hợp sử dụng này?
 >
-> A: AutoGen được thiết kế đặc biệt cho các ứng dụng agentic phân tán, dựa trên sự kiện, làm cho nó phù hợp để tự động hóa các nhiệm vụ tạo mã và phân tích dữ liệu. Nó cung cấp các công cụ và khả năng cần thiết để xây dựng các hệ thống đa-agent phức tạp một cách hiệu quả.
+> A: AutoGen được thiết kế đặc biệt cho các ứng dụng agentic phân tán, dựa trên sự kiện, làm cho nó phù hợp với các nhiệm vụ tự động hóa tạo mã và phân tích dữ liệu. Nó cung cấp các công cụ và khả năng cần thiết để xây dựng các hệ thống đa-agent phức tạp một cách hiệu quả.
 
-> Q: Nghe có vẻ như Azure AI Agent Service cũng có thể hoạt động ở đây, nó có các công cụ để tạo mã và hơn thế nữa?
+>Q: Nghe có vẻ như Azure AI Agent Service cũng có thể hoạt động ở đây, nó có các công cụ để tạo mã và hơn thế nữa?
 
 >
 > A: Đúng vậy, Azure AI Agent Service là một dịch vụ nền tảng dành cho các agent và bổ sung các khả năng tích hợp sẵn cho nhiều mô hình, Azure AI Search, Bing Search và Azure Functions. Nó giúp dễ dàng xây dựng các agent của bạn trong Foundry Portal và triển khai chúng ở quy mô lớn.
@@ -731,37 +734,42 @@ Hãy xem liệu chúng ta có thể giúp bạn bằng cách đi qua một số 
 
 Hãy tóm tắt các điểm khác biệt chính trong một bảng:
 
-| Khung | Trọng tâm | Các khái niệm cốt lõi | Trường hợp sử dụng |
+| Khung | Tập trung | Khái niệm cốt lõi | Trường hợp sử dụng |
 | --- | --- | --- | --- |
-| AutoGen | Các ứng dụng agentic phân tán, dựa trên sự kiện | Agents, Personas, Functions, Data | Tạo mã, nhiệm vụ phân tích dữ liệu |
+| AutoGen | Ứng dụng agentic phân tán, dựa trên sự kiện | Agents, Personas, Functions, Data | Tạo mã, nhiệm vụ phân tích dữ liệu |
 | Semantic Kernel | Hiểu và tạo nội dung giống con người | Agents, Modular Components, Collaboration | Hiểu ngôn ngữ tự nhiên, tạo nội dung |
-| Azure AI Agent Service | Các mô hình linh hoạt, bảo mật doanh nghiệp, Tạo mã, Gọi công cụ | Modularity, Collaboration, Process Orchestration | Triển khai AI agent an toàn, có khả năng mở rộng và linh hoạt |
+| Azure AI Agent Service | Mô hình linh hoạt, bảo mật doanh nghiệp, Tạo mã, Gọi công cụ | Modularity, Collaboration, Process Orchestration | Triển khai AI agent an toàn, có khả năng mở rộng và linh hoạt |
 
-Trường hợp sử dụng lý tưởng cho từng khung này là gì?
+Trường hợp sử dụng lý tưởng cho mỗi khung là gì?
 
-## Tôi có thể tích hợp trực tiếp các công cụ trong hệ sinh thái Azure hiện có của mình, hay tôi cần các giải pháp độc lập?
+## Tôi có thể tích hợp trực tiếp các công cụ hệ sinh thái Azure hiện có của mình, hay tôi cần các giải pháp độc lập?
 
-Câu trả lời là có, bạn có thể tích hợp trực tiếp các công cụ trong hệ sinh thái Azure hiện có của mình với Azure AI Agent Service, đặc biệt là vì nó được xây dựng để hoạt động liền mạch với các dịch vụ Azure khác. Ví dụ, bạn có thể tích hợp Bing, Azure AI Search, và Azure Functions. Ngoài ra còn có sự tích hợp sâu với Azure AI Foundry.
+Câu trả lời là có, bạn có thể tích hợp trực tiếp các công cụ hệ sinh thái Azure hiện có của mình với Azure AI Agent Service, đặc biệt là vì nó được xây dựng để hoạt động liền mạch với các dịch vụ Azure khác. Ví dụ, bạn có thể tích hợp Bing, Azure AI Search, và Azure Functions. Ngoài ra còn có tích hợp sâu với Azure AI Foundry.
 
-Đối với AutoGen và Semantic Kernel, bạn cũng có thể tích hợp với các dịch vụ Azure, nhưng có thể yêu cầu bạn gọi các dịch vụ Azure từ mã của mình. Một cách khác để tích hợp là sử dụng các Azure SDK để tương tác với các dịch vụ Azure từ các agent của bạn. Ngoài ra, như đã đề cập, bạn có thể sử dụng Azure AI Agent Service như một bộ điều phối cho các agent được xây dựng trong AutoGen hoặc Semantic Kernel, điều này sẽ giúp dễ dàng truy cập vào hệ sinh thái Azure.
+Đối với AutoGen và Semantic Kernel, bạn cũng có thể tích hợp với các dịch vụ Azure, nhưng có thể yêu cầu bạn gọi các dịch vụ Azure từ mã của mình. Một cách khác để tích hợp là sử dụng các SDK của Azure để tương tác với các dịch vụ Azure từ các agent của bạn. Ngoài ra, như đã đề cập, bạn có thể sử dụng Azure AI Agent Service như một bộ điều phối cho các agent được xây dựng trong AutoGen hoặc Semantic Kernel, điều này sẽ cung cấp quyền truy cập dễ dàng vào hệ sinh thái Azure.
 
-### Có thêm câu hỏi về AI Agent Frameworks?
+### Có thêm câu hỏi về các khung AI Agent?
 
-Tham gia [Azure AI Foundry Discord](https://aka.ms/ai-agents/discord) để gặp gỡ những người học khác, tham dự các buổi tư vấn và nhận câu trả lời cho các câu hỏi về AI Agents của bạn.
+Tham gia [Azure AI Foundry Discord](https://aka.ms/ai-agents/discord) để gặp gỡ những người học khác, tham dự giờ làm việc và nhận câu trả lời cho các câu hỏi về AI Agents của bạn.
 
-## Tham khảo
+## Tài liệu tham khảo
 
-- 
+- <a href="https://techcommunity.microsoft.com/blog/azure-ai-services-blog/introducing-azure-ai-agent-service/4298357" target="_blank">Azure Agent Service</a>
+- <a href="https://devblogs.microsoft.com/semantic-kernel/microsofts-agentic-ai-frameworks-autogen-and-semantic-kernel/" target="_blank">Semantic Kernel và AutoGen</a>
+- <a href="https://learn.microsoft.com/semantic-kernel/frameworks/agent/?pivots=programming-language-python" target="_blank">Khung Semantic Kernel Python Agent</a>
+- <a href="https://learn.microsoft.com/semantic-kernel/frameworks/agent/?pivots=programming-language-csharp" target="_blank">Khung Semantic Kernel .Net Agent</a>
+- <a href="https://learn.microsoft.com/azure/ai-services/agents/overview" target="_blank">Dịch vụ Azure AI Agent</a>
+- <a href="https://techcommunity.microsoft.com/blog/educatordeveloperblog/using-azure-ai-agent-service-with-autogen--semantic-kernel-to-build-a-multi-agen/4363121" target="_blank">Sử dụng Azure AI Agent Service với AutoGen / Semantic Kernel để xây dựng giải pháp đa-agent</a>
 
 ## Bài học trước
 
-[Giới thiệu về AI Agents và các trường hợp sử dụng](../01-intro-to-ai-agents/README.md)
+[Giới thiệu về AI Agents và các trường hợp sử dụng Agent](../01-intro-to-ai-agents/README.md)
 
 ## Bài học tiếp theo
 
-[Tìm hiểu các mẫu thiết kế Agentic](../03-agentic-design-patterns/README.md)
+[Hiểu các mẫu thiết kế Agentic](../03-agentic-design-patterns/README.md)
 
 ---
 
 **Tuyên bố miễn trừ trách nhiệm**:  
-Tài liệu này đã được dịch bằng dịch vụ dịch thuật AI [Co-op Translator](https://github.com/Azure/co-op-translator). Mặc dù chúng tôi cố gắng đảm bảo độ chính xác, xin lưu ý rằng các bản dịch tự động có thể chứa lỗi hoặc không chính xác. Tài liệu gốc bằng ngôn ngữ bản địa nên được coi là nguồn thông tin chính thức. Đối với các thông tin quan trọng, nên sử dụng dịch vụ dịch thuật chuyên nghiệp bởi con người. Chúng tôi không chịu trách nhiệm cho bất kỳ sự hiểu lầm hoặc diễn giải sai nào phát sinh từ việc sử dụng bản dịch này.
+Tài liệu này đã được dịch bằng dịch vụ dịch thuật AI [Co-op Translator](https://github.com/Azure/co-op-translator). Mặc dù chúng tôi cố gắng đảm bảo độ chính xác, xin lưu ý rằng các bản dịch tự động có thể chứa lỗi hoặc không chính xác. Tài liệu gốc bằng ngôn ngữ bản địa nên được coi là nguồn thông tin chính thức. Đối với các thông tin quan trọng, khuyến nghị sử dụng dịch vụ dịch thuật chuyên nghiệp bởi con người. Chúng tôi không chịu trách nhiệm cho bất kỳ sự hiểu lầm hoặc diễn giải sai nào phát sinh từ việc sử dụng bản dịch này.

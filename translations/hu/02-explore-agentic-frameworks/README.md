@@ -1,79 +1,79 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "a9631d0898fc3c6ecbb3a8a0da7aaba3",
-  "translation_date": "2025-08-29T20:12:41+00:00",
+  "original_hash": "86b9c2b24da3b3e61711182ffa72601c",
+  "translation_date": "2025-09-29T22:46:49+00:00",
   "source_file": "02-explore-agentic-frameworks/README.md",
   "language_code": "hu"
 }
 -->
-[![Az AI ügynök keretrendszerek felfedezése](../../../translated_images/lesson-2-thumbnail.c65f44c93b8558df4d5d407e29970e654629e614f357444a9c27c80feb54c79d.hu.png)](https://youtu.be/ODwF-EZo_O8?si=1xoy_B9RNQfrYdF7)
+[![AI Ügynök Keretrendszerek Felfedezése](../../../translated_images/lesson-2-thumbnail.c65f44c93b8558df4d5d407e29970e654629e614f357444a9c27c80feb54c79d.hu.png)](https://youtu.be/ODwF-EZo_O8?si=1xoy_B9RNQfrYdF7)
 
-> _(Kattints a fenti képre a leckéhez tartozó videó megtekintéséhez)_
+> _(Kattints a fenti képre a videó megtekintéséhez)_
 
-# AI ügynök keretrendszerek felfedezése
+# AI Ügynök Keretrendszerek Felfedezése
 
-Az AI ügynök keretrendszerek olyan szoftverplatformok, amelyek célja az AI ügynökök létrehozásának, telepítésének és kezelésének egyszerűsítése. Ezek a keretrendszerek előre elkészített komponenseket, absztrakciókat és eszközöket biztosítanak a fejlesztők számára, amelyek megkönnyítik a komplex AI rendszerek fejlesztését.
+Az AI ügynök keretrendszerek olyan szoftverplatformok, amelyek célja az AI ügynökök létrehozásának, telepítésének és kezelésének egyszerűsítése. Ezek a keretrendszerek előre elkészített komponenseket, absztrakciókat és eszközöket biztosítanak a fejlesztők számára, amelyek megkönnyítik összetett AI rendszerek fejlesztését.
 
-Ezek a keretrendszerek segítenek a fejlesztőknek, hogy az alkalmazásaik egyedi aspektusaira koncentráljanak, miközben szabványos megközelítéseket kínálnak az AI ügynök fejlesztésének gyakori kihívásaira. Javítják a skálázhatóságot, hozzáférhetőséget és hatékonyságot az AI rendszerek építésében.
+Ezek a keretrendszerek segítenek a fejlesztőknek az alkalmazásaik egyedi aspektusaira koncentrálni, miközben szabványos megközelítéseket kínálnak az AI ügynök fejlesztésének gyakori kihívásaira. Javítják a skálázhatóságot, hozzáférhetőséget és hatékonyságot az AI rendszerek építésében.
 
 ## Bevezetés
 
-Ez a lecke az alábbiakat tárgyalja:
+Ebben a leckében szó lesz:
 
-- Mik azok az AI ügynök keretrendszerek, és mit tesznek lehetővé a fejlesztők számára?
+- Mi az AI Ügynök Keretrendszer, és mit tesz lehetővé a fejlesztők számára?
 - Hogyan használhatják a csapatok ezeket az ügynök képességeinek gyors prototípus-készítésére, iterálására és fejlesztésére?
-- Miben különböznek a Microsoft által létrehozott keretrendszerek és eszközök egymástól?
-- Integrálhatom-e közvetlenül a meglévő Azure ökoszisztéma eszközeimet, vagy különálló megoldásokra van szükségem?
+- Milyen különbségek vannak a Microsoft által létrehozott keretrendszerek és eszközök között, mint például <a href="https://aka.ms/ai-agents/autogen" target="_blank">AutoGen</a>, <a href="https://aka.ms/ai-agents-beginners/semantic-kernel" target="_blank">Semantic Kernel</a>, és <a href="https://aka.ms/ai-agents-beginners/ai-agent-service" target="_blank">Azure AI Agent Service</a>?
+- Integrálhatom-e meglévő Azure ökoszisztéma eszközeimet közvetlenül, vagy különálló megoldásokra van szükségem?
 - Mi az Azure AI Agents szolgáltatás, és hogyan segít nekem?
 
 ## Tanulási célok
 
 A lecke célja, hogy segítsen megérteni:
 
-- Az AI ügynök keretrendszerek szerepét az AI fejlesztésben.
-- Hogyan lehet kihasználni az AI ügynök keretrendszereket intelligens ügynökök építésére.
-- Az AI ügynök keretrendszerek által biztosított kulcsfontosságú képességeket.
+- Az AI Ügynök Keretrendszerek szerepét az AI fejlesztésben.
+- Hogyan használhatók az AI Ügynök Keretrendszerek intelligens ügynökök építésére.
+- Az AI Ügynök Keretrendszerek által lehetővé tett kulcsfontosságú képességeket.
 - Az AutoGen, Semantic Kernel és Azure AI Agent Service közötti különbségeket.
 
-## Mik azok az AI ügynök keretrendszerek, és mit tesznek lehetővé a fejlesztők számára?
+## Mi az AI Ügynök Keretrendszer, és mit tesz lehetővé a fejlesztők számára?
 
-A hagyományos AI keretrendszerek segíthetnek az AI integrálásában az alkalmazásokba, és az alábbi módokon javíthatják ezeket az alkalmazásokat:
+A hagyományos AI keretrendszerek segítenek az AI integrálásában az alkalmazásokba, és javítják azokat az alábbi módokon:
 
 - **Személyre szabás**: Az AI elemezheti a felhasználói viselkedést és preferenciákat, hogy személyre szabott ajánlásokat, tartalmakat és élményeket nyújtson.
-Példa: A streaming szolgáltatások, mint például a Netflix, AI-t használnak filmek és sorozatok ajánlására a megtekintési előzmények alapján, növelve a felhasználói elköteleződést és elégedettséget.
+Példa: A streaming szolgáltatások, mint a Netflix, AI-t használnak filmek és sorozatok ajánlására a megtekintési előzmények alapján, növelve a felhasználói elköteleződést és elégedettséget.
 - **Automatizálás és hatékonyság**: Az AI automatizálhatja az ismétlődő feladatokat, egyszerűsítheti a munkafolyamatokat, és javíthatja az operatív hatékonyságot.
 Példa: Az ügyfélszolgálati alkalmazások AI-alapú chatbotokat használnak a gyakori kérdések kezelésére, csökkentve a válaszidőt és felszabadítva az emberi ügynököket a bonyolultabb problémákra.
 - **Felhasználói élmény javítása**: Az AI javíthatja az általános felhasználói élményt intelligens funkciók, például hangfelismerés, természetes nyelvi feldolgozás és prediktív szöveg segítségével.
-Példa: A virtuális asszisztensek, mint például Siri és Google Assistant, AI-t használnak a hangparancsok megértésére és válaszadására, megkönnyítve a felhasználók számára az eszközeikkel való interakciót.
+Példa: A virtuális asszisztensek, mint a Siri és a Google Assistant, AI-t használnak a hangutasítások megértésére és válaszadására, megkönnyítve a felhasználók számára az eszközökkel való interakciót.
 
-### Ez mind nagyszerűen hangzik, igaz? Akkor miért van szükség az AI ügynök keretrendszerre?
+### Ez mind nagyszerűen hangzik, de miért van szükségünk AI Ügynök Keretrendszerre?
 
-Az AI ügynök keretrendszerek többek, mint egyszerű AI keretrendszerek. Ezeket arra tervezték, hogy lehetővé tegyék intelligens ügynökök létrehozását, amelyek képesek interakcióba lépni a felhasználókkal, más ügynökökkel és a környezettel, hogy meghatározott célokat érjenek el. Ezek az ügynökök autonóm viselkedést mutathatnak, döntéseket hozhatnak, és alkalmazkodhatnak a változó körülményekhez. Nézzük meg az AI ügynök keretrendszerek által biztosított kulcsfontosságú képességeket:
+Az AI Ügynök keretrendszerek többek, mint egyszerű AI keretrendszerek. Ezeket arra tervezték, hogy lehetővé tegyék intelligens ügynökök létrehozását, amelyek képesek interakcióba lépni a felhasználókkal, más ügynökökkel és a környezettel, hogy konkrét célokat érjenek el. Ezek az ügynökök autonóm viselkedést mutathatnak, döntéseket hozhatnak, és alkalmazkodhatnak a változó körülményekhez. Nézzük meg az AI Ügynök Keretrendszerek által lehetővé tett kulcsfontosságú képességeket:
 
-- **Ügynökök együttműködése és koordinációja**: Lehetővé teszi több AI ügynök létrehozását, amelyek együtt dolgozhatnak, kommunikálhatnak és koordinálhatják tevékenységeiket összetett feladatok megoldására.
+- **Ügynökök együttműködése és koordinációja**: Lehetővé teszi több AI ügynök létrehozását, amelyek együtt dolgozhatnak, kommunikálhatnak és koordinálhatnak komplex feladatok megoldására.
 - **Feladat automatizálás és kezelés**: Mechanizmusokat biztosít a több lépésből álló munkafolyamatok automatizálására, feladatok delegálására és dinamikus feladatkezelésre az ügynökök között.
-- **Kontekstuális megértés és alkalmazkodás**: Felruházza az ügynököket a kontextus megértésének, a változó környezethez való alkalmazkodásnak és a valós idejű információk alapján történő döntéshozatal képességével.
+- **Környezeti megértés és alkalmazkodás**: Felruházza az ügynököket a környezet megértésének, a változó körülményekhez való alkalmazkodásnak és a valós idejű információk alapján történő döntéshozatal képességével.
 
-Összefoglalva, az ügynökök lehetővé teszik, hogy többet érjünk el, az automatizálást magasabb szintre emeljük, és intelligensebb rendszereket hozzunk létre, amelyek képesek alkalmazkodni és tanulni a környezetükből.
+Összefoglalva, az ügynökök lehetővé teszik, hogy többet érjünk el, az automatizálást magasabb szintre emeljük, és olyan intelligens rendszereket hozzunk létre, amelyek képesek alkalmazkodni és tanulni a környezetükből.
 
 ## Hogyan lehet gyorsan prototípust készíteni, iterálni és javítani az ügynök képességeit?
 
-Ez egy gyorsan változó terület, de vannak olyan közös elemek, amelyek a legtöbb AI ügynök keretrendszerben megtalálhatók, és segíthetnek a gyors prototípus-készítésben és iterálásban, például moduláris komponensek, együttműködési eszközök és valós idejű tanulás. Nézzük meg ezeket részletesebben:
+Ez egy gyorsan változó terület, de van néhány közös elem a legtöbb AI Ügynök Keretrendszerben, amelyek segíthetnek a gyors prototípus-készítésben és iterálásban, nevezetesen moduláris komponensek, együttműködési eszközök és valós idejű tanulás. Nézzük meg ezeket részletesebben:
 
-- **Moduláris komponensek használata**: Az AI SDK-k előre elkészített komponenseket kínálnak, mint például AI és memória csatlakozók, funkcióhívások természetes nyelv vagy kód pluginok segítségével, prompt sablonok és még sok más.
-- **Együttműködési eszközök kihasználása**: Ügynökök tervezése specifikus szerepekkel és feladatokkal, lehetővé téve az együttműködési munkafolyamatok tesztelését és finomítását.
-- **Valós idejű tanulás**: Visszacsatolási hurkok megvalósítása, ahol az ügynökök tanulnak az interakciókból, és dinamikusan módosítják viselkedésüket.
+- **Használj moduláris komponenseket**: Az AI SDK-k előre elkészített komponenseket kínálnak, mint például AI és memória csatlakozók, funkcióhívás természetes nyelv vagy kód pluginok segítségével, prompt sablonok és még sok más.
+- **Használj együttműködési eszközöket**: Tervezd meg az ügynököket specifikus szerepekkel és feladatokkal, lehetővé téve az együttműködési munkafolyamatok tesztelését és finomítását.
+- **Tanulj valós időben**: Valósíts meg visszacsatolási hurkokat, ahol az ügynökök tanulnak az interakciókból, és dinamikusan módosítják viselkedésüket.
 
-### Moduláris komponensek használata
+### Használj moduláris komponenseket
 
-Az olyan SDK-k, mint a Microsoft Semantic Kernel és LangChain, előre elkészített komponenseket kínálnak, például AI csatlakozókat, prompt sablonokat és memória kezelést.
+Az olyan SDK-k, mint a Microsoft Semantic Kernel és LangChain, előre elkészített komponenseket kínálnak, mint például AI csatlakozók, prompt sablonok és memória kezelés.
 
 **Hogyan használhatják a csapatok ezeket**: A csapatok gyorsan összeállíthatják ezeket a komponenseket, hogy működő prototípust hozzanak létre anélkül, hogy nulláról kellene kezdeniük, lehetővé téve a gyors kísérletezést és iterálást.
 
-**Hogyan működik a gyakorlatban**: Használhat egy előre elkészített elemzőt a felhasználói bemenetből származó információk kinyerésére, egy memória modult az adatok tárolására és visszakeresésére, valamint egy prompt generátort a felhasználókkal való interakcióhoz, mindezt anélkül, hogy ezeket a komponenseket nulláról kellene felépíteni.
+**Hogyan működik a gyakorlatban**: Használhatsz egy előre elkészített elemzőt a felhasználói bemenetből származó információk kinyerésére, egy memória modult az adatok tárolására és visszakeresésére, valamint egy prompt generátort a felhasználókkal való interakcióhoz, mindezt anélkül, hogy ezeket a komponenseket nulláról kellene felépítened.
 
-**Példa kód**. Nézzünk meg példákat arra, hogyan használhatunk egy előre elkészített AI csatlakozót a Semantic Kernel Python és .Net segítségével, amely automatikus funkcióhívást használ a modell felhasználói bemenetre adott válaszához:
+**Példa kód**. Nézzünk meg példákat arra, hogyan használhatsz egy előre elkészített AI csatlakozót a Semantic Kernel Python és .Net segítségével, amely automatikus funkcióhívást használ a modell felhasználói bemenetre adott válaszához:
 
 ``` python
 # Semantic Kernel Python Example
@@ -225,15 +225,15 @@ public class BookTravelPlugin
 }
 ```
 
-A fenti példából látható, hogyan lehet egy előre elkészített elemzőt használni a felhasználói bemenetből származó kulcsfontosságú információk kinyerésére, például egy repülőjegy foglalási kérés eredetére, céljára és dátumára. Ez a moduláris megközelítés lehetővé teszi, hogy a magas szintű logikára koncentráljunk.
+A példából látható, hogyan használhatsz egy előre elkészített elemzőt a kulcsfontosságú információk kinyerésére a felhasználói bemenetből, például egy repülőjegy foglalási kérés kiindulási helyét, célállomását és dátumát. Ez a moduláris megközelítés lehetővé teszi, hogy a magas szintű logikára koncentrálj.
 
-### Együttműködési eszközök kihasználása
+### Használj együttműködési eszközöket
 
 Az olyan keretrendszerek, mint a CrewAI, Microsoft AutoGen és Semantic Kernel, megkönnyítik több ügynök létrehozását, amelyek együtt dolgozhatnak.
 
 **Hogyan használhatják a csapatok ezeket**: A csapatok specifikus szerepekkel és feladatokkal rendelkező ügynököket tervezhetnek, lehetővé téve az együttműködési munkafolyamatok tesztelését és finomítását, valamint az általános rendszerhatékonyság javítását.
 
-**Hogyan működik a gyakorlatban**: Létrehozhat egy ügynökcsapatot, ahol minden ügynöknek van egy speciális funkciója, például adatlekérés, elemzés vagy döntéshozatal. Ezek az ügynökök kommunikálhatnak és megoszthatják az információkat, hogy közös célt érjenek el, például válaszoljanak egy felhasználói kérdésre vagy teljesítsenek egy feladatot.
+**Hogyan működik a gyakorlatban**: Létrehozhatsz egy ügynökcsapatot, ahol minden ügynöknek van egy specializált funkciója, például adatlekérés, elemzés vagy döntéshozatal. Ezek az ügynökök kommunikálhatnak és megoszthatják az információkat, hogy közös célt érjenek el, például válaszoljanak egy felhasználói kérdésre vagy teljesítsenek egy feladatot.
 
 **Példa kód (AutoGen)**:
 
@@ -270,38 +270,38 @@ stream = team.run_stream(task="Analyze data", max_turns=10)
 await Console(stream)
 ```
 
-A fenti kódban látható, hogyan lehet létrehozni egy feladatot, amely több ügynök együttműködését igényli az adatok elemzéséhez. Minden ügynök egy adott funkciót lát el, és a feladatot az ügynökök koordinálásával hajtják végre a kívánt eredmény elérése érdekében. Dedikált, speciális szerepekkel rendelkező ügynökök létrehozásával javítható a feladat hatékonysága és teljesítménye.
+A fenti kódban látható, hogyan hozhatsz létre egy feladatot, amely több ügynök együttműködését igényli az adatok elemzéséhez. Minden ügynök egy specifikus funkciót lát el, és a feladatot az ügynökök koordinálásával hajtják végre a kívánt eredmény elérése érdekében. Dedikált, specializált szerepekkel rendelkező ügynökök létrehozásával javíthatod a feladat hatékonyságát és teljesítményét.
 
-### Valós idejű tanulás
+### Tanulj valós időben
 
-A fejlett keretrendszerek valós idejű kontextus megértési és alkalmazkodási képességeket biztosítanak.
+A fejlett keretrendszerek valós idejű környezeti megértést és alkalmazkodást tesznek lehetővé.
 
-**Hogyan használhatják a csapatok ezeket**: A csapatok visszacsatolási hurkokat valósíthatnak meg, ahol az ügynökök tanulnak az interakciókból, és dinamikusan módosítják viselkedésüket, ami folyamatos javulást és képességek finomítását eredményezi.
+**Hogyan használhatják a csapatok ezeket**: A csapatok visszacsatolási hurkokat valósíthatnak meg, ahol az ügynökök tanulnak az interakciókból, és dinamikusan módosítják viselkedésüket, ami folyamatos fejlődést és képességek finomítását eredményezi.
 
-**Hogyan működik a gyakorlatban**: Az ügynökök elemezhetik a felhasználói visszajelzéseket, környezeti adatokat és feladat eredményeket, hogy frissítsék tudásbázisukat, módosítsák döntéshozatali algoritmusaikat, és idővel javítsák teljesítményüket. Ez az iteratív tanulási folyamat lehetővé teszi az ügynökök számára, hogy alkalmazkodjanak a változó körülményekhez és felhasználói preferenciákhoz, javítva az általános rendszerhatékonyságot.
+**Hogyan működik a gyakorlatban**: Az ügynökök elemezhetik a felhasználói visszajelzéseket, környezeti adatokat és feladat eredményeket, hogy frissítsék tudásbázisukat, módosítsák döntéshozatali algoritmusaikat, és idővel javítsák teljesítményüket. Ez az iteratív tanulási folyamat lehetővé teszi az ügynökök számára, hogy alkalmazkodjanak a változó körülményekhez és felhasználói preferenciákhoz, növelve az általános rendszerhatékonyságot.
 
-## Miben különböznek az AutoGen, Semantic Kernel és Azure AI Agent Service keretrendszerek?
+## Milyen különbségek vannak az AutoGen, Semantic Kernel és Azure AI Agent Service keretrendszerek között?
 
 Számos módon összehasonlíthatók ezek a keretrendszerek, de nézzük meg néhány kulcsfontosságú különbséget a tervezésük, képességeik és célzott felhasználási eseteik szempontjából:
 
 ## AutoGen
 
-Az AutoGen egy nyílt forráskódú keretrendszer, amelyet a Microsoft Research AI Frontiers Lab fejlesztett ki. Az eseményvezérelt, elosztott *agentikus* alkalmazásokra összpontosít, lehetővé téve több LLM és SLM, eszközök, valamint fejlett több ügynökös tervezési minták használatát.
+Az AutoGen egy nyílt forráskódú keretrendszer, amelyet a Microsoft Research AI Frontiers Lab fejlesztett ki. Az eseményvezérelt, elosztott *ügynöki* alkalmazásokra összpontosít, lehetővé téve több LLM és SLM, eszközök és fejlett több ügynökös tervezési minták használatát.
 
-Az AutoGen az ügynökök alapfogalmára épül, amelyek autonóm entitások, amelyek érzékelhetik környezetüket, döntéseket hozhatnak, és cselekedhetnek meghatározott célok elérése érdekében. Az ügynökök aszinkron üzeneteken keresztül kommunikálnak, lehetővé téve számukra, hogy függetlenül és párhuzamosan dolgozzanak, növelve a rendszer skálázhatóságát és reagálóképességét.
+Az AutoGen az ügynökök alapfogalmára épül, amelyek autonóm entitások, amelyek érzékelhetik környezetüket, döntéseket hozhatnak, és cselekedhetnek konkrét célok elérése érdekében. Az ügynökök aszinkron üzeneteken keresztül kommunikálnak, lehetővé téve számukra, hogy függetlenül és párhuzamosan dolgozzanak, növelve a rendszer skálázhatóságát és reagálóképességét.
 
-A Wikipedia szerint egy aktor _a párhuzamos számítás alapvető építőköve. Az általa kapott üzenetre válaszul az aktor képes: helyi döntéseket hozni, további aktorokat létrehozni, több üzenetet küldeni, és meghatározni, hogyan reagáljon a következő kapott üzenetre_.
+<a href="https://en.wikipedia.org/wiki/Actor_model" target="_blank">Az ügynökök az aktor modellre épülnek</a>. A Wikipedia szerint az aktor _a párhuzamos számítás alapvető építőköve. Az általa kapott üzenetre válaszul az aktor képes: helyi döntéseket hozni, további aktorokat létrehozni, további üzeneteket küldeni, és meghatározni, hogyan reagáljon a következő kapott üzenetre_.
 
 **Felhasználási esetek**: Kódgenerálás automatizálása, adat-elemzési feladatok, és egyedi ügynökök létrehozása tervezési és kutatási funkciókhoz.
 
 Az AutoGen néhány fontos alapfogalma:
 
-- **Ügynökök**. Az ügynök egy szoftver entitás, amely:
+- **Ügynökök**. Egy ügynök egy szoftver entitás, amely:
   - **Üzeneteken keresztül kommunikál**, ezek az üzenetek lehetnek szinkron vagy aszinkron.
   - **Fenntartja saját állapotát**, amelyet a beérkező üzenetek módosíthatnak.
-  - **Cselekvéseket hajt végre** a kapott üzenetekre vagy az állapotában bekövetkezett változásokra válaszul. Ezek a cselekvések módosíthatják az ügynök állapotát, és külső hatásokat eredményezhetnek, például üzenetnaplók frissítését, új üzenetek küldését, kód végrehajtását vagy API-hívások végrehajtását.
-
-  Itt van egy rövid kódrészlet, amelyben létrehozunk egy saját ügynököt Chat képességekkel:
+  - **Cselekvéseket hajt végre** a kapott üzenetekre vagy állapotának változásaira válaszul. Ezek a cselekvések módosíthatják az ügynök állapotát, és külső hatásokat eredményezhetnek, például üzenetnaplók frissítését, új üzenetek küldését, kód végrehajtását vagy API-hívások végrehajtását.
+    
+  Itt van egy rövid kódrészlet, amelyben létrehozol egy saját ügynököt Chat képességekkel:
 
     ```python
     from autogen_agentchat.agents import AssistantAgent
@@ -323,10 +323,10 @@ Az AutoGen néhány fontos alapfogalma:
             )
             print(f"{self.id.type} responded: {response.chat_message.content}")
     ```
+    
+    A fenti kódban létrehoztuk a `MyAgent` ügynököt, amely örökli a `RoutedAgent` osztályt. Van egy üzenetkezelője, amely kinyomtatja az üzenet tartalmát, majd választ küld az `AssistantAgent` delegált segítségével. Különösen figyelj arra, hogy a `self._delegate`-nek egy `AssistantAgent` példányt rendelünk, amely egy előre elkészített ügynök, amely képes kezelni a chat befejezéseket.
 
-    A fenti kódban létrehoztuk a `MyAgent`-t, amely örökli a `RoutedAgent`-et. Van egy üzenetkezelője, amely kinyomtatja az üzenet tartalmát, majd választ küld az `AssistantAgent` delegált segítségével. Különösen figyeljünk arra, hogy a `self._delegate`-hez hozzárendeljük az `AssistantAgent` egy példányát, amely egy előre elkészített ügynök, amely képes kezelni a chat befejezéseket.
-
-    Ezután értesítsük az AutoGen-t az ügynöktípusról, és indítsuk el a programot:
+    Ezután értesítsük az AutoGen-t az ügynök típusáról, és indítsuk el a programot:
 
     ```python
     
@@ -338,7 +338,7 @@ Az AutoGen néhány fontos alapfogalma:
     await runtime.send_message(MyMessageType("Hello, World!"), AgentId("my_agent", "default"))
     ```
 
-    A fenti kódban az ügynökök regisztrálva vannak a futtatási környezetben, majd egy üzenetet küldünk az ügynöknek, amely az alábbi kimenetet eredményezi:
+    A fenti kódban az ügynököket regisztráltuk a futtatási környezetben, majd üzenetet küldtünk az ügynöknek, amely az alábbi kimenetet eredményezte:
 
     ```text
     # Output from the console:
@@ -347,59 +347,22 @@ Az AutoGen néhány fontos alapfogalma:
     my_assistant responded: Hello! How can I assist you today?
     ```
 
-- **Több ügynök**. Az AutoGen támogatja több ügynök létrehozását, amelyek együtt dolgozhatnak összetett feladatok elvégzésére. Az ügynökök kommunikálhatnak, megoszthatják az információkat, és koordinálhatják tevékenységeiket, hogy hatékonyabban oldják meg a problémákat. Több ügynökös rendszer létrehozásához különböző típusú ügynököket definiálhatunk, amelyeknek speciális funkcióik és szerepeik vannak, például adatlekérés, elemzés, döntéshozatal és felhasználói interakció. Nézzük meg, hogyan néz ki egy ilyen létrehozás:
+- **Több ügynök**. Az AutoGen támogatja több ügynök létrehozását, amelyek együtt dolgozhatnak komplex feladatok elvégzésére. Az ügynökök kommunikálhatnak, megoszthatják az információkat, és koordinálhatják cselekvéseiket, hogy hatékonyabban oldják meg a problémákat. Több ügynökös rendszer létrehozásához különböző típusú ügynököket definiálhatsz specializált funkciókkal és szerepekkel, például adatlekérés, elemzés, döntéshozatal és felhasználói interakció. Né
+Ezeket az információkat a `SummarizedAzureDocs` memóriagyűjteményben tároljuk. Ez egy nagyon egyszerű példa, de látható, hogyan lehet információt tárolni a memóriában, hogy az LLM használhassa.
 
-    ```python
-    editor_description = "Editor for planning and reviewing the content."
+Tehát ezek a Semantic Kernel keretrendszer alapjai, de mi a helyzet az Agent Frameworkkel?
 
-    # Example of declaring an Agent
-    editor_agent_type = await EditorAgent.register(
-    runtime,
-    editor_topic_type,  # Using topic type as the agent type.
-    lambda: EditorAgent(
-        description=editor_description,
-        group_chat_topic_type=group_chat_topic_type,
-        model_client=OpenAIChatCompletionClient(
-            model="gpt-4o-2024-08-06",
-            # api_key="YOUR_API_KEY",
-        ),
-        ),
-    )
-
-    # remaining declarations shortened for brevity
-
-    # Group chat
-    group_chat_manager_type = await GroupChatManager.register(
-    runtime,
-    "group_chat_manager",
-    lambda: GroupChatManager(
-        participant_topic_types=[writer_topic_type, illustrator_topic_type, editor_topic_type, user_topic_type],
-        model_client=OpenAIChatCompletionClient(
-            model="gpt-4o-2024-08-06",
-            # api_key="YOUR_API_KEY",
-        ),
-        participant_descriptions=[
-            writer_description, 
-            illustrator_description, 
-            editor_description, 
-            user_description
-        ],
-        ),
-    )
-    ```
-
-    A fenti kódban van egy `GroupChatManager`, amely regisztrálva van a futtatási környezetben. Ez a menedzser felelős a különböző típusú ügyn
 ## Azure AI Agent Service
 
-Az Azure AI Agent Service egy újabb fejlesztés, amelyet a Microsoft Ignite 2024 rendezvényen mutattak be. Lehetővé teszi AI-ügynökök fejlesztését és telepítését rugalmasabb modellekkel, például nyílt forráskódú LLM-ek, mint a Llama 3, Mistral és Cohere közvetlen hívásával.
+Az Azure AI Agent Service egy újabb fejlesztés, amelyet a Microsoft Ignite 2024 rendezvényen mutattak be. Lehetővé teszi AI ügynökök fejlesztését és telepítését rugalmasabb modellekkel, például nyílt forráskódú LLM-ek, mint a Llama 3, Mistral és Cohere közvetlen hívásával.
 
 Az Azure AI Agent Service erősebb vállalati biztonsági mechanizmusokat és adatkezelési módszereket kínál, így ideális vállalati alkalmazásokhoz.
 
-Kész megoldásként működik többügynökös orkestrációs keretrendszerekkel, mint az AutoGen és a Semantic Kernel.
+Kész megoldást nyújt több ügynököt kezelő keretrendszerekkel, mint például az AutoGen és a Semantic Kernel.
 
-Ez a szolgáltatás jelenleg nyilvános előzetes verzióban érhető el, és Python és C# nyelveket támogat az ügynökök fejlesztéséhez.
+Ez a szolgáltatás jelenleg nyilvános előzetes verzióban érhető el, és Python és C# nyelveken támogatja az ügynökök fejlesztését.
 
-A Semantic Kernel Python segítségével létrehozhatunk egy Azure AI Agentet egy felhasználó által definiált plugin segítségével:
+A Semantic Kernel Python segítségével létrehozhatunk egy Azure AI ügynököt egy felhasználó által definiált plugin segítségével:
 
 ```python
 import asyncio
@@ -491,7 +454,7 @@ if __name__ == "__main__":
 
 Az Azure AI Agent Service az alábbi alapfogalmakat tartalmazza:
 
-- **Ügynök**. Az Azure AI Agent Service integrálódik az Azure AI Foundry-val. Az AI Foundry-n belül az AI-ügynök egy "intelligens" mikroszolgáltatásként működik, amely kérdések megválaszolására (RAG), műveletek végrehajtására vagy teljes munkafolyamatok automatizálására használható. Ezt úgy éri el, hogy kombinálja a generatív AI modellek erejét olyan eszközökkel, amelyek lehetővé teszik számára a valós adatforrások elérését és kezelését. Íme egy példa egy ügynökre:
+- **Ügynök**. Az Azure AI Agent Service integrálódik az Azure AI Foundry-val. Az AI Foundry-n belül egy AI ügynök "intelligens" mikroszolgáltatásként működik, amely kérdések megválaszolására (RAG), műveletek végrehajtására vagy teljes munkafolyamatok automatizálására használható. Ezt úgy éri el, hogy a generatív AI modellek erejét kombinálja olyan eszközökkel, amelyek lehetővé teszik a valós adatforrások elérését és kezelését. Íme egy példa egy ügynökre:
 
     ```python
     agent = project_client.agents.create_agent(
@@ -503,9 +466,9 @@ Az Azure AI Agent Service az alábbi alapfogalmakat tartalmazza:
     )
     ```
 
-    Ebben a példában egy ügynök jön létre a `gpt-4o-mini` modellel, `my-agent` névvel és `You are helpful agent` utasításokkal. Az ügynök eszközökkel és erőforrásokkal van felszerelve, hogy kódértelmezési feladatokat végezzen.
+    Ebben a példában egy ügynököt hozunk létre a `gpt-4o-mini` modellel, `my-agent` névvel és `You are helpful agent` utasításokkal. Az ügynök eszközökkel és erőforrásokkal van felszerelve, hogy kódértelmezési feladatokat végezzen.
 
-- **Szálak és üzenetek**. A szál egy másik fontos fogalom. Ez egy ügynök és egy felhasználó közötti beszélgetést vagy interakciót képvisel. A szálak használhatók a beszélgetés előrehaladásának nyomon követésére, kontextusinformációk tárolására és az interakció állapotának kezelésére. Íme egy példa egy szálra:
+- **Szálak és üzenetek**. A szál egy másik fontos fogalom. Ez egy ügynök és egy felhasználó közötti beszélgetést vagy interakciót képvisel. A szálak segítségével nyomon követhető a beszélgetés előrehaladása, tárolható a kontextus információ, és kezelhető az interakció állapota. Íme egy példa egy szálra:
 
     ```python
     thread = project_client.agents.create_thread()
@@ -523,19 +486,19 @@ Az Azure AI Agent Service az alábbi alapfogalmakat tartalmazza:
     print(f"Messages: {messages}")
     ```
 
-    Az előző kódban létrejön egy szál. Ezután egy üzenetet küldenek a szálba. A `create_and_process_run` hívásával az ügynököt arra kérik, hogy végezzen munkát a szálon. Végül az üzeneteket lekérik és naplózzák, hogy lássák az ügynök válaszát. Az üzenetek jelzik a beszélgetés előrehaladását a felhasználó és az ügynök között. Fontos megérteni, hogy az üzenetek különböző típusúak lehetnek, például szöveg, kép vagy fájl, amelyet az ügynök munkája eredményezett, például egy kép vagy szöveges válasz. Fejlesztőként ezeket az információkat felhasználhatja a válasz további feldolgozására vagy a felhasználó számára történő bemutatására.
+    Az előző kódban létrehozunk egy szálat. Ezután egy üzenetet küldünk a szálnak. A `create_and_process_run` hívásával az ügynököt arra kérjük, hogy végezzen munkát a szálon. Végül az üzeneteket lekérjük és naplózzuk, hogy lássuk az ügynök válaszát. Az üzenetek jelzik a beszélgetés előrehaladását a felhasználó és az ügynök között. Fontos megérteni, hogy az üzenetek különböző típusúak lehetnek, például szöveg, kép vagy fájl, amely az ügynök munkájának eredményeként jött létre, például egy kép vagy szöveges válasz. Fejlesztőként ezeket az információkat felhasználhatja a válasz további feldolgozására vagy a felhasználónak való bemutatására.
 
-- **Integráció más AI keretrendszerekkel**. Az Azure AI Agent Service képes más keretrendszerekkel, például az AutoGen és a Semantic Kernel együttműködni, ami azt jelenti, hogy az alkalmazás egy részét ezekben a keretrendszerekben építheti fel, például az Agent Service-t használva orkestrátorként, vagy mindent az Agent Service-ben építhet.
+- **Integráció más AI keretrendszerekkel**. Az Azure AI Agent Service képes más keretrendszerekkel, például az AutoGen és a Semantic Kernel keretrendszerekkel együttműködni, ami azt jelenti, hogy az alkalmazás egy részét ezekben a keretrendszerekben építheti fel, például az Agent Service-t használva orchestrátorként, vagy mindent az Agent Service-ben építhet.
 
-**Felhasználási esetek**: Az Azure AI Agent Service olyan vállalati alkalmazásokhoz készült, amelyek biztonságos, skálázható és rugalmas AI-ügynök telepítést igényelnek.
+**Felhasználási esetek**: Az Azure AI Agent Service olyan vállalati alkalmazásokhoz készült, amelyek biztonságos, skálázható és rugalmas AI ügynök telepítést igényelnek.
 
 ## Mi a különbség ezek között a keretrendszerek között?
 
 Úgy tűnik, hogy sok átfedés van ezek között a keretrendszerek között, de vannak kulcsfontosságú különbségek a tervezésük, képességeik és célzott felhasználási eseteik tekintetében:
 
-- **AutoGen**: Egy kísérleti keretrendszer, amely a többügynökös rendszerek élvonalbeli kutatására összpontosít. Ez a legjobb hely a kifinomult többügynökös rendszerek kísérletezésére és prototípusának elkészítésére.
-- **Semantic Kernel**: Egy gyártásra kész ügynökkönyvtár vállalati ügynöki alkalmazások építéséhez. Az eseményvezérelt, elosztott ügynöki alkalmazásokra összpontosít, lehetővé téve több LLM és SLM, eszközök, valamint egy- és többügynökös tervezési minták használatát.
-- **Azure AI Agent Service**: Egy platform és telepítési szolgáltatás az Azure Foundry-ban ügynökök számára. Lehetővé teszi a kapcsolódást az Azure Found által támogatott szolgáltatásokhoz, mint például az Azure OpenAI, Azure AI Search, Bing Search és kódvégrehajtás.
+- **AutoGen**: Egy kísérleti keretrendszer, amely a több ügynökös rendszerek élvonalbeli kutatására összpontosít. Ez a legjobb hely a kifinomult több ügynökös rendszerek kísérletezésére és prototípusának elkészítésére.
+- **Semantic Kernel**: Egy gyártásra kész ügynök könyvtár vállalati ügynöki alkalmazások építéséhez. Az eseményvezérelt, elosztott ügynöki alkalmazásokra összpontosít, lehetővé téve több LLM és SLM, eszközök, valamint egy- és több ügynökös tervezési minták használatát.
+- **Azure AI Agent Service**: Egy platform és telepítési szolgáltatás az Azure Foundry-ban ügynökök számára. Lehetővé teszi a kapcsolódást az Azure által támogatott szolgáltatásokhoz, mint például az Azure OpenAI, Azure AI Search, Bing Search és kódvégrehajtás.
 
 Még mindig nem biztos benne, melyiket válassza?
 
@@ -544,52 +507,60 @@ Még mindig nem biztos benne, melyiket válassza?
 Nézzük meg, hogy segíthetünk-e néhány gyakori felhasználási eset áttekintésével:
 
 > K: Kísérletezek, tanulok és proof-of-concept ügynöki alkalmazásokat építek, és gyorsan szeretnék építeni és kísérletezni.
+>
 
-> V: Az AutoGen jó választás lenne ebben az esetben, mivel az eseményvezérelt, elosztott ügynöki alkalmazásokra összpontosít, és támogatja a fejlett többügynökös tervezési mintákat.
+> V: Az AutoGen jó választás lenne ebben az esetben, mivel az eseményvezérelt, elosztott ügynöki alkalmazásokra összpontosít, és támogatja a fejlett több ügynökös tervezési mintákat.
 
 > K: Miért jobb választás az AutoGen, mint a Semantic Kernel és az Azure AI Agent Service ebben az esetben?
+>
+> V: Az AutoGen kifejezetten az eseményvezérelt, elosztott ügynöki alkalmazásokra lett tervezve, így jól alkalmazható kódgenerálási és adat-elemzési feladatok automatizálására. Megadja a szükséges eszközöket és képességeket a komplex több ügynökös rendszerek hatékony felépítéséhez.
 
-> V: Az AutoGen kifejezetten eseményvezérelt, elosztott ügynöki alkalmazásokra lett tervezve, így jól illeszkedik a kódgenerálási és adat-elemzési feladatok automatizálásához. Megadja a szükséges eszközöket és képességeket a komplex többügynökös rendszerek hatékony felépítéséhez.
-
-> K: Úgy hangzik, hogy az Azure AI Agent Service is működhet itt, hiszen vannak eszközei kódgeneráláshoz és más feladatokhoz?
-
-> V: Igen, az Azure AI Agent Service egy platformszolgáltatás ügynökök számára, és beépített képességeket kínál több modellhez, Azure AI Search-hez, Bing Search-hez és Azure Functions-höz. Könnyűvé teszi az ügynökök építését a Foundry Portálban és azok skálázott telepítését.
+> K: Úgy tűnik, hogy az Azure AI Agent Service is működhet itt, hiszen vannak eszközei kódgeneráláshoz és más feladatokhoz?
+>
+> V: Igen, az Azure AI Agent Service egy platformszolgáltatás ügynökök számára, és beépített képességeket kínál több modellhez, Azure AI Search-hez, Bing Search-hez és Azure Functions-höz. Könnyen lehet ügynököket építeni a Foundry Portálban és nagy léptékben telepíteni őket.
 
 > K: Még mindig zavaros, csak adj egy opciót.
-
-> V: Egy nagyszerű választás az alkalmazás építése a Semantic Kernel-ben, majd az ügynök telepítése az Azure AI Agent Service segítségével. Ez a megközelítés lehetővé teszi az ügynökök egyszerű tárolását, miközben kihasználja a Semantic Kernel-ben történő többügynökös rendszerek építésének erejét. Ezenkívül a Semantic Kernel rendelkezik egy csatlakozóval az AutoGen-ben, ami megkönnyíti a két keretrendszer együttes használatát.
+>
+> V: Egy nagyszerű választás az alkalmazás építése először a Semantic Kernel-ben, majd az ügynök telepítése az Azure AI Agent Service segítségével. Ez a megközelítés lehetővé teszi az ügynökök egyszerű tárolását, miközben kihasználja a több ügynökös rendszerek építésének erejét a Semantic Kernel-ben. Ezenkívül a Semantic Kernel rendelkezik egy csatlakozóval az AutoGen-ben, ami megkönnyíti a két keretrendszer együttes használatát.
 
 Foglaljuk össze a kulcsfontosságú különbségeket egy táblázatban:
 
 | Keretrendszer | Fókusz | Alapfogalmak | Felhasználási esetek |
 | --- | --- | --- | --- |
 | AutoGen | Eseményvezérelt, elosztott ügynöki alkalmazások | Ügynökök, Személyiségek, Funkciók, Adatok | Kódgenerálás, adat-elemzési feladatok |
-| Semantic Kernel | Emberi-szerű szöveges tartalom megértése és generálása | Ügynökök, Moduláris komponensek, Együttműködés | Természetes nyelv megértése, tartalomgenerálás |
-| Azure AI Agent Service | Rugalmas modellek, vállalati biztonság, Kódgenerálás, Eszközök hívása | Modularitás, Együttműködés, Folyamat-orkestráció | Biztonságos, skálázható és rugalmas AI-ügynök telepítés |
+| Semantic Kernel | Emberi szöveg megértése és generálása | Ügynökök, Moduláris komponensek, Együttműködés | Természetes nyelv megértése, tartalomgenerálás |
+| Azure AI Agent Service | Rugalmas modellek, vállalati biztonság, Kódgenerálás, Eszközök hívása | Modularitás, Együttműködés, Folyamatok irányítása | Biztonságos, skálázható és rugalmas AI ügynök telepítés |
 
 Mi az ideális felhasználási eset ezekhez a keretrendszerekhez?
 
 ## Integrálhatom közvetlenül a meglévő Azure ökoszisztéma eszközeimet, vagy különálló megoldásokra van szükségem?
 
-A válasz igen, közvetlenül integrálhatja meglévő Azure ökoszisztéma eszközeit, különösen az Azure AI Agent Service segítségével, mivel ezt úgy tervezték, hogy zökkenőmentesen működjön más Azure szolgáltatásokkal. Például integrálhatja a Binget, az Azure AI Search-t és az Azure Functions-t. Mély integráció is elérhető az Azure AI Foundry-val.
+A válasz igen, közvetlenül integrálhatja meglévő Azure ökoszisztéma eszközeit, különösen az Azure AI Agent Service esetében, mivel úgy lett kialakítva, hogy zökkenőmentesen működjön együtt más Azure szolgáltatásokkal. Például integrálhatja a Bing-et, Azure AI Search-t és Azure Functions-t. Mély integrációt kínál az Azure AI Foundry-val is.
 
-Az AutoGen és a Semantic Kernel esetében szintén integrálhatja az Azure szolgáltatásokat, de ehhez szükség lehet az Azure szolgáltatások hívására a kódjából. Egy másik módja az integrációnak az Azure SDK-k használata, hogy az ügynökökön keresztül kommunikáljon az Azure szolgáltatásokkal. Ezenkívül, ahogy említettük, az Azure AI Agent Service-t használhatja orkestrátorként az AutoGen-ben vagy Semantic Kernel-ben épített ügynökök számára, ami egyszerű hozzáférést biztosít az Azure ökoszisztémához.
+Az AutoGen és a Semantic Kernel esetében szintén integrálhatja az Azure szolgáltatásokat, de ehhez szükség lehet arra, hogy az Azure szolgáltatásokat a kódjából hívja meg. Egy másik módja az integrációnak az Azure SDK-k használata, hogy az ügynökök az Azure szolgáltatásokkal kommunikáljanak. Ezenkívül, ahogy említettük, az Azure AI Agent Service-t használhatja orchestrátorként az AutoGen-ben vagy Semantic Kernel-ben épített ügynökök számára, ami egyszerű hozzáférést biztosít az Azure ökoszisztémához.
 
-### További kérdései vannak az AI Agent keretrendszerekkel kapcsolatban?
+### További kérdései vannak az AI Agent Frameworkökkel kapcsolatban?
 
-Csatlakozzon az [Azure AI Foundry Discord](https://aka.ms/ai-agents/discord) közösséghez, hogy találkozzon más tanulókkal, részt vegyen fogadóórákon, és választ kapjon az AI ügynökökkel kapcsolatos kérdéseire.
+Csatlakozzon az [Azure AI Foundry Discord](https://aka.ms/ai-agents/discord) közösséghez, hogy találkozzon más tanulókkal, részt vegyen konzultációkon, és választ kapjon az AI ügynökökkel kapcsolatos kérdéseire.
 
 ## Hivatkozások
 
+- <a href="https://techcommunity.microsoft.com/blog/azure-ai-services-blog/introducing-azure-ai-agent-service/4298357" target="_blank">Azure Agent Service</a>
+- <a href="https://devblogs.microsoft.com/semantic-kernel/microsofts-agentic-ai-frameworks-autogen-and-semantic-kernel/" target="_blank">Semantic Kernel és AutoGen</a>
+- <a href="https://learn.microsoft.com/semantic-kernel/frameworks/agent/?pivots=programming-language-python" target="_blank">Semantic Kernel Python Agent Framework</a>
+- <a href="https://learn.microsoft.com/semantic-kernel/frameworks/agent/?pivots=programming-language-csharp" target="_blank">Semantic Kernel .Net Agent Framework</a>
+- <a href="https://learn.microsoft.com/azure/ai-services/agents/overview" target="_blank">Azure AI Agent Service</a>
+- <a href="https://techcommunity.microsoft.com/blog/educatordeveloperblog/using-azure-ai-agent-service-with-autogen--semantic-kernel-to-build-a-multi-agen/4363121" target="_blank">Azure AI Agent Service használata AutoGen / Semantic Kernel segítségével több ügynökös megoldás építéséhez</a>
+
 ## Előző lecke
 
-[Bevezetés az AI ügynökökbe és felhasználási esetekbe](../01-intro-to-ai-agents/README.md)
+[Bevezetés az AI ügynökökbe és felhasználási esetek](../01-intro-to-ai-agents/README.md)
 
 ## Következő lecke
 
-[Az ügynöki tervezési minták megértése](../03-agentic-design-patterns/README.md)
+[Ügynöki tervezési minták megértése](../03-agentic-design-patterns/README.md)
 
 ---
 
 **Felelősség kizárása**:  
-Ez a dokumentum az [Co-op Translator](https://github.com/Azure/co-op-translator) AI fordítási szolgáltatás segítségével került lefordításra. Bár törekszünk a pontosságra, kérjük, vegye figyelembe, hogy az automatikus fordítások hibákat vagy pontatlanságokat tartalmazhatnak. Az eredeti dokumentum az eredeti nyelvén tekintendő hiteles forrásnak. Kritikus információk esetén javasolt professzionális emberi fordítást igénybe venni. Nem vállalunk felelősséget semmilyen félreértésért vagy téves értelmezésért, amely a fordítás használatából eredhet.
+Ez a dokumentum az [Co-op Translator](https://github.com/Azure/co-op-translator) AI fordítási szolgáltatás segítségével lett lefordítva. Bár törekszünk a pontosságra, kérjük, vegye figyelembe, hogy az automatikus fordítások hibákat vagy pontatlanságokat tartalmazhatnak. Az eredeti dokumentum az eredeti nyelvén tekintendő hiteles forrásnak. Kritikus információk esetén javasolt professzionális emberi fordítást igénybe venni. Nem vállalunk felelősséget semmilyen félreértésért vagy téves értelmezésért, amely a fordítás használatából eredhet.
