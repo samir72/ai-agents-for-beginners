@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "0c6a7a65974383f8467bb6adf3d34bc5",
-  "translation_date": "2025-09-29T21:25:31+00:00",
+  "original_hash": "413adcc2c6a498d52643d27f6871aa24",
+  "translation_date": "2025-10-01T20:24:33+00:00",
   "source_file": "README.md",
   "language_code": "lt"
 }
@@ -37,19 +37,19 @@ CO_OP_TRANSLATOR_METADATA:
 
 Šiame kurse pateikiamos pamokos, apimančios AI agentų kūrimo pagrindus. Kiekviena pamoka apima atskirą temą, todėl galite pradėti nuo bet kurios jums patinkančios!
 
-Šis kursas palaiko daugiakalbę versiją. Peržiūrėkite mūsų [galimas kalbas čia](../..). 
+Šis kursas palaiko daugiakalbę versiją. Peržiūrėkite mūsų [galimas kalbas čia](../..).
 
 Jei pirmą kartą dirbate su generatyviniais AI modeliais, peržiūrėkite mūsų [Generatyvinis AI pradedantiesiems](https://aka.ms/genai-beginners) kursą, kuriame yra 21 pamoka apie darbą su GenAI.
 
 Nepamirškite [pažymėti žvaigždute (🌟) šį repo](https://docs.github.com/en/get-started/exploring-projects-on-github/saving-repositories-with-stars?WT.mc_id=academic-105485-koreyst) ir [šakoti šį repo](https://github.com/microsoft/ai-agents-for-beginners/fork), kad galėtumėte paleisti kodą.
 
-### Susipažinkite su kitais besimokančiais, gaukite atsakymus į savo klausimus
+### Susipažinkite su kitais mokiniais, užduokite klausimus
 
 Jei susiduriate su sunkumais ar turite klausimų apie AI agentų kūrimą, prisijunkite prie mūsų dedikuoto Discord kanalo [Azure AI Foundry Community Discord](https://aka.ms/ai-agents/discord).
 
 ### Ko jums reikės
 
-Kiekvienoje šio kurso pamokoje yra kodų pavyzdžių, kuriuos rasite aplanke code_samples. Galite [šakoti šį repo](https://github.com/microsoft/ai-agents-for-beginners/fork), kad sukurtumėte savo kopiją.  
+Kiekvienoje šio kurso pamokoje yra kodų pavyzdžių, kuriuos rasite aplanke code_samples. Galite [šakoti šį repo](https://github.com/microsoft/ai-agents-for-beginners/fork), kad sukurtumėte savo kopiją.
 
 Šių pratimų kodų pavyzdžiai naudoja Azure AI Foundry ir GitHub Model Catalogs sąveikai su kalbos modeliais:
 
@@ -58,6 +58,7 @@ Kiekvienoje šio kurso pamokoje yra kodų pavyzdžių, kuriuos rasite aplanke co
 
 Šiame kurse taip pat naudojami šie AI agentų karkasai ir paslaugos iš Microsoft:
 
+- [Microsoft Agent Framework (MAF) - Nauja!](https://aka.ms/ai-agents-beginners/agent-framewrok)
 - [Azure AI Agent Service](https://aka.ms/ai-agents-beginners/ai-agent-service)
 - [Semantic Kernel](https://aka.ms/ai-agents-beginners/semantic-kernel)
 - [AutoGen](https://aka.ms/ai-agents/autogen)
@@ -85,17 +86,17 @@ Turite pasiūlymų ar radote rašybos ar kodo klaidų? [Pateikite problemą](htt
 | Agentinis RAG                                | [Nuoroda](./05-agentic-rag/README.md)            | [Vaizdo įrašas](https://youtu.be/WcjAARvdL7I?si=gKPWsQpKiIlDH9A3) | [Nuoroda](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
 | Patikimų AI agentų kūrimas                   | [Nuoroda](./06-building-trustworthy-agents/README.md) | [Vaizdo įrašas](https://youtu.be/iZKkMEGBCUQ?si=jZjpiMnGFOE9L8OK) | [Nuoroda](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
 | Planavimo dizaino šablonas                   | [Nuoroda](./07-planning-design/README.md)        | [Vaizdo įrašas](https://youtu.be/kPfJ2BrBCMY?si=6SC_iv_E5-mzucnC) | [Nuoroda](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| Daugiagentinis dizaino šablonas              | [Nuoroda](./08-multi-agent/README.md)            | [Vaizdo įrašas](https://youtu.be/V6HpE9hZEx0?si=rMgDhEu7wXo2uo6g) | [Nuoroda](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| Daugiaagentinis dizaino šablonas             | [Nuoroda](./08-multi-agent/README.md)            | [Vaizdo įrašas](https://youtu.be/V6HpE9hZEx0?si=rMgDhEu7wXo2uo6g) | [Nuoroda](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
 | Metakognicijos dizaino šablonas              | [Nuoroda](./09-metacognition/README.md)          | [Vaizdo įrašas](https://youtu.be/His9R6gw6Ec?si=8gck6vvdSNCt6OcF) | [Nuoroda](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
 | AI agentai gamyboje                         | [Nuoroda](./10-ai-agents-production/README.md)   | [Vaizdo įrašas](https://youtu.be/l4TP6IyJxmQ?si=31dnhexRo6yLRJDl) | [Nuoroda](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| Agentinių protokolų naudojimas (MCP, A2A ir NLWeb) | [Nuoroda](./11-agentic-protocols/README.md)      | [Vaizdo įrašas](https://youtu.be/X-Dh9R3Opn8) | [Nuoroda](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| Konteksto inžinerija AI agentams             | [Nuoroda](./12-context-engineering/README.md)         | [Vaizdo įrašas](https://youtu.be/F5zqRV7gEag)                                 | [Nuoroda](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| Agentinės atminties valdymas                 | [Nuoroda](./13-agent-memory/README.md)     |                                                            |                                                                                        |
-| AI agentų vertinimas                         | Numatoma - rugsėjo 18 d.                              |                                                            |                                                                                        |
-| Kompiuterio naudojimo agentų (CUA) kūrimas   | Numatoma - rugsėjo 25 d.                              |                                                            |                                                                                        |
-| Skalabilių agentų diegimas                   | Numatoma - rugsėjo 25 d.                              |                                                            |                                                                                        |
-| Vietinių AI agentų kūrimas                   | Numatoma - spalio 3 d.                                |                                                            |                                                                                        |
-| AI agentų saugumo užtikrinimas               | Numatoma - spalio 10 d.                               |                                                            |                                                                                        |
+| Naudojant agentinius protokolus (MCP, A2A ir NLWeb) | [Nuoroda](./11-agentic-protocols/README.md)           | [Vaizdo įrašas](https://youtu.be/X-Dh9R3Opn8)                                 | [Nuoroda](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| Konteksto inžinerija AI agentams                   | [Nuoroda](./12-context-engineering/README.md)         | [Vaizdo įrašas](https://youtu.be/F5zqRV7gEag)                                 | [Nuoroda](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| Agentinės atminties valdymas                       | [Nuoroda](./13-agent-memory/README.md)     |      [Vaizdo įrašas](https://youtu.be/QrYbHesIxpw?si=vZkVwKrQ4ieCcIPx)                                                      |                                                                                        |
+| Microsoft Agent Framework tyrinėjimas             | [Nuoroda](./14-microsoft-agent-framework/README.md)                            |                                                            |                                                                                        |
+| Kompiuterio naudojimo agentų (CUA) kūrimas         | Netrukus                            |                                                            |                                                                                        |
+| Skalabilių agentų diegimas                         | Netrukus                            |                                                            |                                                                                        |
+| Vietinių AI agentų kūrimas                         | Netrukus                               |                                                            |                                                                                        |
+| AI agentų saugumo užtikrinimas                     | Netrukus                               |                                                            |                                                                                        |
 
 ## 🎒 Kiti kursai
 
@@ -119,31 +120,31 @@ Mūsų komanda kuria ir kitus kursus! Peržiūrėkite:
 
 ## 🌟 Bendruomenės padėka
 
-Dėkojame [Shivam Goyal](https://www.linkedin.com/in/shivam2003/) už svarbių kodų pavyzdžių, demonstruojančių Agentinį RAG, pateikimą. 
+Dėkojame [Shivam Goyal](https://www.linkedin.com/in/shivam2003/) už svarbių kodo pavyzdžių, demonstruojančių Agentinį RAG, indėlį. 
 
 ## Prisidėjimas
 
-Šis projektas laukia jūsų indėlio ir pasiūlymų. Dauguma indėlių reikalauja, kad sutiktumėte su
-Contributor License Agreement (CLA), patvirtinančiu, kad turite teisę ir iš tikrųjų suteikiate mums
+Šis projektas kviečia prisidėti ir teikti pasiūlymus. Dauguma indėlių reikalauja, kad sutiktumėte su
+Contributoriaus licencijos sutartimi (CLA), patvirtinančia, kad turite teisę ir faktiškai suteikiate mums
 teisę naudoti jūsų indėlį. Daugiau informacijos rasite <https://cla.opensource.microsoft.com>.
 
-Kai pateiksite „pull request“, CLA bot automatiškai nustatys, ar jums reikia pateikti
-CLA ir atitinkamai pažymės PR (pvz., statuso patikrinimas, komentaras). Tiesiog vykdykite
-bot pateiktas instrukcijas. Tai reikės padaryti tik vieną kartą visiems repo, naudojantiems mūsų CLA.
+Kai pateiksite „pull request“, CLA botas automatiškai nustatys, ar jums reikia pateikti
+CLA ir atitinkamai pažymės PR (pvz., statuso patikrinimas, komentaras). Tiesiog vykdykite boto pateiktas instrukcijas.
+Tai reikės padaryti tik vieną kartą visiems repo, naudojantiems mūsų CLA.
 
 Šis projektas priėmė [Microsoft atvirojo kodo elgesio kodeksą](https://opensource.microsoft.com/codeofconduct/).
 Daugiau informacijos rasite [Elgesio kodekso DUK](https://opensource.microsoft.com/codeofconduct/faq/) arba
-susisiekite [opencode@microsoft.com](mailto:opencode@microsoft.com) su papildomais klausimais ar komentarais.
+susisiekite su [opencode@microsoft.com](mailto:opencode@microsoft.com), jei turite papildomų klausimų ar komentarų.
 
 ## Prekių ženklai
 
-Šiame projekte gali būti prekių ženklų ar logotipų, susijusių su projektais, produktais ar paslaugomis. Leidžiamas „Microsoft“
+Šiame projekte gali būti prekių ženklų ar logotipų, susijusių su projektais, produktais ar paslaugomis. Leidžiamas Microsoft
 prekių ženklų ar logotipų naudojimas turi atitikti ir laikytis
 [Microsoft prekių ženklų ir prekės ženklo gairių](https://www.microsoft.com/legal/intellectualproperty/trademarks/usage/general).
-„Microsoft“ prekių ženklų ar logotipų naudojimas modifikuotose šio projekto versijose neturi sukelti painiavos ar nurodyti „Microsoft“ rėmimo.
+Microsoft prekių ženklų ar logotipų naudojimas modifikuotose šio projekto versijose neturi sukelti painiavos ar nurodyti Microsoft rėmimo.
 Bet koks trečiųjų šalių prekių ženklų ar logotipų naudojimas turi atitikti tų trečiųjų šalių politiką.
 
 ---
 
-**Atsakomybės atsisakymas**:  
-Šis dokumentas buvo išverstas naudojant AI vertimo paslaugą [Co-op Translator](https://github.com/Azure/co-op-translator). Nors stengiamės užtikrinti tikslumą, prašome atkreipti dėmesį, kad automatiniai vertimai gali turėti klaidų ar netikslumų. Originalus dokumentas jo gimtąja kalba turėtų būti laikomas autoritetingu šaltiniu. Dėl svarbios informacijos rekomenduojama profesionali žmogaus vertimo paslauga. Mes neprisiimame atsakomybės už nesusipratimus ar neteisingus aiškinimus, kylančius dėl šio vertimo naudojimo.
+**Atsakomybės apribojimas**:  
+Šis dokumentas buvo išverstas naudojant AI vertimo paslaugą [Co-op Translator](https://github.com/Azure/co-op-translator). Nors siekiame tikslumo, prašome atkreipti dėmesį, kad automatiniai vertimai gali turėti klaidų ar netikslumų. Originalus dokumentas jo gimtąja kalba turėtų būti laikomas autoritetingu šaltiniu. Kritinei informacijai rekomenduojama naudoti profesionalų žmogaus vertimą. Mes neprisiimame atsakomybės už nesusipratimus ar neteisingą interpretaciją, atsiradusią dėl šio vertimo naudojimo.
