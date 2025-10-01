@@ -1,4 +1,5 @@
 # Memory for AI Agents 
+[![Agent Memory](./images/lesson-13-thumbnail.png)](https://youtu.be/QrYbHesIxpw?si=qNYW6PL3fb3lTPMk)
 
 When discussing the unique benefits of creating AI Agents, two things are mainly discussed: the ability to call tools to complete tasks and the the ability to improve over time. Memory is at the foundation of creating self-improving agent that can create better experiences for our users.
 
@@ -95,7 +96,7 @@ This involves extracting and remembering specific entities (like people, places,
 
 From a conversation about a past trip, the agent might extract "Paris," "Eiffel Tower," and "dinner at Le Chat Noir restaurant" as entities. In a future interaction, the agent could recall "Le Chat Noir" and offer to make a new reservation there.
 
-#### Structured RAG (Retrieval Augmented Generation
+#### Structured RAG (Retrieval Augmented Generation)
 
 While RAG is a broader technique, "Structured RAG" is highlighted as a powerful memory technology. It extracts dense, structured information from various sources (conversations, emails, images) and uses it to enhance precision, recall, and speed in responses. Unlike classic RAG that relies solely on semantic similarity, Structured RAG works with the inherent structure of information.
 
@@ -139,6 +140,6 @@ A common pattern for self-improving agents involves introducing a **"knowledge a
 
 • **Knowledge Base Maintenance**: For a growing knowledge base, less frequently used information can be moved to "cold storage" to manage costs.
 
-## Got More Questions About Context Engineering?
+## Got More Questions About Agent Memory?
 
 Join the [Azure AI Foundry Discord](https://aka.ms/ai-agents/discord) to meet with other learners, attend office hours and get your AI Agents questions answered.
