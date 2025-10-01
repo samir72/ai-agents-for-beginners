@@ -25,3 +25,4 @@ semantic-kernel[mcp]
 uvicorn
 nest-asyncio
 mem0ai
+agent-framework
