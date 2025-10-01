@@ -18,6 +18,10 @@ After completing this lesson, you will know how to:
 - Apply the core features of Microsoft Agent Framework to your Agentic Use Cases
 - Migrate and integrate existing Agentic frameworks and tools  
 
+## Code Samples 
+
+Code samples for [Microsoft Agent Framework (MAF)](https://aka.ms/ai-agents-beginners/agent-framewrok) can be found in this repository under `xx-python-agent-framework` and `xx-dotnet-agent-framework` files.
+
 ## Understanding Microsoft Agent Framework
 
 ![Framework Intro](./images/framework-intro.png)
@@ -366,6 +370,10 @@ AutoGen uses `FunctionTool` to wrap functions for agents to call. MAF uses @ai_f
 **Agent Behaviour**
 
 Agents are single-turn agents by default in AutoGen unless `max_tool_iterations` is set to something higher. Within MAF the `ChatAgent` is a multi-turn by default meaning that it will keep calling tools until the user's task is complete.
+
+## Code Samples 
+
+Code samples for Microsoft Agent Framework can be found in this repository under `xx-python-agent-framework` and `xx-dotnet-agent-framework` files.
 
 ## Got More Questions About Microsoft Agent Framework?
 
