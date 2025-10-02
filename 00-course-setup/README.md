@@ -43,7 +43,7 @@ Whichever option you choose, it will determine which setup steps you need to fol
   
     >Example
 
-    Create python venv directory:
+    Create Python venv directory:
 
     ``` bash
     python3 -m venv venv
