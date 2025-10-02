@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "c55b973b1562abf5aadf6a4028265ac5",
-  "translation_date": "2025-08-29T12:59:50+00:00",
+  "original_hash": "9b03446058b4eed46928ae5e46325ea0",
+  "translation_date": "2025-10-02T13:57:15+00:00",
   "source_file": "00-course-setup/README.md",
   "language_code": "it"
 }
@@ -15,15 +15,15 @@ Questa lezione coprirà come eseguire gli esempi di codice di questo corso.
 
 ## Unisciti ad Altri Studenti e Ottieni Aiuto
 
-Prima di iniziare a clonare il tuo repository, unisciti al [canale Discord AI Agents For Beginners](https://aka.ms/ai-agents/discord) per ricevere aiuto con la configurazione, per qualsiasi domanda sul corso o per connetterti con altri studenti.
+Prima di iniziare a clonare il tuo repository, unisciti al [canale Discord AI Agents For Beginners](https://aka.ms/ai-agents/discord) per ottenere aiuto con la configurazione, rispondere a domande sul corso o connetterti con altri studenti.
 
-## Clona o Fai il Fork di Questo Repository
+## Clona o Fai un Fork di Questo Repository
 
-Per iniziare, clona o fai il fork del repository GitHub. Questo ti permetterà di avere una tua versione del materiale del corso per eseguire, testare e modificare il codice!
+Per iniziare, clona o fai un fork del repository GitHub. Questo ti permetterà di avere una tua versione del materiale del corso per eseguire, testare e modificare il codice!
 
-Puoi farlo cliccando sul link per
+Puoi farlo cliccando sul link per <a href="https://github.com/microsoft/ai-agents-for-beginners/fork" target="_blank">fare un fork del repository</a>.
 
-Dovresti ora avere la tua versione forkata di questo corso al seguente link:
+Ora dovresti avere la tua versione forkata di questo corso al seguente link:
 
 ![Forked Repo](../../../translated_images/forked-repo.33f27ca1901baa6a5e13ec3eb1f0ddd3a44d936d91cc8cfb19bfdb9688bd2c3d.it.png)
 
@@ -48,7 +48,30 @@ Qualunque opzione tu scelga, determinerà quali passaggi di configurazione dovra
 ## Requisiti
 
 - Python 3.12+
-  - **NOTA**: Se non hai Python 3.12 installato, assicurati di installarlo. Poi crea il tuo ambiente virtuale usando python3.12 per garantire che le versioni corrette siano installate dal file requirements.txt.
+  - **NOTE**: Se non hai Python 3.12 installato, assicurati di installarlo. Poi crea il tuo venv usando python3.12 per garantire che le versioni corrette siano installate dal file requirements.txt.
+  
+    >Esempio
+
+    Crea una directory venv Python:
+
+    ``` bash
+    python3 -m venv venv
+    ```
+
+    Poi attiva l'ambiente venv per:
+
+    macOS e Linux
+
+    ```bash
+    source venv/bin/activate
+    ```
+  
+    Windows
+
+    ```bash
+    venv\Scripts\activate
+    ```
+
 - Un Account GitHub - Per accedere al GitHub Models Marketplace
 - Abbonamento Azure - Per accedere ad Azure AI Foundry
 - Account Azure AI Foundry - Per accedere al servizio Azure AI Agent
@@ -60,6 +83,7 @@ Puoi installarli eseguendo il seguente comando nel terminale alla radice del rep
 ```bash
 pip install -r requirements.txt
 ```
+
 Consigliamo di creare un ambiente virtuale Python per evitare conflitti e problemi.
 
 ## Configurazione di VSCode
@@ -71,15 +95,15 @@ Assicurati di utilizzare la versione corretta di Python in VSCode.
 
 ### Passaggio 1: Recupera il tuo GitHub Personal Access Token (PAT)
 
-Questo corso utilizza il GitHub Models Marketplace, che offre accesso gratuito a Large Language Models (LLMs) che utilizzerai per creare AI Agents.
+Questo corso utilizza il GitHub Models Marketplace, fornendo accesso gratuito a Large Language Models (LLMs) che utilizzerai per creare AI Agents.
 
 Per utilizzare i modelli GitHub, dovrai creare un [GitHub Personal Access Token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
 
-Puoi farlo accedendo al tuo account GitHub.
+Puoi farlo andando alle <a href="https://github.com/settings/personal-access-tokens" target="_blank">impostazioni dei Personal Access Token</a> nel tuo account GitHub.
 
-Segui il [Principio del Minimo Privilegio](https://docs.github.com/en/get-started/learning-to-code/storing-your-secrets-safely) quando crei il tuo token. Questo significa che dovresti assegnare al token solo le autorizzazioni necessarie per eseguire gli esempi di codice di questo corso.
+Segui il [Principio del Minimo Privilegio](https://docs.github.com/en/get-started/learning-to-code/storing-your-secrets-safely) quando crei il tuo token. Questo significa che dovresti assegnare al token solo i permessi necessari per eseguire gli esempi di codice di questo corso.
 
-1. Seleziona l'opzione `Fine-grained tokens` sul lato sinistro dello schermo accedendo a **Developer settings**
+1. Seleziona l'opzione `Fine-grained tokens` sul lato sinistro dello schermo navigando verso le **Developer settings**.
    ![](../../../translated_images/profile_developer_settings.410a859fe749c755c859d414294c5908e307222b2c61819c3203bbeed4470e25.it.png)
 
     Poi seleziona `Generate new token`.
@@ -91,8 +115,8 @@ Segui il [Principio del Minimo Privilegio](https://docs.github.com/en/get-starte
     🔐 Raccomandazione sulla Durata del Token
 
     Durata raccomandata: 30 giorni  
-    Per una maggiore sicurezza, puoi optare per un periodo più breve, come 7 giorni 🛡️  
-    È un ottimo modo per fissare un obiettivo personale e completare il corso mentre il tuo slancio di apprendimento è alto 🚀.
+    Per una postura più sicura, puoi optare per un periodo più breve—come 7 giorni 🛡️  
+    È un ottimo modo per impostare un obiettivo personale e completare il corso mentre il tuo slancio di apprendimento è alto 🚀.
 
     ![Token Name and Expiration](../../../translated_images/token-name-expiry-date.a095fb0de63868640a4c82d6b1bbc92b482930a663917a5983a3c7cd1ef86b77.it.png)
 
@@ -100,12 +124,12 @@ Segui il [Principio del Minimo Privilegio](https://docs.github.com/en/get-starte
 
     ![Limit scope to fork repository](../../../translated_images/token_repository_limit.924ade5e11d9d8bb6cd21293987e4579dea860e2ba66d607fb46e49524d53644.it.png)
 
-4. Restringi le autorizzazioni del token: Sotto **Permissions**, clicca sulla scheda **Account** e premi il pulsante "+ Add permissions". Apparirà un menu a tendina. Cerca **Models** e seleziona la casella corrispondente.
+4. Restringi i permessi del token: Sotto **Permissions**, clicca sulla scheda **Account** e premi il pulsante "+ Add permissions". Apparirà un menu a tendina. Cerca **Models** e seleziona la casella corrispondente.
     ![Add Models Permission](../../../translated_images/add_models_permissions.c0c44ed8b40fc143dc87792da9097d715b7de938354e8f771d65416ecc7816b8.it.png)
 
-5. Verifica le autorizzazioni richieste prima di generare il token. ![Verify Permissions](../../../translated_images/verify_permissions.06bd9e43987a8b219f171bbcf519e45ababae35b844f5e9757e10afcb619b936.it.png)
+5. Verifica i permessi richiesti prima di generare il token. ![Verify Permissions](../../../translated_images/verify_permissions.06bd9e43987a8b219f171bbcf519e45ababae35b844f5e9757e10afcb619b936.it.png)
 
-6. Prima di generare il token, assicurati di essere pronto a conservarlo in un luogo sicuro come un gestore di password, poiché non sarà mostrato di nuovo dopo la sua creazione. ![Store Token Securely](../../../translated_images/store_token_securely.08ee2274c6ad6caf3482f1cd1bad7ca3fdca1ce737bc485bfa6499c84297c789.it.png)
+6. Prima di generare il token, assicurati di essere pronto a conservarlo in un luogo sicuro come un password manager, poiché non sarà mostrato di nuovo dopo la creazione. ![Store Token Securely](../../../translated_images/store_token_securely.08ee2274c6ad6caf3482f1cd1bad7ca3fdca1ce737bc485bfa6499c84297c789.it.png)
 
 Copia il nuovo token che hai appena creato. Ora lo aggiungerai al file `.env` incluso in questo corso.
 
@@ -119,7 +143,7 @@ cp .env.example .env
 
 Questo copierà il file di esempio e creerà un `.env` nella tua directory, dove potrai inserire i valori per le variabili di ambiente.
 
-Con il tuo token copiato, apri il file `.env` nel tuo editor di testo preferito e incolla il token nel campo `GITHUB_TOKEN`.  
+Con il tuo token copiato, apri il file `.env` nel tuo editor di testo preferito e incolla il token nel campo `GITHUB_TOKEN`.
 ![GitHub Token Field](../../../translated_images/github_token_field.20491ed3224b5f4ab24d10ced7a68c4aba2948fe8999cfc8675edaa16f5e5681.it.png)
 
 Ora dovresti essere in grado di eseguire gli esempi di codice di questo corso.
@@ -132,7 +156,7 @@ Segui i passaggi per creare un hub e un progetto in Azure AI Foundry qui: [Panor
 
 Una volta creato il tuo progetto, dovrai recuperare la stringa di connessione per il tuo progetto.
 
-Puoi farlo accedendo alla pagina **Overview** del tuo progetto nel portale Azure AI Foundry.
+Puoi farlo andando alla pagina **Overview** del tuo progetto nel portale Azure AI Foundry.
 
 ![Project Connection String](../../../translated_images/project-endpoint.8cf04c9975bbfbf18f6447a599550edb052e52264fb7124d04a12e6175e330a5.it.png)
 
@@ -150,7 +174,7 @@ Con il tuo token copiato, apri il file `.env` nel tuo editor di testo preferito 
 
 ### Passaggio 3: Accedi ad Azure
 
-Come buona pratica di sicurezza, utilizzeremo [l'autenticazione senza chiavi](https://learn.microsoft.com/azure/developer/ai/keyless-connections?tabs=csharp%2Cazure-cli?WT.mc_id=academic-105485-koreyst) per autenticarti ad Azure OpenAI con Microsoft Entra ID.
+Come pratica di sicurezza, utilizzeremo [l'autenticazione senza chiavi](https://learn.microsoft.com/azure/developer/ai/keyless-connections?tabs=csharp%2Cazure-cli?WT.mc_id=academic-105485-koreyst) per autenticarti ad Azure OpenAI con Microsoft Entra ID.
 
 Successivamente, apri un terminale ed esegui `az login --use-device-code` per accedere al tuo account Azure.
 
@@ -170,13 +194,13 @@ Se desideri eseguire questi esempi, dovrai aggiungere le seguenti variabili di a
 
 - `AZURE_OPENAI_SERVICE` - Trova questo nella scheda **Included capabilities** per **Azure OpenAI Service** nella pagina **Overview**.
 
-### Centro di Gestione
+### Management Center
 
 - `AZURE_OPENAI_RESOURCE_GROUP` - Vai a **Project properties** nella pagina **Overview** del **Management Center**.
 
 - `GLOBAL_LLM_SERVICE` - Sotto **Connected resources**, trova il nome della connessione **Azure AI Services**. Se non elencato, controlla il **portale Azure** sotto il tuo gruppo di risorse per il nome della risorsa AI Services.
 
-### Pagina Modelli + Endpoint
+### Pagina Models + Endpoints
 
 - `AZURE_OPENAI_EMBEDDING_DEPLOYMENT_NAME` - Seleziona il tuo modello di embedding (es. `text-embedding-ada-002`) e annota il **Deployment name** dai dettagli del modello.
 
@@ -206,15 +230,15 @@ from azure.identity import DefaultAzureCredential, InteractiveBrowserCredential
 
 ## Bloccato da Qualche Parte?
 
-Se hai problemi con questa configurazione, entra nel nostro
+Se hai problemi con questa configurazione, entra nel nostro <a href="https://discord.gg/kzRShWzttr" target="_blank">Discord della Comunità Azure AI</a> o <a href="https://github.com/microsoft/ai-agents-for-beginners/issues?WT.mc_id=academic-105485-koreyst" target="_blank">crea un problema</a>.
 
 ## Prossima Lezione
 
-Ora sei pronto per eseguire il codice di questo corso. Buon apprendimento sul mondo degli AI Agents!  
+Ora sei pronto per eseguire il codice di questo corso. Buon apprendimento sul mondo degli AI Agents! 
 
 [Introduzione agli AI Agents e ai Casi d'Uso degli Agent](../01-intro-to-ai-agents/README.md)
 
 ---
 
 **Disclaimer**:  
-Questo documento è stato tradotto utilizzando il servizio di traduzione automatica [Co-op Translator](https://github.com/Azure/co-op-translator). Sebbene ci impegniamo per garantire l'accuratezza, si prega di notare che le traduzioni automatiche potrebbero contenere errori o imprecisioni. Il documento originale nella sua lingua nativa dovrebbe essere considerato la fonte autorevole. Per informazioni critiche, si consiglia una traduzione professionale eseguita da un traduttore umano. Non siamo responsabili per eventuali fraintendimenti o interpretazioni errate derivanti dall'uso di questa traduzione.
+Questo documento è stato tradotto utilizzando il servizio di traduzione automatica [Co-op Translator](https://github.com/Azure/co-op-translator). Sebbene ci impegniamo per garantire l'accuratezza, si prega di notare che le traduzioni automatiche possono contenere errori o imprecisioni. Il documento originale nella sua lingua nativa dovrebbe essere considerato la fonte autorevole. Per informazioni critiche, si raccomanda una traduzione professionale effettuata da un esperto umano. Non siamo responsabili per eventuali incomprensioni o interpretazioni errate derivanti dall'uso di questa traduzione.

@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "0c6a7a65974383f8467bb6adf3d34bc5",
-  "translation_date": "2025-09-29T20:52:43+00:00",
+  "original_hash": "413adcc2c6a498d52643d27f6871aa24",
+  "translation_date": "2025-10-02T13:51:51+00:00",
   "source_file": "README.md",
   "language_code": "mo"
 }
@@ -35,7 +35,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## 🌱 開始學習
 
-本課程包含多個教學單元，涵蓋建立AI代理的基礎知識。每個單元都有自己的主題，您可以從任何地方開始學習！
+本課程包含多個教學單元，涵蓋建立AI代理的基礎知識。每個教學單元都有自己的主題，您可以從任何一個開始！
 
 本課程支持多語言，請前往[可用語言](../..)查看。
 
@@ -58,84 +58,83 @@ CO_OP_TRANSLATOR_METADATA:
 
 本課程還使用以下來自Microsoft的AI代理框架和服務：
 
+- [Microsoft代理框架（MAF）- 新版！](https://aka.ms/ai-agents-beginners/agent-framewrok)  
 - [Azure AI代理服務](https://aka.ms/ai-agents-beginners/ai-agent-service)  
-- [Semantic Kernel](https://aka.ms/ai-agents-beginners/semantic-kernel)  
+- [語義內核](https://aka.ms/ai-agents-beginners/semantic-kernel)  
 - [AutoGen](https://aka.ms/ai-agents/autogen)  
 
 有關運行本課程代碼的更多信息，請參考[課程設置](./00-course-setup/README.md)。
 
 ## 🙏 想要幫助？
 
-您有建議或發現拼寫或代碼錯誤嗎？[提交問題](https://github.com/microsoft/ai-agents-for-beginners/issues?WT.mc_id=academic-105485-koreyst)或[創建拉取請求](https://github.com/microsoft/ai-agents-for-beginners/pulls?WT.mc_id=academic-105485-koreyst)。
+您有建議或發現拼寫或代碼錯誤嗎？[提出問題](https://github.com/microsoft/ai-agents-for-beginners/issues?WT.mc_id=academic-105485-koreyst)或[創建拉取請求](https://github.com/microsoft/ai-agents-for-beginners/pulls?WT.mc_id=academic-105485-koreyst)。
 
 ## 📂 每個教學單元包含
 
-- 位於README中的書面教學內容以及短視頻  
+- 位於README中的書面教學內容以及一段短視頻  
 - 支持Azure AI Foundry和GitHub模型（免費）的Python代碼示例  
-- 連結到額外資源以繼續學習  
+- 連結到額外的學習資源以繼續您的學習  
 
 ## 🗃️ 教學單元
 
-| **教學單元**                                 | **文字與代碼**                                    | **視頻**                                                  | **額外學習**                                                                     |
-|----------------------------------------------|----------------------------------------------------|------------------------------------------------------------|----------------------------------------------------------------------------------|
-| AI代理簡介及代理使用案例                     | [連結](./01-intro-to-ai-agents/README.md)          | [視頻](https://youtu.be/3zgm60bXmQk?si=z8QygFvYQv-9WtO1)   | [連結](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| 探索AI代理框架                               | [連結](./02-explore-agentic-frameworks/README.md)  | [視頻](https://youtu.be/ODwF-EZo_O8?si=Vawth4hzVaHv-u0H)   | [連結](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| 理解AI代理設計模式                           | [連結](./03-agentic-design-patterns/README.md)     | [視頻](https://youtu.be/m9lM8qqoOEA?si=BIzHwzstTPL8o9GF)   | [連結](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| 工具使用設計模式                             | [連結](./04-tool-use/README.md)                    | [視頻](https://youtu.be/vieRiPRx-gI?si=2z6O2Xu2cu_Jz46N)   | [連結](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| 代理式RAG                                    | [連結](./05-agentic-rag/README.md)                 | [視頻](https://youtu.be/WcjAARvdL7I?si=gKPWsQpKiIlDH9A3)   | [連結](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| 建立可信的AI代理                             | [連結](./06-building-trustworthy-agents/README.md) | [視頻](https://youtu.be/iZKkMEGBCUQ?si=jZjpiMnGFOE9L8OK)   | [連結](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| 規劃設計模式                                 | [連結](./07-planning-design/README.md)             | [視頻](https://youtu.be/kPfJ2BrBCMY?si=6SC_iv_E5-mzucnC)   | [連結](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| 多代理設計模式                               | [連結](./08-multi-agent/README.md)                 | [視頻](https://youtu.be/V6HpE9hZEx0?si=rMgDhEu7wXo2uo6g)   | [連結](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| 元認知設計模式                               | [連結](./09-metacognition/README.md)               | [視頻](https://youtu.be/His9R6gw6Ec?si=8gck6vvdSNCt6OcF)   | [連結](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| AI代理在生產中的應用                         | [連結](./10-ai-agents-production/README.md)        | [視頻](https://youtu.be/l4TP6IyJxmQ?si=31dnhexRo6yLRJDl)   | [連結](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| 使用代理式協議（MCP、A2A和NLWeb）            | [連結](./11-agentic-protocols/README.md)           | [視頻](https://youtu.be/X-Dh9R3Opn8)                       | [連結](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| AI代理的上下文工程            | [連結](./12-context-engineering/README.md)         | [影片](https://youtu.be/F5zqRV7gEag)                                 | [連結](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| 管理代理記憶                      | [連結](./13-agent-memory/README.md)     |                                                            |                                                                                        |
-| 評估AI代理                         | 即將推出 - 9月18日                            |                                                            |                                                                                        |
-| 建立電腦使用代理 (CUA)           | 即將推出 - 9月25日                            |                                                            |                                                                                        |
-| 部署可擴展代理                    | 即將推出 - 9月25日                            |                                                            |                                                                                        |
-| 創建本地AI代理                     | 即將推出 - 10月3日                               |                                                            |                                                                                        |
-| 確保AI代理安全                           | 即將推出 - 10月10日                               |                                                            |                                                                                        |
+| **教學單元**                                | **文字與代碼**                                   | **視頻**                                                   | **額外學習**                                                                         |
+|---------------------------------------------|--------------------------------------------------|------------------------------------------------------------|--------------------------------------------------------------------------------------|
+| AI代理簡介及代理使用案例                    | [連結](./01-intro-to-ai-agents/README.md)        | [視頻](https://youtu.be/3zgm60bXmQk?si=z8QygFvYQv-9WtO1)   | [連結](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| 探索AI代理框架                              | [連結](./02-explore-agentic-frameworks/README.md)| [視頻](https://youtu.be/ODwF-EZo_O8?si=Vawth4hzVaHv-u0H)   | [連結](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| 理解AI代理設計模式                          | [連結](./03-agentic-design-patterns/README.md)   | [視頻](https://youtu.be/m9lM8qqoOEA?si=BIzHwzstTPL8o9GF)   | [連結](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| 工具使用設計模式                            | [連結](./04-tool-use/README.md)                  | [視頻](https://youtu.be/vieRiPRx-gI?si=2z6O2Xu2cu_Jz46N)   | [連結](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| 代理式RAG                                   | [連結](./05-agentic-rag/README.md)               | [視頻](https://youtu.be/WcjAARvdL7I?si=gKPWsQpKiIlDH9A3)   | [連結](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| 建立可信的AI代理                            | [連結](./06-building-trustworthy-agents/README.md)| [視頻](https://youtu.be/iZKkMEGBCUQ?si=jZjpiMnGFOE9L8OK)   | [連結](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| 規劃設計模式                                | [連結](./07-planning-design/README.md)           | [視頻](https://youtu.be/kPfJ2BrBCMY?si=6SC_iv_E5-mzucnC)   | [連結](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| 多代理設計模式                              | [連結](./08-multi-agent/README.md)               | [視頻](https://youtu.be/V6HpE9hZEx0?si=rMgDhEu7wXo2uo6g)   | [連結](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| 元認知設計模式                              | [連結](./09-metacognition/README.md)             | [視頻](https://youtu.be/His9R6gw6Ec?si=8gck6vvdSNCt6OcF)   | [連結](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| AI代理的生產應用                            | [連結](./10-ai-agents-production/README.md)      | [視頻](https://youtu.be/l4TP6IyJxmQ?si=31dnhexRo6yLRJDl)   | [連結](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| 使用 Agentic Protocols (MCP, A2A 和 NLWeb) | [連結](./11-agentic-protocols/README.md)           | [影片](https://youtu.be/X-Dh9R3Opn8)                                 | [連結](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| AI代理的上下文工程                          | [連結](./12-context-engineering/README.md)         | [影片](https://youtu.be/F5zqRV7gEag)                                 | [連結](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| 管理代理記憶體                              | [連結](./13-agent-memory/README.md)     |      [影片](https://youtu.be/QrYbHesIxpw?si=vZkVwKrQ4ieCcIPx)                                                      |                                                                                        |
+| 探索 Microsoft Agent Framework              | [連結](./14-microsoft-agent-framework/README.md)                            |                                                            |                                                                                        |
+| 建立電腦使用代理 (CUA)                      | 敬請期待                            |                                                            |                                                                                        |
+| 部署可擴展代理                              | 敬請期待                            |                                                            |                                                                                        |
+| 創建本地 AI代理                             | 敬請期待                               |                                                            |                                                                                        |
+| 保護 AI代理                                 | 敬請期待                               |                                                            |                                                                                        |
 
 ## 🎒 其他課程
 
-我們的團隊還製作了其他課程！查看以下內容：
+我們的團隊還提供其他課程！查看以下內容：
 
-- [**新** 初學者的邊緣AI](https://github.com/microsoft/edgeai-for-beginners?WT.mc_id=academic-105485-koreyst)
+- [**新課程** 初學者的邊緣 AI](https://github.com/microsoft/edgeai-for-beginners?WT.mc_id=academic-105485-koreyst)
 - [初學者的模型上下文協議 (MCP)](https://github.com/microsoft/mcp-for-beginners?WT.mc_id=academic-105485-koreyst)
-- [使用 .NET 的生成式AI初學者課程](https://github.com/microsoft/Generative-AI-for-beginners-dotnet?WT.mc_id=academic-105485-koreyst)
-- [生成式AI初學者課程](https://github.com/microsoft/generative-ai-for-beginners?WT.mc_id=academic-105485-koreyst)
-- [使用 Java 的生成式AI初學者課程](https://github.com/microsoft/generative-ai-for-beginners-java?WT.mc_id=academic-105485-koreyst)
-- [初學者的機器學習](https://aka.ms/ml-beginners?WT.mc_id=academic-105485-koreyst)
-- [初學者的數據科學](https://aka.ms/datascience-beginners?WT.mc_id=academic-105485-koreyst)
-- [初學者的人工智能](https://aka.ms/ai-beginners?WT.mc_id=academic-105485-koreyst)
-- [初學者的網絡安全](https://github.com/microsoft/Security-101??WT.mc_id=academic-96948-sayoung)
-- [初學者的網頁開發](https://aka.ms/webdev-beginners?WT.mc_id=academic-105485-koreyst)
-- [初學者的物聯網](https://aka.ms/iot-beginners?WT.mc_id=academic-105485-koreyst)
-- [初學者的XR開發](https://github.com/microsoft/xr-development-for-beginners?WT.mc_id=academic-105485-koreyst)
-- [掌握GitHub Copilot進行AI配對編程](https://aka.ms/GitHubCopilotAI?WT.mc_id=academic-105485-koreyst)
-- [掌握GitHub Copilot為C#/.NET開發者服務](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)
-- [選擇你的Copilot冒險](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)
+- [使用 .NET 的生成式 AI 初學者課程](https://github.com/microsoft/Generative-AI-for-beginners-dotnet?WT.mc_id=academic-105485-koreyst)
+- [生成式 AI 初學者課程](https://github.com/microsoft/generative-ai-for-beginners?WT.mc_id=academic-105485-koreyst)
+- [使用 Java 的生成式 AI 初學者課程](https://github.com/microsoft/generative-ai-for-beginners-java?WT.mc_id=academic-105485-koreyst)
+- [初學者的機器學習課程](https://aka.ms/ml-beginners?WT.mc_id=academic-105485-koreyst)
+- [初學者的數據科學課程](https://aka.ms/datascience-beginners?WT.mc_id=academic-105485-koreyst)
+- [初學者的人工智能課程](https://aka.ms/ai-beginners?WT.mc_id=academic-105485-koreyst)
+- [初學者的網絡安全課程](https://github.com/microsoft/Security-101??WT.mc_id=academic-96948-sayoung)
+- [初學者的網頁開發課程](https://aka.ms/webdev-beginners?WT.mc_id=academic-105485-koreyst)
+- [初學者的物聯網課程](https://aka.ms/iot-beginners?WT.mc_id=academic-105485-koreyst)
+- [初學者的 XR 開發課程](https://github.com/microsoft/xr-development-for-beginners?WT.mc_id=academic-105485-koreyst)
+- [掌握 GitHub Copilot 進行 AI 配對編程](https://aka.ms/GitHubCopilotAI?WT.mc_id=academic-105485-koreyst)
+- [掌握 GitHub Copilot 用於 C#/.NET 開發者](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)
+- [選擇你的 Copilot 冒險](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)
 
 ## 🌟 社群感謝
 
-感謝 [Shivam Goyal](https://www.linkedin.com/in/shivam2003/) 提供重要的代碼範例，展示了代理式RAG。
+感謝 [Shivam Goyal](https://www.linkedin.com/in/shivam2003/) 提供重要的代碼範例，展示了 Agentic RAG。
 
 ## 貢獻
 
 此專案歡迎貢獻和建議。大多數貢獻需要您同意一份貢獻者許可協議 (CLA)，聲明您有權並實際授予我們使用您的貢獻的權利。詳細資訊請訪問 <https://cla.opensource.microsoft.com>。
 
-當您提交拉取請求時，CLA機器人會自動判斷您是否需要提供CLA並適當地標記PR（例如，狀態檢查、評論）。只需按照機器人提供的指示操作即可。您只需在所有使用CLA的倉庫中完成一次此操作。
+當您提交拉取請求時，CLA 機器人會自動判斷您是否需要提供 CLA，並適當地標記 PR（例如，狀態檢查、評論）。只需按照機器人提供的指示操作即可。您只需在所有使用我們 CLA 的存儲庫中執行一次。
 
-此專案採用了 [Microsoft開源行為準則](https://opensource.microsoft.com/codeofconduct/)。
-欲了解更多資訊，請參閱 [行為準則FAQ](https://opensource.microsoft.com/codeofconduct/faq/) 或聯繫 [opencode@microsoft.com](mailto:opencode@microsoft.com) 提出其他問題或意見。
+此專案已採用 [Microsoft 開源行為準則](https://opensource.microsoft.com/codeofconduct/)。如需更多資訊，請參閱 [行為準則 FAQ](https://opensource.microsoft.com/codeofconduct/faq/) 或聯繫 [opencode@microsoft.com](mailto:opencode@microsoft.com) 提出其他問題或意見。
 
 ## 商標
 
-此專案可能包含專案、產品或服務的商標或標誌。授權使用Microsoft商標或標誌需遵守並必須遵循 [Microsoft的商標與品牌指南](https://www.microsoft.com/legal/intellectualproperty/trademarks/usage/general)。在修改版本中使用Microsoft商標或標誌不得引起混淆或暗示Microsoft的贊助。
-任何使用第三方商標或標誌的行為需遵守該第三方的政策。
+此專案可能包含專案、產品或服務的商標或標誌。授權使用 Microsoft 商標或標誌需遵守並必須遵循 [Microsoft 的商標和品牌指南](https://www.microsoft.com/legal/intellectualproperty/trademarks/usage/general)。在修改版本中使用 Microsoft 商標或標誌不得引起混淆或暗示 Microsoft 的贊助。任何使用第三方商標或標誌的行為需遵守該第三方的政策。
 
 ---
 
 **免責聲明**：  
-本文件已使用 AI 翻譯服務 [Co-op Translator](https://github.com/Azure/co-op-translator) 進行翻譯。儘管我們努力確保翻譯的準確性，但請注意，自動翻譯可能包含錯誤或不準確之處。原始文件的母語版本應被視為權威來源。對於關鍵資訊，建議使用專業人工翻譯。我們對因使用此翻譯而引起的任何誤解或誤釋不承擔責任。
+本文件已使用 AI 翻譯服務 [Co-op Translator](https://github.com/Azure/co-op-translator) 進行翻譯。雖然我們致力於提供準確的翻譯，但請注意，自動翻譯可能包含錯誤或不準確之處。原始文件的母語版本應被視為權威來源。對於關鍵資訊，建議使用專業人工翻譯。我們對因使用此翻譯而引起的任何誤解或錯誤解釋不承擔責任。
