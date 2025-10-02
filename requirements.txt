@@ -26,3 +26,4 @@ uvicorn
 nest-asyncio
 mem0ai
 agent-framework
+browser_use
