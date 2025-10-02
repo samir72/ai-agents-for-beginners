@@ -47,7 +47,6 @@ Whichever option you choose, it will determine which setup steps you need to fol
 
     ``` bash
     python3 -m venv venv
-    source 
     ```
 
     Then activate venv envrionment for
