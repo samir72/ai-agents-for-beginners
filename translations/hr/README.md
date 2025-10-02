@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "0c6a7a65974383f8467bb6adf3d34bc5",
-  "translation_date": "2025-09-29T21:21:59+00:00",
+  "original_hash": "413adcc2c6a498d52643d27f6871aa24",
+  "translation_date": "2025-10-02T06:44:29+00:00",
   "source_file": "README.md",
   "language_code": "hr"
 }
@@ -17,15 +17,15 @@ CO_OP_TRANSLATOR_METADATA:
 [![GitHub suradnici](https://img.shields.io/github/contributors/microsoft/ai-agents-for-beginners.svg)](https://GitHub.com/microsoft/ai-agents-for-beginners/graphs/contributors/?WT.mc_id=academic-105485-koreyst)  
 [![GitHub problemi](https://img.shields.io/github/issues/microsoft/ai-agents-for-beginners.svg)](https://GitHub.com/microsoft/ai-agents-for-beginners/issues/?WT.mc_id=academic-105485-koreyst)  
 [![GitHub zahtjevi za povlačenje](https://img.shields.io/github/issues-pr/microsoft/ai-agents-for-beginners.svg)](https://GitHub.com/microsoft/ai-agents-for-beginners/pulls/?WT.mc_id=academic-105485-koreyst)  
-[![PRs Dobrodošli](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com?WT.mc_id=academic-105485-koreyst)  
+[![PR-ovi dobrodošli](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com?WT.mc_id=academic-105485-koreyst)  
 
 ### 🌐 Podrška za više jezika
 
 #### Podržano putem GitHub Action (Automatski i uvijek ažurirano)
 
-[Francuski](../fr/README.md) | [Španjolski](../es/README.md) | [Njemački](../de/README.md) | [Ruski](../ru/README.md) | [Arapski](../ar/README.md) | [Perzijski (Farsi)](../fa/README.md) | [Urdu](../ur/README.md) | [Kineski (pojednostavljeni)](../zh/README.md) | [Kineski (tradicionalni, Macau)](../mo/README.md) | [Kineski (tradicionalni, Hong Kong)](../hk/README.md) | [Kineski (tradicionalni, Tajvan)](../tw/README.md) | [Japanski](../ja/README.md) | [Korejski](../ko/README.md) | [Hindski](../hi/README.md) | [Bengalski](../bn/README.md) | [Marathi](../mr/README.md) | [Nepalski](../ne/README.md) | [Pandžapski (Gurmukhi)](../pa/README.md) | [Portugalski (Portugal)](../pt/README.md) | [Portugalski (Brazil)](../br/README.md) | [Talijanski](../it/README.md) | [Poljski](../pl/README.md) | [Turski](../tr/README.md) | [Grčki](../el/README.md) | [Tajlandski](../th/README.md) | [Švedski](../sv/README.md) | [Danski](../da/README.md) | [Norveški](../no/README.md) | [Finski](../fi/README.md) | [Nizozemski](../nl/README.md) | [Hebrejski](../he/README.md) | [Vijetnamski](../vi/README.md) | [Indonezijski](../id/README.md) | [Malajski](../ms/README.md) | [Tagalog (Filipinski)](../tl/README.md) | [Svahili](../sw/README.md) | [Mađarski](../hu/README.md) | [Češki](../cs/README.md) | [Slovački](../sk/README.md) | [Rumunjski](../ro/README.md) | [Bugarski](../bg/README.md) | [Srpski (ćirilica)](../sr/README.md) | [Hrvatski](./README.md) | [Slovenski](../sl/README.md) | [Ukrajinski](../uk/README.md) | [Burmanski (Mjanmar)](../my/README.md)
+[Francuski](../fr/README.md) | [Španjolski](../es/README.md) | [Njemački](../de/README.md) | [Ruski](../ru/README.md) | [Arapski](../ar/README.md) | [Perzijski (Farsi)](../fa/README.md) | [Urdu](../ur/README.md) | [Kineski (pojednostavljeni)](../zh/README.md) | [Kineski (tradicionalni, Makao)](../mo/README.md) | [Kineski (tradicionalni, Hong Kong)](../hk/README.md) | [Kineski (tradicionalni, Tajvan)](../tw/README.md) | [Japanski](../ja/README.md) | [Korejski](../ko/README.md) | [Hindski](../hi/README.md) | [Bengalski](../bn/README.md) | [Marathi](../mr/README.md) | [Nepalski](../ne/README.md) | [Pandžapski (Gurmukhi)](../pa/README.md) | [Portugalski (Portugal)](../pt/README.md) | [Portugalski (Brazil)](../br/README.md) | [Talijanski](../it/README.md) | [Poljski](../pl/README.md) | [Turski](../tr/README.md) | [Grčki](../el/README.md) | [Tajlandski](../th/README.md) | [Švedski](../sv/README.md) | [Danski](../da/README.md) | [Norveški](../no/README.md) | [Finski](../fi/README.md) | [Nizozemski](../nl/README.md) | [Hebrejski](../he/README.md) | [Vijetnamski](../vi/README.md) | [Indonezijski](../id/README.md) | [Malajski](../ms/README.md) | [Tagalog (Filipinski)](../tl/README.md) | [Svahili](../sw/README.md) | [Mađarski](../hu/README.md) | [Češki](../cs/README.md) | [Slovački](../sk/README.md) | [Rumunjski](../ro/README.md) | [Bugarski](../bg/README.md) | [Srpski (ćirilica)](../sr/README.md) | [Hrvatski](./README.md) | [Slovenski](../sl/README.md) | [Ukrajinski](../uk/README.md) | [Burmanski (Mjanmar)](../my/README.md)
 
-**Ako želite dodati podršku za dodatne jezike, popis podržanih jezika možete pronaći [ovdje](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
+**Ako želite dodati dodatne jezike, podržani jezici navedeni su [ovdje](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
 
 [![GitHub promatrači](https://img.shields.io/github/watchers/microsoft/ai-agents-for-beginners.svg?style=social&label=Watch)](https://GitHub.com/microsoft/ai-agents-for-beginners/watchers/?WT.mc_id=academic-105485-koreyst)  
 [![GitHub forkovi](https://img.shields.io/github/forks/microsoft/ai-agents-for-beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/ai-agents-for-beginners/network/?WT.mc_id=academic-105485-koreyst)  
@@ -35,15 +35,15 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## 🌱 Početak
 
-Ovaj tečaj sadrži lekcije koje pokrivaju osnove izrade AI agenata. Svaka lekcija obrađuje zasebnu temu, pa možete započeti gdje god želite!
+Ovaj tečaj sadrži lekcije koje pokrivaju osnove izrade AI agenata. Svaka lekcija obrađuje vlastitu temu, pa možete započeti gdje god želite!
 
-Tečaj podržava više jezika. Pogledajte naš [popis dostupnih jezika ovdje](../..).  
+Tečaj podržava više jezika. Pogledajte [dostupne jezike ovdje](../..).  
 
 Ako prvi put radite s generativnim AI modelima, pogledajte naš tečaj [Generativna AI za početnike](https://aka.ms/genai-beginners), koji uključuje 21 lekciju o radu s GenAI.
 
 Ne zaboravite [dodati zvjezdicu (🌟) ovom repozitoriju](https://docs.github.com/en/get-started/exploring-projects-on-github/saving-repositories-with-stars?WT.mc_id=academic-105485-koreyst) i [forkati ovaj repozitorij](https://github.com/microsoft/ai-agents-for-beginners/fork) kako biste pokrenuli kod.
 
-### Upoznajte druge polaznike, postavite pitanja
+### Upoznajte druge učenike, postavite pitanja
 
 Ako zapnete ili imate pitanja o izradi AI agenata, pridružite se našem posvećenom Discord kanalu u [Azure AI Foundry Community Discord](https://aka.ms/ai-agents/discord).
 
@@ -58,6 +58,7 @@ Primjeri koda u ovim vježbama koriste Azure AI Foundry i GitHub Model Catalogs 
 
 Ovaj tečaj također koristi sljedeće okvire i usluge za AI agente od Microsofta:
 
+- [Microsoft Agent Framework (MAF) - Novo!](https://aka.ms/ai-agents-beginners/agent-framewrok)  
 - [Azure AI Agent Service](https://aka.ms/ai-agents-beginners/ai-agent-service)  
 - [Semantic Kernel](https://aka.ms/ai-agents-beginners/semantic-kernel)  
 - [AutoGen](https://aka.ms/ai-agents/autogen)  
@@ -66,7 +67,7 @@ Za više informacija o pokretanju koda za ovaj tečaj, pogledajte [Postavljanje 
 
 ## 🙏 Želite pomoći?
 
-Imate prijedloge ili ste pronašli pravopisne ili programske pogreške? [Otvorite problem](https://github.com/microsoft/ai-agents-for-beginners/issues?WT.mc_id=academic-105485-koreyst) ili [kreirajte zahtjev za povlačenje](https://github.com/microsoft/ai-agents-for-beginners/pulls?WT.mc_id=academic-105485-koreyst).
+Imate prijedloge ili ste pronašli pravopisne ili kodne pogreške? [Postavite problem](https://github.com/microsoft/ai-agents-for-beginners/issues?WT.mc_id=academic-105485-koreyst) ili [kreirajte zahtjev za povlačenje](https://github.com/microsoft/ai-agents-for-beginners/pulls?WT.mc_id=academic-105485-koreyst).
 
 ## 📂 Svaka lekcija uključuje
 
@@ -76,26 +77,26 @@ Imate prijedloge ili ste pronašli pravopisne ili programske pogreške? [Otvorit
 
 ## 🗃️ Lekcije
 
-| **Lekcija**                                   | **Tekst i kod**                                   | **Video**                                                  | **Dodatno učenje**                                                                     |
-|-----------------------------------------------|--------------------------------------------------|------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| Uvod u AI agente i primjene agenata           | [Link](./01-intro-to-ai-agents/README.md)        | [Video](https://youtu.be/3zgm60bXmQk?si=z8QygFvYQv-9WtO1)  | [Link](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| Istraživanje okvira za AI agente              | [Link](./02-explore-agentic-frameworks/README.md)| [Video](https://youtu.be/ODwF-EZo_O8?si=Vawth4hzVaHv-u0H)  | [Link](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| **Lekcija**                                  | **Tekst i kod**                                  | **Video**                                                  | **Dodatno učenje**                                                                 |
+|----------------------------------------------|--------------------------------------------------|------------------------------------------------------------|------------------------------------------------------------------------------------|
+| Uvod u AI agente i primjene agenata          | [Link](./01-intro-to-ai-agents/README.md)        | [Video](https://youtu.be/3zgm60bXmQk?si=z8QygFvYQv-9WtO1)  | [Link](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| Istraživanje okvira za AI agente             | [Link](./02-explore-agentic-frameworks/README.md)| [Video](https://youtu.be/ODwF-EZo_O8?si=Vawth4hzVaHv-u0H)  | [Link](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
 | Razumijevanje dizajnerskih obrazaca za AI agente | [Link](./03-agentic-design-patterns/README.md)   | [Video](https://youtu.be/m9lM8qqoOEA?si=BIzHwzstTPL8o9GF)  | [Link](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| Dizajnerski obrazac za korištenje alata       | [Link](./04-tool-use/README.md)                  | [Video](https://youtu.be/vieRiPRx-gI?si=2z6O2Xu2cu_Jz46N)  | [Link](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| Agentic RAG                                   | [Link](./05-agentic-rag/README.md)               | [Video](https://youtu.be/WcjAARvdL7I?si=gKPWsQpKiIlDH9A3)  | [Link](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| Izrada pouzdanih AI agenata                   | [Link](./06-building-trustworthy-agents/README.md)| [Video](https://youtu.be/iZKkMEGBCUQ?si=jZjpiMnGFOE9L8OK ) | [Link](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| Dizajnerski obrazac za planiranje             | [Link](./07-planning-design/README.md)           | [Video](https://youtu.be/kPfJ2BrBCMY?si=6SC_iv_E5-mzucnC)  | [Link](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| Dizajnerski obrazac za više agenata           | [Link](./08-multi-agent/README.md)               | [Video](https://youtu.be/V6HpE9hZEx0?si=rMgDhEu7wXo2uo6g)  | [Link](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| Dizajnerski obrazac za metakogniciju          | [Link](./09-metacognition/README.md)             | [Video](https://youtu.be/His9R6gw6Ec?si=8gck6vvdSNCt6OcF)  | [Link](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| AI agenti u produkciji                        | [Link](./10-ai-agents-production/README.md)      | [Video](https://youtu.be/l4TP6IyJxmQ?si=31dnhexRo6yLRJDl)  | [Link](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| Korištenje agentičkih protokola (MCP, A2A i NLWeb) | [Link](./11-agentic-protocols/README.md)         | [Video](https://youtu.be/X-Dh9R3Opn8)                      | [Link](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| Inženjering konteksta za AI agente            | [Link](./12-context-engineering/README.md)         | [Video](https://youtu.be/F5zqRV7gEag)                                 | [Link](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| Upravljanje memorijom agenata                | [Link](./13-agent-memory/README.md)     |                                                            |                                                                                        |
-| Evaluacija AI agenata                        | Dolazi - 18. rujna                                |                                                            |                                                                                        |
-| Izrada agenata za korištenje računala (CUA)  | Dolazi - 25. rujna                                |                                                            |                                                                                        |
-| Implementacija skalabilnih agenata           | Dolazi - 25. rujna                                |                                                            |                                                                                        |
-| Kreiranje lokalnih AI agenata                | Dolazi - 3. listopada                             |                                                            |                                                                                        |
-| Osiguravanje AI agenata                      | Dolazi - 10. listopada                            |                                                            |                                                                                        |
+| Dizajnerski obrazac za korištenje alata      | [Link](./04-tool-use/README.md)                  | [Video](https://youtu.be/vieRiPRx-gI?si=2z6O2Xu2cu_Jz46N)  | [Link](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| Agentic RAG                                  | [Link](./05-agentic-rag/README.md)               | [Video](https://youtu.be/WcjAARvdL7I?si=gKPWsQpKiIlDH9A3)  | [Link](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| Izrada pouzdanih AI agenata                  | [Link](./06-building-trustworthy-agents/README.md)| [Video](https://youtu.be/iZKkMEGBCUQ?si=jZjpiMnGFOE9L8OK ) | [Link](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| Dizajnerski obrazac za planiranje            | [Link](./07-planning-design/README.md)           | [Video](https://youtu.be/kPfJ2BrBCMY?si=6SC_iv_E5-mzucnC)  | [Link](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| Dizajnerski obrazac za više agenata          | [Link](./08-multi-agent/README.md)               | [Video](https://youtu.be/V6HpE9hZEx0?si=rMgDhEu7wXo2uo6g)  | [Link](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| Dizajnerski obrazac za metakogniciju         | [Link](./09-metacognition/README.md)             | [Video](https://youtu.be/His9R6gw6Ec?si=8gck6vvdSNCt6OcF)  | [Link](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| AI agenti u produkciji                       | [Link](./10-ai-agents-production/README.md)      | [Video](https://youtu.be/l4TP6IyJxmQ?si=31dnhexRo6yLRJDl)  | [Link](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| Korištenje agentnih protokola (MCP, A2A i NLWeb) | [Link](./11-agentic-protocols/README.md)           | [Video](https://youtu.be/X-Dh9R3Opn8)                                 | [Link](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| Inženjering konteksta za AI agente              | [Link](./12-context-engineering/README.md)         | [Video](https://youtu.be/F5zqRV7gEag)                                 | [Link](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| Upravljanje memorijom agenata                  | [Link](./13-agent-memory/README.md)     |      [Video](https://youtu.be/QrYbHesIxpw?si=vZkVwKrQ4ieCcIPx)                                                      |                                                                                        |
+| Istraživanje Microsoft Agent Frameworka        | [Link](./14-microsoft-agent-framework/README.md)                            |                                                            |                                                                                        |
+| Izrada agenata za korištenje računala (CUA)    | Uskoro dolazi                            |                                                            |                                                                                        |
+| Implementacija skalabilnih agenata             | Uskoro dolazi                            |                                                            |                                                                                        |
+| Kreiranje lokalnih AI agenata                  | Uskoro dolazi                               |                                                            |                                                                                        |
+| Osiguravanje AI agenata                        | Uskoro dolazi                               |                                                            |                                                                                        |
 
 ## 🎒 Ostali tečajevi
 
@@ -113,8 +114,8 @@ Naš tim proizvodi i druge tečajeve! Pogledajte:
 - [Web razvoj za početnike](https://aka.ms/webdev-beginners?WT.mc_id=academic-105485-koreyst)
 - [IoT za početnike](https://aka.ms/iot-beginners?WT.mc_id=academic-105485-koreyst)
 - [XR razvoj za početnike](https://github.com/microsoft/xr-development-for-beginners?WT.mc_id=academic-105485-koreyst)
-- [Savladavanje GitHub Copilota za AI programiranje u paru](https://aka.ms/GitHubCopilotAI?WT.mc_id=academic-105485-koreyst)
-- [Savladavanje GitHub Copilota za C#/.NET programere](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)
+- [Ovladavanje GitHub Copilotom za AI programiranje u paru](https://aka.ms/GitHubCopilotAI?WT.mc_id=academic-105485-koreyst)
+- [Ovladavanje GitHub Copilotom za C#/.NET programere](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)
 - [Odaberi svoju vlastitu Copilot avanturu](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)
 
 ## 🌟 Zahvale zajednici
@@ -124,26 +125,26 @@ Hvala [Shivamu Goyalu](https://www.linkedin.com/in/shivam2003/) na doprinosu va�
 ## Doprinos
 
 Ovaj projekt pozdravlja doprinose i prijedloge. Većina doprinosa zahtijeva da se složite s
-Ugovorom o licenci za doprinos (CLA) kojim izjavljujete da imate pravo i stvarno dajete
-nam prava za korištenje vašeg doprinosa. Za detalje, posjetite <https://cla.opensource.microsoft.com>.
+Ugovorom o licenci za doprinos (CLA) koji potvrđuje da imate pravo i stvarno dajete
+prava za korištenje vašeg doprinosa. Za detalje, posjetite <https://cla.opensource.microsoft.com>.
 
 Kada pošaljete pull request, CLA bot će automatski odrediti trebate li dostaviti
 CLA i označiti PR na odgovarajući način (npr. provjera statusa, komentar). Jednostavno slijedite upute
-koje pruža bot. Ovo ćete morati učiniti samo jednom za sve repozitorije koji koriste naš CLA.
+koje vam bot pruži. Ovo ćete morati učiniti samo jednom za sve repozitorije koji koriste naš CLA.
 
-Ovaj projekt je usvojio [Microsoftov Kodeks ponašanja za otvoreni izvor](https://opensource.microsoft.com/codeofconduct/).
+Ovaj projekt je usvojio [Microsoftov kodeks ponašanja za otvoreni izvor](https://opensource.microsoft.com/codeofconduct/).
 Za više informacija pogledajte [FAQ o kodeksu ponašanja](https://opensource.microsoft.com/codeofconduct/faq/) ili
 kontaktirajte [opencode@microsoft.com](mailto:opencode@microsoft.com) s dodatnim pitanjima ili komentarima.
 
 ## Zaštitni znakovi
 
-Ovaj projekt može sadržavati zaštitne znakove ili logotipe za projekte, proizvode ili usluge. Ovlaštena upotreba Microsoftovih
+Ovaj projekt može sadržavati zaštitne znakove ili logotipe za projekte, proizvode ili usluge. Ovlašteno korištenje Microsoftovih
 zaštitnih znakova ili logotipa podliježe i mora slijediti
 [Microsoftove smjernice za zaštitne znakove i brend](https://www.microsoft.com/legal/intellectualproperty/trademarks/usage/general).
-Upotreba Microsoftovih zaštitnih znakova ili logotipa u izmijenjenim verzijama ovog projekta ne smije uzrokovati zabunu ili implicirati Microsoftovo sponzorstvo.
-Svaka upotreba zaštitnih znakova ili logotipa trećih strana podliježe politikama tih trećih strana.
+Korištenje Microsoftovih zaštitnih znakova ili logotipa u izmijenjenim verzijama ovog projekta ne smije uzrokovati zabunu ili implicirati Microsoftovo sponzorstvo.
+Svako korištenje zaštitnih znakova ili logotipa trećih strana podliježe politikama tih trećih strana.
 
 ---
 
 **Izjava o odricanju odgovornosti**:  
-Ovaj dokument je preveden pomoću AI usluge za prevođenje [Co-op Translator](https://github.com/Azure/co-op-translator). Iako nastojimo osigurati točnost, imajte na umu da automatski prijevodi mogu sadržavati pogreške ili netočnosti. Izvorni dokument na izvornom jeziku treba smatrati autoritativnim izvorom. Za ključne informacije preporučuje se profesionalni prijevod od strane ljudskog prevoditelja. Ne preuzimamo odgovornost za nesporazume ili pogrešna tumačenja koja mogu proizaći iz korištenja ovog prijevoda.
+Ovaj dokument je preveden pomoću AI usluge za prevođenje [Co-op Translator](https://github.com/Azure/co-op-translator). Iako nastojimo osigurati točnost, imajte na umu da automatski prijevodi mogu sadržavati pogreške ili netočnosti. Izvorni dokument na izvornom jeziku treba smatrati autoritativnim izvorom. Za ključne informacije preporučuje se profesionalni prijevod od strane ljudskog prevoditelja. Ne preuzimamo odgovornost za nesporazume ili pogrešne interpretacije koje mogu proizaći iz korištenja ovog prijevoda.
