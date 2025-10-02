@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "c55b973b1562abf5aadf6a4028265ac5",
-  "translation_date": "2025-08-29T18:17:54+00:00",
+  "original_hash": "9b03446058b4eed46928ae5e46325ea0",
+  "translation_date": "2025-10-02T17:21:05+00:00",
   "source_file": "00-course-setup/README.md",
   "language_code": "ms"
 }
@@ -19,15 +19,17 @@ Sebelum anda mula mengklon repositori anda, sertai [saluran Discord AI Agents Fo
 
 ## Klon atau Fork Repositori Ini
 
-Untuk memulakan, sila klon atau fork Repositori GitHub. Ini akan mencipta versi kursus anda sendiri supaya anda boleh menjalankan, menguji, dan mengubah suai kod!
+Untuk memulakan, sila klon atau fork repositori GitHub. Ini akan membuat versi kursus anda sendiri supaya anda boleh menjalankan, menguji, dan mengubah kod!
 
-Ini boleh dilakukan dengan mengklik pautan berikut:
+Ini boleh dilakukan dengan mengklik pautan untuk <a href="https://github.com/microsoft/ai-agents-for-beginners/fork" target="_blank">fork repositori</a>
+
+Anda kini sepatutnya mempunyai versi fork kursus ini di pautan berikut:
 
 ![Forked Repo](../../../translated_images/forked-repo.33f27ca1901baa6a5e13ec3eb1f0ddd3a44d936d91cc8cfb19bfdb9688bd2c3d.ms.png)
 
 ## Menjalankan Kod
 
-Kursus ini menyediakan siri Jupyter Notebooks yang boleh anda jalankan untuk mendapatkan pengalaman langsung membina AI Agents.
+Kursus ini menawarkan siri Jupyter Notebooks yang boleh anda jalankan untuk mendapatkan pengalaman langsung membina AI Agents.
 
 Contoh kod menggunakan:
 
@@ -41,12 +43,35 @@ Contoh kod menggunakan:
 
 Kami menggalakkan anda mencuba ketiga-tiga jenis contoh untuk melihat mana yang paling sesuai untuk anda.
 
-Pilihan yang anda pilih akan menentukan langkah persediaan yang perlu anda ikuti di bawah:
+Pilihan mana pun yang anda pilih, ia akan menentukan langkah persediaan yang perlu anda ikuti di bawah:
 
 ## Keperluan
 
 - Python 3.12+
-  - **NOTE**: Jika anda belum memasang Python3.12, pastikan anda memasangnya. Kemudian buat venv anda menggunakan python3.12 untuk memastikan versi yang betul dipasang daripada fail requirements.txt.
+  - **NOTA**: Jika anda tidak mempunyai Python3.12 dipasang, pastikan anda memasangnya. Kemudian buat venv anda menggunakan python3.12 untuk memastikan versi yang betul dipasang dari fail requirements.txt.
+  
+    >Contoh
+
+    Buat direktori Python venv:
+
+    ``` bash
+    python3 -m venv venv
+    ```
+
+    Kemudian aktifkan persekitaran venv untuk:
+
+    macOS dan Linux
+
+    ```bash
+    source venv/bin/activate
+    ```
+  
+    Windows
+
+    ```bash
+    venv\Scripts\activate
+    ```
+
 - Akaun GitHub - Untuk Akses ke Pasar Model GitHub
 - Langganan Azure - Untuk Akses ke Azure AI Foundry
 - Akaun Azure AI Foundry - Untuk Akses ke Perkhidmatan Azure AI Agent
@@ -69,13 +94,13 @@ Pastikan anda menggunakan versi Python yang betul dalam VSCode.
 
 ### Langkah 1: Dapatkan Token Akses Peribadi (PAT) GitHub Anda
 
-Kursus ini menggunakan Pasar Model GitHub, yang menyediakan akses percuma ke Model Bahasa Besar (LLMs) yang akan anda gunakan untuk membina AI Agents.
+Kursus ini menggunakan Pasar Model GitHub, yang menyediakan akses percuma kepada Model Bahasa Besar (LLM) yang akan anda gunakan untuk membina AI Agents.
 
-Untuk menggunakan Model GitHub, anda perlu mencipta [Token Akses Peribadi GitHub](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
+Untuk menggunakan Model GitHub, anda perlu membuat [Token Akses Peribadi GitHub](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
 
-Ini boleh dilakukan dengan pergi ke akaun GitHub anda.
+Ini boleh dilakukan dengan pergi ke <a href="https://github.com/settings/personal-access-tokens" target="_blank">tetapan Token Akses Peribadi</a> dalam Akaun GitHub anda.
 
-Sila ikuti [Prinsip Privasi Minimum](https://docs.github.com/en/get-started/learning-to-code/storing-your-secrets-safely) semasa mencipta token anda. Ini bermaksud anda hanya perlu memberikan token kebenaran yang diperlukan untuk menjalankan contoh kod dalam kursus ini.
+Sila ikuti [Prinsip Privasi Minimum](https://docs.github.com/en/get-started/learning-to-code/storing-your-secrets-safely) semasa membuat token anda. Ini bermaksud anda hanya perlu memberikan token kebenaran yang diperlukan untuk menjalankan contoh kod dalam kursus ini.
 
 1. Pilih pilihan `Fine-grained tokens` di sebelah kiri skrin anda dengan pergi ke **Developer settings**
    ![](../../../translated_images/profile_developer_settings.410a859fe749c755c859d414294c5908e307222b2c61819c3203bbeed4470e25.ms.png)
@@ -90,8 +115,8 @@ Sila ikuti [Prinsip Privasi Minimum](https://docs.github.com/en/get-started/lear
     🔐 Cadangan Tempoh Token
 
     Tempoh yang disyorkan: 30 hari
-    Untuk postur keselamatan yang lebih baik, anda boleh memilih tempoh yang lebih pendek—seperti 7 hari 🛡️
-    Ini adalah cara yang baik untuk menetapkan sasaran peribadi dan menyelesaikan kursus semasa momentum pembelajaran anda tinggi 🚀.
+    Untuk keselamatan yang lebih baik, anda boleh memilih tempoh yang lebih pendek—seperti 7 hari 🛡️
+    Ini adalah cara yang baik untuk menetapkan sasaran peribadi dan menyelesaikan kursus sambil momentum pembelajaran anda tinggi 🚀.
 
     ![Token Name and Expiration](../../../translated_images/token-name-expiry-date.a095fb0de63868640a4c82d6b1bbc92b482930a663917a5983a3c7cd1ef86b77.ms.png)
 
@@ -99,25 +124,25 @@ Sila ikuti [Prinsip Privasi Minimum](https://docs.github.com/en/get-started/lear
 
     ![Limit scope to fork repository](../../../translated_images/token_repository_limit.924ade5e11d9d8bb6cd21293987e4579dea860e2ba66d607fb46e49524d53644.ms.png)
 
-4. Hadkan kebenaran token: Di bawah **Permissions**, klik tab **Account**, dan klik butang "+ Add permissions". Senarai dropdown akan muncul. Sila cari **Models** dan tandakan kotak untuknya.
+4. Hadkan kebenaran token: Di bawah **Permissions**, klik tab **Account**, dan klik butang "+ Add permissions". Dropdown akan muncul. Sila cari **Models** dan tandakan kotak untuknya.
     ![Add Models Permission](../../../translated_images/add_models_permissions.c0c44ed8b40fc143dc87792da9097d715b7de938354e8f771d65416ecc7816b8.ms.png)
 
-5. Sahkan kebenaran yang diperlukan sebelum menjana token. ![Verify Permissions](../../../translated_images/verify_permissions.06bd9e43987a8b219f171bbcf519e45ababae35b844f5e9757e10afcb619b936.ms.png)
+5. Sahkan kebenaran yang diperlukan sebelum menghasilkan token. ![Verify Permissions](../../../translated_images/verify_permissions.06bd9e43987a8b219f171bbcf519e45ababae35b844f5e9757e10afcb619b936.ms.png)
 
-6. Sebelum menjana token, pastikan anda bersedia untuk menyimpan token di tempat yang selamat seperti peti simpanan pengurus kata laluan, kerana ia tidak akan ditunjukkan lagi selepas anda menciptanya. ![Store Token Securely](../../../translated_images/store_token_securely.08ee2274c6ad6caf3482f1cd1bad7ca3fdca1ce737bc485bfa6499c84297c789.ms.png)
+6. Sebelum menghasilkan token, pastikan anda bersedia untuk menyimpan token di tempat yang selamat seperti peti simpanan pengurus kata laluan, kerana ia tidak akan ditunjukkan lagi selepas anda menciptanya. ![Store Token Securely](../../../translated_images/store_token_securely.08ee2274c6ad6caf3482f1cd1bad7ca3fdca1ce737bc485bfa6499c84297c789.ms.png)
 
-Salin token baru anda yang baru sahaja anda cipta. Anda kini akan menambahkannya ke fail `.env` yang disertakan dalam kursus ini.
+Salin token baru anda yang baru sahaja anda buat. Anda kini akan menambahkannya ke fail `.env` yang disertakan dalam kursus ini.
 
 
-### Langkah 2: Cipta Fail `.env` Anda
+### Langkah 2: Buat Fail `.env` Anda
 
-Untuk mencipta fail `.env` anda, jalankan arahan berikut di terminal anda.
+Untuk membuat fail `.env` anda, jalankan arahan berikut di terminal anda.
 
 ```bash
 cp .env.example .env
 ```
 
-Ini akan menyalin fail contoh dan mencipta `.env` dalam direktori anda di mana anda mengisi nilai untuk pembolehubah persekitaran.
+Ini akan menyalin fail contoh dan membuat `.env` dalam direktori anda di mana anda mengisi nilai untuk pembolehubah persekitaran.
 
 Dengan token anda disalin, buka fail `.env` dalam editor teks kegemaran anda dan tampal token anda ke medan `GITHUB_TOKEN`.
 ![GitHub Token Field](../../../translated_images/github_token_field.20491ed3224b5f4ab24d10ced7a68c4aba2948fe8999cfc8675edaa16f5e5681.ms.png)
@@ -130,30 +155,30 @@ Anda kini sepatutnya dapat menjalankan contoh kod dalam kursus ini.
 ### Langkah 1: Dapatkan Endpoint Projek Azure Anda
 
 
-Ikuti langkah-langkah untuk mencipta hub dan projek dalam Azure AI Foundry yang terdapat di sini: [Hub resources overview](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/ai-resources)
+Ikuti langkah-langkah untuk membuat hub dan projek dalam Azure AI Foundry yang terdapat di sini: [Gambaran Keseluruhan Sumber Hub](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/ai-resources)
 
 
-Setelah anda mencipta projek anda, anda perlu mendapatkan string sambungan untuk projek anda.
+Setelah anda membuat projek anda, anda perlu mendapatkan string sambungan untuk projek anda.
 
 Ini boleh dilakukan dengan pergi ke halaman **Overview** projek anda di portal Azure AI Foundry.
 
 ![Project Connection String](../../../translated_images/project-endpoint.8cf04c9975bbfbf18f6447a599550edb052e52264fb7124d04a12e6175e330a5.ms.png)
 
-### Langkah 2: Cipta Fail `.env` Anda
+### Langkah 2: Buat Fail `.env` Anda
 
-Untuk mencipta fail `.env` anda, jalankan arahan berikut di terminal anda.
+Untuk membuat fail `.env` anda, jalankan arahan berikut di terminal anda.
 
 ```bash
 cp .env.example .env
 ```
 
-Ini akan menyalin fail contoh dan mencipta `.env` dalam direktori anda di mana anda mengisi nilai untuk pembolehubah persekitaran.
+Ini akan menyalin fail contoh dan membuat `.env` dalam direktori anda di mana anda mengisi nilai untuk pembolehubah persekitaran.
 
 Dengan token anda disalin, buka fail `.env` dalam editor teks kegemaran anda dan tampal token anda ke medan `PROJECT_ENDPOINT`.
 
 ### Langkah 3: Log Masuk ke Azure
 
-Sebagai amalan keselamatan terbaik, kita akan menggunakan [pengesahan tanpa kunci](https://learn.microsoft.com/azure/developer/ai/keyless-connections?tabs=csharp%2Cazure-cli?WT.mc_id=academic-105485-koreyst) untuk mengesahkan ke Azure OpenAI dengan Microsoft Entra ID. 
+Sebagai amalan keselamatan terbaik, kami akan menggunakan [pengesahan tanpa kunci](https://learn.microsoft.com/azure/developer/ai/keyless-connections?tabs=csharp%2Cazure-cli?WT.mc_id=academic-105485-koreyst) untuk mengesahkan ke Azure OpenAI dengan Microsoft Entra ID. 
 
 Seterusnya, buka terminal dan jalankan `az login --use-device-code` untuk log masuk ke akaun Azure anda.
 
@@ -166,7 +191,7 @@ Untuk Pelajaran Agentic RAG - Pelajaran 5 - terdapat contoh yang menggunakan Azu
 
 Jika anda ingin menjalankan contoh ini, anda perlu menambah pembolehubah persekitaran berikut ke fail `.env` anda:
 
-### Halaman Overview (Projek)
+### Halaman Gambaran Keseluruhan (Projek)
 
 - `AZURE_SUBSCRIPTION_ID` - Semak **Project details** di halaman **Overview** projek anda.
 
@@ -180,7 +205,7 @@ Jika anda ingin menjalankan contoh ini, anda perlu menambah pembolehubah perseki
 
 - `GLOBAL_LLM_SERVICE` - Di bawah **Connected resources**, cari nama sambungan **Azure AI Services**. Jika tidak disenaraikan, semak **Azure portal** di bawah kumpulan sumber anda untuk nama sumber AI Services.
 
-### Halaman Models + Endpoints
+### Halaman Model + Endpoint
 
 - `AZURE_OPENAI_EMBEDDING_DEPLOYMENT_NAME` - Pilih model embedding anda (contohnya, `text-embedding-ada-002`) dan catat **Deployment name** dari butiran model.
 
@@ -198,11 +223,11 @@ Jika anda ingin menjalankan contoh ini, anda perlu menambah pembolehubah perseki
 
 ### Halaman Luar
 
-- `AZURE_OPENAI_API_VERSION` - Lawati halaman [API version lifecycle](https://learn.microsoft.com/en-us/azure/ai-services/openai/api-version-deprecation#latest-ga-api-release) di bawah **Latest GA API release**.
+- `AZURE_OPENAI_API_VERSION` - Lawati halaman [kitaran hayat versi API](https://learn.microsoft.com/en-us/azure/ai-services/openai/api-version-deprecation#latest-ga-api-release) di bawah **Latest GA API release**.
 
 ### Persediaan pengesahan tanpa kunci
 
-Daripada mengekodkan kelayakan anda, kita akan menggunakan sambungan tanpa kunci dengan Azure OpenAI. Untuk melakukannya, kita akan mengimport `DefaultAzureCredential` dan kemudian memanggil fungsi `DefaultAzureCredential` untuk mendapatkan kelayakan.
+Daripada mengekodkan kelayakan anda, kami akan menggunakan sambungan tanpa kunci dengan Azure OpenAI. Untuk melakukannya, kami akan mengimport `DefaultAzureCredential` dan kemudian memanggil fungsi `DefaultAzureCredential` untuk mendapatkan kelayakan.
 
 ```python
 from azure.identity import DefaultAzureCredential, InteractiveBrowserCredential
@@ -210,13 +235,13 @@ from azure.identity import DefaultAzureCredential, InteractiveBrowserCredential
 
 ## Tersangkut di Mana-Mana?
 
-Jika anda menghadapi sebarang masalah menjalankan persediaan ini, sertai kami di saluran Discord untuk mendapatkan bantuan.
+Jika anda menghadapi sebarang masalah menjalankan persediaan ini, sertai <a href="https://discord.gg/kzRShWzttr" target="_blank">Discord Komuniti Azure AI</a> kami atau <a href="https://github.com/microsoft/ai-agents-for-beginners/issues?WT.mc_id=academic-105485-koreyst" target="_blank">buat isu</a>.
 
 ## Pelajaran Seterusnya
 
 Anda kini bersedia untuk menjalankan kod untuk kursus ini. Selamat belajar lebih lanjut tentang dunia AI Agents! 
 
-[Introduction to AI Agents and Agent Use Cases](../01-intro-to-ai-agents/README.md)
+[Pengenalan kepada AI Agents dan Kes Penggunaan Agent](../01-intro-to-ai-agents/README.md)
 
 ---
 
