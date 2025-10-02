@@ -49,7 +49,7 @@ Whichever option you choose, it will determine which setup steps you need to fol
     python3 -m venv venv
     ```
 
-    Then activate venv environment for
+    Then activate venv environment for:
 
     macOS and Linux
 
