@@ -1,17 +1,18 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "1923cf93aba522a5f4a493597112a893",
-  "translation_date": "2025-09-18T15:58:02+00:00",
+  "original_hash": "c27e2a2e9055910545560e8472b341d8",
+  "translation_date": "2025-10-02T19:12:18+00:00",
   "source_file": "13-agent-memory/README.md",
   "language_code": "en"
 }
 -->
 # Memory for AI Agents 
+[![Agent Memory](../../../translated_images/lesson-13-thumbnail.959e3bc52d210c64a614a3bece6b170a2c472138dc0a14c7fbde07306ef95ae7.en.png)](https://youtu.be/QrYbHesIxpw?si=qNYW6PL3fb3lTPMk)
 
-When discussing the unique advantages of building AI Agents, two key aspects often come up: the ability to use tools to complete tasks and the ability to improve over time. Memory is the cornerstone of creating self-improving agents that can deliver better experiences for users.
+When discussing the unique advantages of creating AI Agents, two main aspects are often highlighted: the ability to use tools to complete tasks and the ability to improve over time. Memory is the cornerstone of building self-improving agents that can deliver better experiences for users.
 
-In this lesson, we’ll explore what memory means for AI Agents, how to manage it, and how to use it to enhance our applications.
+In this lesson, we’ll explore what memory means for AI Agents, how to manage it, and how to leverage it to enhance applications.
 
 ## Introduction
 
@@ -21,23 +22,23 @@ This lesson will cover:
 
 • **Implementing and Storing Memory**: Practical approaches to adding memory capabilities to AI agents, focusing on short-term and long-term memory.
 
-• **Making AI Agents Self-Improving**: How memory enables agents to learn from past interactions and improve over time.
+• **Making AI Agents Self-Improving**: How memory enables agents to learn from past interactions and evolve over time.
 
 ## Learning Goals
 
-By the end of this lesson, you’ll be able to:
+By the end of this lesson, you will be able to:
 
 • **Distinguish between different types of AI agent memory**, including working, short-term, and long-term memory, as well as specialized forms like persona and episodic memory.
 
 • **Implement and manage short-term and long-term memory for AI agents** using the Semantic Kernel framework, tools like Mem0 and Whiteboard memory, and integrations with Azure AI Search.
 
-• **Understand the principles behind self-improving AI agents** and how effective memory management systems support continuous learning and adaptation.
+• **Understand the principles behind self-improving AI agents** and how effective memory management systems contribute to continuous learning and adaptation.
 
 ## Understanding AI Agent Memory
 
 At its core, **memory for AI agents refers to the mechanisms that allow them to retain and recall information**. This could include specific details from a conversation, user preferences, past actions, or learned patterns.
 
-Without memory, AI applications are often stateless, meaning every interaction starts from scratch. This results in a repetitive and frustrating user experience where the agent "forgets" previous context or preferences.
+Without memory, AI applications are often stateless, meaning each interaction starts anew. This results in a repetitive and frustrating user experience where the agent "forgets" previous context or preferences.
 
 ### Why is Memory Important?
 
@@ -49,7 +50,7 @@ An agent’s intelligence is closely tied to its ability to recall and use past 
 
 • **Proactive and Reactive**: Anticipating needs or responding appropriately based on historical data.
 
-• **Autonomous**: Acting more independently by leveraging stored knowledge.
+• **Autonomous**: Functioning more independently by leveraging stored knowledge.
 
 The goal of implementing memory is to make agents more **reliable and capable**.
 
@@ -75,7 +76,7 @@ If a user asks, "How much would a flight to Paris cost?" and then follows up wit
 
 #### Long-Term Memory
 
-This is information that persists across multiple conversations or sessions. It allows agents to remember user preferences, historical interactions, or general knowledge over extended periods. This is key for personalization.
+This is information that persists across multiple conversations or sessions. It enables agents to remember user preferences, historical interactions, or general knowledge over extended periods, which is key for personalization.
 
 **Long-Term Memory Example**
 
@@ -95,11 +96,11 @@ This memory stores the sequence of steps an agent takes during a complex task, i
 
 **Episodic Memory Example**
 
-If the agent tried to book a specific flight but it failed due to unavailability, episodic memory could record this failure, enabling the agent to try alternative flights or inform the user about the issue in a more informed way during a subsequent attempt.
+If the agent attempted to book a specific flight but it failed due to unavailability, episodic memory could record this failure, allowing the agent to try alternative flights or inform the user about the issue in a more informed way during a subsequent attempt.
 
 #### Entity Memory
 
-This involves extracting and remembering specific entities (like people, places, or things) and events from conversations. It allows the agent to build a structured understanding of key elements discussed.
+This involves extracting and remembering specific entities (like people, places, or things) and events from conversations. It enables the agent to build a structured understanding of key elements discussed.
 
 **Entity Memory Example**
 
@@ -115,17 +116,17 @@ Instead of just matching keywords, Structured RAG could parse flight details (de
 
 ## Implementing and Storing Memory
 
-Implementing memory for AI agents involves a systematic process of **memory management**, which includes generating, storing, retrieving, integrating, updating, and even "forgetting" (or deleting) information. Retrieval is particularly important.
+Implementing memory for AI agents involves a systematic process of **memory management**, which includes generating, storing, retrieving, integrating, updating, and even "forgetting" (or deleting) information. Retrieval is a particularly critical aspect.
 
 ### Specialized Memory Tools
 
 One way to store and manage agent memory is by using specialized tools like Mem0. Mem0 acts as a persistent memory layer, enabling agents to recall relevant interactions, store user preferences and factual context, and learn from successes and failures over time. The idea is to transform stateless agents into stateful ones.
 
-It operates through a **two-phase memory pipeline: extraction and update**. First, messages added to an agent’s thread are sent to the Mem0 service, which uses a Large Language Model (LLM) to summarize conversation history and extract new memories. Then, an LLM-driven update phase determines whether to add, modify, or delete these memories, storing them in a hybrid data store that can include vector, graph, and key-value databases. This system also supports various memory types and can incorporate graph memory for managing relationships between entities.
+It operates through a **two-phase memory pipeline: extraction and update**. First, messages added to an agent’s thread are sent to the Mem0 service, which uses a Large Language Model (LLM) to summarize conversation history and extract new memories. Then, an LLM-driven update phase determines whether to add, modify, or delete these memories, storing them in a hybrid data store that can include vector, graph, and key-value databases. This system supports various memory types and can incorporate graph memory for managing relationships between entities.
 
 ### Storing Memory with RAG
 
-Beyond specialized memory tools like Mem0, you can use robust search services like **Azure AI Search as a backend for storing and retrieving memories**, especially for structured RAG.
+Beyond specialized memory tools like Mem0, you can leverage robust search services like **Azure AI Search as a backend for storing and retrieving memories**, especially for structured RAG.
 
 This allows you to ground your agent’s responses with your own data, ensuring more relevant and accurate answers. Azure AI Search can be used to store user-specific travel memories, product catalogs, or any other domain-specific knowledge.
 
@@ -149,11 +150,11 @@ A common approach for self-improving agents involves introducing a **"knowledge 
 
 • **Knowledge Base Maintenance**: For a growing knowledge base, less frequently used information can be moved to "cold storage" to manage costs.
 
-## Got More Questions About Context Engineering?
+## Got More Questions About Agent Memory?
 
 Join the [Azure AI Foundry Discord](https://aka.ms/ai-agents/discord) to connect with other learners, attend office hours, and get your AI Agents questions answered.
 
 ---
 
 **Disclaimer**:  
-This document has been translated using the AI translation service [Co-op Translator](https://github.com/Azure/co-op-translator). While we aim for accuracy, please note that automated translations may include errors or inaccuracies. The original document in its native language should be regarded as the authoritative source. For critical information, professional human translation is advised. We are not responsible for any misunderstandings or misinterpretations resulting from the use of this translation.
+This document has been translated using the AI translation service [Co-op Translator](https://github.com/Azure/co-op-translator). While we aim for accuracy, please note that automated translations may contain errors or inaccuracies. The original document in its native language should be regarded as the authoritative source. For critical information, professional human translation is recommended. We are not responsible for any misunderstandings or misinterpretations resulting from the use of this translation.

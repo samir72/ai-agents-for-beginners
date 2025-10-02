@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "c55b973b1562abf5aadf6a4028265ac5",
-  "translation_date": "2025-08-29T20:53:02+00:00",
+  "original_hash": "9b03446058b4eed46928ae5e46325ea0",
+  "translation_date": "2025-10-02T19:21:55+00:00",
   "source_file": "00-course-setup/README.md",
   "language_code": "ro"
 }
@@ -19,9 +19,11 @@ Această lecție va acoperi modul de rulare a exemplelor de cod din acest curs.
 
 ## Clonează sau Fork-uiește acest depozit
 
-Pentru a începe, te rugăm să clonezi sau să fork-uiești depozitul GitHub. Acest lucru va crea propria ta versiune a materialului de curs, astfel încât să poți rula, testa și ajusta codul!
+Pentru a începe, te rugăm să clonezi sau să fork-uiești depozitul GitHub. Acest lucru va crea propria ta versiune a materialului cursului, astfel încât să poți rula, testa și ajusta codul!
 
-Acest lucru poate fi realizat făcând clic pe linkul de mai jos:
+Acest lucru poate fi realizat făcând clic pe linkul pentru <a href="https://github.com/microsoft/ai-agents-for-beginners/fork" target="_blank">fork-uirea depozitului</a>.
+
+Ar trebui să ai acum propria versiune fork-uită a acestui curs la următorul link:
 
 ![Forked Repo](../../../translated_images/forked-repo.33f27ca1901baa6a5e13ec3eb1f0ddd3a44d936d91cc8cfb19bfdb9688bd2c3d.ro.png)
 
@@ -41,12 +43,35 @@ Exemplele de cod utilizează fie:
 
 Te încurajăm să încerci toate cele trei tipuri de exemple pentru a vedea care funcționează cel mai bine pentru tine.
 
-Oricare opțiune alegi, aceasta va determina pașii de configurare pe care trebuie să îi urmezi mai jos:
+Indiferent de opțiunea aleasă, aceasta va determina pașii de configurare pe care trebuie să îi urmezi mai jos:
 
 ## Cerințe
 
 - Python 3.12+
-  - **NOTE**: Dacă nu ai instalat Python 3.12, asigură-te că îl instalezi. Apoi creează mediul virtual folosind python3.12 pentru a te asigura că versiunile corecte sunt instalate din fișierul requirements.txt.
+  - **NOTĂ**: Dacă nu ai instalat Python 3.12, asigură-te că îl instalezi. Apoi creează mediul virtual (venv) folosind python3.12 pentru a te asigura că versiunile corecte sunt instalate din fișierul requirements.txt.
+  
+    >Exemplu
+
+    Creează directorul pentru mediul virtual Python:
+
+    ``` bash
+    python3 -m venv venv
+    ```
+
+    Apoi activează mediul virtual pentru:
+
+    macOS și Linux
+
+    ```bash
+    source venv/bin/activate
+    ```
+  
+    Windows
+
+    ```bash
+    venv\Scripts\activate
+    ```
+
 - Un cont GitHub - Pentru acces la GitHub Models Marketplace
 - Abonament Azure - Pentru acces la Azure AI Foundry
 - Cont Azure AI Foundry - Pentru acces la Azure AI Agent Service
@@ -58,6 +83,7 @@ Le poți instala rulând următoarea comandă în terminalul tău, la rădăcina
 ```bash
 pip install -r requirements.txt
 ```
+
 Recomandăm crearea unui mediu virtual Python pentru a evita conflictele și problemele.
 
 ## Configurarea VSCode
@@ -69,13 +95,13 @@ Asigură-te că folosești versiunea corectă de Python în VSCode.
 
 ### Pasul 1: Obține token-ul personal de acces GitHub (PAT)
 
-Acest curs utilizează GitHub Models Marketplace, oferind acces gratuit la modele de limbaj mare (LLMs) pe care le vei folosi pentru a construi agenți AI.
+Acest curs utilizează GitHub Models Marketplace, oferind acces gratuit la modele de limbaj extins (LLMs) pe care le vei folosi pentru a construi agenți AI.
 
-Pentru a utiliza modelele GitHub, va trebui să creezi un [GitHub Personal Access Token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
+Pentru a utiliza modelele GitHub, va trebui să creezi un [token personal de acces GitHub](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
 
-Acest lucru poate fi realizat accesând contul tău GitHub.
+Acest lucru poate fi realizat accesând <a href="https://github.com/settings/personal-access-tokens" target="_blank">setările pentru token-uri personale de acces</a> din contul tău GitHub.
 
-Te rugăm să urmezi [Principiul Privilegiului Minim](https://docs.github.com/en/get-started/learning-to-code/storing-your-secrets-safely) atunci când creezi token-ul. Acest lucru înseamnă că ar trebui să oferi token-ului doar permisiunile necesare pentru a rula exemplele de cod din acest curs.
+Te rugăm să urmezi [Principiul Privilegiului Minim](https://docs.github.com/en/get-started/learning-to-code/storing-your-secrets-safely) atunci când creezi token-ul. Aceasta înseamnă că ar trebui să oferi token-ului doar permisiunile necesare pentru a rula exemplele de cod din acest curs.
 
 1. Selectează opțiunea `Fine-grained tokens` din partea stângă a ecranului, navigând la **Developer settings**.
    ![](../../../translated_images/profile_developer_settings.410a859fe749c755c859d414294c5908e307222b2c61819c3203bbeed4470e25.ro.png)
@@ -84,7 +110,7 @@ Te rugăm să urmezi [Principiul Privilegiului Minim](https://docs.github.com/en
 
     ![Generate Token](../../../translated_images/fga_new_token.1c1a234afe202ab37483944a291ee80c1868e1e78082fd6bd4180fea5d5a15b4.ro.png)
 
-2. Introdu un nume descriptiv pentru token-ul tău care reflectă scopul său, astfel încât să fie ușor de identificat mai târziu.
+2. Introdu un nume descriptiv pentru token-ul tău care reflectă scopul său, făcându-l ușor de identificat ulterior.
 
     🔐 Recomandare pentru durata token-ului
 
@@ -117,18 +143,18 @@ cp .env.example .env
 
 Aceasta va copia fișierul exemplu și va crea un `.env` în directorul tău, unde vei completa valorile pentru variabilele de mediu.
 
-Cu token-ul copiat, deschide fișierul `.env` în editorul tău de text preferat și lipește token-ul în câmpul `GITHUB_TOKEN`.  
+Cu token-ul copiat, deschide fișierul `.env` în editorul tău de text preferat și lipește token-ul în câmpul `GITHUB_TOKEN`.
 ![GitHub Token Field](../../../translated_images/github_token_field.20491ed3224b5f4ab24d10ced7a68c4aba2948fe8999cfc8675edaa16f5e5681.ro.png)
 
 Acum ar trebui să poți rula exemplele de cod din acest curs.
 
 ## Configurare pentru exemplele care utilizează Azure AI Foundry și Azure AI Agent Service
 
-### Pasul 1: Obține endpoint-ul proiectului Azure
+### Pasul 1: Obține punctul de acces al proiectului Azure
 
-Urmează pașii pentru crearea unui hub și proiect în Azure AI Foundry, găsiți aici: [Hub resources overview](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/ai-resources)
+Urmează pașii pentru crearea unui hub și proiect în Azure AI Foundry, găsiți aici: [Prezentare generală a resurselor hub](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/ai-resources)
 
-După ce ai creat proiectul, va trebui să obții string-ul de conexiune pentru proiectul tău.
+După ce ai creat proiectul, va trebui să obții șirul de conexiune pentru proiectul tău.
 
 Acest lucru poate fi realizat accesând pagina **Overview** a proiectului tău în portalul Azure AI Foundry.
 
@@ -148,7 +174,7 @@ Cu token-ul copiat, deschide fișierul `.env` în editorul tău de text preferat
 
 ### Pasul 3: Autentifică-te în Azure
 
-Ca o bună practică de securitate, vom utiliza [autentificarea fără cheie](https://learn.microsoft.com/azure/developer/ai/keyless-connections?tabs=csharp%2Cazure-cli?WT.mc_id=academic-105485-koreyst) pentru a ne autentifica în Azure OpenAI cu Microsoft Entra ID.
+Ca o bună practică de securitate, vom folosi [autentificarea fără cheie](https://learn.microsoft.com/azure/developer/ai/keyless-connections?tabs=csharp%2Cazure-cli?WT.mc_id=academic-105485-koreyst) pentru a ne autentifica în Azure OpenAI cu Microsoft Entra ID.
 
 Apoi, deschide un terminal și rulează `az login --use-device-code` pentru a te autentifica în contul tău Azure.
 
@@ -160,25 +186,25 @@ Pentru lecția Agentic RAG - Lecția 5 - există exemple care utilizează Azure 
 
 Dacă dorești să rulezi aceste exemple, va trebui să adaugi următoarele variabile de mediu în fișierul `.env`:
 
-### Pagina Overview (Proiect)
+### Pagina de prezentare generală (Proiect)
 
-- `AZURE_SUBSCRIPTION_ID` - Verifică **Project details** pe pagina **Overview** a proiectului tău.
+- `AZURE_SUBSCRIPTION_ID` - Verifică **Detaliile proiectului** pe pagina **Overview** a proiectului tău.
 
 - `AZURE_AI_PROJECT_NAME` - Uită-te în partea de sus a paginii **Overview** pentru proiectul tău.
 
 - `AZURE_OPENAI_SERVICE` - Găsește acest lucru în fila **Included capabilities** pentru **Azure OpenAI Service** pe pagina **Overview**.
 
-### Management Center
+### Centrul de management
 
-- `AZURE_OPENAI_RESOURCE_GROUP` - Accesează **Project properties** pe pagina **Overview** din **Management Center**.
+- `AZURE_OPENAI_RESOURCE_GROUP` - Accesează **Proprietățile proiectului** pe pagina **Overview** a **Management Center**.
 
-- `GLOBAL_LLM_SERVICE` - Sub **Connected resources**, găsește numele conexiunii **Azure AI Services**. Dacă nu este listat, verifică **Azure portal** sub grupul tău de resurse pentru numele resursei AI Services.
+- `GLOBAL_LLM_SERVICE` - Sub **Connected resources**, găsește numele conexiunii **Azure AI Services**. Dacă nu este listat, verifică **Portalul Azure** sub grupul tău de resurse pentru numele resursei AI Services.
 
-### Pagina Models + Endpoints
+### Pagina de modele + puncte de acces
 
-- `AZURE_OPENAI_EMBEDDING_DEPLOYMENT_NAME` - Selectează modelul de embedding (de exemplu, `text-embedding-ada-002`) și notează **Deployment name** din detaliile modelului.
+- `AZURE_OPENAI_EMBEDDING_DEPLOYMENT_NAME` - Selectează modelul tău de embedding (de exemplu, `text-embedding-ada-002`) și notează **Deployment name** din detaliile modelului.
 
-- `AZURE_OPENAI_CHAT_DEPLOYMENT_NAME` - Selectează modelul de chat (de exemplu, `gpt-4o-mini`) și notează **Deployment name** din detaliile modelului.
+- `AZURE_OPENAI_CHAT_DEPLOYMENT_NAME` - Selectează modelul tău de chat (de exemplu, `gpt-4o-mini`) și notează **Deployment name** din detaliile modelului.
 
 ### Portalul Azure
 
@@ -186,7 +212,7 @@ Dacă dorești să rulezi aceste exemple, va trebui să adaugi următoarele vari
 
 - `AZURE_OPENAI_API_KEY` - De pe același ecran, copiază KEY 1 sau KEY 2.
 
-- `AZURE_SEARCH_SERVICE_ENDPOINT` - Găsește resursa **Azure AI Search**, fă clic pe aceasta și vezi **Overview**.
+- `AZURE_SEARCH_SERVICE_ENDPOINT` - Găsește resursa ta **Azure AI Search**, fă clic pe aceasta și vezi **Overview**.
 
 - `AZURE_SEARCH_API_KEY` - Apoi accesează **Settings** și apoi **Keys** pentru a copia cheia principală sau secundară de administrare.
 
@@ -194,9 +220,9 @@ Dacă dorești să rulezi aceste exemple, va trebui să adaugi următoarele vari
 
 - `AZURE_OPENAI_API_VERSION` - Vizitează pagina [API version lifecycle](https://learn.microsoft.com/en-us/azure/ai-services/openai/api-version-deprecation#latest-ga-api-release) sub **Latest GA API release**.
 
-### Configurare autentificare fără cheie
+### Configurarea autentificării fără cheie
 
-În loc să codificăm credențialele, vom utiliza o conexiune fără cheie cu Azure OpenAI. Pentru a face acest lucru, vom importa `DefaultAzureCredential` și ulterior vom apela funcția `DefaultAzureCredential` pentru a obține credențialul.
+În loc să codificăm credențialele, vom folosi o conexiune fără cheie cu Azure OpenAI. Pentru a face acest lucru, vom importa `DefaultAzureCredential` și vom apela ulterior funcția `DefaultAzureCredential` pentru a obține credențialul.
 
 ```python
 from azure.identity import DefaultAzureCredential, InteractiveBrowserCredential
@@ -204,15 +230,15 @@ from azure.identity import DefaultAzureCredential, InteractiveBrowserCredential
 
 ## Probleme?
 
-Dacă întâmpini probleme în rularea acestei configurări, intră pe canalul nostru de Discord pentru ajutor.
+Dacă întâmpini probleme în rularea acestei configurări, intră pe <a href="https://discord.gg/kzRShWzttr" target="_blank">Discord-ul comunității Azure AI</a> sau <a href="https://github.com/microsoft/ai-agents-for-beginners/issues?WT.mc_id=academic-105485-koreyst" target="_blank">creează o problemă</a>.
 
 ## Lecția următoare
 
 Acum ești pregătit să rulezi codul pentru acest curs. Îți dorim succes în explorarea fascinantei lumi a agenților AI!
 
-[Introducere în agenții AI și utilizările acestora](../01-intro-to-ai-agents/README.md)
+[Introducere în agenții AI și cazuri de utilizare ale agenților](../01-intro-to-ai-agents/README.md)
 
 ---
 
 **Declinare de responsabilitate**:  
-Acest document a fost tradus folosind serviciul de traducere AI [Co-op Translator](https://github.com/Azure/co-op-translator). Deși ne străduim să asigurăm acuratețea, vă rugăm să rețineți că traducerile automate pot conține erori sau inexactități. Documentul original în limba sa natală ar trebui considerat sursa autoritară. Pentru informații critice, se recomandă traducerea profesională realizată de un specialist uman. Nu ne asumăm responsabilitatea pentru eventualele neînțelegeri sau interpretări greșite care pot apărea din utilizarea acestei traduceri.
+Acest document a fost tradus folosind serviciul de traducere AI [Co-op Translator](https://github.com/Azure/co-op-translator). Deși ne străduim să asigurăm acuratețea, vă rugăm să fiți conștienți că traducerile automate pot conține erori sau inexactități. Documentul original în limba sa maternă ar trebui considerat sursa autoritară. Pentru informații critice, se recomandă traducerea profesională realizată de un specialist uman. Nu ne asumăm responsabilitatea pentru eventualele neînțelegeri sau interpretări greșite care pot apărea din utilizarea acestei traduceri.
