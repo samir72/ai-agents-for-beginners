@@ -1,21 +1,21 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "0c6a7a65974383f8467bb6adf3d34bc5",
-  "translation_date": "2025-09-29T21:22:50+00:00",
+  "original_hash": "413adcc2c6a498d52643d27f6871aa24",
+  "translation_date": "2025-10-02T06:46:06+00:00",
   "source_file": "README.md",
   "language_code": "sl"
 }
 -->
 # AI agenti za začetnike - Tečaj
 
-![Generative AI For Beginners](../../translated_images/repo-thumbnailv2.06f4a48036fde647f6ba4eb19f5651babe59bb30e972748afb349e47725d7601.sl.png)
+![Generativna AI za začetnike](../../translated_images/repo-thumbnailv2.06f4a48036fde647f6ba4eb19f5651babe59bb30e972748afb349e47725d7601.sl.png)
 
-## Tečaj, ki vas nauči vsega, kar potrebujete za začetek gradnje AI agentov
+## Tečaj, ki vas nauči vsega, kar morate vedeti za začetek gradnje AI agentov
 
-[![GitHub license](https://img.shields.io/github/license/microsoft/ai-agents-for-beginners.svg)](https://github.com/microsoft/ai-agents-for-beginners/blob/master/LICENSE?WT.mc_id=academic-105485-koreyst)
-[![GitHub contributors](https://img.shields.io/github/contributors/microsoft/ai-agents-for-beginners.svg)](https://GitHub.com/microsoft/ai-agents-for-beginners/graphs/contributors/?WT.mc_id=academic-105485-koreyst)
-[![GitHub issues](https://img.shields.io/github/issues/microsoft/ai-agents-for-beginners.svg)](https://GitHub.com/microsoft/ai-agents-for-beginners/issues/?WT.mc_id=academic-105485-koreyst)
+[![GitHub licenca](https://img.shields.io/github/license/microsoft/ai-agents-for-beginners.svg)](https://github.com/microsoft/ai-agents-for-beginners/blob/master/LICENSE?WT.mc_id=academic-105485-koreyst)
+[![GitHub sodelavci](https://img.shields.io/github/contributors/microsoft/ai-agents-for-beginners.svg)](https://GitHub.com/microsoft/ai-agents-for-beginners/graphs/contributors/?WT.mc_id=academic-105485-koreyst)
+[![GitHub težave](https://img.shields.io/github/issues/microsoft/ai-agents-for-beginners.svg)](https://GitHub.com/microsoft/ai-agents-for-beginners/issues/?WT.mc_id=academic-105485-koreyst)
 [![GitHub pull-requests](https://img.shields.io/github/issues-pr/microsoft/ai-agents-for-beginners.svg)](https://GitHub.com/microsoft/ai-agents-for-beginners/pulls/?WT.mc_id=academic-105485-koreyst)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com?WT.mc_id=academic-105485-koreyst)
 
@@ -27,22 +27,22 @@ CO_OP_TRANSLATOR_METADATA:
 
 **Če želite dodati dodatne jezike, so podprti jeziki navedeni [tukaj](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
 
-[![GitHub watchers](https://img.shields.io/github/watchers/microsoft/ai-agents-for-beginners.svg?style=social&label=Watch)](https://GitHub.com/microsoft/ai-agents-for-beginners/watchers/?WT.mc_id=academic-105485-koreyst)
-[![GitHub forks](https://img.shields.io/github/forks/microsoft/ai-agents-for-beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/ai-agents-for-beginners/network/?WT.mc_id=academic-105485-koreyst)
-[![GitHub stars](https://img.shields.io/github/stars/microsoft/ai-agents-for-beginners.svg?style=social&label=Star)](https://GitHub.com/microsoft/ai-agents-for-beginners/stargazers/?WT.mc_id=academic-105485-koreyst)
+[![GitHub opazovalci](https://img.shields.io/github/watchers/microsoft/ai-agents-for-beginners.svg?style=social&label=Watch)](https://GitHub.com/microsoft/ai-agents-for-beginners/watchers/?WT.mc_id=academic-105485-koreyst)
+[![GitHub razvejanja](https://img.shields.io/github/forks/microsoft/ai-agents-for-beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/ai-agents-for-beginners/network/?WT.mc_id=academic-105485-koreyst)
+[![GitHub zvezdice](https://img.shields.io/github/stars/microsoft/ai-agents-for-beginners.svg?style=social&label=Star)](https://GitHub.com/microsoft/ai-agents-for-beginners/stargazers/?WT.mc_id=academic-105485-koreyst)
 
 [![Azure AI Discord](https://dcbadge.limes.pink/api/server/kzRShWzttr)](https://discord.gg/kzRShWzttr)
 
 
 ## 🌱 Začetek
 
-Ta tečaj vključuje lekcije, ki pokrivajo osnove gradnje AI agentov. Vsaka lekcija obravnava svojo temo, zato lahko začnete kjerkoli!
+Ta tečaj vključuje lekcije, ki pokrivajo osnove gradnje AI agentov. Vsaka lekcija obravnava svojo temo, zato lahko začnete kjerkoli želite!
 
 Tečaj podpira več jezikov. Oglejte si [razpoložljive jezike tukaj](../..). 
 
-Če prvič gradite z modeli generativne umetne inteligence, si oglejte naš tečaj [Generative AI For Beginners](https://aka.ms/genai-beginners), ki vključuje 21 lekcij o gradnji z GenAI.
+Če prvič gradite z modeli generativne umetne inteligence, si oglejte naš tečaj [Generativna AI za začetnike](https://aka.ms/genai-beginners), ki vključuje 21 lekcij o gradnji z GenAI.
 
-Ne pozabite [dati zvezdice (🌟) temu repozitoriju](https://docs.github.com/en/get-started/exploring-projects-on-github/saving-repositories-with-stars?WT.mc_id=academic-105485-koreyst) in [forkati ta repozitorij](https://github.com/microsoft/ai-agents-for-beginners/fork), da zaženete kodo.
+Ne pozabite [dodati zvezdice (🌟) temu repozitoriju](https://docs.github.com/en/get-started/exploring-projects-on-github/saving-repositories-with-stars?WT.mc_id=academic-105485-koreyst) in [razvejati ta repozitorij](https://github.com/microsoft/ai-agents-for-beginners/fork), da zaženete kodo.
 
 ### Spoznajte druge učence, dobite odgovore na svoja vprašanja
 
@@ -50,20 +50,21 @@ Ne pozabite [dati zvezdice (🌟) temu repozitoriju](https://docs.github.com/en/
 
 ### Kaj potrebujete
 
-Vsaka lekcija v tem tečaju vključuje primere kode, ki jih najdete v mapi code_samples. Lahko [forkate ta repozitorij](https://github.com/microsoft/ai-agents-for-beginners/fork), da ustvarite svojo kopijo.  
+Vsaka lekcija v tem tečaju vključuje primere kode, ki jih najdete v mapi code_samples. Lahko [razvejate ta repozitorij](https://github.com/microsoft/ai-agents-for-beginners/fork), da ustvarite svojo kopijo.  
 
 Primeri kode v teh vajah uporabljajo Azure AI Foundry in GitHub Model Catalogs za interakcijo z jezikovnimi modeli:
 
 - [Github Models](https://aka.ms/ai-agents-beginners/github-models) - Brezplačno / Omejeno
 - [Azure AI Foundry](https://aka.ms/ai-agents-beginners/ai-foundry) - Zahtevan Azure račun
 
-Ta tečaj uporablja tudi naslednje okvirje in storitve AI agentov od Microsofta:
+Ta tečaj uporablja tudi naslednje okvirje in storitve za AI agente od Microsofta:
 
+- [Microsoft Agent Framework (MAF) - Novo!](https://aka.ms/ai-agents-beginners/agent-framewrok)
 - [Azure AI Agent Service](https://aka.ms/ai-agents-beginners/ai-agent-service)
 - [Semantic Kernel](https://aka.ms/ai-agents-beginners/semantic-kernel)
 - [AutoGen](https://aka.ms/ai-agents/autogen)
 
-Za več informacij o zagonu kode za ta tečaj obiščite [Course Setup](./00-course-setup/README.md).
+Za več informacij o zagonu kode za ta tečaj obiščite [Nastavitev tečaja](./00-course-setup/README.md).
 
 ## 🙏 Želite pomagati?
 
@@ -72,48 +73,48 @@ Imate predloge ali ste našli napake v črkovanju ali kodi? [Odprite težavo](ht
 ## 📂 Vsaka lekcija vključuje
 
 - Pisno lekcijo, ki se nahaja v README, in kratek video
-- Python primere kode, ki podpirajo Azure AI Foundry in Github Models (brezplačno)
+- Primeri kode v Pythonu, ki podpirajo Azure AI Foundry in Github Models (brezplačno)
 - Povezave do dodatnih virov za nadaljevanje učenja
 
 ## 🗃️ Lekcije
 
-| **Lekcija**                                  | **Besedilo in koda**                              | **Video**                                                  | **Dodatno učenje**                                                                 |
-|----------------------------------------------|--------------------------------------------------|------------------------------------------------------------|------------------------------------------------------------------------------------|
+| **Lekcija**                                  | **Besedilo in koda**                              | **Video**                                                  | **Dodatno učenje**                                                                     |
+|----------------------------------------------|--------------------------------------------------|------------------------------------------------------------|----------------------------------------------------------------------------------------|
 | Uvod v AI agente in primere uporabe agentov  | [Povezava](./01-intro-to-ai-agents/README.md)    | [Video](https://youtu.be/3zgm60bXmQk?si=z8QygFvYQv-9WtO1)  | [Povezava](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
 | Raziskovanje AI agentnih okvirjev            | [Povezava](./02-explore-agentic-frameworks/README.md) | [Video](https://youtu.be/ODwF-EZo_O8?si=Vawth4hzVaHv-u0H)  | [Povezava](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| Razumevanje vzorcev oblikovanja AI agentov   | [Povezava](./03-agentic-design-patterns/README.md) | [Video](https://youtu.be/m9lM8qqoOEA?si=BIzHwzstTPL8o9GF)  | [Povezava](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| Vzorec uporabe orodij                       | [Povezava](./04-tool-use/README.md)              | [Video](https://youtu.be/vieRiPRx-gI?si=2z6O2Xu2cu_Jz46N)  | [Povezava](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| Razumevanje AI agentnih vzorcev oblikovanja  | [Povezava](./03-agentic-design-patterns/README.md) | [Video](https://youtu.be/m9lM8qqoOEA?si=BIzHwzstTPL8o9GF)  | [Povezava](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| Vzorec oblikovanja uporabe orodij           | [Povezava](./04-tool-use/README.md)              | [Video](https://youtu.be/vieRiPRx-gI?si=2z6O2Xu2cu_Jz46N)  | [Povezava](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
 | Agentni RAG                                  | [Povezava](./05-agentic-rag/README.md)           | [Video](https://youtu.be/WcjAARvdL7I?si=gKPWsQpKiIlDH9A3)  | [Povezava](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
 | Gradnja zaupanja vrednih AI agentov          | [Povezava](./06-building-trustworthy-agents/README.md) | [Video](https://youtu.be/iZKkMEGBCUQ?si=jZjpiMnGFOE9L8OK ) | [Povezava](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| Vzorec načrtovanja                          | [Povezava](./07-planning-design/README.md)       | [Video](https://youtu.be/kPfJ2BrBCMY?si=6SC_iv_E5-mzucnC)  | [Povezava](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| Vzorec več agentov                          | [Povezava](./08-multi-agent/README.md)           | [Video](https://youtu.be/V6HpE9hZEx0?si=rMgDhEu7wXo2uo6g)  | [Povezava](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| Vzorec metakognicije                        | [Povezava](./09-metacognition/README.md)         | [Video](https://youtu.be/His9R6gw6Ec?si=8gck6vvdSNCt6OcF)  | [Povezava](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| Vzorec oblikovanja načrtovanja              | [Povezava](./07-planning-design/README.md)       | [Video](https://youtu.be/kPfJ2BrBCMY?si=6SC_iv_E5-mzucnC)  | [Povezava](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| Vzorec oblikovanja več agentov              | [Povezava](./08-multi-agent/README.md)           | [Video](https://youtu.be/V6HpE9hZEx0?si=rMgDhEu7wXo2uo6g)  | [Povezava](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| Vzorec oblikovanja metakognicije            | [Povezava](./09-metacognition/README.md)         | [Video](https://youtu.be/His9R6gw6Ec?si=8gck6vvdSNCt6OcF)  | [Povezava](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
 | AI agenti v produkciji                      | [Povezava](./10-ai-agents-production/README.md)  | [Video](https://youtu.be/l4TP6IyJxmQ?si=31dnhexRo6yLRJDl)  | [Povezava](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| Uporaba agentnih protokolov (MCP, A2A in NLWeb) | [Povezava](./11-agentic-protocols/README.md)     | [Video](https://youtu.be/X-Dh9R3Opn8)                      | [Povezava](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| Inženiring konteksta za AI agente            | [Povezava](./12-context-engineering/README.md)         | [Video](https://youtu.be/F5zqRV7gEag)                                 | [Povezava](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| Upravljanje agentovega spomina               | [Povezava](./13-agent-memory/README.md)     |                                                            |                                                                                        |
-| Vrednotenje AI agentov                       | Na voljo - 18. september                              |                                                            |                                                                                        |
-| Gradnja agentov za uporabo računalnika (CUA) | Na voljo - 25. september                              |                                                            |                                                                                        |
-| Uvajanje skalabilnih agentov                 | Na voljo - 25. september                              |                                                            |                                                                                        |
-| Ustvarjanje lokalnih AI agentov              | Na voljo - 3. oktober                                 |                                                            |                                                                                        |
-| Varnost AI agentov                           | Na voljo - 10. oktober                                |                                                            |                                                                                        |
+| Uporaba agentnih protokolov (MCP, A2A in NLWeb) | [Povezava](./11-agentic-protocols/README.md)           | [Video](https://youtu.be/X-Dh9R3Opn8)                                 | [Povezava](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| Inženiring konteksta za AI agente              | [Povezava](./12-context-engineering/README.md)         | [Video](https://youtu.be/F5zqRV7gEag)                                 | [Povezava](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| Upravljanje agentnega spomina                  | [Povezava](./13-agent-memory/README.md)     |      [Video](https://youtu.be/QrYbHesIxpw?si=vZkVwKrQ4ieCcIPx)                                                      |                                                                                        |
+| Raziskovanje Microsoftovega okvira za agente  | [Povezava](./14-microsoft-agent-framework/README.md)                            |                                                            |                                                                                        |
+| Gradnja agentov za uporabo računalnika (CUA)  | Kmalu na voljo                            |                                                            |                                                                                        |
+| Uvajanje skalabilnih agentov                  | Kmalu na voljo                            |                                                            |                                                                                        |
+| Ustvarjanje lokalnih AI agentov               | Kmalu na voljo                               |                                                            |                                                                                        |
+| Varnost AI agentov                            | Kmalu na voljo                               |                                                            |                                                                                        |
 
 ## 🎒 Drugi tečaji
 
 Naša ekipa pripravlja tudi druge tečaje! Oglejte si:
 
 - [**NOVO** Edge AI za začetnike](https://github.com/microsoft/edgeai-for-beginners?WT.mc_id=academic-105485-koreyst)
-- [Protokol konteksta modela (MCP) za začetnike](https://github.com/microsoft/mcp-for-beginners?WT.mc_id=academic-105485-koreyst)
-- [Generativni AI za začetnike z uporabo .NET](https://github.com/microsoft/Generative-AI-for-beginners-dotnet?WT.mc_id=academic-105485-koreyst)
-- [Generativni AI za začetnike](https://github.com/microsoft/generative-ai-for-beginners?WT.mc_id=academic-105485-koreyst)
-- [Generativni AI za začetnike z uporabo Jave](https://github.com/microsoft/generative-ai-for-beginners-java?WT.mc_id=academic-105485-koreyst)
-- [Strojno učenje za začetnike](https://aka.ms/ml-beginners?WT.mc_id=academic-105485-koreyst)
+- [Model Context Protocol (MCP) za začetnike](https://github.com/microsoft/mcp-for-beginners?WT.mc_id=academic-105485-koreyst)
+- [Generativna AI za začetnike z uporabo .NET](https://github.com/microsoft/Generative-AI-for-beginners-dotnet?WT.mc_id=academic-105485-koreyst)
+- [Generativna AI za začetnike](https://github.com/microsoft/generative-ai-for-beginners?WT.mc_id=academic-105485-koreyst)
+- [Generativna AI za začetnike z uporabo Jave](https://github.com/microsoft/generative-ai-for-beginners-java?WT.mc_id=academic-105485-koreyst)
+- [ML za začetnike](https://aka.ms/ml-beginners?WT.mc_id=academic-105485-koreyst)
 - [Podatkovna znanost za začetnike](https://aka.ms/datascience-beginners?WT.mc_id=academic-105485-koreyst)
 - [AI za začetnike](https://aka.ms/ai-beginners?WT.mc_id=academic-105485-koreyst)
 - [Kibernetska varnost za začetnike](https://github.com/microsoft/Security-101??WT.mc_id=academic-96948-sayoung)
 - [Spletni razvoj za začetnike](https://aka.ms/webdev-beginners?WT.mc_id=academic-105485-koreyst)
 - [IoT za začetnike](https://aka.ms/iot-beginners?WT.mc_id=academic-105485-koreyst)
-- [Razvoj XR za začetnike](https://github.com/microsoft/xr-development-for-beginners?WT.mc_id=academic-105485-koreyst)
+- [XR razvoj za začetnike](https://github.com/microsoft/xr-development-for-beginners?WT.mc_id=academic-105485-koreyst)
 - [Obvladovanje GitHub Copilot za AI programiranje v paru](https://aka.ms/GitHubCopilotAI?WT.mc_id=academic-105485-koreyst)
 - [Obvladovanje GitHub Copilot za razvijalce C#/.NET](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)
 - [Izberi svojo Copilot pustolovščino](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)
@@ -136,12 +137,12 @@ kontaktirajte [opencode@microsoft.com](mailto:opencode@microsoft.com) za dodatna
 ## Blagovne znamke
 
 Ta projekt lahko vsebuje blagovne znamke ali logotipe za projekte, izdelke ali storitve. Dovoljena uporaba Microsoftovih
-blagovnih znamk ali logotipov mora biti skladna z
-[Microsoftovimi smernicami za uporabo blagovnih znamk](https://www.microsoft.com/legal/intellectualproperty/trademarks/usage/general).
+blagovnih znamk ali logotipov je predmet in mora slediti
+[Microsoftovim smernicam za blagovne znamke in znamke](https://www.microsoft.com/legal/intellectualproperty/trademarks/usage/general).
 Uporaba Microsoftovih blagovnih znamk ali logotipov v spremenjenih različicah tega projekta ne sme povzročiti zmede ali nakazovati Microsoftovega sponzorstva.
 Vsaka uporaba blagovnih znamk ali logotipov tretjih oseb je predmet politik teh tretjih oseb.
 
 ---
 
 **Omejitev odgovornosti**:  
-Ta dokument je bil preveden z uporabo storitve AI za prevajanje [Co-op Translator](https://github.com/Azure/co-op-translator). Čeprav si prizadevamo za natančnost, vas prosimo, da upoštevate, da lahko avtomatizirani prevodi vsebujejo napake ali netočnosti. Izvirni dokument v njegovem maternem jeziku je treba obravnavati kot avtoritativni vir. Za ključne informacije priporočamo profesionalni človeški prevod. Ne prevzemamo odgovornosti za morebitna nesporazumevanja ali napačne razlage, ki izhajajo iz uporabe tega prevoda.
+Ta dokument je bil preveden z uporabo storitve AI za prevajanje [Co-op Translator](https://github.com/Azure/co-op-translator). Čeprav si prizadevamo za natančnost, vas prosimo, da upoštevate, da lahko avtomatizirani prevodi vsebujejo napake ali netočnosti. Izvirni dokument v njegovem maternem jeziku naj se šteje za avtoritativni vir. Za ključne informacije priporočamo profesionalni človeški prevod. Ne prevzemamo odgovornosti za morebitna nesporazumevanja ali napačne razlage, ki izhajajo iz uporabe tega prevoda.
