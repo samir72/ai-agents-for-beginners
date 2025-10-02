@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "0c6a7a65974383f8467bb6adf3d34bc5",
-  "translation_date": "2025-09-29T20:45:24+00:00",
+  "original_hash": "413adcc2c6a498d52643d27f6871aa24",
+  "translation_date": "2025-10-02T19:11:28+00:00",
   "source_file": "README.md",
   "language_code": "en"
 }
@@ -59,9 +59,11 @@ The code example in these exercises, utilize Azure AI Foundry and GitHub Model C
 
 This course also uses the following AI Agent frameworks and services from Microsoft:
 
+- [Microsoft Agent Framework (MAF) - New!](https://aka.ms/ai-agents-beginners/agent-framewrok)
 - [Azure AI Agent Service](https://aka.ms/ai-agents-beginners/ai-agent-service)
 - [Semantic Kernel](https://aka.ms/ai-agents-beginners/semantic-kernel)
 - [AutoGen](https://aka.ms/ai-agents/autogen)
+
 
 For more information on running the code for this course, go to the [Course Setup](./00-course-setup/README.md).
 
@@ -92,18 +94,18 @@ Do you have suggestions or found spelling or code errors? [Raise an issue](https
 | Multi-Agent Design Pattern                   | [Link](./08-multi-agent/README.md)                 | [Video](https://youtu.be/V6HpE9hZEx0?si=rMgDhEu7wXo2uo6g)  | [Link](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
 | Metacognition Design Pattern                 | [Link](./09-metacognition/README.md)               | [Video](https://youtu.be/His9R6gw6Ec?si=8gck6vvdSNCt6OcF)  | [Link](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
 | AI Agents in Production                      | [Link](./10-ai-agents-production/README.md)        | [Video](https://youtu.be/l4TP6IyJxmQ?si=31dnhexRo6yLRJDl)  | [Link](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| Using Agentic Protocols (MCP, A2A and NLWeb) | [Link](./11-agentic-protocols/README.md)           | [Video](https://youtu.be/X-Dh9R3Opn8)                                 | [Link](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| Using Agentic Protocols (MCP, A2A, and NLWeb) | [Link](./11-agentic-protocols/README.md)           | [Video](https://youtu.be/X-Dh9R3Opn8)                                 | [Link](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
 | Context Engineering for AI Agents            | [Link](./12-context-engineering/README.md)         | [Video](https://youtu.be/F5zqRV7gEag)                                 | [Link](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| Managing Agentic Memory                      | [Link](./13-agent-memory/README.md)     |                                                            |                                                                                        |
-| Evaluating AI Agents                         | Coming - September 18th                            |                                                            |                                                                                        |
-| Building Computer Use Agents (CUA)           | Coming - September 25th                            |                                                            |                                                                                        |
-| Deploying Scalable Agents                    | Coming - September 25th                            |                                                            |                                                                                        |
-| Creating Local AI Agents                     | Coming - October 3rd                               |                                                            |                                                                                        |
-| Securing AI Agents                           | Coming - October 10th                               |                                                            |                                                                                        |
+| Managing Agentic Memory                      | [Link](./13-agent-memory/README.md)     |      [Video](https://youtu.be/QrYbHesIxpw?si=vZkVwKrQ4ieCcIPx)                                                      |                                                                                        |
+| Exploring Microsoft Agent Framework                         | [Link](./14-microsoft-agent-framework/README.md)                            |                                                            |                                                                                        |
+| Building Computer Use Agents (CUA)           | Coming Soon                            |                                                            |                                                                                        |
+| Deploying Scalable Agents                    | Coming Soon                            |                                                            |                                                                                        |
+| Creating Local AI Agents                     | Coming Soon                               |                                                            |                                                                                        |
+| Securing AI Agents                           | Coming Soon                               |                                                            |                                                                                        |
 
 ## 🎒 Other Courses
 
-Our team creates other courses! Check out:
+Our team offers other courses! Check out:
 
 - [**NEW** Edge AI for Beginners](https://github.com/microsoft/edgeai-for-beginners?WT.mc_id=academic-105485-koreyst)
 - [Model Context Protocol (MCP) For Beginners](https://github.com/microsoft/mcp-for-beginners?WT.mc_id=academic-105485-koreyst)
@@ -140,4 +142,4 @@ This project may contain trademarks or logos for projects, products, or services
 ---
 
 **Disclaimer**:  
-This document has been translated using the AI translation service [Co-op Translator](https://github.com/Azure/co-op-translator). While we aim for accuracy, please note that automated translations may include errors or inaccuracies. The original document in its native language should be regarded as the authoritative source. For critical information, professional human translation is advised. We are not responsible for any misunderstandings or misinterpretations resulting from the use of this translation.
+This document has been translated using the AI translation service [Co-op Translator](https://github.com/Azure/co-op-translator). While we aim for accuracy, please note that automated translations may contain errors or inaccuracies. The original document in its native language should be regarded as the authoritative source. For critical information, professional human translation is recommended. We are not responsible for any misunderstandings or misinterpretations resulting from the use of this translation.

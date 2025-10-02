@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "c55b973b1562abf5aadf6a4028265ac5",
-  "translation_date": "2025-08-28T09:43:07+00:00",
+  "original_hash": "9b03446058b4eed46928ae5e46325ea0",
+  "translation_date": "2025-10-02T19:13:08+00:00",
   "source_file": "00-course-setup/README.md",
   "language_code": "fr"
 }
@@ -15,13 +15,13 @@ Cette leçon explique comment exécuter les exemples de code de ce cours.
 
 ## Rejoignez d'autres apprenants et obtenez de l'aide
 
-Avant de commencer à cloner votre dépôt, rejoignez le [canal Discord AI Agents For Beginners](https://aka.ms/ai-agents/discord) pour obtenir de l'aide sur la configuration, poser des questions sur le cours ou entrer en contact avec d'autres apprenants.
+Avant de cloner votre dépôt, rejoignez le [canal Discord AI Agents For Beginners](https://aka.ms/ai-agents/discord) pour obtenir de l'aide sur la configuration, poser des questions sur le cours ou vous connecter avec d'autres apprenants.
 
 ## Cloner ou forker ce dépôt
 
 Pour commencer, veuillez cloner ou forker le dépôt GitHub. Cela vous permettra de créer votre propre version du matériel du cours afin de pouvoir exécuter, tester et modifier le code !
 
-Cela peut être fait en cliquant sur le lien pour 
+Cela peut être fait en cliquant sur le lien pour <a href="https://github.com/microsoft/ai-agents-for-beginners/fork" target="_blank">forker le dépôt</a>.
 
 Vous devriez maintenant avoir votre propre version forkée de ce cours au lien suivant :
 
@@ -35,13 +35,13 @@ Les exemples de code utilisent :
 
 **Requiert un compte GitHub - Gratuit** :
 
-1) Framework Semantic Kernel Agent + GitHub Models Marketplace. Étiqueté comme (semantic-kernel.ipynb)
-2) Framework AutoGen + GitHub Models Marketplace. Étiqueté comme (autogen.ipynb)
+1) Framework Semantic Kernel Agent + Marketplace des modèles GitHub. Étiqueté comme (semantic-kernel.ipynb)
+2) Framework AutoGen + Marketplace des modèles GitHub. Étiqueté comme (autogen.ipynb)
 
 **Requiert un abonnement Azure** :
-3) Azure AI Foundry + Azure AI Agent Service. Étiqueté comme (azureaiagent.ipynb)
+3) Azure AI Foundry + Service Azure AI Agent. Étiqueté comme (azureaiagent.ipynb)
 
-Nous vous encourageons à essayer les trois types d'exemples pour voir lequel fonctionne le mieux pour vous.
+Nous vous encourageons à essayer les trois types d'exemples pour voir lequel vous convient le mieux.
 
 L'option que vous choisissez déterminera les étapes de configuration que vous devez suivre ci-dessous :
 
@@ -49,11 +49,34 @@ L'option que vous choisissez déterminera les étapes de configuration que vous 
 
 - Python 3.12+
   - **NOTE** : Si vous n'avez pas Python 3.12 installé, assurez-vous de l'installer. Ensuite, créez votre environnement virtuel (venv) en utilisant python3.12 pour garantir que les bonnes versions sont installées à partir du fichier requirements.txt.
-- Un compte GitHub - Pour accéder au GitHub Models Marketplace
+  
+    > Exemple
+
+    Créez un répertoire venv Python :
+
+    ``` bash
+    python3 -m venv venv
+    ```
+
+    Puis activez l'environnement venv pour :
+
+    macOS et Linux
+
+    ```bash
+    source venv/bin/activate
+    ```
+  
+    Windows
+
+    ```bash
+    venv\Scripts\activate
+    ```
+
+- Un compte GitHub - Pour accéder au Marketplace des modèles GitHub
 - Un abonnement Azure - Pour accéder à Azure AI Foundry
 - Un compte Azure AI Foundry - Pour accéder au service Azure AI Agent
 
-Nous avons inclus un fichier `requirements.txt` à la racine de ce dépôt contenant tous les packages Python nécessaires pour exécuter les exemples de code.
+Nous avons inclus un fichier `requirements.txt` à la racine de ce dépôt qui contient tous les packages Python nécessaires pour exécuter les exemples de code.
 
 Vous pouvez les installer en exécutant la commande suivante dans votre terminal à la racine du dépôt :
 
@@ -71,27 +94,27 @@ Assurez-vous d'utiliser la bonne version de Python dans VSCode.
 
 ### Étape 1 : Récupérez votre jeton d'accès personnel GitHub (PAT)
 
-Ce cours utilise le GitHub Models Marketplace, qui offre un accès gratuit à des modèles de langage étendu (LLMs) que vous utiliserez pour créer des agents d'IA.
+Ce cours utilise le Marketplace des modèles GitHub, offrant un accès gratuit à des modèles de langage (LLMs) que vous utiliserez pour créer des agents d'IA.
 
 Pour utiliser les modèles GitHub, vous devrez créer un [jeton d'accès personnel GitHub](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
 
-Cela peut être fait en accédant à votre compte GitHub.
+Cela peut être fait en accédant aux <a href="https://github.com/settings/personal-access-tokens" target="_blank">paramètres des jetons d'accès personnel</a> de votre compte GitHub.
 
 Veuillez suivre le [principe du moindre privilège](https://docs.github.com/en/get-started/learning-to-code/storing-your-secrets-safely) lors de la création de votre jeton. Cela signifie que vous ne devez donner au jeton que les permissions nécessaires pour exécuter les exemples de code de ce cours.
 
-1. Sélectionnez l'option `Fine-grained tokens` sur le côté gauche de votre écran en accédant aux **Paramètres du développeur**.
+1. Sélectionnez l'option `Fine-grained tokens` sur le côté gauche de votre écran en accédant aux **paramètres du développeur**.
    ![](../../../translated_images/profile_developer_settings.410a859fe749c755c859d414294c5908e307222b2c61819c3203bbeed4470e25.fr.png)
 
     Ensuite, sélectionnez `Generate new token`.
 
     ![Générer un jeton](../../../translated_images/fga_new_token.1c1a234afe202ab37483944a291ee80c1868e1e78082fd6bd4180fea5d5a15b4.fr.png)
 
-2. Entrez un nom descriptif pour votre jeton qui reflète son objectif, afin qu'il soit facile à identifier plus tard.
+2. Entrez un nom descriptif pour votre jeton qui reflète son objectif, afin de le reconnaître facilement plus tard.
 
     🔐 Recommandation de durée du jeton
 
     Durée recommandée : 30 jours  
-    Pour une posture plus sécurisée, vous pouvez opter pour une période plus courte, comme 7 jours 🛡️  
+    Pour une posture plus sécurisée, vous pouvez opter pour une période plus courte, comme 7 jours 🛡️.  
     C'est une excellente façon de se fixer un objectif personnel et de terminer le cours tout en maintenant votre élan d'apprentissage 🚀.
 
     ![Nom et expiration du jeton](../../../translated_images/token-name-expiry-date.a095fb0de63868640a4c82d6b1bbc92b482930a663917a5983a3c7cd1ef86b77.fr.png)
@@ -117,14 +140,14 @@ Pour créer votre fichier `.env`, exécutez la commande suivante dans votre term
 cp .env.example .env
 ```
 
-Cela copiera le fichier exemple et créera un fichier `.env` dans votre répertoire où vous remplirez les valeurs des variables d'environnement.
+Cela copiera le fichier exemple et créera un `.env` dans votre répertoire où vous remplirez les valeurs des variables d'environnement.
 
 Avec votre jeton copié, ouvrez le fichier `.env` dans votre éditeur de texte préféré et collez votre jeton dans le champ `GITHUB_TOKEN`.
 ![Champ du jeton GitHub](../../../translated_images/github_token_field.20491ed3224b5f4ab24d10ced7a68c4aba2948fe8999cfc8675edaa16f5e5681.fr.png)
 
 Vous devriez maintenant être en mesure d'exécuter les exemples de code de ce cours.
 
-## Configuration pour les exemples utilisant Azure AI Foundry et Azure AI Agent Service
+## Configuration pour les exemples utilisant Azure AI Foundry et le service Azure AI Agent
 
 ### Étape 1 : Récupérez votre point de terminaison de projet Azure
 
@@ -144,7 +167,7 @@ Pour créer votre fichier `.env`, exécutez la commande suivante dans votre term
 cp .env.example .env
 ```
 
-Cela copiera le fichier exemple et créera un fichier `.env` dans votre répertoire où vous remplirez les valeurs des variables d'environnement.
+Cela copiera le fichier exemple et créera un `.env` dans votre répertoire où vous remplirez les valeurs des variables d'environnement.
 
 Avec votre jeton copié, ouvrez le fichier `.env` dans votre éditeur de texte préféré et collez votre jeton dans le champ `PROJECT_ENDPOINT`.
 
@@ -174,13 +197,13 @@ Si vous souhaitez exécuter ces exemples, vous devrez ajouter les variables d'en
 
 - `AZURE_OPENAI_RESOURCE_GROUP` - Accédez aux **Propriétés du projet** sur la page **Vue d'ensemble** du **Centre de gestion**.
 
-- `GLOBAL_LLM_SERVICE` - Sous **Ressources connectées**, trouvez le nom de connexion des **Services Azure AI**. Si non listé, vérifiez le **portail Azure** sous votre groupe de ressources pour le nom de la ressource des services AI.
+- `GLOBAL_LLM_SERVICE` - Sous **Ressources connectées**, trouvez le nom de connexion des **Services Azure AI**. Si non listé, consultez le **portail Azure** sous votre groupe de ressources pour le nom de la ressource des services AI.
 
 ### Page Modèles + Points de terminaison
 
-- `AZURE_OPENAI_EMBEDDING_DEPLOYMENT_NAME` - Sélectionnez votre modèle d'intégration (par ex., `text-embedding-ada-002`) et notez le **Nom du déploiement** à partir des détails du modèle.
+- `AZURE_OPENAI_EMBEDDING_DEPLOYMENT_NAME` - Sélectionnez votre modèle d'embedding (par ex., `text-embedding-ada-002`) et notez le **Nom du déploiement** dans les détails du modèle.
 
-- `AZURE_OPENAI_CHAT_DEPLOYMENT_NAME` - Sélectionnez votre modèle de chat (par ex., `gpt-4o-mini`) et notez le **Nom du déploiement** à partir des détails du modèle.
+- `AZURE_OPENAI_CHAT_DEPLOYMENT_NAME` - Sélectionnez votre modèle de chat (par ex., `gpt-4o-mini`) et notez le **Nom du déploiement** dans les détails du modèle.
 
 ### Portail Azure
 
@@ -190,11 +213,11 @@ Si vous souhaitez exécuter ces exemples, vous devrez ajouter les variables d'en
 
 - `AZURE_SEARCH_SERVICE_ENDPOINT` - Trouvez votre ressource **Azure AI Search**, cliquez dessus, et consultez **Vue d'ensemble**.
 
-- `AZURE_SEARCH_API_KEY` - Ensuite, accédez à **Paramètres** puis **Clés** pour copier la clé administrateur principale ou secondaire.
+- `AZURE_SEARCH_API_KEY` - Ensuite, allez dans **Paramètres**, puis **Clés** pour copier la clé administrateur principale ou secondaire.
 
 ### Page externe
 
-- `AZURE_OPENAI_API_VERSION` - Visitez la page [Cycle de vie des versions API](https://learn.microsoft.com/en-us/azure/ai-services/openai/api-version-deprecation#latest-ga-api-release) sous **Dernière version GA de l'API**.
+- `AZURE_OPENAI_API_VERSION` - Consultez la page [Cycle de vie des versions API](https://learn.microsoft.com/en-us/azure/ai-services/openai/api-version-deprecation#latest-ga-api-release) sous **Dernière version GA de l'API**.
 
 ### Configuration de l'authentification sans clé
 
@@ -206,7 +229,7 @@ from azure.identity import DefaultAzureCredential, InteractiveBrowserCredential
 
 ## Vous êtes bloqué ?
 
-Si vous rencontrez des problèmes pour exécuter cette configuration, rejoignez notre 
+Si vous rencontrez des problèmes avec cette configuration, rejoignez notre <a href="https://discord.gg/kzRShWzttr" target="_blank">communauté Discord Azure AI</a> ou <a href="https://github.com/microsoft/ai-agents-for-beginners/issues?WT.mc_id=academic-105485-koreyst" target="_blank">créez un ticket</a>.
 
 ## Leçon suivante
 
@@ -217,4 +240,4 @@ Vous êtes maintenant prêt à exécuter le code de ce cours. Bonne découverte 
 ---
 
 **Avertissement** :  
-Ce document a été traduit à l'aide du service de traduction automatique [Co-op Translator](https://github.com/Azure/co-op-translator). Bien que nous nous efforcions d'assurer l'exactitude, veuillez noter que les traductions automatisées peuvent contenir des erreurs ou des inexactitudes. Le document original dans sa langue d'origine doit être considéré comme la source faisant autorité. Pour des informations critiques, il est recommandé de recourir à une traduction professionnelle réalisée par un humain. Nous déclinons toute responsabilité en cas de malentendus ou d'interprétations erronées résultant de l'utilisation de cette traduction.
+Ce document a été traduit à l'aide du service de traduction automatique [Co-op Translator](https://github.com/Azure/co-op-translator). Bien que nous nous efforcions d'assurer l'exactitude, veuillez noter que les traductions automatisées peuvent contenir des erreurs ou des inexactitudes. Le document original dans sa langue d'origine doit être considéré comme la source faisant autorité. Pour des informations critiques, il est recommandé de recourir à une traduction humaine professionnelle. Nous déclinons toute responsabilité en cas de malentendus ou d'interprétations erronées résultant de l'utilisation de cette traduction.
