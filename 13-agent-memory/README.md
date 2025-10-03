@@ -77,7 +77,7 @@ A long-term memory might store that "Ben enjoys skiing and outdoor activities, l
 
 This specialized memory type helps an agent develop a consistent "personality" or "persona". It allows the agent to remember details about itself or its intended role, making interactions more fluid and focused.
 
-**Long Term Memory Example**
+**Persona Memory Example**
 If the travel agent is designed to be an "expert ski planner," persona memory might reinforce this role, influencing its responses to align with an expert's tone and knowledge.
 
 #### Workflow/Episodic Memory
