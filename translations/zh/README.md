@@ -1,17 +1,17 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "413adcc2c6a498d52643d27f6871aa24",
-  "translation_date": "2025-10-01T20:29:20+00:00",
+  "original_hash": "fbe8e2c7026d42ed06780dce1b06fd61",
+  "translation_date": "2025-10-03T14:15:03+00:00",
   "source_file": "README.md",
   "language_code": "zh"
 }
 -->
-# 初学者的AI代理课程
+# 初学者的 AI 代理课程
 
-![生成式AI初学者课程](../../translated_images/repo-thumbnailv2.06f4a48036fde647f6ba4eb19f5651babe59bb30e972748afb349e47725d7601.zh.png)
+![生成式 AI 初学者课程](../../translated_images/repo-thumbnailv2.06f4a48036fde647f6ba4eb19f5651babe59bb30e972748afb349e47725d7601.zh.png)
 
-## 一门教你如何开始构建AI代理的课程
+## 一门教你从零开始构建 AI 代理的课程
 
 [![GitHub license](https://img.shields.io/github/license/microsoft/ai-agents-for-beginners.svg)](https://github.com/microsoft/ai-agents-for-beginners/blob/master/LICENSE?WT.mc_id=academic-105485-koreyst)
 [![GitHub contributors](https://img.shields.io/github/contributors/microsoft/ai-agents-for-beginners.svg)](https://GitHub.com/microsoft/ai-agents-for-beginners/graphs/contributors/?WT.mc_id=academic-105485-koreyst)
@@ -21,11 +21,11 @@ CO_OP_TRANSLATOR_METADATA:
 
 ### 🌐 多语言支持
 
-#### 通过GitHub Action支持（自动更新且始终保持最新）
+#### 通过 GitHub Action 支持（自动更新，始终保持最新）
 
-[法语](../fr/README.md) | [西班牙语](../es/README.md) | [德语](../de/README.md) | [俄语](../ru/README.md) | [阿拉伯语](../ar/README.md) | [波斯语（法尔西语）](../fa/README.md) | [乌尔都语](../ur/README.md) | [中文（简体）](./README.md) | [中文（繁体，澳门）](../mo/README.md) | [中文（繁体，香港）](../hk/README.md) | [中文（繁体，台湾）](../tw/README.md) | [日语](../ja/README.md) | [韩语](../ko/README.md) | [印地语](../hi/README.md) | [孟加拉语](../bn/README.md) | [马拉地语](../mr/README.md) | [尼泊尔语](../ne/README.md) | [旁遮普语（古木基文）](../pa/README.md) | [葡萄牙语（葡萄牙）](../pt/README.md) | [葡萄牙语（巴西）](../br/README.md) | [意大利语](../it/README.md) | [波兰语](../pl/README.md) | [土耳其语](../tr/README.md) | [希腊语](../el/README.md) | [泰语](../th/README.md) | [瑞典语](../sv/README.md) | [丹麦语](../da/README.md) | [挪威语](../no/README.md) | [芬兰语](../fi/README.md) | [荷兰语](../nl/README.md) | [希伯来语](../he/README.md) | [越南语](../vi/README.md) | [印尼语](../id/README.md) | [马来语](../ms/README.md) | [塔加洛语（菲律宾语）](../tl/README.md) | [斯瓦希里语](../sw/README.md) | [匈牙利语](../hu/README.md) | [捷克语](../cs/README.md) | [斯洛伐克语](../sk/README.md) | [罗马尼亚语](../ro/README.md) | [保加利亚语](../bg/README.md) | [塞尔维亚语（西里尔文）](../sr/README.md) | [克罗地亚语](../hr/README.md) | [斯洛文尼亚语](../sl/README.md) | [乌克兰语](../uk/README.md) | [缅甸语（缅甸）](../my/README.md)
+[法语](../fr/README.md) | [西班牙语](../es/README.md) | [德语](../de/README.md) | [俄语](../ru/README.md) | [阿拉伯语](../ar/README.md) | [波斯语 (Farsi)](../fa/README.md) | [乌尔都语](../ur/README.md) | [中文 (简体)](./README.md) | [中文 (繁体，澳门)](../mo/README.md) | [中文 (繁体，香港)](../hk/README.md) | [中文 (繁体，台湾)](../tw/README.md) | [日语](../ja/README.md) | [韩语](../ko/README.md) | [印地语](../hi/README.md) | [孟加拉语](../bn/README.md) | [马拉地语](../mr/README.md) | [尼泊尔语](../ne/README.md) | [旁遮普语 (Gurmukhi)](../pa/README.md) | [葡萄牙语 (葡萄牙)](../pt/README.md) | [葡萄牙语 (巴西)](../br/README.md) | [意大利语](../it/README.md) | [波兰语](../pl/README.md) | [土耳其语](../tr/README.md) | [希腊语](../el/README.md) | [泰语](../th/README.md) | [瑞典语](../sv/README.md) | [丹麦语](../da/README.md) | [挪威语](../no/README.md) | [芬兰语](../fi/README.md) | [荷兰语](../nl/README.md) | [希伯来语](../he/README.md) | [越南语](../vi/README.md) | [印尼语](../id/README.md) | [马来语](../ms/README.md) | [他加禄语 (菲律宾)](../tl/README.md) | [斯瓦希里语](../sw/README.md) | [匈牙利语](../hu/README.md) | [捷克语](../cs/README.md) | [斯洛伐克语](../sk/README.md) | [罗马尼亚语](../ro/README.md) | [保加利亚语](../bg/README.md) | [塞尔维亚语 (西里尔字母)](../sr/README.md) | [克罗地亚语](../hr/README.md) | [斯洛文尼亚语](../sl/README.md) | [乌克兰语](../uk/README.md) | [缅甸语 (Myanmar)](../my/README.md)
 
-**如果您希望支持其他语言，请查看[这里](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
+**如果您希望支持其他语言，请查看 [这里](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
 
 [![GitHub watchers](https://img.shields.io/github/watchers/microsoft/ai-agents-for-beginners.svg?style=social&label=Watch)](https://GitHub.com/microsoft/ai-agents-for-beginners/watchers/?WT.mc_id=academic-105485-koreyst)
 [![GitHub forks](https://img.shields.io/github/forks/microsoft/ai-agents-for-beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/ai-agents-for-beginners/network/?WT.mc_id=academic-105485-koreyst)
@@ -35,68 +35,68 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## 🌱 快速入门
 
-本课程包含关于构建AI代理基础知识的课程。每节课都有独立的主题，您可以从任何地方开始学习！
+本课程包含关于构建 AI 代理的基础知识的课程。每节课都有独立的主题，您可以从任意一节开始学习！
 
-本课程支持多语言。请查看我们的[可用语言](../..)。
+本课程支持多语言。请查看我们的 [可用语言](../..)。
 
-如果这是您第一次使用生成式AI模型，请查看我们的[生成式AI初学者课程](https://aka.ms/genai-beginners)，其中包含21节关于生成式AI的课程。
+如果您是第一次使用生成式 AI 模型，请查看我们的 [生成式 AI 初学者课程](https://aka.ms/genai-beginners)，其中包含 21 节关于使用生成式 AI 的课程。
 
-别忘了[收藏（🌟）这个仓库](https://docs.github.com/en/get-started/exploring-projects-on-github/saving-repositories-with-stars?WT.mc_id=academic-105485-koreyst)并[分叉这个仓库](https://github.com/microsoft/ai-agents-for-beginners/fork)以运行代码。
+别忘了 [收藏 (🌟) 本仓库](https://docs.github.com/en/get-started/exploring-projects-on-github/saving-repositories-with-stars?WT.mc_id=academic-105485-koreyst) 和 [Fork 本仓库](https://github.com/microsoft/ai-agents-for-beginners/fork) 来运行代码。
 
 ### 与其他学习者交流，解决您的问题
 
-如果您遇到困难或对构建AI代理有任何疑问，请加入我们在[Azure AI Foundry社区Discord](https://aka.ms/ai-agents/discord)的专属频道。
+如果您遇到困难或有关于构建 AI 代理的问题，请加入我们在 [Azure AI Foundry 社区 Discord](https://aka.ms/ai-agents/discord) 的专属频道。
 
 ### 您需要准备什么
 
-本课程的每节课都包含代码示例，您可以在code_samples文件夹中找到这些示例。您可以[分叉这个仓库](https://github.com/microsoft/ai-agents-for-beginners/fork)以创建自己的副本。
+本课程的每节课都包含代码示例，您可以在 code_samples 文件夹中找到这些示例。您可以 [Fork 本仓库](https://github.com/microsoft/ai-agents-for-beginners/fork) 来创建自己的副本。
 
-这些练习中的代码示例使用Azure AI Foundry和GitHub模型目录与语言模型交互：
+这些练习中的代码示例使用 Azure AI Foundry 和 GitHub 模型目录与语言模型交互：
 
-- [GitHub模型](https://aka.ms/ai-agents-beginners/github-models) - 免费/有限
-- [Azure AI Foundry](https://aka.ms/ai-agents-beginners/ai-foundry) - 需要Azure账户
+- [GitHub 模型](https://aka.ms/ai-agents-beginners/github-models) - 免费 / 有限
+- [Azure AI Foundry](https://aka.ms/ai-agents-beginners/ai-foundry) - 需要 Azure 账户
 
-本课程还使用了以下来自微软的AI代理框架和服务：
+本课程还使用了以下来自 Microsoft 的 AI 代理框架和服务：
 
-- [微软代理框架（MAF）- 新！](https://aka.ms/ai-agents-beginners/agent-framewrok)
-- [Azure AI代理服务](https://aka.ms/ai-agents-beginners/ai-agent-service)
-- [语义内核](https://aka.ms/ai-agents-beginners/semantic-kernel)
+- [Microsoft Agent Framework (MAF) - 新版！](https://aka.ms/ai-agents-beginners/agent-framewrok)
+- [Azure AI Agent Service](https://aka.ms/ai-agents-beginners/ai-agent-service)
+- [Semantic Kernel](https://aka.ms/ai-agents-beginners/semantic-kernel)
 - [AutoGen](https://aka.ms/ai-agents/autogen)
 
-有关运行本课程代码的更多信息，请查看[课程设置](./00-course-setup/README.md)。
+有关运行本课程代码的更多信息，请查看 [课程设置](./00-course-setup/README.md)。
 
 ## 🙏 想要贡献？
 
-您有建议或发现拼写或代码错误吗？[提交问题](https://github.com/microsoft/ai-agents-for-beginners/issues?WT.mc_id=academic-105485-koreyst)或[创建拉取请求](https://github.com/microsoft/ai-agents-for-beginners/pulls?WT.mc_id=academic-105485-koreyst)。
+您有建议或发现拼写或代码错误吗？[提交问题](https://github.com/microsoft/ai-agents-for-beginners/issues?WT.mc_id=academic-105485-koreyst) 或 [创建拉取请求](https://github.com/microsoft/ai-agents-for-beginners/pulls?WT.mc_id=academic-105485-koreyst)。
 
 ## 📂 每节课包括
 
-- 位于README中的书面课程和一个简短视频
-- 支持Azure AI Foundry和GitHub模型（免费）的Python代码示例
+- 位于 README 中的书面课程和简短视频
+- 支持 Azure AI Foundry 和 GitHub 模型（免费）的 Python 代码示例
 - 继续学习的额外资源链接
 
 ## 🗃️ 课程目录
 
 | **课程**                                     | **文本与代码**                                    | **视频**                                                  | **额外学习**                                                                     |
 |----------------------------------------------|----------------------------------------------------|------------------------------------------------------------|----------------------------------------------------------------------------------|
-| AI代理简介及应用场景                         | [链接](./01-intro-to-ai-agents/README.md)          | [视频](https://youtu.be/3zgm60bXmQk?si=z8QygFvYQv-9WtO1)  | [链接](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| 探索AI代理框架                               | [链接](./02-explore-agentic-frameworks/README.md)  | [视频](https://youtu.be/ODwF-EZo_O8?si=Vawth4hzVaHv-u0H)  | [链接](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| 理解AI代理设计模式                           | [链接](./03-agentic-design-patterns/README.md)     | [视频](https://youtu.be/m9lM8qqoOEA?si=BIzHwzstTPL8o9GF)  | [链接](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| 工具使用设计模式                             | [链接](./04-tool-use/README.md)                    | [视频](https://youtu.be/vieRiPRx-gI?si=2z6O2Xu2cu_Jz46N)  | [链接](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| 代理式RAG                                    | [链接](./05-agentic-rag/README.md)                 | [视频](https://youtu.be/WcjAARvdL7I?si=gKPWsQpKiIlDH9A3)  | [链接](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| 构建可信的AI代理                             | [链接](./06-building-trustworthy-agents/README.md) | [视频](https://youtu.be/iZKkMEGBCUQ?si=jZjpiMnGFOE9L8OK ) | [链接](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| 规划设计模式                                 | [链接](./07-planning-design/README.md)             | [视频](https://youtu.be/kPfJ2BrBCMY?si=6SC_iv_E5-mzucnC)  | [链接](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| 多代理设计模式                               | [链接](./08-multi-agent/README.md)                 | [视频](https://youtu.be/V6HpE9hZEx0?si=rMgDhEu7wXo2uo6g)  | [链接](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| 元认知设计模式                               | [链接](./09-metacognition/README.md)               | [视频](https://youtu.be/His9R6gw6Ec?si=8gck6vvdSNCt6OcF)  | [链接](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| AI代理的生产应用                             | [链接](./10-ai-agents-production/README.md)        | [视频](https://youtu.be/l4TP6IyJxmQ?si=31dnhexRo6yLRJDl)  | [链接](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| AI 代理简介及应用场景                        | [链接](./01-intro-to-ai-agents/README.md)          | [视频](https://youtu.be/3zgm60bXmQk?si=z8QygFvYQv-9WtO1)   | [链接](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| 探索 AI 代理框架                             | [链接](./02-explore-agentic-frameworks/README.md)  | [视频](https://youtu.be/ODwF-EZo_O8?si=Vawth4hzVaHv-u0H)   | [链接](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| 理解 AI 代理设计模式                         | [链接](./03-agentic-design-patterns/README.md)     | [视频](https://youtu.be/m9lM8qqoOEA?si=BIzHwzstTPL8o9GF)   | [链接](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| 工具使用设计模式                             | [链接](./04-tool-use/README.md)                    | [视频](https://youtu.be/vieRiPRx-gI?si=2z6O2Xu2cu_Jz46N)   | [链接](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| 代理式 RAG                                   | [链接](./05-agentic-rag/README.md)                 | [视频](https://youtu.be/WcjAARvdL7I?si=gKPWsQpKiIlDH9A3)   | [链接](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| 构建可信的 AI 代理                           | [链接](./06-building-trustworthy-agents/README.md) | [视频](https://youtu.be/iZKkMEGBCUQ?si=jZjpiMnGFOE9L8OK)   | [链接](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| 规划设计模式                                 | [链接](./07-planning-design/README.md)             | [视频](https://youtu.be/kPfJ2BrBCMY?si=6SC_iv_E5-mzucnC)   | [链接](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| 多代理设计模式                               | [链接](./08-multi-agent/README.md)                 | [视频](https://youtu.be/V6HpE9hZEx0?si=rMgDhEu7wXo2uo6g)   | [链接](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| 元认知设计模式                               | [链接](./09-metacognition/README.md)               | [视频](https://youtu.be/His9R6gw6Ec?si=8gck6vvdSNCt6OcF)   | [链接](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| AI 代理的生产应用                            | [链接](./10-ai-agents-production/README.md)        | [视频](https://youtu.be/l4TP6IyJxmQ?si=31dnhexRo6yLRJDl)   | [链接](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
 | 使用代理协议 (MCP, A2A 和 NLWeb) | [链接](./11-agentic-protocols/README.md)           | [视频](https://youtu.be/X-Dh9R3Opn8)                                 | [链接](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| AI代理的上下文工程               | [链接](./12-context-engineering/README.md)         | [视频](https://youtu.be/F5zqRV7gEag)                                 | [链接](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| 管理代理记忆                     | [链接](./13-agent-memory/README.md)     |      [视频](https://youtu.be/QrYbHesIxpw?si=vZkVwKrQ4ieCcIPx)                                                      |                                                                                        |
-| 探索微软代理框架                 | [链接](./14-microsoft-agent-framework/README.md)                            |                                                            |                                                                                        |
-| 构建计算机使用代理 (CUA)         | 即将推出                            |                                                            |                                                                                        |
-| 部署可扩展代理                   | 即将推出                            |                                                            |                                                                                        |
-| 创建本地AI代理                   | 即将推出                               |                                                            |                                                                                        |
-| AI代理的安全性                   | 即将推出                               |                                                            |                                                                                        |
+| AI代理的上下文工程                | [链接](./12-context-engineering/README.md)         | [视频](https://youtu.be/F5zqRV7gEag)                                 | [链接](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| 管理代理记忆                      | [链接](./13-agent-memory/README.md)     |      [视频](https://youtu.be/QrYbHesIxpw?si=vZkVwKrQ4ieCcIPx)                                                      |                                                                                        |
+| 探索微软代理框架                  | [链接](./14-microsoft-agent-framework/README.md)                            |                                                            |                                                                                        |
+| 构建计算机使用代理 (CUA)          | 即将推出                            |                                                            |                                                                                        |
+| 部署可扩展代理                    | 即将推出                            |                                                            |                                                                                        |
+| 创建本地AI代理                    | 即将推出                               |                                                            |                                                                                        |
+| AI代理的安全性                    | 即将推出                               |                                                            |                                                                                        |
 
 ## 🎒 其他课程
 
@@ -120,19 +120,32 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## 🌟 社区感谢
 
-感谢 [Shivam Goyal](https://www.linkedin.com/in/shivam2003/) 提供了重要的代码示例，展示了代理式RAG的应用。
+感谢 [Shivam Goyal](https://www.linkedin.com/in/shivam2003/) 提供了重要的代码示例，展示了代理式RAG。
 
 ## 贡献
 
-本项目欢迎贡献和建议。大多数贡献需要您同意一份贡献者许可协议 (CLA)，声明您有权并实际授予我们使用您的贡献的权利。详情请访问 <https://cla.opensource.microsoft.com>。
+本项目欢迎贡献和建议。大多数贡献需要您同意一份贡献者许可协议 (CLA)，声明您有权并确实授予我们使用您的贡献的权利。详情请访问 <https://cla.opensource.microsoft.com>。
 
 当您提交拉取请求时，CLA机器人会自动判断您是否需要提供CLA，并适当地标注PR（例如状态检查、评论）。只需按照机器人提供的指示操作即可。您只需在所有使用CLA的仓库中完成一次此操作。
 
-本项目已采用 [微软开源行为准则](https://opensource.microsoft.com/codeofconduct/)。有关更多信息，请参阅 [行为准则FAQ](https://opensource.microsoft.com/codeofconduct/faq/) 或联系 [opencode@microsoft.com](mailto:opencode@microsoft.com) 提出其他问题或意见。
+本项目已采用 [微软开源行为准则](https://opensource.microsoft.com/codeofconduct/)。
+有关更多信息，请参阅 [行为准则FAQ](https://opensource.microsoft.com/codeofconduct/faq/) 或联系 [opencode@microsoft.com](mailto:opencode@microsoft.com) 提出其他问题或意见。
 
 ## 商标
 
-本项目可能包含项目、产品或服务的商标或标志。使用微软商标或标志需获得授权，并必须遵循 [微软商标和品牌指南](https://www.microsoft.com/legal/intellectualproperty/trademarks/usage/general)。在修改版本中使用微软商标或标志不得引起混淆或暗示微软赞助。任何使用第三方商标或标志的行为需遵循相关第三方的政策。
+本项目可能包含项目、产品或服务的商标或标志。使用微软商标或标志需遵守并符合 [微软商标和品牌指南](https://www.microsoft.com/legal/intellectualproperty/trademarks/usage/general)。
+在修改版本中使用微软商标或标志不得引起混淆或暗示微软赞助。
+任何使用第三方商标或标志的行为需遵守第三方的相关政策。
+
+## 获取帮助
+
+如果您遇到问题或对构建AI应用有任何疑问，请加入：
+
+[![Azure AI Foundry Discord](https://img.shields.io/badge/Discord-Azure_AI_Foundry_Community_Discord-blue?style=for-the-badge&logo=discord&color=5865f2&logoColor=fff)](https://aka.ms/foundry/discord)
+
+如果您有产品反馈或在构建过程中遇到错误，请访问：
+
+[![Azure AI Foundry Developer Forum](https://img.shields.io/badge/GitHub-Azure_AI_Foundry_Developer_Forum-blue?style=for-the-badge&logo=github&color=000000&logoColor=fff)](https://aka.ms/foundry/forum)
 
 ---
 

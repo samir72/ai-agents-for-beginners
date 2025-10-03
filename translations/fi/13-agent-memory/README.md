@@ -1,16 +1,16 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "c27e2a2e9055910545560e8472b341d8",
-  "translation_date": "2025-10-02T17:09:50+00:00",
+  "original_hash": "d2c9703548140bafa2d6a77406552542",
+  "translation_date": "2025-10-03T14:48:56+00:00",
   "source_file": "13-agent-memory/README.md",
   "language_code": "fi"
 }
 -->
 # Muisti AI-agentteja varten
-[![Agentin muisti](../../../translated_images/lesson-13-thumbnail.959e3bc52d210c64a614a3bece6b170a2c472138dc0a14c7fbde07306ef95ae7.fi.png)](https://youtu.be/QrYbHesIxpw?si=qNYW6PL3fb3lTPMk)
+[![Agenttimuisti](../../../translated_images/lesson-13-thumbnail.959e3bc52d210c64a614a3bece6b170a2c472138dc0a14c7fbde07306ef95ae7.fi.png)](https://youtu.be/QrYbHesIxpw?si=qNYW6PL3fb3lTPMk)
 
-Kun keskustellaan AI-agenttien luomisen ainutlaatuisista eduista, kaksi asiaa nousee esiin: kyky käyttää työkaluja tehtävien suorittamiseen ja kyky parantua ajan myötä. Muisti on itseään kehittävän agentin perusta, joka voi tarjota parempia kokemuksia käyttäjillemme.
+Kun puhutaan AI-agenttien luomisen ainutlaatuisista eduista, kaksi asiaa nousee esiin: kyky käyttää työkaluja tehtävien suorittamiseen ja kyky parantua ajan myötä. Muisti on keskeinen osa itseään kehittävän agentin luomista, joka voi tarjota parempia kokemuksia käyttäjillemme.
 
 Tässä oppitunnissa tarkastelemme, mitä muisti tarkoittaa AI-agenteille ja kuinka voimme hallita ja hyödyntää sitä sovellustemme hyväksi.
 
@@ -22,7 +22,7 @@ Tämä oppitunti kattaa:
 
 • **Muistin toteuttaminen ja tallentaminen**: Käytännön menetelmiä muistikapasiteetin lisäämiseksi AI-agenteille, keskittyen lyhyt- ja pitkäaikaiseen muistiin.
 
-• **AI-agenttien itseoppiminen**: Kuinka muisti mahdollistaa oppimisen aiemmista vuorovaikutuksista ja parantumisen ajan myötä.
+• **AI-agenttien itseparantaminen**: Kuinka muisti mahdollistaa oppimisen aiemmista vuorovaikutuksista ja parantumisen ajan myötä.
 
 ## Oppimistavoitteet
 
@@ -30,7 +30,7 @@ Oppitunnin jälkeen osaat:
 
 • **Erotella AI-agenttien eri muistityypit**, kuten työmuisti, lyhyt- ja pitkäaikainen muisti sekä erikoistuneet muodot, kuten persoonamuisti ja episodinen muisti.
 
-• **Toteuttaa ja hallita lyhyt- ja pitkäaikaista muistia AI-agenteille** Semantic Kernel -kehystä hyödyntäen, käyttäen työkaluja kuten Mem0 ja Whiteboard-muisti sekä integroimalla Azure AI Searchiin.
+• **Toteuttaa ja hallita lyhyt- ja pitkäaikaista muistia AI-agenteille** käyttämällä Semantic Kernel -kehystä, hyödyntämällä työkaluja kuten Mem0 ja Whiteboard-muisti sekä integroimalla Azure AI Searchin kanssa.
 
 • **Ymmärtää itseään kehittävien AI-agenttien periaatteet** ja kuinka vahvat muistinhallintajärjestelmät edistävät jatkuvaa oppimista ja sopeutumista.
 
@@ -60,7 +60,7 @@ Muistin toteuttamisen tavoitteena on tehdä agenteista **luotettavampia ja kyken
 
 Ajattele tätä kuin muistilappua, jota agentti käyttää yhden tehtävän tai ajatusprosessin aikana. Se sisältää välittömän tiedon, joka tarvitaan seuraavan askeleen laskemiseen.
 
-AI-agenteille työmuisti tallentaa usein keskustelun olennaisimmat tiedot, vaikka koko keskusteluhistoria olisi pitkä tai katkaistu. Se keskittyy keskeisten elementtien, kuten vaatimusten, ehdotusten, päätösten ja toimien, poimimiseen.
+AI-agenteille työmuisti usein tallentaa keskustelun olennaisimmat tiedot, vaikka koko keskusteluhistoria olisi pitkä tai katkaistu. Se keskittyy keskeisten elementtien, kuten vaatimusten, ehdotusten, päätösten ja toimien, poimimiseen.
 
 **Työmuistin esimerkki**
 
@@ -68,11 +68,11 @@ Matkavarausagentti voi tallentaa käyttäjän nykyisen pyynnön, kuten "Haluan v
 
 #### Lyhytaikainen muisti
 
-Tämä muistityyppi säilyttää tiedon yhden keskustelun tai istunnon ajan. Se on nykyisen keskustelun konteksti, joka mahdollistaa agentin viittaamisen aiempiin vuoropuhelun käänteisiin.
+Tämä muistityyppi säilyttää tiedot yhden keskustelun tai istunnon ajan. Se on nykyisen keskustelun konteksti, joka mahdollistaa agentin viittaamisen aiempiin vuoropuhelun käänteisiin.
 
 **Lyhytaikaisen muistin esimerkki**
 
-Jos käyttäjä kysyy: "Paljonko lento Pariisiin maksaisi?" ja jatkaa: "Entä majoitus siellä?", lyhytaikainen muisti varmistaa, että agentti tietää "siellä" viittaavan "Pariisiin" saman keskustelun aikana.
+Jos käyttäjä kysyy, "Paljonko lento Pariisiin maksaisi?" ja jatkaa "Entä majoitus siellä?", lyhytaikainen muisti varmistaa, että agentti tietää "siellä" viittaavan "Pariisiin" saman keskustelun aikana.
 
 #### Pitkäaikainen muisti
 
@@ -84,15 +84,15 @@ Pitkäaikainen muisti voi tallentaa, että "Ben pitää laskettelusta ja ulkoilm
 
 #### Persoonamuisti
 
-Tämä erikoistunut muistityyppi auttaa agenttia kehittämään johdonmukaisen "persoonallisuuden" tai "persoonan". Se mahdollistaa agentin muistamaan yksityiskohtia itsestään tai sen tarkoitetusta roolista, tehden vuorovaikutuksesta sujuvampaa ja keskittyneempää.
+Tämä erikoistunut muistityyppi auttaa agenttia kehittämään johdonmukaisen "persoonallisuuden" tai "roolin". Se mahdollistaa agentin muistamaan yksityiskohtia itsestään tai tarkoitetusta roolistaan, tehden vuorovaikutuksesta sujuvampaa ja keskittyneempää.
 
-**Pitkäaikaisen muistin esimerkki**
+**Persoonamuistin esimerkki**
 
 Jos matkavarausagentti on suunniteltu olemaan "laskettelusuunnittelun asiantuntija", persoonamuisti voi vahvistaa tätä roolia, vaikuttaen sen vastauksiin asiantuntijan sävyyn ja tietämykseen.
 
 #### Työnkulku-/episodinen muisti
 
-Tämä muisti tallentaa agentin suorittamien monimutkaisten tehtävien vaiheiden järjestyksen, mukaan lukien onnistumiset ja epäonnistumiset. Se on kuin muistaminen erityisistä "jaksoista" tai aiemmista kokemuksista oppimista varten.
+Tämä muisti tallentaa agentin suorittamien monimutkaisten tehtävien vaiheiden järjestyksen, mukaan lukien onnistumiset ja epäonnistumiset. Se on kuin muistaisi erityisiä "episodeja" tai aiempia kokemuksia oppiakseen niistä.
 
 **Episodisen muistin esimerkki**
 
@@ -100,7 +100,7 @@ Jos agentti yritti varata tietyn lennon, mutta se epäonnistui saatavuuden puutt
 
 #### Entiteettimuisti
 
-Tämä liittyy tiettyjen entiteettien (kuten ihmisten, paikkojen tai asioiden) ja tapahtumien poimimiseen ja muistamiseen keskusteluista. Se mahdollistaa agentin rakentamaan rakenteellisen ymmärryksen keskusteltavista keskeisistä elementeistä.
+Tämä liittyy tiettyjen entiteettien (kuten ihmisten, paikkojen tai asioiden) ja tapahtumien poimimiseen ja muistamiseen keskusteluista. Se mahdollistaa agentin rakentamaan rakenteellisen ymmärryksen keskustelluista keskeisistä elementeistä.
 
 **Entiteettimuistin esimerkki**
 
@@ -112,17 +112,17 @@ Vaikka RAG on laajempi tekniikka, "Rakenteellinen RAG" korostetaan tehokkaana mu
 
 **Rakenteellisen RAG:n esimerkki**
 
-Sen sijaan, että vain vastaisi avainsanoihin, Rakenteellinen RAG voisi jäsentää lentotiedot (kohde, päivämäärä, aika, lentoyhtiö) sähköpostista ja tallentaa ne rakenteellisesti. Tämä mahdollistaa tarkat kyselyt, kuten "Minkä lennon varasin Pariisiin tiistaina?"
+Sen sijaan, että vain etsisi avainsanoja, Rakenteellinen RAG voisi jäsentää lentotiedot (kohde, päivämäärä, aika, lentoyhtiö) sähköpostista ja tallentaa ne rakenteellisesti. Tämä mahdollistaa tarkat kyselyt, kuten "Minkä lennon varasin Pariisiin tiistaina?"
 
 ## Muistin toteuttaminen ja tallentaminen
 
-Muistin toteuttaminen AI-agenteille sisältää systemaattisen prosessin **muistinhallinnasta**, joka sisältää tiedon tuottamisen, tallentamisen, hakemisen, integroinnin, päivittämisen ja jopa "unohtamisen" (tai poistamisen). Hakeminen on erityisen tärkeä osa.
+Muistin toteuttaminen AI-agenteille sisältää systemaattisen **muistinhallintaprosessin**, joka sisältää tiedon tuottamisen, tallentamisen, hakemisen, integroimisen, päivittämisen ja jopa "unohtamisen" (tai poistamisen). Hakeminen on erityisen tärkeä osa.
 
 ### Erikoistuneet muistityökalut
 
-Yksi tapa tallentaa ja hallita agentin muistia on käyttää erikoistuneita työkaluja, kuten Mem0. Mem0 toimii pysyvänä muistikerroksena, joka mahdollistaa agenttien muistamaan olennaiset vuorovaikutukset, tallentamaan käyttäjän mieltymykset ja faktuaalisen kontekstin sekä oppimaan onnistumisista ja epäonnistumisista ajan myötä. Ajatuksena on, että tilattomat agentit muuttuvat tilallisiksi.
+Yksi tapa tallentaa ja hallita agenttimuistia on käyttää erikoistuneita työkaluja, kuten Mem0. Mem0 toimii pysyvänä muistikerroksena, joka mahdollistaa agenttien muistamaan olennaiset vuorovaikutukset, tallentamaan käyttäjän mieltymykset ja faktuaalisen kontekstin sekä oppimaan onnistumisista ja epäonnistumisista ajan myötä. Ajatuksena on, että tilattomat agentit muuttuvat tilallisiksi.
 
-Se toimii **kaksivaiheisella muistiputkella: poiminta ja päivitys**. Ensin agentin ketjuun lisätyt viestit lähetetään Mem0-palveluun, joka käyttää suurta kielimallia (LLM) keskusteluhistorian tiivistämiseen ja uusien muistojen poimimiseen. Tämän jälkeen LLM-pohjainen päivitysvaihe päättää, lisätäänkö, muokataanko vai poistetaanko nämä muistot, tallentaen ne hybriditietokantaan, joka voi sisältää vektori-, graafi- ja avain-arvo-tietokantoja. Tämä järjestelmä tukee myös erilaisia muistityyppejä ja voi sisältää graafimuistin entiteettien välisten suhteiden hallintaan.
+Se toimii **kaksivaiheisella muistiputkella: poiminta ja päivitys**. Ensin agentin ketjuun lisätyt viestit lähetetään Mem0-palveluun, joka käyttää suurta kielimallia (LLM) keskusteluhistorian tiivistämiseen ja uusien muistojen poimimiseen. Tämän jälkeen LLM-ohjattu päivitysvaihe päättää, lisätäänkö, muokataanko vai poistetaanko nämä muistot, tallentaen ne hybriditietokantaan, joka voi sisältää vektori-, graafi- ja avain-arvo-tietokantoja. Tämä järjestelmä tukee myös erilaisia muistityyppejä ja voi sisältää graafimuistia entiteettien välisten suhteiden hallintaan.
 
 ### Muistin tallentaminen RAG:lla
 
@@ -132,7 +132,7 @@ Tämä mahdollistaa agentin vastausten perustamisen omaan dataasi, varmistaen re
 
 Azure AI Search tukee ominaisuuksia, kuten **Rakenteellinen RAG**, joka erottuu tiheän, rakenteellisen tiedon poimimisessa ja hakemisessa suurista tietoaineistoista, kuten keskusteluhistorioista, sähköposteista tai jopa kuvista. Tämä tarjoaa "yliluonnollista tarkkuutta ja muistamista" verrattuna perinteisiin tekstin pilkkomis- ja upotusmenetelmiin.
 
-## AI-agenttien itseoppiminen
+## AI-agenttien itseparantaminen
 
 Yleinen kaava itseään kehittäville agenteille sisältää **"tietoagentin"** käyttöönoton. Tämä erillinen agentti tarkkailee pääkeskustelua käyttäjän ja ensisijaisen agentin välillä. Sen rooli on:
 
@@ -146,7 +146,7 @@ Yleinen kaava itseään kehittäville agenteille sisältää **"tietoagentin"** 
 
 ### Muistin optimoinnit
 
-• **Viiveen hallinta**: Käyttäjävuorovaikutusten hidastumisen välttämiseksi voidaan aluksi käyttää halvempaa ja nopeampaa mallia nopeasti tarkistamaan, onko tieto arvokasta tallentaa tai hakea, ja vasta monimutkaisempi poiminta-/hakuprosessi otetaan käyttöön tarvittaessa.
+• **Viiveen hallinta**: Välttääkseen käyttäjävuorovaikutusten hidastumista, aluksi voidaan käyttää halvempaa ja nopeampaa mallia nopeasti tarkistamaan, onko tieto arvokasta tallentaa tai hakea, ja käyttää monimutkaisempaa poiminta-/hakuprosessia vain tarvittaessa.
 
 • **Tietokannan ylläpito**: Kasvavalle tietokannalle harvemmin käytetty tieto voidaan siirtää "kylmäsäilytykseen" kustannusten hallitsemiseksi.
 

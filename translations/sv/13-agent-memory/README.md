@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "c27e2a2e9055910545560e8472b341d8",
-  "translation_date": "2025-10-02T15:33:51+00:00",
+  "original_hash": "d2c9703548140bafa2d6a77406552542",
+  "translation_date": "2025-10-03T14:43:43+00:00",
   "source_file": "13-agent-memory/README.md",
   "language_code": "sv"
 }
@@ -10,7 +10,7 @@ CO_OP_TRANSLATOR_METADATA:
 # Minneshantering för AI-agenter
 [![Agentminne](../../../translated_images/lesson-13-thumbnail.959e3bc52d210c64a614a3bece6b170a2c472138dc0a14c7fbde07306ef95ae7.sv.png)](https://youtu.be/QrYbHesIxpw?si=qNYW6PL3fb3lTPMk)
 
-När man diskuterar de unika fördelarna med att skapa AI-agenter, nämns främst två saker: förmågan att använda verktyg för att utföra uppgifter och förmågan att förbättras över tid. Minnet är grunden för att skapa självförbättrande agenter som kan ge bättre upplevelser för våra användare.
+När man diskuterar de unika fördelarna med att skapa AI-agenter, nämns främst två saker: förmågan att använda verktyg för att utföra uppgifter och förmågan att förbättras över tid. Minne är grunden för att skapa självförbättrande agenter som kan ge bättre upplevelser för våra användare.
 
 I denna lektion kommer vi att titta på vad minne innebär för AI-agenter och hur vi kan hantera och använda det för att förbättra våra applikationer.
 
@@ -22,7 +22,7 @@ Denna lektion kommer att täcka:
 
 • **Implementera och lagra minne**: Praktiska metoder för att lägga till minnesfunktioner i dina AI-agenter, med fokus på kortsiktigt och långsiktigt minne.
 
-• **Göra AI-agenter självförbättrande**: Hur minne gör det möjligt för agenter att lära sig av tidigare interaktioner och förbättras över tid.
+• **Göra AI-agenter självförbättrande**: Hur minne gör det möjligt för agenter att lära sig från tidigare interaktioner och förbättras över tid.
 
 ## Lärandemål
 
@@ -42,15 +42,15 @@ Utan minne är AI-applikationer ofta tillståndslösa, vilket innebär att varje
 
 ### Varför är minne viktigt?
 
-En agents intelligens är starkt kopplad till dess förmåga att återkalla och använda tidigare information. Minnet gör det möjligt för agenter att vara:
+En agents intelligens är starkt kopplad till dess förmåga att återkalla och använda tidigare information. Minne gör det möjligt för agenter att vara:
 
-• **Reflekterande**: Lära sig av tidigare handlingar och resultat.
+• **Reflekterande**: Lära sig från tidigare handlingar och resultat.
 
 • **Interaktiva**: Bibehålla sammanhang under en pågående konversation.
 
 • **Proaktiva och reaktiva**: Förutse behov eller svara lämpligt baserat på historiska data.
 
-• **Självständiga**: Arbeta mer oberoende genom att dra nytta av lagrad kunskap.
+• **Autonoma**: Arbeta mer självständigt genom att dra nytta av lagrad kunskap.
 
 Målet med att implementera minne är att göra agenter mer **pålitliga och kapabla**.
 
@@ -64,11 +64,11 @@ För AI-agenter fångar arbetsminnet ofta den mest relevanta informationen från
 
 **Exempel på arbetsminne**
 
-I en resebokningsagent kan arbetsminnet fånga användarens aktuella begäran, som "Jag vill boka en resa till Paris". Detta specifika krav hålls i agentens omedelbara sammanhang för att styra den aktuella interaktionen.
+I en resebokningsagent kan arbetsminnet fånga användarens aktuella begäran, såsom "Jag vill boka en resa till Paris". Detta specifika krav hålls i agentens omedelbara sammanhang för att styra den aktuella interaktionen.
 
 #### Kortsiktigt minne
 
-Denna typ av minne behåller information under en enda konversation eller session. Det är sammanhanget för den aktuella chatten, vilket gör att agenten kan referera tillbaka till tidigare turer i dialogen.
+Denna typ av minne behåller information under en enda konversation eller session. Det är sammanhanget för den aktuella chatten, vilket gör det möjligt för agenten att referera tillbaka till tidigare turer i dialogen.
 
 **Exempel på kortsiktigt minne**
 
@@ -76,7 +76,7 @@ Om en användare frågar, "Hur mycket kostar en flygresa till Paris?" och sedan 
 
 #### Långsiktigt minne
 
-Detta är information som kvarstår över flera konversationer eller sessioner. Det gör det möjligt för agenter att komma ihåg användarpreferenser, historiska interaktioner eller generell kunskap över längre perioder. Detta är viktigt för personalisering.
+Detta är information som kvarstår över flera konversationer eller sessioner. Det gör det möjligt för agenter att komma ihåg användarpreferenser, historiska interaktioner eller allmän kunskap över längre perioder. Detta är viktigt för personalisering.
 
 **Exempel på långsiktigt minne**
 
@@ -84,11 +84,11 @@ Ett långsiktigt minne kan lagra att "Ben gillar skidåkning och utomhusaktivite
 
 #### Personaminne
 
-Denna specialiserade typ av minne hjälper en agent att utveckla en konsekvent "personlighet" eller "persona". Det gör att agenten kan komma ihåg detaljer om sig själv eller sin avsedda roll, vilket gör interaktioner mer flytande och fokuserade.
+Denna specialiserade typ av minne hjälper en agent att utveckla en konsekvent "personlighet" eller "persona". Det gör det möjligt för agenten att komma ihåg detaljer om sig själv eller sin avsedda roll, vilket gör interaktioner mer smidiga och fokuserade.
 
 **Exempel på personaminne**
 
-Om reseagenten är designad att vara en "expert på skidplanering", kan personaminne förstärka denna roll och påverka dess svar så att de överensstämmer med en experts ton och kunskap.
+Om reseagenten är designad för att vara en "expert på skidplanering", kan personaminne förstärka denna roll och påverka dess svar så att de överensstämmer med en experts ton och kunskap.
 
 #### Arbetsflöde/Episodiskt minne
 
@@ -96,15 +96,15 @@ Detta minne lagrar sekvensen av steg en agent tar under en komplex uppgift, inkl
 
 **Exempel på episodiskt minne**
 
-Om agenten försökte boka ett specifikt flyg men misslyckades på grund av otillgänglighet, kan episodiskt minne registrera detta misslyckande, vilket gör att agenten kan försöka alternativa flyg eller informera användaren om problemet på ett mer informerat sätt vid ett senare försök.
+Om agenten försökte boka ett specifikt flyg men det misslyckades på grund av otillgänglighet, kan episodiskt minne registrera detta misslyckande, vilket gör det möjligt för agenten att försöka alternativa flyg eller informera användaren om problemet på ett mer informerat sätt vid ett senare försök.
 
 #### Entitetsminne
 
-Detta innebär att extrahera och komma ihåg specifika entiteter (som personer, platser eller saker) och händelser från konversationer. Det gör att agenten kan bygga en strukturerad förståelse av nyckelelement som diskuteras.
+Detta innebär att extrahera och komma ihåg specifika entiteter (som personer, platser eller saker) och händelser från konversationer. Det gör det möjligt för agenten att bygga en strukturerad förståelse av nyckelelement som diskuteras.
 
 **Exempel på entitetsminne**
 
-Från en konversation om en tidigare resa kan agenten extrahera "Paris", "Eiffeltornet" och "middag på restaurang Le Chat Noir" som entiteter. Vid en framtida interaktion kan agenten komma ihåg "Le Chat Noir" och erbjuda att boka en ny reservation där.
+Från en konversation om en tidigare resa kan agenten extrahera "Paris", "Eiffeltornet" och "middag på Le Chat Noir-restaurang" som entiteter. Vid en framtida interaktion kan agenten komma ihåg "Le Chat Noir" och erbjuda att göra en ny reservation där.
 
 #### Strukturerad RAG (Retrieval Augmented Generation)
 
@@ -120,9 +120,9 @@ Att implementera minne för AI-agenter innebär en systematisk process av **minn
 
 ### Specialiserade minnesverktyg
 
-Ett sätt att lagra och hantera agentminne är att använda specialiserade verktyg som Mem0. Mem0 fungerar som ett beständigt minneslager, vilket gör att agenter kan återkalla relevanta interaktioner, lagra användarpreferenser och faktuell kontext, samt lära sig av framgångar och misslyckanden över tid. Idén här är att tillståndslösa agenter blir tillståndsfulla.
+Ett sätt att lagra och hantera agentminne är att använda specialiserade verktyg som Mem0. Mem0 fungerar som ett beständigt minneslager, vilket gör det möjligt för agenter att återkalla relevanta interaktioner, lagra användarpreferenser och faktuell kontext, samt lära sig av framgångar och misslyckanden över tid. Idén här är att tillståndslösa agenter blir tillståndsfulla.
 
-Det fungerar genom en **tvåfasig minnespipeline: extraktion och uppdatering**. Först skickas meddelanden som läggs till en agents tråd till Mem0-tjänsten, som använder en Large Language Model (LLM) för att sammanfatta konversationshistorik och extrahera nya minnen. Därefter avgör en LLM-driven uppdateringsfas om dessa minnen ska läggas till, modifieras eller raderas, och lagrar dem i en hybrid datalagring som kan inkludera vektor-, graf- och nyckel-värde-databaser. Detta system stöder också olika minnestyper och kan integrera grafminne för att hantera relationer mellan entiteter.
+Det fungerar genom en **tvåfasig minnespipeline: extraktion och uppdatering**. Först skickas meddelanden som läggs till en agents tråd till Mem0-tjänsten, som använder en Large Language Model (LLM) för att sammanfatta konversationshistorik och extrahera nya minnen. Därefter avgör en LLM-driven uppdateringsfas om dessa minnen ska läggas till, modifieras eller raderas, och lagrar dem i en hybrid datalagring som kan inkludera vektor-, graf- och nyckelvärdesdatabaser. Detta system stöder också olika minnestyper och kan integrera grafminne för att hantera relationer mellan entiteter.
 
 ### Lagra minne med RAG
 
@@ -136,7 +136,7 @@ Azure AI Search stöder funktioner som **Strukturerad RAG**, som utmärker sig v
 
 Ett vanligt mönster för självförbättrande agenter innebär att introducera en **"kunskapsagent"**. Denna separata agent observerar huvudkonversationen mellan användaren och den primära agenten. Dess roll är att:
 
-1. **Identifiera värdefull information**: Avgöra om någon del av konversationen är värd att spara som generell kunskap eller en specifik användarpreferens.
+1. **Identifiera värdefull information**: Avgöra om någon del av konversationen är värd att spara som allmän kunskap eller en specifik användarpreferens.
 
 2. **Extrahera och sammanfatta**: Destillera den väsentliga lärdomen eller preferensen från konversationen.
 
@@ -157,4 +157,4 @@ Gå med i [Azure AI Foundry Discord](https://aka.ms/ai-agents/discord) för att 
 ---
 
 **Ansvarsfriskrivning**:  
-Detta dokument har översatts med hjälp av AI-översättningstjänsten [Co-op Translator](https://github.com/Azure/co-op-translator). Även om vi strävar efter noggrannhet, bör det noteras att automatiserade översättningar kan innehålla fel eller felaktigheter. Det ursprungliga dokumentet på dess originalspråk bör betraktas som den auktoritativa källan. För kritisk information rekommenderas professionell mänsklig översättning. Vi ansvarar inte för eventuella missförstånd eller feltolkningar som uppstår vid användning av denna översättning.
+Detta dokument har översatts med hjälp av AI-översättningstjänsten [Co-op Translator](https://github.com/Azure/co-op-translator). Även om vi strävar efter noggrannhet, vänligen notera att automatiska översättningar kan innehålla fel eller felaktigheter. Det ursprungliga dokumentet på dess originalspråk bör betraktas som den auktoritativa källan. För kritisk information rekommenderas professionell mänsklig översättning. Vi ansvarar inte för eventuella missförstånd eller feltolkningar som uppstår vid användning av denna översättning.

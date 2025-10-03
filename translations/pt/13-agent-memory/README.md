@@ -1,14 +1,14 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "c27e2a2e9055910545560e8472b341d8",
-  "translation_date": "2025-10-01T20:28:45+00:00",
+  "original_hash": "d2c9703548140bafa2d6a77406552542",
+  "translation_date": "2025-10-03T14:33:22+00:00",
   "source_file": "13-agent-memory/README.md",
   "language_code": "pt"
 }
 -->
-# Memória para Agentes de IA
-[![Memória do Agente](../../../translated_images/lesson-13-thumbnail.959e3bc52d210c64a614a3bece6b170a2c472138dc0a14c7fbde07306ef95ae7.pt.png)](https://youtu.be/QrYbHesIxpw?si=qNYW6PL3fb3lTPMk)
+# Memória para Agentes de IA 
+[![Memória de Agente](../../../translated_images/lesson-13-thumbnail.959e3bc52d210c64a614a3bece6b170a2c472138dc0a14c7fbde07306ef95ae7.pt.png)](https://youtu.be/QrYbHesIxpw?si=qNYW6PL3fb3lTPMk)
 
 Ao discutir os benefícios únicos de criar Agentes de IA, dois aspetos são frequentemente mencionados: a capacidade de utilizar ferramentas para realizar tarefas e a capacidade de melhorar ao longo do tempo. A memória é a base para criar agentes autossuficientes que proporcionam melhores experiências aos nossos utilizadores.
 
@@ -32,13 +32,13 @@ Após completar esta lição, saberá como:
 
 • **Implementar e gerir memória de curto e longo prazo para agentes de IA** utilizando o framework Semantic Kernel, aproveitando ferramentas como Mem0 e memória Whiteboard, e integrando com Azure AI Search.
 
-• **Compreender os princípios por trás de agentes de IA autossuficientes** e como sistemas robustos de gestão de memória contribuem para aprendizagem contínua e adaptação.
+• **Compreender os princípios por trás de agentes de IA autossuficientes** e como sistemas robustos de gestão de memória contribuem para aprendizagem e adaptação contínuas.
 
 ## Compreender a Memória de Agentes de IA
 
 Na sua essência, **a memória para agentes de IA refere-se aos mecanismos que lhes permitem reter e recordar informações**. Estas informações podem incluir detalhes específicos de uma conversa, preferências do utilizador, ações anteriores ou até padrões aprendidos.
 
-Sem memória, as aplicações de IA são frequentemente sem estado, o que significa que cada interação começa do zero. Isto resulta numa experiência repetitiva e frustrante, onde o agente "esquece" o contexto ou as preferências anteriores.
+Sem memória, as aplicações de IA são frequentemente sem estado, o que significa que cada interação começa do zero. Isso resulta numa experiência repetitiva e frustrante para o utilizador, onde o agente "esquece" o contexto ou as preferências anteriores.
 
 ### Por que é a Memória Importante?
 
@@ -48,7 +48,7 @@ A inteligência de um agente está profundamente ligada à sua capacidade de rec
 
 • **Interativos**: Manter o contexto ao longo de uma conversa contínua.
 
-• **Proativos e Reativos**: Antecipar necessidades ou responder adequadamente com base em dados históricos.
+• **Proativos e Reativos**: Antecipar necessidades ou responder de forma adequada com base em dados históricos.
 
 • **Autónomos**: Operar de forma mais independente ao recorrer a conhecimentos armazenados.
 
@@ -80,19 +80,19 @@ Esta é a informação que persiste ao longo de várias conversas ou sessões. P
 
 **Exemplo de Memória de Longo Prazo**
 
-Uma memória de longo prazo pode armazenar que "O Ben gosta de esquiar e de atividades ao ar livre, prefere café com vista para a montanha e quer evitar pistas de esqui avançadas devido a uma lesão anterior". Esta informação, aprendida em interações anteriores, influencia recomendações em futuras sessões de planeamento de viagens, tornando-as altamente personalizadas.
+Uma memória de longo prazo pode armazenar que "O Ben gosta de esquiar e de atividades ao ar livre, aprecia café com vista para a montanha e quer evitar pistas de esqui avançadas devido a uma lesão anterior". Esta informação, aprendida em interações anteriores, influencia recomendações em futuras sessões de planeamento de viagens, tornando-as altamente personalizadas.
 
 #### Memória de Persona
 
-Este tipo de memória especializada ajuda um agente a desenvolver uma "personalidade" ou "persona" consistente. Permite que o agente se lembre de detalhes sobre si próprio ou sobre o seu papel pretendido, tornando as interações mais fluidas e focadas.
+Este tipo de memória especializado ajuda um agente a desenvolver uma "personalidade" ou "persona" consistente. Permite que o agente se lembre de detalhes sobre si próprio ou sobre o seu papel pretendido, tornando as interações mais fluidas e focadas.
 
 **Exemplo de Memória de Persona**
 
-Se o agente de viagens for projetado para ser um "especialista em planeamento de esqui", a memória de persona pode reforçar este papel, influenciando as suas respostas para se alinharem com o tom e o conhecimento de um especialista.
+Se o agente de viagens for projetado para ser um "especialista em planeamento de esqui", a memória de persona pode reforçar este papel, influenciando as suas respostas para se alinharem com o tom e conhecimento de um especialista.
 
 #### Memória de Fluxo/Episódica
 
-Esta memória armazena a sequência de passos que um agente realiza durante uma tarefa complexa, incluindo sucessos e falhas. É como lembrar "episódios" específicos ou experiências passadas para aprender com elas.
+Esta memória armazena a sequência de passos que um agente toma durante uma tarefa complexa, incluindo sucessos e falhas. É como lembrar "episódios" específicos ou experiências passadas para aprender com eles.
 
 **Exemplo de Memória Episódica**
 
@@ -108,11 +108,11 @@ De uma conversa sobre uma viagem passada, o agente pode extrair "Paris", "Torre 
 
 #### RAG Estruturado (Geração Aumentada por Recuperação)
 
-Embora o RAG seja uma técnica mais ampla, o "RAG Estruturado" é destacado como uma tecnologia de memória poderosa. Extrai informações densas e estruturadas de várias fontes (conversas, emails, imagens) e utiliza-as para melhorar a precisão, a recuperação e a velocidade nas respostas. Ao contrário do RAG clássico, que depende apenas de similaridade semântica, o RAG Estruturado trabalha com a estrutura inerente da informação.
+Embora o RAG seja uma técnica mais ampla, o "RAG Estruturado" é destacado como uma tecnologia de memória poderosa. Extrai informações densas e estruturadas de várias fontes (conversas, e-mails, imagens) e usa-as para melhorar a precisão, a recuperação e a velocidade nas respostas. Ao contrário do RAG clássico, que depende apenas de similaridade semântica, o RAG Estruturado trabalha com a estrutura inerente da informação.
 
 **Exemplo de RAG Estruturado**
 
-Em vez de apenas corresponder palavras-chave, o RAG Estruturado pode analisar detalhes de voos (destino, data, hora, companhia aérea) de um email e armazená-los de forma estruturada. Isto permite consultas precisas como "Que voo reservei para Paris na terça-feira?"
+Em vez de apenas corresponder palavras-chave, o RAG Estruturado pode analisar detalhes de voos (destino, data, hora, companhia aérea) de um e-mail e armazená-los de forma estruturada. Isso permite consultas precisas como "Que voo reservei para Paris na terça-feira?"
 
 ## Implementar e Armazenar Memória
 
@@ -126,11 +126,11 @@ Funciona através de um **pipeline de memória em duas fases: extração e atual
 
 ### Armazenar Memória com RAG
 
-Além de ferramentas especializadas de memória como o Mem0, pode utilizar serviços de pesquisa robustos como o **Azure AI Search como backend para armazenar e recuperar memórias**, especialmente para RAG estruturado.
+Além de ferramentas especializadas de memória como o Mem0, pode utilizar serviços de pesquisa robustos como o **Azure AI Search como backend para armazenar e recuperar memórias**, especialmente para RAG Estruturado.
 
-Isto permite que fundamente as respostas do seu agente com os seus próprios dados, garantindo respostas mais relevantes e precisas. O Azure AI Search pode ser utilizado para armazenar memórias específicas do utilizador sobre viagens, catálogos de produtos ou qualquer outro conhecimento específico de domínio.
+Isto permite que fundamente as respostas do seu agente com os seus próprios dados, garantindo respostas mais relevantes e precisas. O Azure AI Search pode ser usado para armazenar memórias específicas do utilizador sobre viagens, catálogos de produtos ou qualquer outro conhecimento específico de domínio.
 
-O Azure AI Search suporta capacidades como **RAG Estruturado**, que se destaca na extração e recuperação de informações densas e estruturadas de grandes conjuntos de dados, como históricos de conversas, emails ou até imagens. Isto proporciona "precisão e recuperação sobre-humanas" em comparação com abordagens tradicionais de fragmentação de texto e incorporação.
+O Azure AI Search suporta capacidades como **RAG Estruturado**, que se destaca na extração e recuperação de informações densas e estruturadas de grandes conjuntos de dados, como históricos de conversas, e-mails ou até imagens. Isto proporciona "precisão e recuperação sobre-humanas" em comparação com abordagens tradicionais de fragmentação de texto e incorporação.
 
 ## Tornar os Agentes de IA Autossuficientes
 
@@ -138,7 +138,7 @@ Um padrão comum para agentes autossuficientes envolve introduzir um **"agente d
 
 1. **Identificar informações valiosas**: Determinar se alguma parte da conversa vale a pena ser guardada como conhecimento geral ou uma preferência específica do utilizador.
 
-2. **Extrair e resumir**: Destilar o aprendizado ou preferência essencial da conversa.
+2. **Extrair e resumir**: Destilar o essencial da aprendizagem ou preferência da conversa.
 
 3. **Armazenar numa base de conhecimento**: Persistir esta informação extraída, frequentemente numa base de dados vetorial, para que possa ser recuperada mais tarde.
 
@@ -146,7 +146,7 @@ Um padrão comum para agentes autossuficientes envolve introduzir um **"agente d
 
 ### Otimizações para Memória
 
-• **Gestão de Latência**: Para evitar atrasos nas interações do utilizador, pode ser utilizado inicialmente um modelo mais barato e rápido para verificar rapidamente se a informação é valiosa para armazenar ou recuperar, invocando apenas o processo de extração/recuperação mais complexo quando necessário.
+• **Gestão de Latência**: Para evitar atrasos nas interações do utilizador, pode ser usado inicialmente um modelo mais barato e rápido para verificar rapidamente se a informação é valiosa para armazenar ou recuperar, invocando apenas o processo de extração/recuperação mais complexo quando necessário.
 
 • **Manutenção da Base de Conhecimento**: Para uma base de conhecimento em crescimento, informações menos utilizadas podem ser movidas para "armazenamento frio" para gerir custos.
 

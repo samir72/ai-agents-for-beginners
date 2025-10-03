@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "c27e2a2e9055910545560e8472b341d8",
-  "translation_date": "2025-10-01T21:32:49+00:00",
+  "original_hash": "d2c9703548140bafa2d6a77406552542",
+  "translation_date": "2025-10-03T14:07:17+00:00",
   "source_file": "13-agent-memory/README.md",
   "language_code": "es"
 }
@@ -10,9 +10,9 @@ CO_OP_TRANSLATOR_METADATA:
 # Memoria para Agentes de IA
 [![Memoria de Agentes](../../../translated_images/lesson-13-thumbnail.959e3bc52d210c64a614a3bece6b170a2c472138dc0a14c7fbde07306ef95ae7.es.png)](https://youtu.be/QrYbHesIxpw?si=qNYW6PL3fb3lTPMk)
 
-Al hablar de los beneficios únicos de crear agentes de IA, se destacan principalmente dos aspectos: la capacidad de utilizar herramientas para completar tareas y la habilidad de mejorar con el tiempo. La memoria es la base para crear agentes que se auto-mejoren y ofrezcan mejores experiencias a nuestros usuarios.
+Cuando se habla de los beneficios únicos de crear agentes de IA, se destacan principalmente dos aspectos: la capacidad de utilizar herramientas para completar tareas y la habilidad de mejorar con el tiempo. La memoria es la base para crear agentes que se auto-mejoran y que pueden ofrecer mejores experiencias a nuestros usuarios.
 
-En esta lección, exploraremos qué es la memoria para los agentes de IA y cómo podemos gestionarla y utilizarla en beneficio de nuestras aplicaciones.
+En esta lección, exploraremos qué es la memoria para los agentes de IA y cómo podemos gestionarla y utilizarla para mejorar nuestras aplicaciones.
 
 ## Introducción
 
@@ -30,9 +30,9 @@ Al completar esta lección, sabrás cómo:
 
 • **Diferenciar entre los distintos tipos de memoria de los agentes de IA**, incluyendo memoria de trabajo, memoria a corto plazo, memoria a largo plazo y formas especializadas como memoria de personalidad y memoria episódica.
 
-• **Implementar y gestionar memoria a corto y largo plazo para agentes de IA** utilizando el marco Semantic Kernel, aprovechando herramientas como Mem0 y memoria de Whiteboard, e integrándolas con Azure AI Search.
+• **Implementar y gestionar memoria a corto y largo plazo para agentes de IA** utilizando el marco Semantic Kernel, aprovechando herramientas como Mem0 y memoria de Whiteboard, e integrando con Azure AI Search.
 
-• **Comprender los principios detrás de los agentes de IA auto-mejorables** y cómo los sistemas robustos de gestión de memoria contribuyen al aprendizaje continuo y la adaptación.
+• **Comprender los principios detrás de los agentes de IA que se auto-mejoran** y cómo los sistemas robustos de gestión de memoria contribuyen al aprendizaje continuo y la adaptación.
 
 ## Comprender la Memoria de los Agentes de IA
 
@@ -134,7 +134,7 @@ Azure AI Search admite capacidades como **RAG Estructurado**, que sobresale en e
 
 ## Hacer que los Agentes de IA se Auto-Mejoren
 
-Un patrón común para agentes auto-mejorables implica introducir un **"agente de conocimiento"**. Este agente separado observa la conversación principal entre el usuario y el agente principal. Su función es:
+Un patrón común para agentes que se auto-mejoran implica introducir un **"agente de conocimiento"**. Este agente separado observa la conversación principal entre el usuario y el agente primario. Su función es:
 
 1. **Identificar información valiosa**: Determinar si alguna parte de la conversación merece ser guardada como conocimiento general o preferencia específica del usuario.
 
@@ -142,7 +142,7 @@ Un patrón común para agentes auto-mejorables implica introducir un **"agente d
 
 3. **Almacenar en una base de conocimiento**: Persistir esta información extraída, a menudo en una base de datos vectorial, para que pueda ser recuperada más tarde.
 
-4. **Aumentar consultas futuras**: Cuando el usuario inicia una nueva consulta, el agente de conocimiento recupera información almacenada relevante y la agrega al prompt del usuario, proporcionando contexto crucial al agente principal (similar a RAG).
+4. **Aumentar consultas futuras**: Cuando el usuario inicia una nueva consulta, el agente de conocimiento recupera información relevante almacenada y la agrega al prompt del usuario, proporcionando contexto crucial al agente primario (similar a RAG).
 
 ### Optimizaciones para la Memoria
 

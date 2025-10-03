@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "413adcc2c6a498d52643d27f6871aa24",
-  "translation_date": "2025-10-02T19:11:28+00:00",
+  "original_hash": "fbe8e2c7026d42ed06780dce1b06fd61",
+  "translation_date": "2025-10-03T14:03:56+00:00",
   "source_file": "README.md",
   "language_code": "en"
 }
@@ -125,7 +125,7 @@ Our team offers other courses! Check out:
 
 ## 🌟 Community Thanks
 
-Thanks to [Shivam Goyal](https://www.linkedin.com/in/shivam2003/) for contributing important code samples demonstrating Agentic RAG. 
+Thanks to [Shivam Goyal](https://www.linkedin.com/in/shivam2003/) for contributing key code samples demonstrating Agentic RAG.
 
 ## Contributing
 
@@ -138,6 +138,16 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 ## Trademarks
 
 This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft trademarks or logos is subject to and must follow [Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/legal/intellectualproperty/trademarks/usage/general). Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship. Any use of third-party trademarks or logos is subject to those third parties' policies.
+
+## Getting Help
+
+If you get stuck or have any questions about building AI apps, join:
+
+[![Azure AI Foundry Discord](https://img.shields.io/badge/Discord-Azure_AI_Foundry_Community_Discord-blue?style=for-the-badge&logo=discord&color=5865f2&logoColor=fff)](https://aka.ms/foundry/discord)
+
+If you have product feedback or encounter errors while building, visit:
+
+[![Azure AI Foundry Developer Forum](https://img.shields.io/badge/GitHub-Azure_AI_Foundry_Developer_Forum-blue?style=for-the-badge&logo=github&color=000000&logoColor=fff)](https://aka.ms/foundry/forum)
 
 ---
 

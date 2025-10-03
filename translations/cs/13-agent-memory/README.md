@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "c27e2a2e9055910545560e8472b341d8",
-  "translation_date": "2025-10-02T08:55:43+00:00",
+  "original_hash": "d2c9703548140bafa2d6a77406552542",
+  "translation_date": "2025-10-03T15:01:54+00:00",
   "source_file": "13-agent-memory/README.md",
   "language_code": "cs"
 }
@@ -10,7 +10,7 @@ CO_OP_TRANSLATOR_METADATA:
 # Paměť pro AI agenty
 [![Paměť agentů](../../../translated_images/lesson-13-thumbnail.959e3bc52d210c64a614a3bece6b170a2c472138dc0a14c7fbde07306ef95ae7.cs.png)](https://youtu.be/QrYbHesIxpw?si=qNYW6PL3fb3lTPMk)
 
-Při diskusi o unikátních výhodách vytváření AI agentů se nejčastěji zmiňují dvě věci: schopnost využívat nástroje k plnění úkolů a schopnost se zlepšovat v průběhu času. Paměť je základem pro vytvoření samo-zlepšujícího se agenta, který dokáže poskytovat lepší zážitky našim uživatelům.
+Při diskusi o unikátních výhodách vytváření AI agentů se nejčastěji zmiňují dvě věci: schopnost využívat nástroje k plnění úkolů a schopnost se zlepšovat v průběhu času. Paměť je základem pro vytváření samo-zlepšujících se agentů, kteří mohou poskytovat lepší zážitky našim uživatelům.
 
 V této lekci se podíváme na to, co je paměť pro AI agenty, jak ji můžeme spravovat a využívat ve prospěch našich aplikací.
 
@@ -30,7 +30,7 @@ Po dokončení této lekce budete vědět, jak:
 
 • **Rozlišovat mezi různými typy paměti AI agentů**, včetně pracovní, krátkodobé a dlouhodobé paměti, stejně jako specializovaných forem, jako je paměť osobnosti a epizodická paměť.
 
-• **Implementovat a spravovat krátkodobou a dlouhodobou paměť pro AI agenty** pomocí rámce Semantic Kernel, využívat nástroje jako Mem0 a Whiteboard memory a integrovat je s Azure AI Search.
+• **Implementovat a spravovat krátkodobou a dlouhodobou paměť pro AI agenty** pomocí frameworku Semantic Kernel, využívat nástroje jako Mem0 a Whiteboard memory a integrovat je s Azure AI Search.
 
 • **Porozumět principům samo-zlepšujících se AI agentů** a jak robustní systémy správy paměti přispívají k neustálému učení a adaptaci.
 
@@ -58,7 +58,7 @@ Cílem implementace paměti je učinit agenty více **spolehlivými a schopnými
 
 #### Pracovní paměť
 
-Představte si ji jako kus papíru, který agent používá během jednoho probíhajícího úkolu nebo myšlenkového procesu. Uchovává okamžité informace potřebné k výpočtu dalšího kroku.
+Představte si ji jako kus papíru, který agent používá během jednoho úkolu nebo myšlenkového procesu. Uchovává okamžité informace potřebné k výpočtu dalšího kroku.
 
 Pro AI agenty pracovní paměť často zachycuje nejrelevantnější informace z konverzace, i když je celá historie chatu dlouhá nebo zkrácená. Zaměřuje se na klíčové prvky, jako jsou požadavky, návrhy, rozhodnutí a akce.
 
@@ -80,7 +80,7 @@ Toto jsou informace, které přetrvávají napříč více konverzacemi nebo rel
 
 **Příklad dlouhodobé paměti**
 
-Dlouhodobá paměť může uchovávat, že "Ben má rád lyžování a outdoorové aktivity, preferuje kávu s výhledem na hory a chce se vyhnout pokročilým lyžařským svahům kvůli minulému zranění". Tyto informace, naučené z předchozích interakcí, ovlivňují doporučení v budoucích plánovacích relacích, což je činí vysoce personalizovanými.
+Dlouhodobá paměť může uchovávat, že "Ben má rád lyžování a outdoorové aktivity, má rád kávu s výhledem na hory a chce se vyhnout pokročilým lyžařským svahům kvůli minulému zranění". Tyto informace, naučené z předchozích interakcí, ovlivňují doporučení v budoucích plánovacích relacích, což je činí vysoce personalizovanými.
 
 #### Paměť osobnosti
 
@@ -90,7 +90,7 @@ Tento specializovaný typ paměti pomáhá agentovi rozvíjet konzistentní "oso
 
 Pokud je cestovní agent navržen jako "expert na plánování lyžařských výletů", paměť osobnosti může posilovat tuto roli, ovlivňovat jeho odpovědi tak, aby odpovídaly tónu a znalostem experta.
 
-#### Paměť pracovního postupu/epizodická paměť
+#### Workflow/Epizodická paměť
 
 Tato paměť uchovává sekvenci kroků, které agent podniká během složitého úkolu, včetně úspěchů a neúspěchů. Je to jako pamatovat si specifické "epizody" nebo minulé zkušenosti, aby se z nich mohl učit.
 
@@ -108,7 +108,7 @@ Z konverzace o minulém výletu by agent mohl extrahovat "Paříž", "Eiffelova 
 
 #### Strukturovaný RAG (Retrieval Augmented Generation)
 
-Zatímco RAG je širší technika, "Strukturovaný RAG" je zdůrazněn jako výkonná paměťová technologie. Extrahuje husté, strukturované informace z různých zdrojů (konverzací, e-mailů, obrázků) a využívá je ke zvýšení přesnosti, vybavení a rychlosti odpovědí. Na rozdíl od klasického RAG, který se spoléhá pouze na sémantickou podobnost, Strukturovaný RAG pracuje s inherentní strukturou informací.
+Zatímco RAG je širší technika, "Strukturovaný RAG" je zdůrazněn jako výkonná paměťová technologie. Extrahuje husté, strukturované informace z různých zdrojů (konverzací, e-mailů, obrázků) a využívá je ke zvýšení přesnosti, vybavení a rychlosti odpovědí. Na rozdíl od klasického RAG, který se spoléhá pouze na sémantickou podobnost, Strukturovaný RAG pracuje se samotnou strukturou informací.
 
 **Příklad strukturovaného RAG**
 
@@ -116,7 +116,7 @@ Místo pouhého shody klíčových slov by Strukturovaný RAG mohl analyzovat de
 
 ## Implementace a ukládání paměti
 
-Implementace paměti pro AI agenty zahrnuje systematický proces **správy paměti**, který zahrnuje generování, ukládání, vyhledávání, integraci, aktualizaci a dokonce "zapomínání" (nebo mazání) informací. Vyhledávání je obzvláště klíčovým aspektem.
+Implementace paměti pro AI agenty zahrnuje systematický proces **správy paměti**, který zahrnuje generování, ukládání, vybavování, integraci, aktualizaci a dokonce "zapomínání" (nebo mazání) informací. Vybavování je obzvláště klíčovým aspektem.
 
 ### Specializované nástroje pro paměť
 
@@ -126,29 +126,29 @@ Funguje prostřednictvím **dvoufázového paměťového procesu: extrakce a akt
 
 ### Ukládání paměti pomocí RAG
 
-Kromě specializovaných nástrojů pro paměť, jako je Mem0, můžete využít robustní vyhledávací služby, jako je **Azure AI Search jako backend pro ukládání a vyhledávání pamětí**, zejména pro strukturovaný RAG.
+Kromě specializovaných nástrojů pro paměť, jako je Mem0, můžete využít robustní vyhledávací služby, jako je **Azure AI Search jako backend pro ukládání a vybavování pamětí**, zejména pro strukturovaný RAG.
 
-To umožňuje zakotvit odpovědi agenta ve vašich vlastních datech, což zajišťuje relevantnější a přesnější odpovědi. Azure AI Search lze použít k ukládání uživatelských cestovních pamětí, katalogů produktů nebo jakýchkoli jiných znalostí specifických pro danou oblast.
+To vám umožňuje zakotvit odpovědi agenta ve vašich vlastních datech, což zajišťuje relevantnější a přesnější odpovědi. Azure AI Search lze použít k ukládání uživatelsky specifických cestovních pamětí, katalogů produktů nebo jakýchkoli jiných znalostí specifických pro danou oblast.
 
-Azure AI Search podporuje funkce jako **Strukturovaný RAG**, který vyniká při extrakci a vyhledávání hustých, strukturovaných informací z velkých datových sad, jako jsou historie konverzací, e-maily nebo dokonce obrázky. To poskytuje "nadlidskou přesnost a vybavení" ve srovnání s tradičními přístupy k rozdělování textu a vkládání.
+Azure AI Search podporuje funkce jako **Strukturovaný RAG**, který vyniká při extrakci a vybavování hustých, strukturovaných informací z velkých datových sad, jako jsou historie konverzací, e-maily nebo dokonce obrázky. To poskytuje "nadlidskou přesnost a vybavení" ve srovnání s tradičními přístupy k dělení textu a vkládání.
 
 ## Vytváření samo-zlepšujících se AI agentů
 
 Běžný vzor pro samo-zlepšující se agenty zahrnuje zavedení **"agenta znalostí"**. Tento samostatný agent sleduje hlavní konverzaci mezi uživatelem a primárním agentem. Jeho role je:
 
-1. **Identifikovat cenné informace**: Určit, zda je nějaká část konverzace hodná uložení jako obecné znalosti nebo specifická uživatelská preference.
+1. **Identifikovat hodnotné informace**: Určit, zda je nějaká část konverzace hodná uložení jako obecné znalosti nebo specifická uživatelská preference.
 
 2. **Extrahovat a sumarizovat**: Destilovat podstatné učení nebo preference z konverzace.
 
-3. **Uložit do znalostní databáze**: Trvale uložit tyto extrahované informace, často do vektorové databáze, aby je bylo možné později vyhledat.
+3. **Uložit do znalostní databáze**: Uchovat tyto extrahované informace, často ve vektorové databázi, aby mohly být později vybaveny.
 
-4. **Rozšířit budoucí dotazy**: Když uživatel zahájí nový dotaz, agent znalostí vyhledá relevantní uložené informace a připojí je k uživatelskému zadání, čímž poskytne klíčový kontext primárnímu agentovi (podobně jako RAG).
+4. **Rozšířit budoucí dotazy**: Když uživatel zahájí nový dotaz, agent znalostí vybaví relevantní uložené informace a připojí je k uživatelskému promptu, čímž poskytne klíčový kontext primárnímu agentovi (podobně jako RAG).
 
-### Optimalizace paměti
+### Optimalizace pro paměť
 
-• **Správa latence**: Aby se zabránilo zpomalení uživatelských interakcí, může být zpočátku použit levnější a rychlejší model k rychlému ověření, zda je informace cenná k uložení nebo vyhledání, přičemž složitější proces extrakce/vyhledávání se použije pouze v případě potřeby.
+• **Správa latence**: Aby se zabránilo zpomalení uživatelských interakcí, může být zpočátku použit levnější, rychlejší model k rychlému ověření, zda je informace hodnotná k uložení nebo vybavení, přičemž složitější proces extrakce/vybavení se spustí pouze v případě potřeby.
 
-• **Údržba znalostní databáze**: U rostoucí znalostní databáze mohou být méně často používané informace přesunuty do "studeného úložiště" pro správu nákladů.
+• **Údržba znalostní databáze**: Pro rostoucí znalostní databázi mohou být méně často používané informace přesunuty do "studeného úložiště" pro správu nákladů.
 
 ## Máte další otázky ohledně paměti agentů?
 
@@ -156,5 +156,5 @@ Připojte se na [Azure AI Foundry Discord](https://aka.ms/ai-agents/discord), k
 
 ---
 
-**Upozornění**:  
-Tento dokument byl přeložen pomocí služby pro automatický překlad [Co-op Translator](https://github.com/Azure/co-op-translator). I když se snažíme o co největší přesnost, mějte prosím na paměti, že automatické překlady mohou obsahovat chyby nebo nepřesnosti. Původní dokument v jeho původním jazyce by měl být považován za závazný zdroj. Pro důležité informace doporučujeme profesionální lidský překlad. Neodpovídáme za žádná nedorozumění nebo nesprávné výklady vyplývající z použití tohoto překladu.
+**Prohlášení**:  
+Tento dokument byl přeložen pomocí služby AI pro překlady [Co-op Translator](https://github.com/Azure/co-op-translator). I když se snažíme o přesnost, mějte prosím na paměti, že automatizované překlady mohou obsahovat chyby nebo nepřesnosti. Původní dokument v jeho původním jazyce by měl být považován za autoritativní zdroj. Pro důležité informace doporučujeme profesionální lidský překlad. Neodpovídáme za žádná nedorozumění nebo nesprávné interpretace vyplývající z použití tohoto překladu.

@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "c27e2a2e9055910545560e8472b341d8",
-  "translation_date": "2025-10-02T13:56:44+00:00",
+  "original_hash": "d2c9703548140bafa2d6a77406552542",
+  "translation_date": "2025-10-03T14:35:57+00:00",
   "source_file": "13-agent-memory/README.md",
   "language_code": "it"
 }
@@ -28,9 +28,9 @@ Questa lezione coprirà:
 
 Dopo aver completato questa lezione, saprai come:
 
-• **Distinguere tra i vari tipi di memoria degli agenti AI**, inclusa la memoria di lavoro, a breve termine e a lungo termine, oltre a forme specializzate come la memoria di persona e episodica.
+• **Distinguere tra i diversi tipi di memoria degli agenti AI**, inclusa la memoria di lavoro, a breve termine e a lungo termine, oltre a forme specializzate come memoria di persona e memoria episodica.
 
-• **Implementare e gestire la memoria a breve e lungo termine per gli agenti AI** utilizzando il framework Semantic Kernel, sfruttando strumenti come Mem0 e la memoria Whiteboard, e integrandoli con Azure AI Search.
+• **Implementare e gestire memoria a breve e lungo termine per gli agenti AI** utilizzando il framework Semantic Kernel, sfruttando strumenti come Mem0 e memoria Whiteboard, e integrandoli con Azure AI Search.
 
 • **Comprendere i principi alla base degli agenti AI auto-miglioranti** e come sistemi di gestione della memoria robusti contribuiscano all'apprendimento continuo e all'adattamento.
 
@@ -72,7 +72,7 @@ Questo tipo di memoria conserva informazioni per la durata di una singola conver
 
 **Esempio di Memoria a Breve Termine**
 
-Se un utente chiede, "Quanto costerebbe un volo per Parigi?" e poi segue con "E per l'alloggio lì?", la memoria a breve termine garantisce che l'agente sappia che "lì" si riferisce a "Parigi" all'interno della stessa conversazione.
+Se un utente chiede, "Quanto costerebbe un volo per Parigi?" e poi segue con "E per l'alloggio lì?", la memoria a breve termine garantisce che l'agente sappia che "lì" si riferisce a "Parigi" nella stessa conversazione.
 
 #### Memoria a Lungo Termine
 
@@ -100,7 +100,7 @@ Se l'agente ha tentato di prenotare un volo specifico ma ha fallito a causa di i
 
 #### Memoria di Entità
 
-Questa memoria riguarda l'estrazione e la conservazione di entità specifiche (come persone, luoghi o cose) ed eventi dalle conversazioni. Consente all'agente di costruire una comprensione strutturata degli elementi chiave discussi.
+Questa memoria riguarda l'estrazione e il ricordo di entità specifiche (come persone, luoghi o cose) ed eventi dalle conversazioni. Consente all'agente di costruire una comprensione strutturata degli elementi chiave discussi.
 
 **Esempio di Memoria di Entità**
 
@@ -108,7 +108,7 @@ Da una conversazione su un viaggio passato, l'agente potrebbe estrarre "Parigi",
 
 #### RAG Strutturato (Generazione Augmentata da Recupero)
 
-Mentre il RAG è una tecnica più ampia, il "RAG Strutturato" è evidenziato come una tecnologia di memoria potente. Estrae informazioni dense e strutturate da varie fonti (conversazioni, email, immagini) e le utilizza per migliorare precisione, richiamo e velocità nelle risposte. A differenza del RAG classico che si basa esclusivamente sulla somiglianza semantica, il RAG Strutturato lavora con la struttura intrinseca delle informazioni.
+Mentre RAG è una tecnica più ampia, il "RAG Strutturato" viene evidenziato come una tecnologia di memoria potente. Estrae informazioni dense e strutturate da varie fonti (conversazioni, email, immagini) e le utilizza per migliorare precisione, richiamo e velocità nelle risposte. A differenza del RAG classico che si basa esclusivamente sulla somiglianza semantica, il RAG Strutturato lavora con la struttura intrinseca delle informazioni.
 
 **Esempio di RAG Strutturato**
 
@@ -122,13 +122,13 @@ Implementare la memoria per gli agenti AI implica un processo sistematico di **g
 
 Un modo per archiviare e gestire la memoria degli agenti è utilizzare strumenti specializzati come Mem0. Mem0 funziona come uno strato di memoria persistente, consentendo agli agenti di richiamare interazioni rilevanti, archiviare preferenze dell'utente e contesti fattuali, e apprendere da successi e fallimenti nel tempo. L'idea qui è che gli agenti senza stato si trasformino in agenti con stato.
 
-Funziona attraverso una **pipeline di memoria a due fasi: estrazione e aggiornamento**. Innanzitutto, i messaggi aggiunti al thread di un agente vengono inviati al servizio Mem0, che utilizza un Large Language Model (LLM) per riassumere la cronologia delle conversazioni ed estrarre nuove memorie. Successivamente, una fase di aggiornamento guidata da LLM determina se aggiungere, modificare o eliminare queste memorie, archiviandole in un archivio dati ibrido che può includere database vettoriali, grafici e chiave-valore. Questo sistema supporta anche vari tipi di memoria e può incorporare la memoria grafica per gestire le relazioni tra entità.
+Funziona attraverso una **pipeline di memoria a due fasi: estrazione e aggiornamento**. Innanzitutto, i messaggi aggiunti al thread di un agente vengono inviati al servizio Mem0, che utilizza un Large Language Model (LLM) per riassumere la cronologia delle conversazioni ed estrarre nuove memorie. Successivamente, una fase di aggiornamento guidata da LLM determina se aggiungere, modificare o eliminare queste memorie, archiviandole in un archivio dati ibrido che può includere database vettoriali, grafici e chiave-valore. Questo sistema supporta anche vari tipi di memoria e può incorporare memoria grafica per gestire le relazioni tra entità.
 
 ### Archiviare la Memoria con RAG
 
-Oltre agli strumenti di memoria specializzati come Mem0, puoi sfruttare servizi di ricerca robusti come **Azure AI Search come backend per archiviare e recuperare memorie**, specialmente per il RAG strutturato.
+Oltre agli strumenti di memoria specializzati come Mem0, puoi sfruttare servizi di ricerca robusti come **Azure AI Search come backend per archiviare e recuperare memorie**, specialmente per RAG strutturato.
 
-Questo consente di basare le risposte dell'agente sui tuoi dati, garantendo risposte più pertinenti e accurate. Azure AI Search può essere utilizzato per archiviare memorie di viaggio specifiche dell'utente, cataloghi di prodotti o qualsiasi altra conoscenza specifica del dominio.
+Questo ti consente di basare le risposte del tuo agente sui tuoi dati, garantendo risposte più pertinenti e accurate. Azure AI Search può essere utilizzato per archiviare memorie di viaggio specifiche dell'utente, cataloghi di prodotti o qualsiasi altra conoscenza specifica del dominio.
 
 Azure AI Search supporta funzionalità come **RAG Strutturato**, che eccelle nell'estrazione e nel recupero di informazioni dense e strutturate da grandi dataset come cronologie di conversazioni, email o persino immagini. Questo offre "precisione e richiamo sovrumani" rispetto agli approcci tradizionali di suddivisione del testo e embedding.
 
@@ -142,7 +142,7 @@ Un modello comune per gli agenti auto-miglioranti prevede l'introduzione di un *
 
 3. **Archiviare in una base di conoscenza**: Conservare queste informazioni estratte, spesso in un database vettoriale, in modo che possano essere recuperate in seguito.
 
-4. **Arricchire le query future**: Quando l'utente avvia una nuova query, l'agente di conoscenza recupera le informazioni archiviate rilevanti e le aggiunge al prompt dell'utente, fornendo un contesto cruciale all'agente primario (simile al RAG).
+4. **Arricchire le query future**: Quando l'utente avvia una nuova query, l'agente di conoscenza recupera le informazioni archiviate rilevanti e le aggiunge al prompt dell'utente, fornendo un contesto cruciale all'agente primario (simile a RAG).
 
 ### Ottimizzazioni per la Memoria
 
@@ -156,5 +156,5 @@ Unisciti al [Discord di Azure AI Foundry](https://aka.ms/ai-agents/discord) pe
 
 ---
 
-**Clausola di esclusione della responsabilità**:  
-Questo documento è stato tradotto utilizzando il servizio di traduzione automatica [Co-op Translator](https://github.com/Azure/co-op-translator). Sebbene ci impegniamo per garantire l'accuratezza, si prega di tenere presente che le traduzioni automatiche possono contenere errori o imprecisioni. Il documento originale nella sua lingua nativa dovrebbe essere considerato la fonte autorevole. Per informazioni critiche, si raccomanda una traduzione professionale effettuata da un traduttore umano. Non siamo responsabili per eventuali incomprensioni o interpretazioni errate derivanti dall'uso di questa traduzione.
+**Disclaimer**:  
+Questo documento è stato tradotto utilizzando il servizio di traduzione automatica [Co-op Translator](https://github.com/Azure/co-op-translator). Sebbene ci impegniamo per garantire l'accuratezza, si prega di notare che le traduzioni automatiche possono contenere errori o imprecisioni. Il documento originale nella sua lingua nativa dovrebbe essere considerato la fonte autorevole. Per informazioni critiche, si raccomanda una traduzione professionale effettuata da un traduttore umano. Non siamo responsabili per eventuali incomprensioni o interpretazioni errate derivanti dall'uso di questa traduzione.

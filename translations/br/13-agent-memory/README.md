@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "c27e2a2e9055910545560e8472b341d8",
-  "translation_date": "2025-10-02T13:54:50+00:00",
+  "original_hash": "d2c9703548140bafa2d6a77406552542",
+  "translation_date": "2025-10-03T14:34:37+00:00",
   "source_file": "13-agent-memory/README.md",
   "language_code": "br"
 }
@@ -10,7 +10,7 @@ CO_OP_TRANSLATOR_METADATA:
 # Memória para Agentes de IA
 [![Memória do Agente](../../../translated_images/lesson-13-thumbnail.959e3bc52d210c64a614a3bece6b170a2c472138dc0a14c7fbde07306ef95ae7.br.png)](https://youtu.be/QrYbHesIxpw?si=qNYW6PL3fb3lTPMk)
 
-Ao discutir os benefícios únicos de criar agentes de IA, dois aspectos principais são abordados: a capacidade de utilizar ferramentas para realizar tarefas e a habilidade de melhorar ao longo do tempo. A memória é a base para criar agentes autossuficientes que proporcionam experiências melhores para os usuários.
+Ao discutir os benefícios únicos de criar agentes de IA, dois aspectos principais são abordados: a capacidade de utilizar ferramentas para realizar tarefas e a habilidade de melhorar ao longo do tempo. A memória é a base para criar agentes autossuficientes que proporcionam experiências melhores para nossos usuários.
 
 Nesta lição, vamos explorar o que é memória para agentes de IA e como podemos gerenciá-la e utilizá-la para beneficiar nossas aplicações.
 
@@ -58,7 +58,7 @@ O objetivo de implementar memória é tornar os agentes mais **confiáveis e cap
 
 #### Memória de Trabalho
 
-Pense nisso como um pedaço de papel usado pelo agente durante uma única tarefa ou processo de pensamento. Ele mantém informações imediatas necessárias para calcular o próximo passo.
+Pense nisso como um pedaço de papel usado pelo agente durante uma única tarefa ou processo de pensamento em andamento. Ele mantém informações imediatas necessárias para calcular o próximo passo.
 
 Para agentes de IA, a memória de trabalho frequentemente captura as informações mais relevantes de uma conversa, mesmo que o histórico completo do chat seja longo ou truncado. Ela se concentra em extrair elementos-chave como requisitos, propostas, decisões e ações.
 
@@ -72,7 +72,7 @@ Esse tipo de memória retém informações durante uma única conversa ou sessã
 
 **Exemplo de Memória de Curto Prazo**
 
-Se um usuário pergunta: "Quanto custa um voo para Paris?" e depois segue com "E a hospedagem lá?", a memória de curto prazo garante que o agente saiba que "lá" se refere a "Paris" dentro da mesma conversa.
+Se um usuário pergunta: "Quanto custa um voo para Paris?" e depois segue com "E sobre hospedagem lá?", a memória de curto prazo garante que o agente saiba que "lá" se refere a "Paris" dentro da mesma conversa.
 
 #### Memória de Longo Prazo
 
@@ -80,7 +80,7 @@ Essa é a informação que persiste ao longo de várias conversas ou sessões. P
 
 **Exemplo de Memória de Longo Prazo**
 
-Uma memória de longo prazo pode armazenar que "Ben gosta de esquiar e atividades ao ar livre, aprecia café com vista para montanhas e quer evitar pistas de esqui avançadas devido a uma lesão anterior". Essas informações, aprendidas em interações anteriores, influenciam recomendações em futuras sessões de planejamento de viagens, tornando-as altamente personalizadas.
+Uma memória de longo prazo pode armazenar que "Ben gosta de esquiar e atividades ao ar livre, prefere café com vista para montanhas e quer evitar pistas de esqui avançadas devido a uma lesão anterior". Essas informações, aprendidas em interações anteriores, influenciam recomendações em futuras sessões de planejamento de viagens, tornando-as altamente personalizadas.
 
 #### Memória de Persona
 
@@ -92,17 +92,17 @@ Se o agente de viagens foi projetado para ser um "especialista em planejamento d
 
 #### Memória de Fluxo/Episódica
 
-Essa memória armazena a sequência de passos que um agente realiza durante uma tarefa complexa, incluindo sucessos e falhas. É como lembrar "episódios" específicos ou experiências passadas para aprender com eles.
+Essa memória armazena a sequência de etapas que um agente realiza durante uma tarefa complexa, incluindo sucessos e falhas. É como lembrar "episódios" específicos ou experiências passadas para aprender com eles.
 
 **Exemplo de Memória Episódica**
 
 Se o agente tentou reservar um voo específico, mas falhou devido à indisponibilidade, a memória episódica pode registrar essa falha, permitindo que o agente tente voos alternativos ou informe o usuário sobre o problema de forma mais informada em uma tentativa subsequente.
 
-#### Memória de Entidade
+#### Memória de Entidades
 
 Isso envolve extrair e lembrar entidades específicas (como pessoas, lugares ou coisas) e eventos de conversas. Permite que o agente construa uma compreensão estruturada dos elementos-chave discutidos.
 
-**Exemplo de Memória de Entidade**
+**Exemplo de Memória de Entidades**
 
 De uma conversa sobre uma viagem passada, o agente pode extrair "Paris", "Torre Eiffel" e "jantar no restaurante Le Chat Noir" como entidades. Em uma interação futura, o agente pode lembrar "Le Chat Noir" e oferecer fazer uma nova reserva lá.
 
@@ -142,7 +142,7 @@ Um padrão comum para agentes autossuficientes envolve a introdução de um **"a
 
 3. **Armazenar em uma base de conhecimento**: Persistir essas informações extraídas, frequentemente em um banco de dados vetorial, para que possam ser recuperadas posteriormente.
 
-4. **Aumentar consultas futuras**: Quando o usuário inicia uma nova consulta, o agente de conhecimento recupera informações armazenadas relevantes e as adiciona ao prompt do usuário, fornecendo contexto crucial ao agente primário (semelhante ao RAG).
+4. **Aumentar consultas futuras**: Quando o usuário inicia uma nova consulta, o agente de conhecimento recupera informações armazenadas relevantes e as adiciona ao prompt do usuário, fornecendo contexto crucial ao agente primário (similar ao RAG).
 
 ### Otimizações para Memória
 
@@ -157,4 +157,4 @@ Participe do [Discord do Azure AI Foundry](https://aka.ms/ai-agents/discord) p
 ---
 
 **Aviso Legal**:  
-Este documento foi traduzido utilizando o serviço de tradução por IA [Co-op Translator](https://github.com/Azure/co-op-translator). Embora nos esforcemos para garantir a precisão, é importante estar ciente de que traduções automatizadas podem conter erros ou imprecisões. O documento original em seu idioma nativo deve ser considerado a fonte oficial. Para informações críticas, recomenda-se a tradução profissional realizada por humanos. Não nos responsabilizamos por quaisquer mal-entendidos ou interpretações incorretas decorrentes do uso desta tradução.
+Este documento foi traduzido utilizando o serviço de tradução por IA [Co-op Translator](https://github.com/Azure/co-op-translator). Embora nos esforcemos para garantir a precisão, esteja ciente de que traduções automatizadas podem conter erros ou imprecisões. O documento original em seu idioma nativo deve ser considerado a fonte oficial. Para informações críticas, recomenda-se a tradução profissional realizada por humanos. Não nos responsabilizamos por quaisquer mal-entendidos ou interpretações equivocadas decorrentes do uso desta tradução.

@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "c27e2a2e9055910545560e8472b341d8",
-  "translation_date": "2025-10-02T19:12:18+00:00",
+  "original_hash": "d2c9703548140bafa2d6a77406552542",
+  "translation_date": "2025-10-03T14:04:35+00:00",
   "source_file": "13-agent-memory/README.md",
   "language_code": "en"
 }
@@ -30,7 +30,7 @@ By the end of this lesson, you will be able to:
 
 • **Distinguish between different types of AI agent memory**, including working, short-term, and long-term memory, as well as specialized forms like persona and episodic memory.
 
-• **Implement and manage short-term and long-term memory for AI agents** using the Semantic Kernel framework, tools like Mem0 and Whiteboard memory, and integrations with Azure AI Search.
+• **Implement and manage short-term and long-term memory for AI agents** using the Semantic Kernel framework, tools like Mem0 and Whiteboard memory, and integration with Azure AI Search.
 
 • **Understand the principles behind self-improving AI agents** and how effective memory management systems contribute to continuous learning and adaptation.
 
@@ -50,7 +50,7 @@ An agent’s intelligence is closely tied to its ability to recall and use past 
 
 • **Proactive and Reactive**: Anticipating needs or responding appropriately based on historical data.
 
-• **Autonomous**: Functioning more independently by leveraging stored knowledge.
+• **Autonomous**: Functioning more independently by drawing on stored knowledge.
 
 The goal of implementing memory is to make agents more **reliable and capable**.
 
@@ -72,7 +72,7 @@ This type of memory retains information for the duration of a single conversatio
 
 **Short-Term Memory Example**
 
-If a user asks, "How much would a flight to Paris cost?" and then follows up with "What about accommodation there?", short-term memory ensures the agent knows "there" refers to "Paris" within the same conversation.
+If a user asks, "How much would a flight to Paris cost?" and then follows up with "What about accommodation there?", short-term memory ensures the agent understands that "there" refers to "Paris" within the same conversation.
 
 #### Long-Term Memory
 
@@ -96,11 +96,11 @@ This memory stores the sequence of steps an agent takes during a complex task, i
 
 **Episodic Memory Example**
 
-If the agent attempted to book a specific flight but it failed due to unavailability, episodic memory could record this failure, allowing the agent to try alternative flights or inform the user about the issue in a more informed way during a subsequent attempt.
+If the agent attempted to book a specific flight but it failed due to unavailability, episodic memory could record this failure, enabling the agent to try alternative flights or inform the user about the issue in a more informed way during a subsequent attempt.
 
 #### Entity Memory
 
-This involves extracting and remembering specific entities (like people, places, or things) and events from conversations. It enables the agent to build a structured understanding of key elements discussed.
+This involves extracting and remembering specific entities (like people, places, or things) and events from conversations. It allows the agent to build a structured understanding of key elements discussed.
 
 **Entity Memory Example**
 
@@ -122,7 +122,7 @@ Implementing memory for AI agents involves a systematic process of **memory mana
 
 One way to store and manage agent memory is by using specialized tools like Mem0. Mem0 acts as a persistent memory layer, enabling agents to recall relevant interactions, store user preferences and factual context, and learn from successes and failures over time. The idea is to transform stateless agents into stateful ones.
 
-It operates through a **two-phase memory pipeline: extraction and update**. First, messages added to an agent’s thread are sent to the Mem0 service, which uses a Large Language Model (LLM) to summarize conversation history and extract new memories. Then, an LLM-driven update phase determines whether to add, modify, or delete these memories, storing them in a hybrid data store that can include vector, graph, and key-value databases. This system supports various memory types and can incorporate graph memory for managing relationships between entities.
+It operates through a **two-phase memory pipeline: extraction and update**. First, messages added to an agent’s thread are sent to the Mem0 service, which uses a Large Language Model (LLM) to summarize conversation history and extract new memories. Then, an LLM-driven update phase determines whether to add, modify, or delete these memories, storing them in a hybrid data store that can include vector, graph, and key-value databases. This system also supports various memory types and can incorporate graph memory for managing relationships between entities.
 
 ### Storing Memory with RAG
 
@@ -134,7 +134,7 @@ Azure AI Search supports capabilities like **Structured RAG**, which excels at e
 
 ## Making AI Agents Self-Improve
 
-A common approach for self-improving agents involves introducing a **"knowledge agent"**. This separate agent observes the main conversation between the user and the primary agent. Its role is to:
+A common pattern for self-improving agents involves introducing a **"knowledge agent"**. This separate agent observes the main conversation between the user and the primary agent. Its role is to:
 
 1. **Identify valuable information**: Determine if any part of the conversation is worth saving as general knowledge or a specific user preference.
 
