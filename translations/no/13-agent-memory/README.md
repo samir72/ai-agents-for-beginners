@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "c27e2a2e9055910545560e8472b341d8",
-  "translation_date": "2025-10-02T15:37:46+00:00",
+  "original_hash": "d2c9703548140bafa2d6a77406552542",
+  "translation_date": "2025-10-03T14:46:37+00:00",
   "source_file": "13-agent-memory/README.md",
   "language_code": "no"
 }
@@ -18,7 +18,7 @@ I denne leksjonen skal vi se på hva hukommelse er for AI-agenter, hvordan vi ka
 
 Denne leksjonen dekker:
 
-• **Forstå AI-agenters hukommelse**: Hva hukommelse er og hvorfor det er viktig for agenter.
+• **Forstå AI-agentens hukommelse**: Hva hukommelse er og hvorfor det er viktig for agenter.
 
 • **Implementere og lagre hukommelse**: Praktiske metoder for å legge til hukommelsesfunksjoner i AI-agenter, med fokus på kortsiktig og langsiktig hukommelse.
 
@@ -28,17 +28,17 @@ Denne leksjonen dekker:
 
 Etter å ha fullført denne leksjonen, vil du kunne:
 
-• **Skille mellom ulike typer AI-agenters hukommelse**, inkludert arbeids-, kortsiktig og langsiktig hukommelse, samt spesialiserte former som persona- og episodisk hukommelse.
+• **Skille mellom ulike typer AI-agentens hukommelse**, inkludert arbeids-, kortsiktig og langsiktig hukommelse, samt spesialiserte former som persona- og episodisk hukommelse.
 
 • **Implementere og administrere kortsiktig og langsiktig hukommelse for AI-agenter** ved hjelp av Semantic Kernel-rammeverket, verktøy som Mem0 og Whiteboard-hukommelse, og integrering med Azure AI Search.
 
 • **Forstå prinsippene bak selvforbedrende AI-agenter** og hvordan robuste hukommelsessystemer bidrar til kontinuerlig læring og tilpasning.
 
-## Forstå AI-agenters hukommelse
+## Forstå AI-agentens hukommelse
 
 I sin kjerne refererer **hukommelse for AI-agenter til mekanismer som lar dem beholde og hente frem informasjon**. Denne informasjonen kan være spesifikke detaljer om en samtale, brukerpreferanser, tidligere handlinger eller til og med lærte mønstre.
 
-Uten hukommelse er AI-applikasjoner ofte tilstandsløse, noe som betyr at hver interaksjon starter fra bunnen av. Dette fører til en repetitiv og frustrerende brukeropplevelse der agenten "glemmer" tidligere kontekst eller preferanser.
+Uten hukommelse er AI-applikasjoner ofte tilstandsløse, noe som betyr at hver interaksjon starter fra scratch. Dette fører til en repetitiv og frustrerende brukeropplevelse der agenten "glemmer" tidligere kontekst eller preferanser.
 
 ### Hvorfor er hukommelse viktig?
 
@@ -60,11 +60,11 @@ Målet med å implementere hukommelse er å gjøre agenter mer **pålitelige og 
 
 Tenk på dette som et stykke kladdepapir en agent bruker under en enkelt, pågående oppgave eller tankeprosess. Det holder umiddelbar informasjon som trengs for å beregne neste steg.
 
-For AI-agenter fanger arbeidshukommelse ofte opp den mest relevante informasjonen fra en samtale, selv om hele samtalehistorikken er lang eller avkortet. Den fokuserer på å trekke ut nøkkelpunkter som krav, forslag, beslutninger og handlinger.
+For AI-agenter fanger arbeidshukommelse ofte den mest relevante informasjonen fra en samtale, selv om hele samtalehistorikken er lang eller avkortet. Den fokuserer på å trekke ut nøkkelpunkter som krav, forslag, beslutninger og handlinger.
 
 **Eksempel på arbeidshukommelse**
 
-I en reisebestillingsagent kan arbeidshukommelsen fange opp brukerens nåværende forespørsel, som "Jeg vil bestille en tur til Paris". Dette spesifikke kravet holdes i agentens umiddelbare kontekst for å styre den nåværende interaksjonen.
+I en reisebestillingsagent kan arbeidshukommelsen fange brukerens nåværende forespørsel, som "Jeg vil bestille en tur til Paris". Dette spesifikke kravet holdes i agentens umiddelbare kontekst for å styre den nåværende interaksjonen.
 
 #### Korttidsminne
 
@@ -84,7 +84,7 @@ Et langtidsminne kan lagre at "Ben liker ski og utendørsaktiviteter, foretrekke
 
 #### Persona-hukommelse
 
-Denne spesialiserte typen hukommelse hjelper en agent med å utvikle en konsistent "personlighet" eller "persona". Det lar agenten huske detaljer om seg selv eller sin tiltenkte rolle, og gjør interaksjoner mer flytende og fokuserte.
+Denne spesialiserte hukommelsestypen hjelper en agent med å utvikle en konsistent "personlighet" eller "persona". Det lar agenten huske detaljer om seg selv eller sin tiltenkte rolle, og gjør interaksjoner mer flytende og fokuserte.
 
 **Eksempel på persona-hukommelse**
 
@@ -100,7 +100,7 @@ Hvis agenten forsøkte å bestille en spesifikk flyreise, men det mislyktes på 
 
 #### Enhetshukommelse
 
-Dette innebærer å trekke ut og huske spesifikke enheter (som personer, steder eller ting) og hendelser fra samtaler. Det lar agenten bygge en strukturert forståelse av nøkkelpunkter som diskuteres.
+Dette innebærer å trekke ut og huske spesifikke enheter (som personer, steder eller ting) og hendelser fra samtaler. Det lar agenten bygge en strukturert forståelse av nøkkelpunktene som diskuteres.
 
 **Eksempel på enhetshukommelse**
 
@@ -108,7 +108,7 @@ Fra en samtale om en tidligere tur kan agenten trekke ut "Paris", "Eiffeltårnet
 
 #### Strukturert RAG (Retrieval Augmented Generation)
 
-Mens RAG er en bredere teknikk, fremheves "strukturert RAG" som en kraftig hukommelsesteknologi. Den trekker ut tett, strukturert informasjon fra ulike kilder (samtaler, e-poster, bilder) og bruker den for å forbedre presisjon, gjenkalling og hastighet i svarene. I motsetning til klassisk RAG som kun baserer seg på semantisk likhet, arbeider strukturert RAG med den iboende strukturen i informasjonen.
+Mens RAG er en bredere teknikk, fremheves "strukturert RAG" som en kraftig hukommelsesteknologi. Den trekker ut tett, strukturert informasjon fra ulike kilder (samtaler, e-poster, bilder) og bruker den til å forbedre presisjon, gjenkalling og hastighet i svarene. I motsetning til klassisk RAG som kun baserer seg på semantisk likhet, arbeider strukturert RAG med den iboende strukturen i informasjonen.
 
 **Eksempel på strukturert RAG**
 
@@ -116,19 +116,19 @@ I stedet for bare å matche nøkkelord, kan strukturert RAG analysere flydetalje
 
 ## Implementere og lagre hukommelse
 
-Implementering av hukommelse for AI-agenter innebærer en systematisk prosess med **hukommelsesadministrasjon**, som inkluderer generering, lagring, henting, integrering, oppdatering og til og med "glemming" (eller sletting) av informasjon. Henting er en spesielt viktig del.
+Å implementere hukommelse for AI-agenter innebærer en systematisk prosess med **hukommelsesadministrasjon**, som inkluderer generering, lagring, henting, integrering, oppdatering og til og med "glemming" (eller sletting) av informasjon. Henting er en spesielt viktig del.
 
 ### Spesialiserte hukommelsesverktøy
 
-En måte å lagre og administrere agenthukommelse på er ved å bruke spesialiserte verktøy som Mem0. Mem0 fungerer som et vedvarende hukommelseslag, som lar agenter huske relevante interaksjoner, lagre brukerpreferanser og faktuell kontekst, og lære av suksesser og feil over tid. Ideen her er at tilstandsløse agenter blir til tilstandsfulle.
+En måte å lagre og administrere agentens hukommelse på er ved å bruke spesialiserte verktøy som Mem0. Mem0 fungerer som et vedvarende hukommelseslag, som lar agenter huske relevante interaksjoner, lagre brukerpreferanser og faktuell kontekst, og lære av suksesser og feil over tid. Ideen her er at tilstandsløse agenter blir til tilstandsfulle.
 
-Det fungerer gjennom en **to-fase hukommelsesprosess: utvinning og oppdatering**. Først sendes meldinger lagt til en agents tråd til Mem0-tjenesten, som bruker en Large Language Model (LLM) for å oppsummere samtalehistorikk og trekke ut nye minner. Deretter bestemmer en LLM-drevet oppdateringsfase om disse minnene skal legges til, endres eller slettes, og lagrer dem i en hybrid datalagring som kan inkludere vektor-, graf- og nøkkel-verdi-databaser. Dette systemet støtter også ulike typer hukommelse og kan inkludere grafhukommelse for å administrere relasjoner mellom enheter.
+Det fungerer gjennom en **to-fase hukommelsesprosess: utvinning og oppdatering**. Først sendes meldinger lagt til en agents tråd til Mem0-tjenesten, som bruker en Large Language Model (LLM) for å oppsummere samtalehistorikk og trekke ut nye minner. Deretter bestemmer en LLM-drevet oppdateringsfase om disse minnene skal legges til, endres eller slettes, og lagrer dem i en hybrid datalagring som kan inkludere vektor-, graf- og nøkkel-verdi-databaser. Dette systemet støtter også ulike hukommelsestyper og kan inkludere grafhukommelse for å administrere relasjoner mellom enheter.
 
 ### Lagring av hukommelse med RAG
 
 Utover spesialiserte hukommelsesverktøy som Mem0, kan du bruke robuste søketjenester som **Azure AI Search som backend for lagring og henting av minner**, spesielt for strukturert RAG.
 
-Dette lar deg forankre agentens svar med dine egne data, og sikrer mer relevante og nøyaktige svar. Azure AI Search kan brukes til å lagre bruker-spesifikke reisehukommelser, produktkataloger eller annen domenespesifikk kunnskap.
+Dette lar deg forankre agentens svar med dine egne data, og sikrer mer relevante og nøyaktige svar. Azure AI Search kan brukes til å lagre bruker-spesifikke reise-minner, produktkataloger eller annen domenespesifikk kunnskap.
 
 Azure AI Search støtter funksjoner som **strukturert RAG**, som utmerker seg ved å trekke ut og hente tett, strukturert informasjon fra store datasett som samtalehistorikk, e-poster eller til og med bilder. Dette gir "supermenneskelig presisjon og gjenkalling" sammenlignet med tradisjonelle tekstchunking- og embedding-tilnærminger.
 
@@ -138,7 +138,7 @@ Et vanlig mønster for selvforbedrende agenter innebærer å introdusere en **"k
 
 1. **Identifisere verdifull informasjon**: Bestemme om noen del av samtalen er verdt å lagre som generell kunnskap eller en spesifikk brukerpreferanse.
 
-2. **Trekk ut og oppsummer**: Destillere essensiell læring eller preferanse fra samtalen.
+2. **Trekk ut og oppsummer**: Destillere den essensielle læringen eller preferansen fra samtalen.
 
 3. **Lagre i en kunnskapsbase**: Bevare denne uttrukne informasjonen, ofte i en vektordatabase, slik at den kan hentes frem senere.
 
@@ -148,13 +148,13 @@ Et vanlig mønster for selvforbedrende agenter innebærer å introdusere en **"k
 
 • **Latenshåndtering**: For å unngå å bremse brukerinteraksjoner, kan en billigere, raskere modell brukes først for raskt å sjekke om informasjon er verdt å lagre eller hente, og kun aktivere den mer komplekse utvinnings-/hentingsprosessen når det er nødvendig.
 
-• **Vedlikehold av kunnskapsbase**: For en voksende kunnskapsbase kan mindre ofte brukt informasjon flyttes til "kald lagring" for å redusere kostnader.
+• **Vedlikehold av kunnskapsbase**: For en voksende kunnskapsbase kan mindre brukt informasjon flyttes til "kald lagring" for å redusere kostnader.
 
-## Har du flere spørsmål om agenthukommelse?
+## Har du flere spørsmål om agentens hukommelse?
 
 Bli med på [Azure AI Foundry Discord](https://aka.ms/ai-agents/discord) for å møte andre lærende, delta på kontortimer og få svar på spørsmålene dine om AI-agenter.
 
 ---
 
 **Ansvarsfraskrivelse**:  
-Dette dokumentet er oversatt ved hjelp av AI-oversettelsestjenesten [Co-op Translator](https://github.com/Azure/co-op-translator). Selv om vi tilstreber nøyaktighet, vær oppmerksom på at automatiserte oversettelser kan inneholde feil eller unøyaktigheter. Det originale dokumentet på dets opprinnelige språk bør anses som den autoritative kilden. For kritisk informasjon anbefales profesjonell menneskelig oversettelse. Vi er ikke ansvarlige for misforståelser eller feiltolkninger som oppstår ved bruk av denne oversettelsen.
+Dette dokumentet er oversatt ved hjelp av AI-oversettelsestjenesten [Co-op Translator](https://github.com/Azure/co-op-translator). Selv om vi tilstreber nøyaktighet, vennligst vær oppmerksom på at automatiserte oversettelser kan inneholde feil eller unøyaktigheter. Det originale dokumentet på sitt opprinnelige språk bør betraktes som den autoritative kilden. For kritisk informasjon anbefales profesjonell menneskelig oversettelse. Vi er ikke ansvarlige for eventuelle misforståelser eller feiltolkninger som oppstår ved bruk av denne oversettelsen.

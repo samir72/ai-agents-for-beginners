@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "c27e2a2e9055910545560e8472b341d8",
-  "translation_date": "2025-10-02T06:46:56+00:00",
+  "original_hash": "d2c9703548140bafa2d6a77406552542",
+  "translation_date": "2025-10-03T15:11:08+00:00",
   "source_file": "13-agent-memory/README.md",
   "language_code": "sl"
 }
@@ -10,7 +10,7 @@ CO_OP_TRANSLATOR_METADATA:
 # Spomin za AI agente
 [![Spomin agenta](../../../translated_images/lesson-13-thumbnail.959e3bc52d210c64a614a3bece6b170a2c472138dc0a14c7fbde07306ef95ae7.sl.png)](https://youtu.be/QrYbHesIxpw?si=qNYW6PL3fb3lTPMk)
 
-Ko razpravljamo o edinstvenih prednostih ustvarjanja AI agentov, sta dve stvari pogosto v ospredju: sposobnost uporabe orodij za dokončanje nalog in sposobnost izboljševanja skozi čas. Spomin je temelj za ustvarjanje samopopravljajočega agenta, ki lahko zagotovi boljše izkušnje za naše uporabnike.
+Ko govorimo o edinstvenih prednostih ustvarjanja AI agentov, sta dve stvari pogosto v ospredju: sposobnost uporabe orodij za dokončanje nalog in sposobnost izboljševanja skozi čas. Spomin je temelj za ustvarjanje samopopravljajočega agenta, ki lahko zagotovi boljše izkušnje za naše uporabnike.
 
 V tej lekciji bomo raziskali, kaj spomin pomeni za AI agente, kako ga lahko upravljamo in uporabljamo za izboljšanje naših aplikacij.
 
@@ -38,7 +38,7 @@ Po zaključku te lekcije boste znali:
 
 V svojem bistvu **spomin za AI agente pomeni mehanizme, ki jim omogočajo ohranjanje in priklic informacij**. Te informacije lahko vključujejo specifične podrobnosti o pogovoru, uporabniške preference, pretekla dejanja ali celo naučene vzorce.
 
-Brez spomina so AI aplikacije pogosto brez stanja, kar pomeni, da se vsaka interakcija začne od začetka. To vodi do ponavljajoče in frustrirajoče uporabniške izkušnje, kjer agent "pozabi" prejšnji kontekst ali preference.
+Brez spomina so AI aplikacije pogosto brez stanja, kar pomeni, da se vsaka interakcija začne od začetka. To vodi v ponavljajočo in frustrirajočo uporabniško izkušnjo, kjer agent "pozabi" prejšnji kontekst ali preference.
 
 ### Zakaj je spomin pomemben?
 
@@ -58,13 +58,13 @@ Cilj implementacije spomina je narediti agente bolj **zanesljive in sposobne**.
 
 #### Delovni spomin
 
-Pomislite na to kot na kos papirja, ki ga agent uporablja med eno samo, tekočo nalogo ali procesom razmišljanja. Vsebuje takojšnje informacije, potrebne za izračun naslednjega koraka.
+Pomislite na to kot na kos papirja, ki ga agent uporablja med eno samo, tekočo nalogo ali procesom razmišljanja. Zadrži takojšnje informacije, potrebne za izračun naslednjega koraka.
 
-Za AI agente delovni spomin pogosto zajema najbolj relevantne informacije iz pogovora, tudi če je celotna zgodovina klepeta dolga ali skrajšana. Osredotoča se na ključne elemente, kot so zahteve, predlogi, odločitve in dejanja.
+Za AI agente delovni spomin pogosto zajame najbolj relevantne informacije iz pogovora, tudi če je celotna zgodovina klepeta dolga ali skrajšana. Osredotoča se na ključne elemente, kot so zahteve, predlogi, odločitve in dejanja.
 
 **Primer delovnega spomina**
 
-Pri agentu za rezervacijo potovanj bi delovni spomin lahko zajel trenutno zahtevo uporabnika, na primer "Želim rezervirati potovanje v Pariz". Ta specifična zahteva je v agentovem takojšnjem kontekstu za usmerjanje trenutne interakcije.
+Pri agentu za rezervacijo potovanj bi delovni spomin lahko zajel trenutno zahtevo uporabnika, na primer "Želim rezervirati potovanje v Pariz". Ta specifična zahteva je zadržana v trenutnem kontekstu agenta za vodenje interakcije.
 
 #### Kratkoročni spomin
 
@@ -88,11 +88,11 @@ Ta specializirana vrsta spomina pomaga agentu razviti dosledno "osebnost" ali "v
 
 **Primer osebnostnega spomina**
 
-Če je agent za potovanja zasnovan kot "strokovnjak za načrtovanje smučarskih potovanj", bi osebnostni spomin lahko okrepil to vlogo, kar bi vplivalo na njegove odgovore, da se uskladijo s tonom in znanjem strokovnjaka.
+Če je agent za potovanja zasnovan kot "strokovnjak za načrtovanje smučarskih počitnic", bi osebnostni spomin lahko okrepil to vlogo, kar bi vplivalo na njegove odgovore, da se ujemajo s tonom in znanjem strokovnjaka.
 
-#### Delovni/Epizodni spomin
+#### Epizodni spomin
 
-Ta spomin shranjuje zaporedje korakov, ki jih agent izvede med kompleksno nalogo, vključno z uspehi in neuspehi. To je kot spominjanje specifičnih "epizod" ali preteklih izkušenj za učenje iz njih.
+Ta spomin shranjuje zaporedje korakov, ki jih agent izvede med kompleksno nalogo, vključno z uspehi in neuspehi. Je kot spomin na specifične "epizode" ali pretekle izkušnje, iz katerih se lahko uči.
 
 **Primer epizodnega spomina**
 
@@ -100,7 +100,7 @@ Ta spomin shranjuje zaporedje korakov, ki jih agent izvede med kompleksno nalogo
 
 #### Spomin na entitete
 
-Ta vključuje izvlečenje in zapomnitev specifičnih entitet (kot so ljudje, kraji ali stvari) in dogodkov iz pogovorov. Omogoča agentu, da zgradi strukturirano razumevanje ključnih elementov, o katerih se razpravlja.
+Ta spomin vključuje izvlečenje in zapomnitev specifičnih entitet (kot so ljudje, kraji ali stvari) in dogodkov iz pogovorov. Omogoča agentu, da zgradi strukturirano razumevanje ključnih elementov, o katerih se razpravlja.
 
 **Primer spomina na entitete**
 
@@ -120,15 +120,15 @@ Implementacija spomina za AI agente vključuje sistematičen proces **upravljanj
 
 ### Specializirana orodja za spomin
 
-Eden od načinov za shranjevanje in upravljanje spomina agenta je uporaba specializiranih orodij, kot je Mem0. Mem0 deluje kot trajna plast spomina, ki agentom omogoča priklic relevantnih interakcij, shranjevanje uporabniških preferenc in dejanskega konteksta ter učenje iz uspehov in neuspehov skozi čas. Ideja tukaj je, da se agenti brez stanja spremenijo v agente s stanjem.
+Eden od načinov za shranjevanje in upravljanje spomina agenta je uporaba specializiranih orodij, kot je Mem0. Mem0 deluje kot trajna plast spomina, ki agentom omogoča priklic relevantnih interakcij, shranjevanje uporabniških preferenc in dejanskega konteksta ter učenje iz uspehov in neuspehov skozi čas. Ideja je, da se agenti brez stanja spremenijo v agente s stanjem.
 
-Deluje skozi **dvofazni proces spomina: ekstrakcija in posodobitev**. Najprej se sporočila, dodana v nit agenta, pošljejo v storitev Mem0, ki uporablja Large Language Model (LLM) za povzetek zgodovine pogovora in izvleček novih spominov. Nato faza posodobitve, ki jo vodi LLM, določi, ali naj te spomine doda, spremeni ali izbriše, ter jih shrani v hibridno podatkovno shrambo, ki lahko vključuje vektorske, grafične in ključ-vrednostne baze podatkov. Ta sistem podpira tudi različne vrste spomina in lahko vključuje grafični spomin za upravljanje odnosov med entitetami.
+Deluje skozi **dvofazni proces spomina: ekstrakcija in posodobitev**. Najprej se sporočila, dodana v nit agenta, pošljejo storitvi Mem0, ki uporablja Large Language Model (LLM) za povzetek zgodovine pogovora in izvleček novih spominov. Nato faza posodobitve, ki jo vodi LLM, določi, ali je treba te spomine dodati, spremeniti ali izbrisati, ter jih shrani v hibridno podatkovno shrambo, ki lahko vključuje vektorske, grafične in ključ-vrednostne baze podatkov. Ta sistem podpira tudi različne vrste spomina in lahko vključuje grafični spomin za upravljanje odnosov med entitetami.
 
 ### Shranjevanje spomina z RAG
 
 Poleg specializiranih orodij za spomin, kot je Mem0, lahko uporabite robustne iskalne storitve, kot je **Azure AI Search kot zaledje za shranjevanje in priklic spominov**, še posebej za strukturirani RAG.
 
-To vam omogoča, da utemeljite odgovore agenta z lastnimi podatki, kar zagotavlja bolj relevantne in natančne odgovore. Azure AI Search se lahko uporablja za shranjevanje uporabniških spominov o potovanjih, katalogov izdelkov ali katere koli druge domensko specifične informacije.
+To omogoča, da utemeljite odgovore agenta z lastnimi podatki, kar zagotavlja bolj relevantne in natančne odgovore. Azure AI Search se lahko uporablja za shranjevanje uporabniških spominov o potovanjih, katalogov izdelkov ali katere koli druge domensko specifične informacije.
 
 Azure AI Search podpira zmogljivosti, kot je **strukturirani RAG**, ki odlično izvleče in prikliče gosto, strukturirano informacijo iz velikih podatkovnih nizov, kot so zgodovine pogovorov, e-pošte ali celo slike. To zagotavlja "nadčloveško natančnost in priklic" v primerjavi s tradicionalnimi pristopi razdeljevanja besedila in vgrajevanja.
 
@@ -142,7 +142,7 @@ Pogost vzorec za samopopravljajoče agente vključuje uvedbo **"agenta za znanje
 
 3. **Shranjevanje v bazo znanja**: Ohranjati te izvlečene informacije, pogosto v vektorski podatkovni bazi, da jih je mogoče priklicati kasneje.
 
-4. **Dopolnjevanje prihodnjih poizvedb**: Ko uporabnik začne novo poizvedbo, agent za znanje prikliče relevantne shranjene informacije in jih doda uporabnikovemu pozivu, kar zagotavlja ključni kontekst primarnemu agentu (podobno kot RAG).
+4. **Dopolnjevanje prihodnjih poizvedb**: Ko uporabnik začne novo poizvedbo, agent za znanje prikliče relevantne shranjene informacije in jih doda uporabnikovemu pozivu, kar zagotavlja ključen kontekst primarnemu agentu (podobno kot RAG).
 
 ### Optimizacije za spomin
 
@@ -152,9 +152,9 @@ Pogost vzorec za samopopravljajoče agente vključuje uvedbo **"agenta za znanje
 
 ## Imate več vprašanj o spominu agenta?
 
-Pridružite se [Azure AI Foundry Discord](https://aka.ms/ai-agents/discord), da se povežete z drugimi učenci, udeležite uradnih ur in dobite odgovore na svoja vprašanja o AI agentih.
+Pridružite se [Azure AI Foundry Discord](https://aka.ms/ai-agents/discord), kjer lahko srečate druge učence, se udeležite uradnih ur in dobite odgovore na svoja vprašanja o AI agentih.
 
 ---
 
 **Omejitev odgovornosti**:  
-Ta dokument je bil preveden z uporabo storitve AI za prevajanje [Co-op Translator](https://github.com/Azure/co-op-translator). Čeprav si prizadevamo za natančnost, vas prosimo, da upoštevate, da lahko avtomatizirani prevodi vsebujejo napake ali netočnosti. Izvirni dokument v njegovem izvirnem jeziku je treba obravnavati kot avtoritativni vir. Za ključne informacije priporočamo profesionalni človeški prevod. Ne prevzemamo odgovornosti za morebitna nesporazumevanja ali napačne razlage, ki izhajajo iz uporabe tega prevoda.
+Ta dokument je bil preveden z uporabo storitve AI za prevajanje [Co-op Translator](https://github.com/Azure/co-op-translator). Čeprav si prizadevamo za natančnost, vas prosimo, da upoštevate, da lahko avtomatizirani prevodi vsebujejo napake ali netočnosti. Izvirni dokument v njegovem maternem jeziku je treba obravnavati kot avtoritativni vir. Za ključne informacije priporočamo profesionalni človeški prevod. Ne prevzemamo odgovornosti za morebitna nesporazumevanja ali napačne razlage, ki izhajajo iz uporabe tega prevoda.

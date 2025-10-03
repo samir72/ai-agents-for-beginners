@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "413adcc2c6a498d52643d27f6871aa24",
-  "translation_date": "2025-10-02T05:58:18+00:00",
+  "original_hash": "fbe8e2c7026d42ed06780dce1b06fd61",
+  "translation_date": "2025-10-03T14:20:54+00:00",
   "source_file": "README.md",
   "language_code": "ja"
 }
@@ -11,7 +11,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 ![初心者向け生成AI](../../translated_images/repo-thumbnailv2.06f4a48036fde647f6ba4eb19f5651babe59bb30e972748afb349e47725d7601.ja.png)
 
-## AIエージェントの構築を始めるために必要なすべてを学べるコース
+## AIエージェントを構築するために必要なすべてを学べるコース
 
 [![GitHub license](https://img.shields.io/github/license/microsoft/ai-agents-for-beginners.svg)](https://github.com/microsoft/ai-agents-for-beginners/blob/master/LICENSE?WT.mc_id=academic-105485-koreyst)
 [![GitHub contributors](https://img.shields.io/github/contributors/microsoft/ai-agents-for-beginners.svg)](https://GitHub.com/microsoft/ai-agents-for-beginners/graphs/contributors/?WT.mc_id=academic-105485-koreyst)
@@ -33,14 +33,13 @@ CO_OP_TRANSLATOR_METADATA:
 
 [![Azure AI Discord](https://dcbadge.limes.pink/api/server/kzRShWzttr)](https://discord.gg/kzRShWzttr)
 
-
 ## 🌱 始め方
 
-このコースでは、AIエージェント構築の基礎を学べるレッスンを提供しています。各レッスンは独立したトピックを扱っているので、好きなところから始めてください！
+このコースでは、AIエージェントを構築するための基本を学べるレッスンを提供しています。各レッスンは独立したトピックを扱っているので、好きなところから始めてください！
 
 このコースは多言語対応しています。[対応言語はこちら](../..)をご覧ください。
 
-生成AIモデルを初めて扱う方は、[初心者向け生成AI](https://aka.ms/genai-beginners)コースをご覧ください。このコースでは、生成AIを使った構築に関する21のレッスンを提供しています。
+生成AIモデルを初めて扱う方は、[初心者向け生成AIコース](https://aka.ms/genai-beginners)をご覧ください。このコースでは、生成AIを使った構築に関する21のレッスンを提供しています。
 
 このリポジトリを[スター (🌟)](https://docs.github.com/en/get-started/exploring-projects-on-github/saving-repositories-with-stars?WT.mc_id=academic-105485-koreyst)したり、[フォーク](https://github.com/microsoft/ai-agents-for-beginners/fork)してコードを実行するのを忘れないでください。
 
@@ -68,16 +67,13 @@ AIエージェントの構築で行き詰まったり、質問がある場合は
 
 ## 🙏 協力したいですか？
 
-提案がある場合やスペルミスやコードの誤りを見つけた場合は、[Issueを提出](https://github.com/microsoft/ai-agents-for-beginners/issues?WT.mc_id=academic-105485-koreyst)するか、[プルリクエストを作成](https://github.com/microsoft/ai-agents-for-beginners/pulls?WT.mc_id=academic-105485-koreyst)してください。
-
-
+提案がある場合やスペルミスやコードのエラーを見つけた場合は、[問題を報告](https://github.com/microsoft/ai-agents-for-beginners/issues?WT.mc_id=academic-105485-koreyst)するか、[プルリクエストを作成](https://github.com/microsoft/ai-agents-for-beginners/pulls?WT.mc_id=academic-105485-koreyst)してください。
 
 ## 📂 各レッスンには以下が含まれます
 
 - READMEに記載されたレッスン内容と短い動画
 - Azure AI FoundryとGithub Models (無料) をサポートするPythonコード例
 - 学習を続けるための追加リソースへのリンク
-
 
 ## 🗃️ レッスン一覧
 
@@ -87,18 +83,18 @@ AIエージェントの構築で行き詰まったり、質問がある場合は
 | AIエージェントフレームワークの探索           | [リンク](./02-explore-agentic-frameworks/README.md) | [動画](https://youtu.be/ODwF-EZo_O8?si=Vawth4hzVaHv-u0H)   | [リンク](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
 | AIエージェント設計パターンの理解             | [リンク](./03-agentic-design-patterns/README.md)  | [動画](https://youtu.be/m9lM8qqoOEA?si=BIzHwzstTPL8o9GF)   | [リンク](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
 | ツール使用設計パターン                      | [リンク](./04-tool-use/README.md)                 | [動画](https://youtu.be/vieRiPRx-gI?si=2z6O2Xu2cu_Jz46N)   | [リンク](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| エージェント型RAG                           | [リンク](./05-agentic-rag/README.md)              | [動画](https://youtu.be/WcjAARvdL7I?si=gKPWsQpKiIlDH9A3)   | [リンク](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| エージェント型RAG                            | [リンク](./05-agentic-rag/README.md)              | [動画](https://youtu.be/WcjAARvdL7I?si=gKPWsQpKiIlDH9A3)   | [リンク](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
 | 信頼できるAIエージェントの構築               | [リンク](./06-building-trustworthy-agents/README.md) | [動画](https://youtu.be/iZKkMEGBCUQ?si=jZjpiMnGFOE9L8OK )  | [リンク](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
 | 計画設計パターン                            | [リンク](./07-planning-design/README.md)          | [動画](https://youtu.be/kPfJ2BrBCMY?si=6SC_iv_E5-mzucnC)   | [リンク](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
 | マルチエージェント設計パターン               | [リンク](./08-multi-agent/README.md)              | [動画](https://youtu.be/V6HpE9hZEx0?si=rMgDhEu7wXo2uo6g)   | [リンク](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
 | メタ認知設計パターン                        | [リンク](./09-metacognition/README.md)            | [動画](https://youtu.be/His9R6gw6Ec?si=8gck6vvdSNCt6OcF)   | [リンク](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
 | AIエージェントの実運用                      | [リンク](./10-ai-agents-production/README.md)     | [動画](https://youtu.be/l4TP6IyJxmQ?si=31dnhexRo6yLRJDl)   | [リンク](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| エージェントプロトコルの使用 (MCP、A2A、NLWeb) | [リンク](./11-agentic-protocols/README.md)           | [動画](https://youtu.be/X-Dh9R3Opn8)                                 | [リンク](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| AIエージェントのためのコンテキストエンジニアリング | [リンク](./12-context-engineering/README.md)         | [動画](https://youtu.be/F5zqRV7gEag)                                 | [リンク](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| エージェンティックプロトコルの使用 (MCP、A2A、NLWeb) | [リンク](./11-agentic-protocols/README.md)           | [動画](https://youtu.be/X-Dh9R3Opn8)                                 | [リンク](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| AIエージェントのためのコンテキストエンジニアリング            | [リンク](./12-context-engineering/README.md)         | [動画](https://youtu.be/F5zqRV7gEag)                                 | [リンク](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
 | エージェントメモリの管理                      | [リンク](./13-agent-memory/README.md)     |      [動画](https://youtu.be/QrYbHesIxpw?si=vZkVwKrQ4ieCcIPx)                                                      |                                                                                        |
-| Microsoft Agent Framework の探求                         | [リンク](./14-microsoft-agent-framework/README.md)                            |                                                            |                                                                                        |
+| Microsoft Agent Frameworkの探求                         | [リンク](./14-microsoft-agent-framework/README.md)                            |                                                            |                                                                                        |
 | コンピュータ利用エージェント (CUA) の構築           | 近日公開                            |                                                            |                                                                                        |
-| スケーラブルエージェントの展開                    | 近日公開                            |                                                            |                                                                                        |
+| スケーラブルエージェントのデプロイ                    | 近日公開                            |                                                            |                                                                                        |
 | ローカルAIエージェントの作成                     | 近日公開                               |                                                            |                                                                                        |
 | AIエージェントのセキュリティ                           | 近日公開                               |                                                            |                                                                                        |
 
@@ -107,7 +103,7 @@ AIエージェントの構築で行き詰まったり、質問がある場合は
 私たちのチームは他にもコースを提供しています！ぜひチェックしてください：
 
 - [**NEW** 初心者向けEdge AI](https://github.com/microsoft/edgeai-for-beginners?WT.mc_id=academic-105485-koreyst)
-- [初心者向けモデルコンテキストプロトコル (MCP)](https://github.com/microsoft/mcp-for-beginners?WT.mc_id=academic-105485-koreyst)
+- [初心者向けModel Context Protocol (MCP)](https://github.com/microsoft/mcp-for-beginners?WT.mc_id=academic-105485-koreyst)
 - [.NETを使用した初心者向け生成AI](https://github.com/microsoft/Generative-AI-for-beginners-dotnet?WT.mc_id=academic-105485-koreyst)
 - [初心者向け生成AI](https://github.com/microsoft/generative-ai-for-beginners?WT.mc_id=academic-105485-koreyst)
 - [Javaを使用した初心者向け生成AI](https://github.com/microsoft/generative-ai-for-beginners-java?WT.mc_id=academic-105485-koreyst)
@@ -124,24 +120,34 @@ AIエージェントの構築で行き詰まったり、質問がある場合は
 
 ## 🌟 コミュニティへの感謝
 
-Agentic RAGを示す重要なコードサンプルを提供してくれた [Shivam Goyal](https://www.linkedin.com/in/shivam2003/) さんに感謝します。
+エージェンティックRAGを示す重要なコードサンプルを提供してくれた[Shivam Goyal](https://www.linkedin.com/in/shivam2003/)さんに感謝します。
 
 ## コントリビューション
 
-このプロジェクトは貢献と提案を歓迎します。ほとんどの貢献には、あなたがその貢献を使用する権利を持ち、実際にその権利を付与することを宣言するコントリビューターライセンス契約 (CLA) に同意する必要があります。詳細は <https://cla.opensource.microsoft.com> をご覧ください。
+このプロジェクトは貢献と提案を歓迎します。ほとんどの貢献には、あなたがその貢献を使用する権利を持ち、実際にその権利を付与することを宣言するContributor License Agreement (CLA) に同意する必要があります。詳細は<https://cla.opensource.microsoft.com>をご覧ください。
 
-プルリクエストを送信すると、CLAボットが自動的にCLAを提供する必要があるかどうかを判断し、PRに適切な装飾を行います (例: ステータスチェック、コメント)。ボットの指示に従うだけで済みます。CLAは、すべてのリポジトリで一度だけ行えば十分です。
+プルリクエストを送信すると、CLAボットが自動的にCLAを提供する必要があるかどうかを判断し、PRに適切な装飾を行います（例：ステータスチェック、コメント）。ボットの指示に従うだけで済みます。CLAはすべてのリポジトリで一度だけ行えば済みます。
 
-このプロジェクトは [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/) を採用しています。
-詳細については [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) を参照するか、追加の質問やコメントがある場合は [opencode@microsoft.com](mailto:opencode@microsoft.com) にお問い合わせください。
+このプロジェクトは[Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/)を採用しています。
+詳細については[Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/)をご覧いただくか、追加の質問やコメントについては[opencode@microsoft.com](mailto:opencode@microsoft.com)までお問い合わせください。
 
 ## 商標
 
-このプロジェクトには、プロジェクト、製品、サービスの商標やロゴが含まれている場合があります。Microsoftの商標やロゴの認可された使用は、[Microsoftの商標およびブランドガイドライン](https://www.microsoft.com/legal/intellectualproperty/trademarks/usage/general) に従う必要があります。
+このプロジェクトには、プロジェクト、製品、サービスの商標やロゴが含まれている場合があります。Microsoftの商標やロゴの認可された使用は、[Microsoftの商標およびブランドガイドライン](https://www.microsoft.com/legal/intellectualproperty/trademarks/usage/general)に従う必要があります。
 このプロジェクトの改変版でMicrosoftの商標やロゴを使用する場合、混乱を招いたりMicrosoftのスポンサーシップを暗示したりしてはなりません。
 第三者の商標やロゴの使用は、それぞれの第三者のポリシーに従う必要があります。
+
+## ヘルプを得る
+
+AIアプリの構築で行き詰まったり質問がある場合は、以下に参加してください：
+
+[![Azure AI Foundry Discord](https://img.shields.io/badge/Discord-Azure_AI_Foundry_Community_Discord-blue?style=for-the-badge&logo=discord&color=5865f2&logoColor=fff)](https://aka.ms/foundry/discord)
+
+製品のフィードバックや構築中のエラーについては以下をご覧ください：
+
+[![Azure AI Foundry Developer Forum](https://img.shields.io/badge/GitHub-Azure_AI_Foundry_Developer_Forum-blue?style=for-the-badge&logo=github&color=000000&logoColor=fff)](https://aka.ms/foundry/forum)
 
 ---
 
 **免責事項**:  
-この文書は、AI翻訳サービス [Co-op Translator](https://github.com/Azure/co-op-translator) を使用して翻訳されています。正確性を追求しておりますが、自動翻訳には誤りや不正確な部分が含まれる可能性があることをご承知ください。元の言語で記載された文書が正式な情報源とみなされるべきです。重要な情報については、専門の人間による翻訳を推奨します。この翻訳の使用に起因する誤解や誤解について、当社は責任を負いません。
+この文書は、AI翻訳サービス [Co-op Translator](https://github.com/Azure/co-op-translator) を使用して翻訳されています。正確性を追求しておりますが、自動翻訳には誤りや不正確な部分が含まれる可能性があります。元の言語で記載された文書を正式な情報源としてお考えください。重要な情報については、専門の人間による翻訳を推奨します。この翻訳の使用に起因する誤解や誤解釈について、当方は一切の責任を負いません。

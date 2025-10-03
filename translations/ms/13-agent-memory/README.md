@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "c27e2a2e9055910545560e8472b341d8",
-  "translation_date": "2025-10-02T17:20:29+00:00",
+  "original_hash": "d2c9703548140bafa2d6a77406552542",
+  "translation_date": "2025-10-03T14:56:07+00:00",
   "source_file": "13-agent-memory/README.md",
   "language_code": "ms"
 }
@@ -38,7 +38,7 @@ Selepas menyelesaikan pelajaran ini, anda akan tahu bagaimana untuk:
 
 Secara asasnya, **memori untuk ejen AI merujuk kepada mekanisme yang membolehkan mereka menyimpan dan mengingat maklumat**. Maklumat ini boleh berupa butiran spesifik tentang perbualan, keutamaan pengguna, tindakan lalu, atau corak yang dipelajari.
 
-Tanpa memori, aplikasi AI sering kali tidak mempunyai keadaan, bermakna setiap interaksi bermula dari awal. Ini membawa kepada pengalaman pengguna yang berulang dan mengecewakan di mana ejen "lupa" konteks atau keutamaan sebelumnya.
+Tanpa memori, aplikasi AI sering kali bersifat tanpa keadaan, bermaksud setiap interaksi bermula dari awal. Ini membawa kepada pengalaman pengguna yang berulang dan mengecewakan di mana ejen "lupa" konteks atau keutamaan sebelumnya.
 
 ### Mengapa Memori Penting?
 
@@ -46,9 +46,9 @@ Kecerdasan ejen sangat berkait rapat dengan keupayaannya untuk mengingat dan men
 
 • **Reflektif**: Belajar daripada tindakan dan hasil lalu.
 
-• **Interaktif**: Mengekalkan konteks sepanjang perbualan yang berterusan.
+• **Interaktif**: Mengekalkan konteks dalam perbualan yang berterusan.
 
-• **Proaktif dan Reaktif**: Menjangka keperluan atau bertindak balas dengan sesuai berdasarkan data sejarah.
+• **Proaktif dan Reaktif**: Meramalkan keperluan atau bertindak balas dengan sesuai berdasarkan data sejarah.
 
 • **Autonomi**: Beroperasi dengan lebih bebas dengan menggunakan pengetahuan yang disimpan.
 
@@ -58,7 +58,7 @@ Tujuan melaksanakan memori adalah untuk menjadikan ejen lebih **boleh dipercayai
 
 #### Memori Kerja
 
-Anggap ini sebagai sehelai kertas draf yang digunakan oleh ejen semasa satu tugas atau proses pemikiran yang sedang berlangsung. Ia menyimpan maklumat segera yang diperlukan untuk langkah seterusnya.
+Anggap ini sebagai sehelai kertas contengan yang digunakan oleh ejen semasa satu tugas atau proses pemikiran yang sedang berlangsung. Ia menyimpan maklumat segera yang diperlukan untuk langkah seterusnya.
 
 Untuk ejen AI, memori kerja sering kali menangkap maklumat yang paling relevan daripada perbualan, walaupun sejarah penuh perbualan itu panjang atau dipotong. Ia memberi fokus kepada elemen utama seperti keperluan, cadangan, keputusan, dan tindakan.
 
@@ -76,7 +76,7 @@ Jika pengguna bertanya, "Berapa harga tiket penerbangan ke Paris?" dan kemudian 
 
 #### Memori Jangka Panjang
 
-Ini adalah maklumat yang kekal merentasi pelbagai perbualan atau sesi. Ia membolehkan ejen mengingat keutamaan pengguna, interaksi sejarah, atau pengetahuan umum dalam tempoh yang panjang. Ini penting untuk personalisasi.
+Ini adalah maklumat yang kekal merentasi pelbagai perbualan atau sesi. Ia membolehkan ejen mengingat keutamaan pengguna, interaksi sejarah, atau pengetahuan umum dalam jangka masa panjang. Ini penting untuk personalisasi.
 
 **Contoh Memori Jangka Panjang**
 
@@ -86,7 +86,7 @@ Memori jangka panjang mungkin menyimpan bahawa "Ben suka bermain ski dan aktivit
 
 Jenis memori khusus ini membantu ejen membangunkan "personaliti" atau "persona" yang konsisten. Ia membolehkan ejen mengingat butiran tentang dirinya atau peranannya yang dimaksudkan, menjadikan interaksi lebih lancar dan fokus.
 
-**Contoh Memori Jangka Panjang**
+**Contoh Memori Persona**
 
 Jika ejen perjalanan direka untuk menjadi "pakar perancang ski," memori persona mungkin mengukuhkan peranan ini, mempengaruhi responsnya agar selaras dengan nada dan pengetahuan seorang pakar.
 
@@ -100,7 +100,7 @@ Jika ejen cuba menempah penerbangan tertentu tetapi gagal kerana tidak tersedia,
 
 #### Memori Entiti
 
-Ini melibatkan pengekstrakan dan penyimpanan entiti tertentu (seperti orang, tempat, atau benda) dan peristiwa daripada perbualan. Ia membolehkan ejen membina pemahaman yang berstruktur tentang elemen utama yang dibincangkan.
+Ini melibatkan pengekstrakan dan pengingatan entiti tertentu (seperti orang, tempat, atau benda) dan peristiwa daripada perbualan. Ia membolehkan ejen membina pemahaman yang berstruktur tentang elemen utama yang dibincangkan.
 
 **Contoh Memori Entiti**
 
@@ -108,7 +108,7 @@ Daripada perbualan tentang perjalanan lalu, ejen mungkin mengekstrak "Paris," "M
 
 #### RAG Berstruktur (Retrieval Augmented Generation)
 
-Walaupun RAG adalah teknik yang lebih luas, "RAG Berstruktur" disorot sebagai teknologi memori yang kuat. Ia mengekstrak maklumat yang padat dan berstruktur daripada pelbagai sumber (perbualan, e-mel, imej) dan menggunakannya untuk meningkatkan ketepatan, ingatan, dan kelajuan dalam respons. Tidak seperti RAG klasik yang hanya bergantung pada kesamaan semantik, RAG Berstruktur berfungsi dengan struktur maklumat yang wujud.
+Walaupun RAG adalah teknik yang lebih luas, "RAG Berstruktur" diketengahkan sebagai teknologi memori yang berkuasa. Ia mengekstrak maklumat yang padat dan berstruktur daripada pelbagai sumber (perbualan, e-mel, imej) dan menggunakannya untuk meningkatkan ketepatan, pengingatan, dan kelajuan dalam respons. Berbeza dengan RAG klasik yang hanya bergantung pada kesamaan semantik, RAG Berstruktur berfungsi dengan struktur maklumat yang wujud.
 
 **Contoh RAG Berstruktur**
 
@@ -122,15 +122,15 @@ Melaksanakan memori untuk ejen AI melibatkan proses sistematik **pengurusan memo
 
 Salah satu cara untuk menyimpan dan mengurus memori ejen adalah dengan menggunakan alat khusus seperti Mem0. Mem0 berfungsi sebagai lapisan memori yang berterusan, membolehkan ejen mengingat interaksi yang relevan, menyimpan keutamaan pengguna dan konteks fakta, serta belajar daripada kejayaan dan kegagalan dari masa ke masa. Idea di sini adalah bahawa ejen tanpa keadaan berubah menjadi ejen dengan keadaan.
 
-Ia berfungsi melalui **saluran memori dua fasa: pengekstrakan dan pengemaskinian**. Pertama, mesej yang ditambahkan ke utas ejen dihantar ke perkhidmatan Mem0, yang menggunakan Model Bahasa Besar (LLM) untuk meringkaskan sejarah perbualan dan mengekstrak memori baru. Kemudian, fasa pengemaskinian yang didorong oleh LLM menentukan sama ada untuk menambah, mengubah, atau memadamkan memori ini, menyimpannya dalam stor data hibrid yang boleh merangkumi pangkalan data vektor, graf, dan nilai kunci. Sistem ini juga menyokong pelbagai jenis memori dan boleh menggabungkan memori graf untuk mengurus hubungan antara entiti.
+Ia berfungsi melalui **saluran memori dua fasa: pengekstrakan dan pengemaskinian**. Pertama, mesej yang ditambahkan ke utas ejen dihantar ke perkhidmatan Mem0, yang menggunakan Model Bahasa Besar (LLM) untuk meringkaskan sejarah perbualan dan mengekstrak memori baru. Seterusnya, fasa pengemaskinian yang didorong oleh LLM menentukan sama ada untuk menambah, mengubah, atau memadamkan memori ini, menyimpannya dalam stor data hibrid yang boleh merangkumi pangkalan data vektor, graf, dan nilai kunci. Sistem ini juga menyokong pelbagai jenis memori dan boleh menggabungkan memori graf untuk mengurus hubungan antara entiti.
 
 ### Menyimpan Memori dengan RAG
 
 Selain alat memori khusus seperti Mem0, anda boleh memanfaatkan perkhidmatan carian yang kukuh seperti **Azure AI Search sebagai backend untuk menyimpan dan mengambil memori**, terutamanya untuk RAG Berstruktur.
 
-Ini membolehkan anda mengasaskan respons ejen dengan data anda sendiri, memastikan jawapan yang lebih relevan dan tepat. Azure AI Search boleh digunakan untuk menyimpan memori perjalanan pengguna, katalog produk, atau sebarang pengetahuan khusus domain.
+Ini membolehkan anda mengasaskan respons ejen anda dengan data anda sendiri, memastikan jawapan yang lebih relevan dan tepat. Azure AI Search boleh digunakan untuk menyimpan memori perjalanan pengguna, katalog produk, atau sebarang pengetahuan khusus domain.
 
-Azure AI Search menyokong keupayaan seperti **RAG Berstruktur**, yang cemerlang dalam mengekstrak dan mengambil maklumat yang padat dan berstruktur daripada set data besar seperti sejarah perbualan, e-mel, atau bahkan imej. Ini memberikan "ketepatan dan ingatan superman" berbanding pendekatan pemotongan teks dan pengekodan tradisional.
+Azure AI Search menyokong keupayaan seperti **RAG Berstruktur**, yang cemerlang dalam mengekstrak dan mengambil maklumat yang padat dan berstruktur daripada set data besar seperti sejarah perbualan, e-mel, atau bahkan imej. Ini memberikan "ketepatan dan pengingatan supermanusia" berbanding pendekatan pemotongan teks dan pengekodan tradisional.
 
 ## Menjadikan Ejen AI Lebih Baik
 
@@ -146,7 +146,7 @@ Corak biasa untuk ejen yang mampu memperbaiki diri melibatkan pengenalan **"ejen
 
 ### Pengoptimuman untuk Memori
 
-• **Pengurusan Latensi**: Untuk mengelakkan memperlahankan interaksi pengguna, model yang lebih murah dan pantas boleh digunakan pada mulanya untuk memeriksa dengan cepat sama ada maklumat itu berharga untuk disimpan atau diambil, hanya menggunakan proses pengekstrakan/pengambilan yang lebih kompleks apabila perlu.
+• **Pengurusan Kependaman**: Untuk mengelakkan interaksi pengguna menjadi perlahan, model yang lebih murah dan cepat boleh digunakan pada mulanya untuk memeriksa dengan cepat sama ada maklumat itu berharga untuk disimpan atau diambil, hanya menggunakan proses pengekstrakan/pengambilan yang lebih kompleks apabila perlu.
 
 • **Penyelenggaraan Pangkalan Pengetahuan**: Untuk pangkalan pengetahuan yang semakin berkembang, maklumat yang kurang kerap digunakan boleh dipindahkan ke "penyimpanan sejuk" untuk menguruskan kos.
 
@@ -157,4 +157,4 @@ Sertai [Azure AI Foundry Discord](https://aka.ms/ai-agents/discord) untuk berhub
 ---
 
 **Penafian**:  
-Dokumen ini telah diterjemahkan menggunakan perkhidmatan terjemahan AI [Co-op Translator](https://github.com/Azure/co-op-translator). Walaupun kami berusaha untuk memastikan ketepatan, sila ambil perhatian bahawa terjemahan automatik mungkin mengandungi kesilapan atau ketidaktepatan. Dokumen asal dalam bahasa asalnya harus dianggap sebagai sumber yang berwibawa. Untuk maklumat yang kritikal, terjemahan manusia profesional adalah disyorkan. Kami tidak bertanggungjawab atas sebarang salah faham atau salah tafsir yang timbul daripada penggunaan terjemahan ini.
+Dokumen ini telah diterjemahkan menggunakan perkhidmatan terjemahan AI [Co-op Translator](https://github.com/Azure/co-op-translator). Walaupun kami berusaha untuk ketepatan, sila ambil perhatian bahawa terjemahan automatik mungkin mengandungi kesilapan atau ketidaktepatan. Dokumen asal dalam bahasa asalnya harus dianggap sebagai sumber yang berwibawa. Untuk maklumat penting, terjemahan manusia profesional adalah disyorkan. Kami tidak bertanggungjawab atas sebarang salah faham atau salah tafsir yang timbul daripada penggunaan terjemahan ini.

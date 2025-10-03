@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "413adcc2c6a498d52643d27f6871aa24",
-  "translation_date": "2025-10-02T13:49:57+00:00",
+  "original_hash": "fbe8e2c7026d42ed06780dce1b06fd61",
+  "translation_date": "2025-10-03T14:09:08+00:00",
   "source_file": "README.md",
   "language_code": "ru"
 }
@@ -11,7 +11,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 ![Генеративный ИИ для начинающих](../../translated_images/repo-thumbnailv2.06f4a48036fde647f6ba4eb19f5651babe59bb30e972748afb349e47725d7601.ru.png)
 
-## Курс, обучающий всему необходимому для создания AI-агентов
+## Курс, обучающий всему, что нужно знать для создания AI-агентов
 
 [![Лицензия GitHub](https://img.shields.io/github/license/microsoft/ai-agents-for-beginners.svg)](https://github.com/microsoft/ai-agents-for-beginners/blob/master/LICENSE?WT.mc_id=academic-105485-koreyst)
 [![Участники GitHub](https://img.shields.io/github/contributors/microsoft/ai-agents-for-beginners.svg)](https://GitHub.com/microsoft/ai-agents-for-beginners/graphs/contributors/?WT.mc_id=academic-105485-koreyst)
@@ -25,7 +25,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 [Французский](../fr/README.md) | [Испанский](../es/README.md) | [Немецкий](../de/README.md) | [Русский](./README.md) | [Арабский](../ar/README.md) | [Персидский (фарси)](../fa/README.md) | [Урду](../ur/README.md) | [Китайский (упрощенный)](../zh/README.md) | [Китайский (традиционный, Макао)](../mo/README.md) | [Китайский (традиционный, Гонконг)](../hk/README.md) | [Китайский (традиционный, Тайвань)](../tw/README.md) | [Японский](../ja/README.md) | [Корейский](../ko/README.md) | [Хинди](../hi/README.md) | [Бенгальский](../bn/README.md) | [Маратхи](../mr/README.md) | [Непальский](../ne/README.md) | [Панджаби (гурмукхи)](../pa/README.md) | [Португальский (Португалия)](../pt/README.md) | [Португальский (Бразилия)](../br/README.md) | [Итальянский](../it/README.md) | [Польский](../pl/README.md) | [Турецкий](../tr/README.md) | [Греческий](../el/README.md) | [Тайский](../th/README.md) | [Шведский](../sv/README.md) | [Датский](../da/README.md) | [Норвежский](../no/README.md) | [Финский](../fi/README.md) | [Голландский](../nl/README.md) | [Иврит](../he/README.md) | [Вьетнамский](../vi/README.md) | [Индонезийский](../id/README.md) | [Малайский](../ms/README.md) | [Тагальский (филиппинский)](../tl/README.md) | [Суахили](../sw/README.md) | [Венгерский](../hu/README.md) | [Чешский](../cs/README.md) | [Словацкий](../sk/README.md) | [Румынский](../ro/README.md) | [Болгарский](../bg/README.md) | [Сербский (кириллица)](../sr/README.md) | [Хорватский](../hr/README.md) | [Словенский](../sl/README.md) | [Украинский](../uk/README.md) | [Бирманский (Мьянма)](../my/README.md)
 
-**Если вы хотите добавить поддержку других языков, список доступных языков находится [здесь](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
+**Если вы хотите добавить поддержку дополнительных языков, список доступных языков можно найти [здесь](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
 
 [![Наблюдатели GitHub](https://img.shields.io/github/watchers/microsoft/ai-agents-for-beginners.svg?style=social&label=Watch)](https://GitHub.com/microsoft/ai-agents-for-beginners/watchers/?WT.mc_id=academic-105485-koreyst)
 [![Форки GitHub](https://img.shields.io/github/forks/microsoft/ai-agents-for-beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/ai-agents-for-beginners/network/?WT.mc_id=academic-105485-koreyst)
@@ -43,13 +43,13 @@ CO_OP_TRANSLATOR_METADATA:
 
 Не забудьте [поставить звезду (🌟) этому репозиторию](https://docs.github.com/en/get-started/exploring-projects-on-github/saving-repositories-with-stars?WT.mc_id=academic-105485-koreyst) и [форкнуть этот репозиторий](https://github.com/microsoft/ai-agents-for-beginners/fork), чтобы запустить код.
 
-### Общайтесь с другими учащимися, задавайте вопросы
+### Общайтесь с другими учениками, задавайте вопросы
 
 Если вы столкнулись с трудностями или у вас есть вопросы о создании AI-агентов, присоединяйтесь к нашему специальному каналу Discord в [Azure AI Foundry Community Discord](https://aka.ms/ai-agents/discord).
 
 ### Что вам понадобится
 
-Каждый урок курса включает примеры кода, которые находятся в папке code_samples. Вы можете [форкнуть этот репозиторий](https://github.com/microsoft/ai-agents-for-beginners/fork), чтобы создать свою копию.
+Каждый урок курса включает примеры кода, которые можно найти в папке code_samples. Вы можете [форкнуть этот репозиторий](https://github.com/microsoft/ai-agents-for-beginners/fork), чтобы создать свою копию.
 
 Примеры кода в этих упражнениях используют Azure AI Foundry и GitHub Model Catalogs для взаимодействия с языковыми моделями:
 
@@ -59,7 +59,7 @@ CO_OP_TRANSLATOR_METADATA:
 Этот курс также использует следующие фреймворки и сервисы AI-агентов от Microsoft:
 
 - [Microsoft Agent Framework (MAF) - Новинка!](https://aka.ms/ai-agents-beginners/agent-framewrok)
-- [Сервис AI-агентов Azure](https://aka.ms/ai-agents-beginners/ai-agent-service)
+- [Сервис Azure AI Agent](https://aka.ms/ai-agents-beginners/ai-agent-service)
 - [Semantic Kernel](https://aka.ms/ai-agents-beginners/semantic-kernel)
 - [AutoGen](https://aka.ms/ai-agents/autogen)
 
@@ -67,12 +67,12 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## 🙏 Хотите помочь?
 
-У вас есть предложения или вы нашли ошибки в тексте или коде? [Создайте проблему](https://github.com/microsoft/ai-agents-for-beginners/issues?WT.mc_id=academic-105485-koreyst) или [создайте запрос на изменение](https://github.com/microsoft/ai-agents-for-beginners/pulls?WT.mc_id=academic-105485-koreyst).
+У вас есть предложения или вы нашли орфографические ошибки или ошибки в коде? [Создайте проблему](https://github.com/microsoft/ai-agents-for-beginners/issues?WT.mc_id=academic-105485-koreyst) или [создайте запрос на изменение](https://github.com/microsoft/ai-agents-for-beginners/pulls?WT.mc_id=academic-105485-koreyst).
 
 ## 📂 Каждый урок включает
 
-- Письменный урок в README и короткое видео
-- Примеры кода на Python с поддержкой Azure AI Foundry и моделей GitHub (бесплатно)
+- Письменный урок, расположенный в README, и короткое видео
+- Примеры кода на Python, поддерживающие Azure AI Foundry и модели GitHub (бесплатно)
 - Ссылки на дополнительные ресурсы для продолжения обучения
 
 ## 🗃️ Уроки
@@ -88,7 +88,7 @@ CO_OP_TRANSLATOR_METADATA:
 | Шаблон проектирования планирования           | [Ссылка](./07-planning-design/README.md)         | [Видео](https://youtu.be/kPfJ2BrBCMY?si=6SC_iv_E5-mzucnC)  | [Ссылка](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
 | Шаблон проектирования для нескольких агентов | [Ссылка](./08-multi-agent/README.md)             | [Видео](https://youtu.be/V6HpE9hZEx0?si=rMgDhEu7wXo2uo6g)  | [Ссылка](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
 | Шаблон проектирования метакогниции           | [Ссылка](./09-metacognition/README.md)           | [Видео](https://youtu.be/His9R6gw6Ec?si=8gck6vvdSNCt6OcF)  | [Ссылка](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| AI-агенты в продакшене                      | [Ссылка](./10-ai-agents-production/README.md)    | [Видео](https://youtu.be/l4TP6IyJxmQ?si=31dnhexRo6yLRJDl)  | [Ссылка](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| AI-агенты в производстве                     | [Ссылка](./10-ai-agents-production/README.md)    | [Видео](https://youtu.be/l4TP6IyJxmQ?si=31dnhexRo6yLRJDl)  | [Ссылка](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
 | Использование агентных протоколов (MCP, A2A и NLWeb) | [Ссылка](./11-agentic-protocols/README.md)           | [Видео](https://youtu.be/X-Dh9R3Opn8)                                 | [Ссылка](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
 | Инженерия контекста для AI-агентов                   | [Ссылка](./12-context-engineering/README.md)         | [Видео](https://youtu.be/F5zqRV7gEag)                                 | [Ссылка](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
 | Управление памятью агентов                           | [Ссылка](./13-agent-memory/README.md)     |      [Видео](https://youtu.be/QrYbHesIxpw?si=vZkVwKrQ4ieCcIPx)                                                      |                                                                                        |
@@ -120,7 +120,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## 🌟 Благодарности сообществу
 
-Спасибо [Шиваму Гойалу](https://www.linkedin.com/in/shivam2003/) за вклад в важные примеры кода, демонстрирующие Agentic RAG. 
+Спасибо [Шиваму Гойалу](https://www.linkedin.com/in/shivam2003/) за вклад в важные примеры кода, демонстрирующие Agentic RAG.
 
 ## Внесение вклада
 
@@ -142,6 +142,16 @@ CLA, и добавит соответствующую информацию к PR
 должно соответствовать и следовать [Руководству по товарным знакам и брендам Microsoft](https://www.microsoft.com/legal/intellectualproperty/trademarks/usage/general).
 Использование товарных знаков или логотипов Microsoft в модифицированных версиях этого проекта не должно вызывать путаницу или подразумевать спонсорство Microsoft.
 Любое использование товарных знаков или логотипов третьих сторон должно соответствовать политике этих третьих сторон.
+
+## Получение помощи
+
+Если вы столкнулись с трудностями или у вас есть вопросы о создании AI-приложений, присоединяйтесь:
+
+[![Azure AI Foundry Discord](https://img.shields.io/badge/Discord-Azure_AI_Foundry_Community_Discord-blue?style=for-the-badge&logo=discord&color=5865f2&logoColor=fff)](https://aka.ms/foundry/discord)
+
+Если у вас есть отзывы о продукте или ошибки при создании, посетите:
+
+[![Azure AI Foundry Developer Forum](https://img.shields.io/badge/GitHub-Azure_AI_Foundry_Developer_Forum-blue?style=for-the-badge&logo=github&color=000000&logoColor=fff)](https://aka.ms/foundry/forum)
 
 ---
 

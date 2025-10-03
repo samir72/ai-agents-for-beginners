@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "413adcc2c6a498d52643d27f6871aa24",
-  "translation_date": "2025-10-02T15:35:03+00:00",
+  "original_hash": "fbe8e2c7026d42ed06780dce1b06fd61",
+  "translation_date": "2025-10-03T14:44:19+00:00",
   "source_file": "README.md",
   "language_code": "da"
 }
@@ -54,8 +54,8 @@ Hver lektion i dette kursus indeholder kodeeksempler, som kan findes i mappen co
 
 Kodeeksemplerne i disse øvelser bruger Azure AI Foundry og GitHub Model Catalogs til at interagere med sprogmodeller:
 
-- [Github-modeller](https://aka.ms/ai-agents-beginners/github-models) - Gratis / Begrænset
-- [Azure AI Foundry](https://aka.ms/ai-agents-beginners/ai-foundry) - Azure-konto påkrævet
+- [Github Models](https://aka.ms/ai-agents-beginners/github-models) - Gratis / Begrænset
+- [Azure AI Foundry](https://aka.ms/ai-agents-beginners/ai-foundry) - Kræver Azure-konto
 
 Dette kursus bruger også følgende AI-agentrammer og tjenester fra Microsoft:
 
@@ -73,7 +73,7 @@ Har du forslag eller fundet stavefejl eller kodefejl? [Opret en issue](https://g
 ## 📂 Hver lektion inkluderer
 
 - En skriftlig lektion i README og en kort video
-- Python-kodeeksempler, der understøtter Azure AI Foundry og Github-modeller (gratis)
+- Python-kodeeksempler, der understøtter Azure AI Foundry og Github Models (Gratis)
 - Links til ekstra ressourcer for at fortsætte din læring
 
 ## 🗃️ Lektioner
@@ -91,13 +91,13 @@ Har du forslag eller fundet stavefejl eller kodefejl? [Opret en issue](https://g
 | Metakognition designmønster                 | [Link](./09-metacognition/README.md)             | [Video](https://youtu.be/His9R6gw6Ec?si=8gck6vvdSNCt6OcF)  | [Link](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
 | AI-agenter i produktion                     | [Link](./10-ai-agents-production/README.md)      | [Video](https://youtu.be/l4TP6IyJxmQ?si=31dnhexRo6yLRJDl)  | [Link](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
 | Brug af agentiske protokoller (MCP, A2A og NLWeb) | [Link](./11-agentic-protocols/README.md)           | [Video](https://youtu.be/X-Dh9R3Opn8)                                 | [Link](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| Kontekstengineering for AI-agenter              | [Link](./12-context-engineering/README.md)         | [Video](https://youtu.be/F5zqRV7gEag)                                 | [Link](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
-| Håndtering af agentisk hukommelse               | [Link](./13-agent-memory/README.md)     |      [Video](https://youtu.be/QrYbHesIxpw?si=vZkVwKrQ4ieCcIPx)                                                      |                                                                                        |
-| Udforskning af Microsoft Agent Framework        | [Link](./14-microsoft-agent-framework/README.md)                            |                                                            |                                                                                        |
-| Opbygning af Computer Use Agents (CUA)          | Kommer snart                            |                                                            |                                                                                        |
-| Udrulning af skalerbare agenter                 | Kommer snart                            |                                                            |                                                                                        |
-| Oprettelse af lokale AI-agenter                 | Kommer snart                               |                                                            |                                                                                        |
-| Sikring af AI-agenter                           | Kommer snart                               |                                                            |                                                                                        |
+| Kontekstengineering for AI-agenter               | [Link](./12-context-engineering/README.md)         | [Video](https://youtu.be/F5zqRV7gEag)                                 | [Link](https://aka.ms/ai-agents-beginners/collection?WT.mc_id=academic-105485-koreyst) |
+| Håndtering af agentisk hukommelse                | [Link](./13-agent-memory/README.md)     |      [Video](https://youtu.be/QrYbHesIxpw?si=vZkVwKrQ4ieCcIPx)                                                      |                                                                                        |
+| Udforskning af Microsoft Agent Framework         | [Link](./14-microsoft-agent-framework/README.md)                            |                                                            |                                                                                        |
+| Opbygning af Computer Use Agents (CUA)           | Kommer snart                            |                                                            |                                                                                        |
+| Udrulning af skalerbare agenter                  | Kommer snart                            |                                                            |                                                                                        |
+| Oprettelse af lokale AI-agenter                  | Kommer snart                               |                                                            |                                                                                        |
+| Sikring af AI-agenter                            | Kommer snart                               |                                                            |                                                                                        |
 
 ## 🎒 Andre kurser
 
@@ -129,7 +129,7 @@ Dette projekt byder bidrag og forslag velkommen. De fleste bidrag kræver, at du
 Contributor License Agreement (CLA), der erklærer, at du har retten til, og faktisk gør, at give os
 rettighederne til at bruge dit bidrag. For detaljer, besøg <https://cla.opensource.microsoft.com>.
 
-Når du indsender en pull request, vil en CLA-bot automatisk afgøre, om du skal give
+Når du sender en pull request, vil en CLA-bot automatisk afgøre, om du skal give
 en CLA og dekorere PR'en passende (f.eks. statuscheck, kommentar). Følg blot instruktionerne
 givet af botten. Du skal kun gøre dette én gang på tværs af alle repos, der bruger vores CLA.
 
@@ -141,11 +141,21 @@ kontakt [opencode@microsoft.com](mailto:opencode@microsoft.com) med eventuelle y
 
 Dette projekt kan indeholde varemærker eller logoer for projekter, produkter eller tjenester. Autoriseret brug af Microsoft
 varemærker eller logoer er underlagt og skal følge
-[Microsofts retningslinjer for varemærker og brand](https://www.microsoft.com/legal/intellectualproperty/trademarks/usage/general).
+[Microsofts retningslinjer for varemærker og branding](https://www.microsoft.com/legal/intellectualproperty/trademarks/usage/general).
 Brug af Microsofts varemærker eller logoer i modificerede versioner af dette projekt må ikke skabe forvirring eller antyde Microsoft-sponsorering.
 Enhver brug af tredjeparts varemærker eller logoer er underlagt disse tredjeparts politikker.
+
+## Få hjælp
+
+Hvis du sidder fast eller har spørgsmål om opbygning af AI-apps, så deltag i:
+
+[![Azure AI Foundry Discord](https://img.shields.io/badge/Discord-Azure_AI_Foundry_Community_Discord-blue?style=for-the-badge&logo=discord&color=5865f2&logoColor=fff)](https://aka.ms/foundry/discord)
+
+Hvis du har produktfeedback eller fejl under opbygning, besøg:
+
+[![Azure AI Foundry Developer Forum](https://img.shields.io/badge/GitHub-Azure_AI_Foundry_Developer_Forum-blue?style=for-the-badge&logo=github&color=000000&logoColor=fff)](https://aka.ms/foundry/forum)
 
 ---
 
 **Ansvarsfraskrivelse**:  
-Dette dokument er blevet oversat ved hjælp af AI-oversættelsestjenesten [Co-op Translator](https://github.com/Azure/co-op-translator). Selvom vi bestræber os på nøjagtighed, skal det bemærkes, at automatiserede oversættelser kan indeholde fejl eller unøjagtigheder. Det originale dokument på dets oprindelige sprog bør betragtes som den autoritative kilde. For kritisk information anbefales professionel menneskelig oversættelse. Vi påtager os ikke ansvar for misforståelser eller fejltolkninger, der måtte opstå som følge af brugen af denne oversættelse.
+Dette dokument er blevet oversat ved hjælp af AI-oversættelsestjenesten [Co-op Translator](https://github.com/Azure/co-op-translator). Selvom vi bestræber os på nøjagtighed, skal du være opmærksom på, at automatiserede oversættelser kan indeholde fejl eller unøjagtigheder. Det originale dokument på dets oprindelige sprog bør betragtes som den autoritative kilde. For kritisk information anbefales professionel menneskelig oversættelse. Vi er ikke ansvarlige for misforståelser eller fejltolkninger, der opstår som følge af brugen af denne oversættelse.
